@@ -11,10 +11,19 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PagesController@welcome');
+Route::get('/cottages', 'PagesController@cottages');
+Route::get('/houses', 'PagesController@houses');
+Route::get('/saunas', 'PagesController@saunas');
+Route::get('/baths', 'PagesController@saunas');
+Route::get('/arbours', 'PagesController@arbours');
+Route::get('/about', 'PagesController@about');
+Route::get('/services', 'PagesController@services');
+Route::get('/contact', 'PagesController@contacts');
 
+//Route::get('/news', 'NewsController@index');
+//Route::get('/news/{news}', 'NewsController@post');
+//Route::get('/search', 'NewsController@search');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
