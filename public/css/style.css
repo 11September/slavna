@@ -9,28 +9,29 @@
 }
 
 @font-face {
-    font-family: 'Proxima_Nova-regular'; /* Имя шрифта */
+    font-family: 'Proxima_Nova'; /* Имя шрифта */
     src: url(../fonts/ProximaNova-Regular.ttf); /* Путь к файлу со шрифтом */
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Proxima_Nova-regular-it';
-    src: url('../fonts/ProximaNovaCond-RegularIt.ttf');
+    font-family: 'Proxima_Nova';
+    src: url('ProximaNovaCond-RegularIt.ttf');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Proxima_Nova-bold';
-    src: url('../fonts/ProximaNova-Bold.ttf');
-
+    font-family: 'Proxima_Nova';
+    src: url('ProximaNova-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'Proxima_Nova-bold';
-    src: url('../fonts/ProximaNovaExCn-BoldIt.ttf');
+    font-family: 'Proxima_Nova';
+    src: url('ProximaNovaExCn-BoldIt.ttf');
     font-weight: bold;
     font-style: italic;
 }
@@ -81,7 +82,7 @@ form button:hover{
 
 .photo_report .block_img{
     border-radius: 25px;
-    box-shadow: 0 0 20px 0 rgba( 0, 0, 0, 0.8);
+    box-shadow: 0 0 20px 0 rgba( 0, 0, 0, 0.8)ж
     width: 850px;
     margin: 10px 0;
 }
@@ -191,90 +192,6 @@ form button:hover{
     color: #fff;
 }
 /* reviews end */
-
-
-/* contacts-form */
-.wrapper-text-left{
-
-    background: #74432F;
-}
-
-
-.text-ua{
-    color:#F4DB8F;
-    text-align: center;
-    font-size: 50px;
-}
-
-
-.text-p-ua{
-    color:white;
-    text-align: center;
-    font-size: 30px;
-}
-
-.my-fafa{
-    color: white;
-    text-align: center;
-}
-
-.input-special input{
-display: flex;
-    justify-content: center;
-}
-
-.h2-text-quest{
-    font-family: 'Proxima_Nova-bold';
-    font-size: 40px;
-    letter-spacing: 3px;
-}
-
-
-.wrapper-answer-form{
-    background: white;
-    border-radius: 55px;
-
-}
-
-hr{
-
-    color:#2D1C15;
-}
-
-.h2-text-quest{
-    text-align: center;
-}
-
-textarea{
-    width: 650px;
-    height: 190px;
-    text-align: center;
-}
-
-.under-form-text{
-    color:#74432F;
-    text-align: left;
-    margin-bottom: 30px;
-    margin-top: 10px;
-    font-size: 16px;
-}
-
-.question-span {
-    display: inline-block;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 24px;
-    padding-top: 15px;
-    color:white;
-    background:#2D1C15;
-    height: 60px;
-    width: 650px;
-}
-
-.contactForm{
-    font-family: 'Proxima_Nova';
-}
-/*contacts-form*/
 
 /* footer */
 
