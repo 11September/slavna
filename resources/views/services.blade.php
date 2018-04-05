@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    @include('partials.contactForm')
+
 @endsection
 
 @section('scripts')
