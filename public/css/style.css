@@ -114,12 +114,16 @@ form button:hover{
     height: 400px;
 }
 
+.block_text p span{
+    color: #fdc83c;
+}
+
 .photo_report_panel{
     
 }
 
 .photo_report_arrow{
-
+    text-align: center;
 }
 
 .photo_report_link{
@@ -134,7 +138,49 @@ form button:hover{
     letter-spacing: 3px;
 }
 
+.photo_report_arrow .slick-prev:before,
+.photo_report_arrow .slick-next:before{
+    z-index: 2;
+    position: relative;
+}
 
+.photo_report_arrow .slick-prev{
+    left: 15px;
+}
+
+.photo_report_arrow .slick-prev:before{
+    content: url(../images/photo_report_slider_left.png);
+}
+
+.photo_report_arrow .slick-next{
+    right: -5px;
+}
+
+.photo_report_arrow .slick-next:before{
+    content: url(../images/photo_report_slider_right.png);
+}
+
+.photo_report_arrow .slick-dots li{
+    height: 3px;
+    background: #eee6e4;
+    margin: 0;
+    width: 38px;
+}
+
+.photo_report_arrow .slick-active{
+    background: #f3d99e;
+    border: none;
+    box-shadow: 0 0 5px 1px rgba( 243, 217, 158, 0.8);
+}
+
+.photo_report_arrow .slick-dots li button:before{
+    content: '';
+    top: -8px;
+}
+
+.photo_report_panel span{
+    font-size: 30px;
+}
 
 /* photo_report end */
 
