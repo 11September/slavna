@@ -51,7 +51,7 @@ $(document).ready(function(){
     $('.current_number_slide').text("0" + current);
     $('.all_number_slide').text("0" + last_n);
 
-    console.log( 0 + current );
+    // console.log( 0 + current );
 
   });
 
