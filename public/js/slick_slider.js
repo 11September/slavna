@@ -18,16 +18,7 @@ $(document).ready(function(){
         settings: {
           arrows: true,
           dots: true,
-          centerMode: true,
-          centerPadding: '0px',
           slidesToShow: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: true,
-          dots: false
         }
       }
     ]
@@ -53,6 +44,30 @@ $(document).ready(function(){
 
     // console.log( 0 + current );
 
+  });
+
+  $('.reviews_slider').slick({
+      initialSlide: 0,
+      slidesToShow: 1,
+      rows: 1,
+      arrows: false,
+      // appendArrows: $('.photo_report_arrow'),
+      dots: true,
+      // appendDots: $('.photo_report_arrow'),
+      infinite: false,
+      centerMode: true,
+      // vertical: true,
+      focusOnSelect: true,
+      responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          arrows: true,
+          dots: true,
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 
 
