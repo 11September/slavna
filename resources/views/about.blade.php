@@ -5,6 +5,8 @@
 @endsection
 
 @section('content')
+    @include('partials.thubnails-about')
+
     @include('partials.thubnails')
 
     @include('partials.contactForm')

@@ -11,6 +11,31 @@ class PagesController extends Controller
         return view('welcome');
     }
 
+    public function about()
+    {
+        return view('about');
+    }
+
+    public function services()
+    {
+        return view('services');
+    }
+
+    public function contacts()
+    {
+        return view('contact');
+    }
+
+    public function reservation()
+    {
+        return view('reservation');
+    }
+
+    public function photos()
+    {
+        return view('photos');
+    }
+
     public function cottages()
     {
         return view('cottages');
@@ -54,30 +79,5 @@ class PagesController extends Controller
     public function arbour()
     {
         return view('arbour');
-    }
-
-    public function about()
-    {
-        return view('about');
-    }
-
-    public function services()
-    {
-        return view('services');
-    }
-
-    public function contacts()
-    {
-        return view('contact');
-    }
-
-    public function reservation()
-    {
-        return view('reservation');
-    }
-
-    public function photos()
-    {
-        return view('photos');
     }
 }

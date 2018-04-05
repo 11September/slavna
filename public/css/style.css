@@ -235,6 +235,7 @@ form button:hover {
 .thubnails-item img {
     width: 100%;
     height: 100%;
+    opacity: 0.5;
 }
 
 .wrapper-button-all-photos {
@@ -260,6 +261,14 @@ form button:hover {
 }
 
 /* Thubnails end */
+
+
+/* Thubnails-about */
+#thumbnails-about{
+    margin: 100px 0;
+}
+/* Thubnails-about end */
+
 
 /* contactForm */
 .wrapper-text-left {
