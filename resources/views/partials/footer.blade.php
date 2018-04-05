@@ -5,7 +5,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-5 center-block">
                     <div class="wrapper-footer-logo">
                         <a href="{{ url('/') }}">
-                            <img src="{{ asset('images/footer_logo.png') }}" alt="footer-logo">
+                            <!-- <img src="{{ asset('images/footer_logo.png') }}" alt="footer-logo"> -->
                         </a>
                         <div class="logo-info">
                             <h4>Відділ освіти </h4>

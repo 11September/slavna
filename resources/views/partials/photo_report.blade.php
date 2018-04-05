@@ -8,10 +8,10 @@
 		  			<p>
 		  				Пусть в этот славный новогодний вечер, Сказка к вам волшебная придет. А Дед Мороз в своем мешке зветном Подарков в "Славну" непременно принесет :) Коттедж-парк "Славна" Ваш природных отдых в комфортных условиях.
 		  			</p>
-		  			<div class="row">
-		  				<div class="col-xl-6">Дотс и стрелки</div>
-		  				<div class="col-xl-6">
-		  					<a href="">Подробней</a>
+		  			<div class="row photo_report_panel">
+		  				<div class="col-xl-6 photo_report_arrow">Дотс и стрелки</div>
+		  				<div class="col-xl-6 photo_report_link">
+		  					<a href="#">Подробней</a>
 		  				</div>
 		  			</div>
 		  		</div>

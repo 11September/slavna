@@ -74,7 +74,7 @@ form button:hover{
     background: #683d2c;
     margin-left: 70px;
     height: 640px;
-    padding: 35px 15px 30px 35px;
+    padding: 35px 50px 30px 35px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     width: 1000px;
@@ -102,8 +102,39 @@ form button:hover{
 }
 
 .photo_report_slider h3{
+    font-family: "Arial";
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.photo_report_slider p{
+    font-size: 30px;
+    line-height: 1.2;
+    height: 400px;
+}
+
+.photo_report_panel{
     
 }
+
+.photo_report_arrow{
+
+}
+
+.photo_report_link{
+    text-align: center;
+}
+
+.photo_report_panel a{
+    color: #271e19;
+    background: #fff;
+    padding: 30px 70px;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+
 
 /* photo_report end */
 
