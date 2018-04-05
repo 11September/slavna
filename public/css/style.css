@@ -13,26 +13,35 @@ body{
 }
 
 @font-face {
-    font-family: 'Proxima_Nova'; /* Имя шрифта */
+    font-family: 'Proxima_Nova-reg'; /* Имя шрифта */
     src: url(../fonts/ProximaNova-Regular.ttf); /* Путь к файлу со шрифтом */
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Proxima_Nova';
+    font-family: 'Proxima_Nova-reg-it';
     src: url('../fonts/ProximaNovaCond-RegularIt.ttf');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Proxima_Nova';
+    font-family: 'Proxima_Nova-bold';
     src: url('../fonts/ProximaNova-Bold.ttf');
-    font-weight: bold;
-    font-style: normal;
 }
 
+@font-face {
+    font-family: 'Proxima_Nova';
+    src: url('../fonts/ProximaNovaExCn-BoldIt.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Proxima_light';
+    src: url('../fonts/ProximaNova-Light.ttf');
+}
 .slick-slide:hover, .slick-slide:active, .slick-slide:visited {
     outline: 0;
     outline-offset: 0;
@@ -79,7 +88,7 @@ form button:hover{
 
 .photo_report .block_img{
     border-radius: 25px;
-    box-shadow: 0 0 20px 0 rgba( 0, 0, 0, 0.8);
+    box-shadow: 0 0 20px 0 rgba( 0, 0, 0, 0.8)ж
     width: 850px;
     margin: 10px 0;
 }
@@ -276,6 +285,40 @@ form button:hover{
     width:100%;
     /*height:220px;*/
     background-color: #2D1C15;
+
+
+
+/* contactForm */
+
+.wrapper-text-left{
+    background: #74432F;
+}
+
+.text-ua{
+    font-size: 50px;
+    color:#F4DB8F;
+    text-align: center;
+    font-family: 'Proxima_Nova-reg';
+}
+.text-p-ua, .my-fafa{
+    text-align: center;
+    color:white;
+}
+
+hr{
+    margin-top: 50px;
+    margin-bottom: 0;
+    height:2px;
+    width: 100%;
+    background:#2D1C15;
+}
+.text-p-ua{
+    font-size: 30px;
+    font-family: 'Proxima_Nova-reg';
+}
+.my-fafa svg{
+    width: 50px!important;
+    height: 100px!important;
 }
 
 .footer-logo{
@@ -285,6 +328,12 @@ form button:hover{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+.h2-text-quest{
+    font-family: 'Proxima_Nova-bold';
+    text-align: center;
+    font-size: 41px;
+    margin-top: 85px;
+    letter-spacing: 2px;
 }
 
 .footer-logo img{
@@ -307,6 +356,49 @@ form button:hover{
     align-items: center;
     line-height: 31px;
 }
+
+textarea{
+    width: 655px;
+   border:2px solid #2D1C15;
+    height: 192px ;
+    font-family: 'Proxima_light';
+}
+.question-span{
+    background: #2D1C15;
+    color:white;
+    letter-spacing: 2px;
+    font-size: 24px;
+    font-family: 'Proxima_Nova-reg';
+
+}
+
+.under-form-text{
+    font-size: 16px;
+    color:#74432F;
+    margin-top: 20px;
+    font-family: 'Proxima_light';
+    margin-bottom: 40px;
+}
+ .question-span {
+     display: inline-block;
+     text-align: center;
+     padding-top: 20px;
+     border-radius: 5px;
+    width: 653px;
+    height: 68px;
+}
+.input-bot{
+    margin-bottom: 55px;
+}
+ .checkout-input{
+     margin-top: 80px;
+     width: 750px;
+     border:none;
+     border-bottom: 2px solid #74432F;
+ }
+/*contactForm*/
+/* footer */
+
 /* footer end */
 @media (min-width: 1920px) {
 
