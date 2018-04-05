@@ -36,22 +36,20 @@
                 <HR>
 
                 <div class="input-special">
-                    <label for=" text">Имя*</label>
-                    <input type="text" placeholder="Имя">
+                    <input  class="checkout-input" type="text" placeholder="И м я*">
                 </div>
 
                 <div class="input-special">
-
-                    <label for=" text">Телефон*</label>
-                    <input type="number">
+                    <input class="checkout-input" type="number" placeholder="E-mail*">
                 </div>
                     <div class="input-special">
-                        <label for=" text">E-mail*</label>
-                        <input type="text"  placeholder="E-mail*">
+                        <input class="checkout-input input-bot" type="text"  placeholder="Т е л е ф о н*">
                     </div>
-                  <textarea>
-                      Задайте свой вопрос
-                    </textarea>
+                <textarea name="" id="">
+                         Задайте свой вопрос
+                </textarea>
+
+
 
                 <p class="under-form-text">
                     Пожалуйста заполните все поля формы, и в скором времени наш<br>
@@ -61,6 +59,7 @@
                 <span class="question-span">
             Задать вопрос
                 </span>
+
             </div>
         </div>
     </div>
