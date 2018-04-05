@@ -14,8 +14,6 @@
 
 @include('partials.reviews')
 
-
-
 @include('partials.latest_publications')
 
 @include('partials.thubnails')

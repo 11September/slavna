@@ -10,15 +10,45 @@ class PagesController extends Controller
     {
         return view('welcome');
     }
-    
+
+    public function about()
+    {
+        return view('about');
+    }
+
+    public function services()
+    {
+        return view('services');
+    }
+
+    public function contacts()
+    {
+        return view('contact');
+    }
+
+    public function reservation()
+    {
+        return view('reservation');
+    }
+
+    public function photos()
+    {
+        return view('photos');
+    }
+
     public function cottages()
     {
-        return view('welcome');
+        return view('cottages');
     }
 
     public function houses()
     {
-        return view('welcome');
+        return view('houses');
+    }
+
+    public function house()
+    {
+        return view('house');
     }
 
     public function saunas()
@@ -26,18 +56,28 @@ class PagesController extends Controller
         return view('welcome');
     }
 
+    public function sauna()
+    {
+        return view('sauna');
+    }
+
+    public function baths()
+    {
+        return view('baths');
+    }
+
+    public function bath()
+    {
+        return view('bath');
+    }
+
     public function arbours()
     {
-        return view('welcome');
+        return view('arbours');
     }
 
-    public function about()
+    public function arbour()
     {
-        return view('welcome');
-    }
-
-    public function services()
-    {
-        return view('welcome');
+        return view('arbour');
     }
 }

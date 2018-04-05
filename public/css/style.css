@@ -80,7 +80,7 @@ form button:hover {
 
 .photo_report .block_img {
     border-radius: 25px;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8) ж
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
     width: 850px;
     margin: 10px 0;
 }
@@ -224,6 +224,7 @@ form button:hover {
 .thubnails-item-info .thubnails-item-info-heading {
     font-size: 50px;
     color: #2D1C15;
+    text-align: center;
 }
 
 .thubnails-item-info .thubnails-item-info-content {
@@ -235,6 +236,7 @@ form button:hover {
 .thubnails-item img {
     width: 100%;
     height: 100%;
+    opacity: 0.5;
 }
 
 .wrapper-button-all-photos {
@@ -260,6 +262,47 @@ form button:hover {
 }
 
 /* Thubnails end */
+
+
+/* Thubnails-about */
+#thumbnails-about{
+    margin: 100px 0;
+}
+
+#thumbnails-about .thubnails-item{
+    position: relative;
+}
+
+.thubnails-item-wrapper-lines{
+    position: absolute;
+    top: 50%;
+    height: 100px;
+    width:100%;
+    margin-top: -50px;
+    background-color: #000000;
+}
+
+.thubnails-item-line-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+    color: #FFFFFF;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.thubnails-item-line-link:hover{
+    color: #FFFFFF;
+}
+
+#thumbnails-about .thubnails-item-info-heading{
+    margin-bottom: 30px;
+}
+/* Thubnails-about end */
+
 
 /* contactForm */
 .wrapper-text-left {
@@ -430,6 +473,7 @@ textarea {
     }
 
     .thubnails-item-info .thubnails-item-info-heading {
+        text-align: center;
         font-size: 26px;
     }
 
