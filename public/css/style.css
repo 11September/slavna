@@ -224,6 +224,7 @@ form button:hover {
 .thubnails-item-info .thubnails-item-info-heading {
     font-size: 50px;
     color: #2D1C15;
+    text-align: center;
 }
 
 .thubnails-item-info .thubnails-item-info-content {
@@ -266,6 +267,39 @@ form button:hover {
 /* Thubnails-about */
 #thumbnails-about{
     margin: 100px 0;
+}
+
+#thumbnails-about .thubnails-item{
+    position: relative;
+}
+
+.thubnails-item-wrapper-lines{
+    position: absolute;
+    top: 50%;
+    height: 100px;
+    width:100%;
+    margin-top: -50px;
+    background-color: #000000;
+}
+
+.thubnails-item-line-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+    color: #FFFFFF;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.thubnails-item-line-link:hover{
+    color: #FFFFFF;
+}
+
+#thumbnails-about .thubnails-item-info-heading{
+    margin-bottom: 30px;
 }
 /* Thubnails-about end */
 
@@ -439,6 +473,7 @@ textarea {
     }
 
     .thubnails-item-info .thubnails-item-info-heading {
+        text-align: center;
         font-size: 26px;
     }
 
