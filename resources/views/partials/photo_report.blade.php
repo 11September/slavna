@@ -1,5 +1,5 @@
 <section class="photo_report">
-	<div class="container">
+	<div class="container full_cr">
 		<div class="photo_report_slider">
 
 		  <div class="photo_report_slider_item">

@@ -59,7 +59,7 @@ form button:hover{
     color: #fff;
 }
 
-.photo_report .container{
+.full_cr{
     max-width: 100%;
     padding-left: 0;
     padding-right: 0;
@@ -183,6 +183,15 @@ form button:hover{
 }
 
 /* photo_report end */
+
+/* reviews */
+.reviews{
+    padding: 90px 0 110px;
+    background: #2d1c15;
+    font-family: 'Proxima_Nova';
+    color: #fff;
+}
+/* reviews end */
 
 /* footer */
 
