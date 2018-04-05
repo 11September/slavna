@@ -11,3 +11,4 @@
 <script src="{{ asset('js/fontawesome-all.min.js') }}"></script>
 <script src="{{ asset('js/jquery.waypoints.min.js') }}"></script>
 <script src="{{ asset('js/main.js') }}"></script>
+<script src="{{ asset('js/slick.min.js') }}"></script>
