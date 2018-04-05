@@ -263,9 +263,13 @@ form button:hover {
 
 /* contactForm */
 .wrapper-text-left {
+    height: 98%;
     background: #74432F;
 }
 
+.wrapper-answer-form{
+    background: whitesmoke;
+}
 .text-ua {
     font-size: 50px;
     color: #F4DB8F;
@@ -343,7 +347,7 @@ textarea {
 
 .checkout-input {
     margin-top: 80px;
-    width: 750px;
+    width: 100%;
     border: none;
     border-bottom: 2px solid #74432F;
 }
@@ -385,6 +389,9 @@ textarea {
 
 .footer-copyright {
     margin-top: 20px;
+}
+.row{
+    align-items: center;
 }
 
 .footer-copyright, .develop {

@@ -32,33 +32,38 @@
 
             <div class="wrapper-answer-form col-lg-6">
 
-                <h2 class="h2-text-quest">ЗАДАТЬ ВОПРОС </h2>
-                <HR>
 
-                <div class="input-special">
-                    <input  class="checkout-input" type="text" placeholder="И м я*">
-                </div>
+                <form style="background: whitesmoke" action="">
+                    <h2 class="h2-text-quest">ЗАДАТЬ ВОПРОС </h2>
+                    <HR>
 
-                <div class="input-special">
-                    <input class="checkout-input" type="number" placeholder="E-mail*">
-                </div>
+                    <div class="input-special">
+                        <input  class="checkout-input" type="text" placeholder="И м я*">
+                    </div>
+
+                    <div class="input-special">
+                        <input class="checkout-input" type="number" placeholder="E-mail*">
+                    </div>
                     <div class="input-special">
                         <input class="checkout-input input-bot" type="text"  placeholder="Т е л е ф о н*">
                     </div>
-                <textarea name="" id="">
+                    <textarea name="" id="">
                          Задайте свой вопрос
                 </textarea>
 
+                    <p class="under-form-text">
+                        Пожалуйста заполните все поля формы, и в скором времени наш<br>
+                        администратор ответит на ваши вопросы.
+                    </p>
 
-
-                <p class="under-form-text">
-                    Пожалуйста заполните все поля формы, и в скором времени наш<br>
-                    администратор ответит на ваши вопросы.
-                </p>
-
-                <span class="question-span">
+                    <span href="#" class="question-span">
             Задать вопрос
                 </span>
+
+                </form>
+
+
+
 
             </div>
         </div>
