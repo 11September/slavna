@@ -5,6 +5,8 @@
 @endsection
 
 @section('content')
+    @include('partials.reservation')
+
     @include('partials.thubnails')
 
     @include('partials.contactForm')

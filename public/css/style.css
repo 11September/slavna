@@ -451,6 +451,57 @@ textarea {
 /* footer end */
 
 
+
+/*reservaion-form*/
+
+.text-reserv{
+    font-size: 60px;
+    color:#F4DB8F;
+    font-family: 'Proxima_Nova-bold';
+    letter-spacing: 8px;
+    margin-bottom: 40px;
+
+}
+
+ .reserv-span{
+    display: inline-block;
+    background:#FFFFFF;
+   width: 300px;
+   height: 80px;
+     color:black;
+    text-align: center;
+     font-size: 25px;   font-family: 'Proxima_Nova-reg';
+     letter-spacing: 5px;
+margin-top: 40px;
+}
+
+
+
+ #place-1,#place-2,#place-3,#place-4,#place-5{
+     text-align: center;
+     margin-bottom: 30px;
+
+ }
+
+
+
+
+::-webkit-input-placeholder {color:#2D1C15!important; font-size: 25px;   font-family: 'Proxima_Nova-reg';}
+::-moz-placeholder          {color:#2D1C15!important; font-size: 25px;   font-family: 'Proxima_Nova-reg';}/* Firefox 19+ */
+:-moz-placeholder           {color:#2D1C15!important; font-size: 25px;   font-family: 'Proxima_Nova-reg';}/* Firefox 18- */
+:-ms-input-placeholder      {color:#2D1C15!important; font-size: 25px;   font-family: 'Proxima_Nova-reg';}
+
+
+#reserve-area {
+    color:#2D1C15!important; font-size: 25px;   font-family: 'Proxima_Nova-reg';
+     text-align: center;
+ }
+
+form{
+    text-align: center;
+}
+/*reservaion-form*/
+
 @media (min-width: 1920px) {
 
 }
