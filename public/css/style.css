@@ -58,22 +58,54 @@ form button:hover{
     padding: 70px 0;
     color: #fff;
 }
-/* photo_report end */
 
-
-/* footer */
-
-/* footer end */
-
-/* макетная верстка */
-@media (min-width: 1920px) {
-/* photo_report */
 .photo_report .container{
     max-width: 100%;
     padding-left: 0;
     padding-right: 0;
 }
-/* photo_report end */
+
+.flexx{
+    display: flex !important;
+    align-items: center;
+}
+
+.photo_report .block_text{
+    background: #683d2c;
+    margin-left: 70px;
+    height: 640px;
+    padding: 35px 15px 30px 35px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    width: 1000px;
+}
+
+.photo_report .block_img{
+    border-radius: 25px;
+    box-shadow: 0 0 20px 0 rgba( 0, 0, 0, 0.8)ж
+    width: 850px;
+    margin: 10px 0;
+}
+
+.photo_report .block_img img{
+    border-radius: 25px;
+    height: 700px;
+    width: 850px;
+}
+
+.photo_report .draggable{
+    padding: 0 !important;
+}
+
+.photo_report .slick-slide{
+    width: 1920px !important;
+}
+
+/* footer */
+
+/* footer end */
+@media (min-width: 1920px) {
+
 }
 
 @media (max-width: 1400px) {

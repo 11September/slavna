@@ -1,10 +1,21 @@
 <section class="photo_report">
 	<div class="container">
 		<div class="photo_report_slider">
-		  <div>
-		  	<div class="row">
-		  		<div class="col-xl-6 block_text">1</div>
-		  		<div class="col-xl-6 block_img">
+		  <div class="photo_report_slider_item">
+		  	<div class="flexx">
+		  		<div class="block_text">
+		  			<h3>Фотоотчет с нового года 2018</h3>
+		  			<p>
+		  				Пусть в этот славный новогодний вечер, Сказка к вам волшебная придет. А Дед Мороз в своем мешке зветном Подарков в "Славну" непременно принесет :) Коттедж-парк "Славна" Ваш природных отдых в комфортных условиях.
+		  			</p>
+		  			<div class="row">
+		  				<div class="col-xl-6">Дотс и стрелки</div>
+		  				<div class="col-xl-6">
+		  					<a href="">Подробней</a>
+		  				</div>
+		  			</div>
+		  		</div>
+		  		<div class="block_img">
 		  			<img src="{{ asset('images/photo_report_slider_example.png') }}">
 		  		</div>
 		  	</div>
