@@ -72,7 +72,15 @@ form button:hover{
 
 /* footer end */
 
-
+@media (min-width: 1920px) {
+/* photo_report */
+.photo_report .container{
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+/* photo_report end */
+}
 
 @media (max-width: 1400px) {
 

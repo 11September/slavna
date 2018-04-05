@@ -1,8 +1,9 @@
 $(document).ready(function(){
 
   $('.photo_report_slider').slick({
-      initialSlide: 2,
+      initialSlide: 1,
       slidesToShow: 1,
+      rows: 1,
       arrows: true,
       dots: true,
       infinite: false,
