@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
   $('.photo_report_slider').slick({
-      initialSlide: 1,
+      initialSlide: 0,
       slidesToShow: 1,
       rows: 1,
       arrows: true,
