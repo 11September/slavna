@@ -502,6 +502,45 @@ form{
 }
 /*reservaion-form*/
 
+/*dance-for-clear*/
+
+/*.dance-for-clear{*/
+    /*background-image: url("../images/dance-clear.png");*/
+    /*background-size: 100% 100%;*/
+    /*background-repeat: no-repeat;*/
+    /*width: 100%;*/
+    /*min-height: 700px;*/
+/*}*/
+
+
+.img-dance {
+    width: 1920px;
+    position: relative;
+    height: 700px;
+}
+.text-daneclear{
+    color:white;
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    padding-top: 0px;
+    position: absolute;
+    z-index: 999;
+    font-family: 'Proxima_Nova-bold';
+}
+
+.description-dance{
+    font-size: 25px;
+    font-family: 'Proxima_Nova-reg';
+    color: white;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    line-height: 45px;
+
+}
+/*dance-for-clear*/
+
 @media (min-width: 1920px) {
 
 }
