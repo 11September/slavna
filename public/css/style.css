@@ -290,6 +290,21 @@ form button:hover {
 
 /* reviews end */
 
+/* latest_publication */
+.latest_publication{
+
+}
+
+.latest_publication .block_text{
+    order: 2;
+    margin-left: 0;
+    border-top-left-radius: 0; 
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+/* latest_publication end 
+
 /* Thubnails */
 .thumbnails {
     margin-top: 120px;
