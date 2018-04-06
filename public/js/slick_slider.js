@@ -37,12 +37,13 @@ $(document).ready(function(){
     element = Number(element) + Number("1");
 
     $(this).find('.current_number_slide').text("0" + current);
-    $('.all_number_slide').text("0" + last_n);
+    $(this).find('.all_number_slide').text("0" + last_n);
   });
 
   $('.reviews_slider').slick({
       initialSlide: 0,
       slidesToShow: 1,
+      verticalSwiping: true,
       rows: 1,
       arrows: true,
       appendArrows: $('.clider_info'),
@@ -64,8 +65,9 @@ $(document).ready(function(){
     ]
   });
 
+  element = Number("1");
+
   $('.reviews_slider_item').last().addClass("reviews_slider_item_last");
-  var element = Number("1");
 
   $('.reviews_slider_item').each(function(){
 
@@ -77,7 +79,7 @@ $(document).ready(function(){
     element = Number(element) + Number("1");
 
     $(this).find('.reviews_current_number_slide').text("0" + current);
-    $('.reviews_all_number_slide').text("0" + last_n);
+    $(this).find('.reviews_all_number_slide').text("0" + last_n);
   });
 
   $('.latest_publication_slider').slick({
@@ -85,9 +87,9 @@ $(document).ready(function(){
       slidesToShow: 1,
       rows: 1,
       arrows: true,
-      appendArrows: $('.photo_report_arrow'),
+      appendArrows: $('.latest_publication_arrow'),
       dots: true,
-      appendDots: $('.photo_report_arrow'),
+      appendDots: $('.latest_publication_arrow'),
       infinite: false,
       centerMode: true,
       // vertical: true,
@@ -104,5 +106,21 @@ $(document).ready(function(){
     ]
   });
 
+  element = Number("1");
+
+$('.latest_publication_slider_item').last().addClass("latest_publication_slider_item_last");
+
+  $('.latest_publication_slider_item').each(function(){
+
+    current = $('.latest_publication_slider_item').attr("data-slick-index");
+    last_n = $('.latest_publication_slider_item_last').attr("data-slick-index");
+
+    current = Number(current) + Number(element);
+    last_n = Number(last_n) + Number("1");
+    element = Number(element) + Number("1");
+
+    $(this).find('.current_number_slide').text("0" + current);
+    $(this).find('.all_number_slide').text("0" + last_n);
+  });
 
 });
