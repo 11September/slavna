@@ -247,7 +247,8 @@ form button:hover {
 .reviews .clider_info{
     display: flex;
     flex-direction: column;
-    padding-top: 75px;
+    height: 230px;
+    justify-content: center;
 }
 
 .reviews .slick-prev:before,
@@ -258,8 +259,9 @@ form button:hover {
 
 .reviews .slick-prev{
     left: inherit;
-    right: 185px;
-    margin-top: -725px;
+    right: 50px;
+    position: relative;
+    top: -100px;
 }
 
 .reviews .slick-prev:before{
@@ -267,8 +269,9 @@ form button:hover {
 }
 
 .reviews .slick-next{
-    right: 185px;
-    margin-top: -460px;
+    right: 50px;
+    position: relative;
+    margin-top: -75px;
 }
 
 .reviews .slick-next:before{
@@ -293,6 +296,27 @@ form button:hover {
     height: 630px !important;
 }
 
+.reviews .bg_i_text{
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    height: 95px;
+    margin-top: -95px;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 3px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.clider_info span{
+    top: -45px;
+    position: relative;
+}
 /* reviews end */
 
 /* latest_publication */
@@ -307,6 +331,23 @@ form button:hover {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px;
+}
+
+.latest_publication h3{
+    font-family: "Arial";
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.latest_publication p{
+    font-size: 30px;
+    line-height: 1.2;
+    height: 400px;
+}
+
+.latest_publication .photo_report_arrow{
+    order: 2;
 }
 /* latest_publication end 
 
