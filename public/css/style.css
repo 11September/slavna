@@ -205,7 +205,7 @@ form button:hover {
     border-radius: 35px;
     box-shadow: 0 0 20px 0 rgba( 0, 0, 0, 0.8);
     margin: 10px 0;
-    margin-left: -90px;
+    margin-left: 65px;
 }
 
 .reviews_slider_img img{
@@ -218,6 +218,7 @@ form button:hover {
 
 .reviews_slider_head{
     width: 740px;
+    margin-right: 500px;
 }
 
 .reviews_slider_head p{
@@ -229,7 +230,7 @@ form button:hover {
 .slider_bg{
     background: #4d2d20;
     padding: 70px 35px 70px 500px;
-    width: 1540px;
+    width: 1570px;
     border-radius: 25px;
 }
 
@@ -286,6 +287,10 @@ form button:hover {
 
 .add_reviews{
     padding-left: 300px;
+}
+
+.reviews .draggable{
+    height: 630px !important;
 }
 
 /* reviews end */
