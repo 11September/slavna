@@ -638,7 +638,7 @@ form{
     font-size: 50px;
     text-align: center;
     width: 100%;
-    padding-top: 0px;
+    padding-top:300px;
     position: absolute;
     z-index: 999;
     font-family: 'Proxima_Nova-bold';
@@ -655,6 +655,61 @@ form{
 
 }
 /*dance-for-clear*/
+
+
+
+/* BLOG-ONE*/
+
+.Blog-list{
+    margin: 0;
+    padding: 0;
+}
+.dance-blog-h2{
+    font-size: 40px;
+    color:white;
+    font-family: 'Proxima_Nova-bold';
+}
+
+.description-blog-p{
+
+    font-size: 30px;
+    color:white;
+    font-family: 'Proxima_Nova-reg';
+    line-height: 45px;
+
+}
+.hr-blog{
+    margin: 0 auto;
+}
+
+.wrapper-all-item-blog{
+    border-radius: 12px;
+    background: #74432F;
+}
+
+.all-icons-wrapper{
+    display: flex;
+}
+.icons-blog-one svg{
+    color:white;
+    text-align: right;
+}
+
+.fa-clock{
+    text-align: right;
+}
+
+
+.icons-blog-two svg{
+    text-align: left;
+    color:white;
+}
+
+.dance-blog-one-list{
+    width: 350px;
+    height: 350px;
+}
+/* BLOG-ONE*/
 
 @media (min-width: 1920px) {
 
