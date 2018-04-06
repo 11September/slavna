@@ -193,7 +193,7 @@ form button:hover {
 .reviews h2{
     font-size: 50px;
     color: #f5db90;
-
+    padding-bottom: 20px;
 }
 
 .reviews_slider_item > .row{
@@ -202,14 +202,92 @@ form button:hover {
 }
 
 .reviews_slider_img{
-    border-radius: 25px;
+    border-radius: 35px;
+    box-shadow: 0 0 20px 0 rgba( 0, 0, 0, 0.8);
+    margin: 10px 0;
+    margin-left: -90px;
 }
 
 .reviews_slider_img img{
     height: 520px;
     width: 440px;
     border-radius: 25px;
+    position: relative;
+    z-index: 1;
 }
+
+.reviews_slider_head{
+    width: 740px;
+}
+
+.reviews_slider_head p{
+    font-size: 30px;
+    color: #f3db95;
+    font-style: italic;
+}
+
+.slider_bg{
+    background: #4d2d20;
+    padding: 70px 35px 70px 500px;
+    width: 1540px;
+    border-radius: 25px;
+}
+
+.slider_bg p{
+    font-size: 30px;
+
+}
+
+.reviews .row_content_slider{
+    margin-top: -320px;
+    margin-bottom: 150px;
+}
+
+.reviews .clider_info{
+    display: flex;
+    flex-direction: column;
+    padding-top: 75px;
+}
+
+.reviews .slick-prev:before,
+.reviews .slick-next:before{
+    z-index: 2;
+    position: relative;
+}
+
+.reviews .slick-prev{
+    left: inherit;
+    right: 185px;
+    margin-top: -725px;
+}
+
+.reviews .slick-prev:before{
+    content: url(../images/photo_report_slider_top.png);
+}
+
+.reviews .slick-next{
+    right: 185px;
+    margin-top: -460px;
+}
+
+.reviews .slick-next:before{
+    content: url(../images/photo_report_slider_bottom.png);
+}
+
+.row_links{
+    font-size: 30px;
+    margin-top: -105px;
+    margin-bottom: 80px;
+}
+
+.row_links a{
+    color: #fff;
+}
+
+.add_reviews{
+    padding-left: 300px;
+}
+
 /* reviews end */
 
 /* Thubnails */
@@ -452,9 +530,6 @@ textarea {
 
 .footer-copyright {
     margin-top: 20px;
-}
-.row{
-    align-items: center;
 }
 
 .footer-copyright, .develop {
