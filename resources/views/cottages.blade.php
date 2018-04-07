@@ -6,8 +6,6 @@
 
 @section('content')
 
-    @include('partials.servieces-info')
-
 @endsection
 
 @section('scripts')
