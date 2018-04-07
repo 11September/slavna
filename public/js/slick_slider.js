@@ -64,5 +64,26 @@ $(document).ready(function(){
     ]
   });
 
+    $('.intro_slider').slick({
+        initialSlide: 0,
+        slidesToShow: 1,
+        rows: 1,
+        arrows: true,
+        centerPadding: '0px',
+        infinite: false,
+        centerMode: true,
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    arrows: true,
+                    dots: true,
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
 
 });
