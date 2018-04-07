@@ -1,7 +1,12 @@
 $(document).ready(function() {
-    $(".mobile-btn").click(function () {
-        $(".menu-list").slideToggle();
-        $(".menu-list").removeClass('hider');
+    $(".menu-trigger").click(function () {
+        $(".main-menu").slideToggle();
+        $(".main-menu").removeClass('hider');
     });
+
+    $(".close-btn").click(function () {
+        $(".main-menu").slideToggle();
+    });
+
 });
 
