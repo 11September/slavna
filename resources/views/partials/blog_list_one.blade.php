@@ -36,6 +36,8 @@
     </div>
     </div>
 
+
+    <div class="container-fluid">
     <div class="row wrapper-all-item-blog padding-assist">
         <div class="wrapper-blog-list-left col-lg-4">
             <img class="dance-blog-one-list" src="images/dance-blog.png" alt="">
@@ -72,7 +74,7 @@
     </div>
 
 
-
+    <div class="container-fluid">
     <div class="row wrapper-all-item-blog padding-assist">
         <div class="wrapper-blog-list-left col-lg-4">
             <img class="dance-blog-one-list" src="images/dance-blog.png" alt="">
