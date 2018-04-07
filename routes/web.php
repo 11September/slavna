@@ -19,8 +19,10 @@ Route::get('/contacts', 'PagesController@contacts');
 Route::get('/reservation', 'PagesController@reservation');
 Route::get('/photos', 'PagesController@photos');
 
-Route::get('/cottages', 'PagesController@cottages');
-Route::get('/cottages/{cottage}', 'PagesController@cottage');
+
+Route::get('/list/cottages', 'PagesController@cottages');
+Route::get('/one/{cottage}', 'PagesController@cottage');
+
 
 Route::get('/houses', 'PagesController@houses');
 Route::get('/house/{house}', 'PagesController@house');

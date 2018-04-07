@@ -41,6 +41,11 @@ class PagesController extends Controller
         return view('cottages');
     }
 
+    public function cottage()
+    {
+        return view('one-cottage');
+    }
+
     public function houses()
     {
         return view('houses');
