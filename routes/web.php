@@ -19,22 +19,23 @@ Route::get('/contacts', 'PagesController@contacts');
 Route::get('/reservation', 'PagesController@reservation');
 Route::get('/photos', 'PagesController@photos');
 
-
+// 4 page but same structure
 Route::get('/list/cottages', 'PagesController@cottages');
 Route::get('/one/{cottage}', 'PagesController@cottage');
+// 4 page but same structure
 
 
-Route::get('/houses', 'PagesController@houses');
-Route::get('/house/{house}', 'PagesController@house');
-
-Route::get('/saunas', 'PagesController@saunas');
-Route::get('/sauna/{sauna}', 'PagesController@sauna');
-
-Route::get('/baths', 'PagesController@baths');
-Route::get('/bath/{bath}', 'PagesController@bath');
-
-Route::get('/arbours', 'PagesController@arbours');
-Route::get('/arbour/{arbour}', 'PagesController@arbour');
+//Route::get('/houses', 'PagesController@houses');
+//Route::get('/house/{house}', 'PagesController@house');
+//
+//Route::get('/saunas', 'PagesController@saunas');
+//Route::get('/sauna/{sauna}', 'PagesController@sauna');
+//
+//Route::get('/baths', 'PagesController@baths');
+//Route::get('/bath/{bath}', 'PagesController@bath');
+//
+//Route::get('/arbours', 'PagesController@arbours');
+//Route::get('/arbour/{arbour}', 'PagesController@arbour');
 
 Route::get('/news', 'NewsController@index');
 Route::get('/news/{news}', 'NewsController@post');
