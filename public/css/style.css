@@ -768,15 +768,24 @@ form{
     background: #74432F;
 }
 
-.all-icons-wrapper{
-    display: flex;
+.icons-blog-two{
+   padding-left: 50px;
+    text-align: right;
 }
 .icons-blog-one svg{
     color:white;
     text-align: right;
 }
+.padding-assist{
+    margin-top: 50px;
+}
 
-.fa-clock{
+.fa-clock {
+    color: white;
+    text-align: left;
+}
+.fa-eye {
+    color: white;
     text-align: right;
 }
 
