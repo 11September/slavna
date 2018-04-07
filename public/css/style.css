@@ -465,12 +465,22 @@ form button:hover {
 
 /* contactForm */
 .wrapper-text-left {
-    height: 98%;
+    height: 800px;
     background: #74432F;
+}
+
+.padding-phone-p{
+    padding-top: 15px}
+
+.special-padding-top{
+padding-top: 60px;
 }
 
 .wrapper-answer-form{
     background: whitesmoke;
+    position: relative;
+    right: 60px;
+    border-radius: 30px;
 }
 .text-ua {
     font-size: 50px;
@@ -480,16 +490,39 @@ form button:hover {
 }
 
 .text-p-ua, .my-fafa {
+
     text-align: center;
     color: white;
 }
+.my-fafa{
+    padding-top: 75px;
+}
 
+.fa-facebook-square{
+    margin-left: 35px;
+text-align: center;
+    color:black;
+
+}
+.fa-instagram{
+    margin-left: 35px;
+    text-align: center;
+    color:black;
+}
+
+.fa-google{
+    margin-left: 35px;
+    text-align: center;
+    color:black;
+}
 hr {
     margin-top: 50px;
     margin-bottom: 0;
     height: 2px;
-    width: 100%;
+    width: 80%;
     background: #2D1C15;
+    margin-left: 95px;
+
 }
 
 .text-p-ua {
@@ -511,10 +544,17 @@ hr {
 }
 
 textarea {
-    width: 100%;
+    width: 80%;
     border: 2px solid #2D1C15;
-    height: 192px;
+    min-height: 200px;
     font-family: 'Proxima_light';
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    letter-spacing: 7px;
+    font-size: 25px;
+    padding-top: 90px;
+    text-align: left;
+    margin: 0 auto;
+    color: #2D1C15;
 }
 
 .question-span {
@@ -552,6 +592,7 @@ textarea {
     width: 80%;
     border: none;
     border-bottom: 2px solid #74432F;
+    background: none;
 }
 /*contactForm*/
 
@@ -670,9 +711,8 @@ form{
 
 
 .img-dance {
-    width: 1920px;
-    position: relative;
-    height: 700px;
+    width: 100%;
+    height: 100%;
 }
 .text-daneclear{
     color:white;
@@ -751,6 +791,28 @@ form{
     height: 350px;
 }
 /* BLOG-ONE*/
+
+
+/* all-photos*/
+.photo-left img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.photo-right img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+
+.twest-1:hover{
+
+
+}
+/* all-photos*/
 
 @media (min-width: 1920px) {
 
