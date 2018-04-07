@@ -37,17 +37,59 @@ $(document).ready(function(){
     element = Number(element) + Number("1");
 
     $(this).find('.current_number_slide').text("0" + current);
-    $('.all_number_slide').text("0" + last_n);
+    $(this).find('.all_number_slide').text("0" + last_n);
   });
 
   $('.reviews_slider').slick({
       initialSlide: 0,
       slidesToShow: 1,
+      verticalSwiping: true,
       rows: 1,
-      arrows: false,
-      // appendArrows: $('.photo_report_arrow'),
+      arrows: true,
+      appendArrows: $('.clider_info'),
       dots: true,
-      // appendDots: $('.photo_report_arrow'),
+      appendDots: $('.clider_info'),
+      infinite: false,
+      centerMode: true,
+      vertical: true,
+      focusOnSelect: true,
+      responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          arrows: true,
+          dots: true,
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+
+  element = Number("1");
+
+  $('.reviews_slider_item').last().addClass("reviews_slider_item_last");
+
+  $('.reviews_slider_item').each(function(){
+
+    current = $('.reviews_slider_item').attr("data-slick-index");
+    last_n = $('.reviews_slider_item_last').attr("data-slick-index");
+
+    current = Number(current) + Number(element);
+    last_n = Number(last_n) + Number("1");
+    element = Number(element) + Number("1");
+
+    $(this).find('.reviews_current_number_slide').text("0" + current);
+    $(this).find('.reviews_all_number_slide').text("0" + last_n);
+  });
+
+  $('.latest_publication_slider').slick({
+      initialSlide: 0,
+      slidesToShow: 1,
+      rows: 1,
+      arrows: true,
+      appendArrows: $('.latest_publication_arrow'),
+      dots: true,
+      appendDots: $('.latest_publication_arrow'),
       infinite: false,
       centerMode: true,
       // vertical: true,
@@ -85,5 +127,21 @@ $(document).ready(function(){
         ]
     });
 
+  element = Number("1");
+
+$('.latest_publication_slider_item').last().addClass("latest_publication_slider_item_last");
+
+  $('.latest_publication_slider_item').each(function(){
+
+    current = $('.latest_publication_slider_item').attr("data-slick-index");
+    last_n = $('.latest_publication_slider_item_last').attr("data-slick-index");
+
+    current = Number(current) + Number(element);
+    last_n = Number(last_n) + Number("1");
+    element = Number(element) + Number("1");
+
+    $(this).find('.current_number_slide').text("0" + current);
+    $(this).find('.all_number_slide').text("0" + last_n);
+  });
 
 });

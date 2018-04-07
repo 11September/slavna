@@ -341,7 +341,7 @@ form button:hover {
 .reviews h2{
     font-size: 50px;
     color: #f5db90;
-
+    padding-bottom: 20px;
 }
 
 .reviews_slider_item > .row{
@@ -350,15 +350,154 @@ form button:hover {
 }
 
 .reviews_slider_img{
-    border-radius: 25px;
+    border-radius: 35px;
+    box-shadow: 0 0 20px 0 rgba( 0, 0, 0, 0.8);
+    margin: 10px 0;
+    margin-left: 65px;
 }
 
 .reviews_slider_img img{
     height: 520px;
     width: 440px;
     border-radius: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.reviews_slider_head{
+    width: 740px;
+    margin-right: 500px;
+}
+
+.reviews_slider_head p{
+    font-size: 30px;
+    color: #f3db95;
+    font-style: italic;
+}
+
+.slider_bg{
+    background: #4d2d20;
+    padding: 70px 35px 70px 500px;
+    width: 1570px;
+    border-radius: 25px;
+}
+
+.slider_bg p{
+    font-size: 30px;
+
+}
+
+.reviews .row_content_slider{
+    margin-top: -320px;
+    margin-bottom: 150px;
+}
+
+.reviews .clider_info{
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+    justify-content: center;
+}
+
+.reviews .slick-prev:before,
+.reviews .slick-next:before{
+    z-index: 2;
+    position: relative;
+}
+
+.reviews .slick-prev{
+    left: inherit;
+    right: 50px;
+    position: relative;
+    top: -100px;
+}
+
+.reviews .slick-prev:before{
+    content: url(../images/photo_report_slider_top.png);
+}
+
+.reviews .slick-next{
+    right: 50px;
+    position: relative;
+    margin-top: -75px;
+}
+
+.reviews .slick-next:before{
+    content: url(../images/photo_report_slider_bottom.png);
+}
+
+.row_links{
+    font-size: 30px;
+    margin-top: -105px;
+    margin-bottom: 80px;
+}
+
+.row_links a{
+    color: #fff;
+}
+
+.add_reviews{
+    padding-left: 300px;
+}
+
+.reviews .draggable{
+    height: 630px !important;
+}
+
+.reviews .bg_i_text{
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    height: 95px;
+    margin-top: -95px;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 3px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.clider_info span{
+    top: -45px;
+    position: relative;
 }
 /* reviews end */
+
+/* latest_publication */
+.latest_publication{
+
+}
+
+.latest_publication .block_text{
+    order: 2;
+    margin-left: 0;
+    border-top-left-radius: 0; 
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.latest_publication h3{
+    font-family: "Arial";
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.latest_publication p{
+    font-size: 30px;
+    line-height: 1.2;
+    height: 400px;
+}
+
+.latest_publication .photo_report_arrow{
+    order: 2;
+}
+/* latest_publication end 
 
 /* Thubnails */
 .thumbnails {
@@ -474,12 +613,22 @@ form button:hover {
 
 /* contactForm */
 .wrapper-text-left {
-    height: 98%;
+    height: 800px;
     background: #74432F;
+}
+
+.padding-phone-p{
+    padding-top: 15px}
+
+.special-padding-top{
+padding-top: 60px;
 }
 
 .wrapper-answer-form{
     background: whitesmoke;
+    position: relative;
+    right: 60px;
+    border-radius: 30px;
 }
 .text-ua {
     font-size: 50px;
@@ -489,16 +638,39 @@ form button:hover {
 }
 
 .text-p-ua, .my-fafa {
+
     text-align: center;
     color: white;
 }
+.my-fafa{
+    padding-top: 75px;
+}
 
+.fa-facebook-square{
+    margin-left: 35px;
+text-align: center;
+    color:black;
+
+}
+.fa-instagram{
+    margin-left: 35px;
+    text-align: center;
+    color:black;
+}
+
+.fa-google{
+    margin-left: 35px;
+    text-align: center;
+    color:black;
+}
 hr {
     margin-top: 50px;
     margin-bottom: 0;
     height: 2px;
-    width: 100%;
+    width: 80%;
     background: #2D1C15;
+    margin-left: 95px;
+
 }
 
 .text-p-ua {
@@ -520,10 +692,17 @@ hr {
 }
 
 textarea {
-    width: 100%;
+    width: 80%;
     border: 2px solid #2D1C15;
-    height: 192px;
+    min-height: 200px;
     font-family: 'Proxima_light';
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    letter-spacing: 7px;
+    font-size: 25px;
+    padding-top: 90px;
+    text-align: left;
+    margin: 0 auto;
+    color: #2D1C15;
 }
 
 .question-span {
@@ -561,6 +740,7 @@ textarea {
     width: 80%;
     border: none;
     border-bottom: 2px solid #74432F;
+    background: none;
 }
 /*contactForm*/
 
@@ -600,9 +780,6 @@ textarea {
 
 .footer-copyright {
     margin-top: 20px;
-}
-.row{
-    align-items: center;
 }
 
 .footer-copyright, .develop {
@@ -669,6 +846,121 @@ form{
     text-align: center;
 }
 /*reservaion-form*/
+
+/*dance-for-clear*/
+
+/*.dance-for-clear{*/
+    /*background-image: url("../images/dance-clear.png");*/
+    /*background-size: 100% 100%;*/
+    /*background-repeat: no-repeat;*/
+    /*width: 100%;*/
+    /*min-height: 700px;*/
+/*}*/
+
+
+.img-dance {
+    width: 100%;
+    height: 100%;
+}
+.text-daneclear{
+    color:white;
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    padding-top:300px;
+    position: absolute;
+    z-index: 999;
+    font-family: 'Proxima_Nova-bold';
+}
+
+.description-dance{
+    font-size: 25px;
+    font-family: 'Proxima_Nova-reg';
+    color: white;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    line-height: 45px;
+
+}
+/*dance-for-clear*/
+
+
+
+/* BLOG-ONE*/
+
+.Blog-list{
+    margin: 0;
+    padding: 0;
+}
+.dance-blog-h2{
+    font-size: 40px;
+    color:white;
+    font-family: 'Proxima_Nova-bold';
+}
+
+.description-blog-p{
+
+    font-size: 30px;
+    color:white;
+    font-family: 'Proxima_Nova-reg';
+    line-height: 45px;
+
+}
+.hr-blog{
+    margin: 0 auto;
+}
+
+.wrapper-all-item-blog{
+    border-radius: 12px;
+    background: #74432F;
+}
+
+.all-icons-wrapper{
+    display: flex;
+}
+.icons-blog-one svg{
+    color:white;
+    text-align: right;
+}
+
+.fa-clock{
+    text-align: right;
+}
+
+
+.icons-blog-two svg{
+    text-align: left;
+    color:white;
+}
+
+.dance-blog-one-list{
+    width: 350px;
+    height: 350px;
+}
+/* BLOG-ONE*/
+
+
+/* all-photos*/
+.photo-left img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.photo-right img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+
+.twest-1:hover{
+
+
+}
+/* all-photos*/
 
 @media (min-width: 1920px) {
 

@@ -36,12 +36,17 @@ class PagesController extends Controller
 
     public function photos()
     {
-        return view('photos');
+        return view('all-photos');
     }
 
     public function cottages()
     {
         return view('cottages');
+    }
+
+    public function cottage()
+    {
+        return view('one-cottage');
     }
 
     public function houses()

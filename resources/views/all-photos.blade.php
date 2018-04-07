@@ -5,10 +5,9 @@
 @endsection
 
 @section('content')
-    @include ('partials.blog_list_one')
-    @include('partials.thubnails')
-
+    @include('partials.photo-items')
     @include('partials.contactForm')
+
 @endsection
 
 @section('scripts')

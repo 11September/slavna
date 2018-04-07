@@ -1,3 +1,5 @@
+
+
 <section class="contactForm">
 
     <div class="container-fluid">
@@ -11,22 +13,22 @@
                     ул. Монастырська
                 </h2>
 
-                <p class="text-p-ua">
-                    (095) 65-02-810<br>
-                    (05446) 3-13-36<br>
-                    (098) 179-24-55<br>
-                    (прием банкетов - ресторан)<br><br>
-                    WWW.PARK-SLAVNA.COM.UA<br>
-                    PK_SLАVNА@UKR.NET<br>
-                </p>
 
-                <p class="my-fafa">
+                <P class="text-p-ua padding-phone-p"> (095) 65-02-810</P>
+                <P class="text-p-ua padding-phone-p">(05446) 3-13-36</P>
+                <P class="text-p-ua padding-phone-p"> (098) 179-24-55</P>
+            <p class="text-p-ua  padding-phone-p"> (прием банкетов - ресторан) </p>
 
-                    <i class="fab fa-facebook-square "></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-google"></i>
+                <p class="text-p-ua  special-padding-top">WWW.PARK-SLAVNA.COM.UA</p>
+                <p class="text-p-ua  padding-phone-p"> PK_SLАVNА@UKR.NET</p>
 
-                </p>
+                <div class="my-fafa">
+
+                    <a href="#"> <i class="fab fa-facebook-square">facebook</i> </a>
+                   <a href="#"> <i class="fab fa-instagram">instagram </i> </a>
+                     <a href="#"> <i class="fab fa-google"> </i></a>
+
+                </div>
             </div>
 
 
