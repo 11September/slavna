@@ -626,6 +626,30 @@ form button:hover {
 .reviews .slick-next:before{
     content: url(../images/photo_report_slider_bottom.png);
 }
+.hover-item-text{
+font-size: 30px;
+    color:#F4DB8F;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Proxima_Nova-reg';
+    position: absolute;
+    z-index: 9999;
+    background: #74432F;
+    width: 515px;
+    border-radius: 10px;
+    height: 130px;
+    padding-top: 50px;
+    left: 0;
+    right: 0;
+    opacity: 0.9;
+    bottom:10px;
+    visibility: hidden;
+}
+
+.twest-1:hover ~.hover-item-text{
+    visibility: visible;
+}
+
 
 .row_links{
     font-size: 30px;
@@ -1795,6 +1819,10 @@ color:#F4DB8F;
 @media (max-width: 992px) {
     /* Navbar */
 
+    .hover-item-text{
+        width: 660px!important;
+        bottom:25px;
+    }
     hr{
         width: 92%;
     }
@@ -2137,6 +2165,11 @@ color:#F4DB8F;
 
 @media (max-width: 576px) {
     /* photo_report */
+
+    .hover-item-text{
+        width: 490px!important;
+        bottom:20px;
+    }
 .photo_report .draggable {
     height: 685px;
 }
@@ -2200,6 +2233,11 @@ color:#F4DB8F;
 
 @media (max-width: 480px) {
     /* reviews */
+
+    .hover-item-text{
+        width: 430px!important;
+        bottom:15px;
+    }
 .reviews .draggable {
     height: 890px !important;
 }
@@ -2375,6 +2413,10 @@ color:#F4DB8F;
         height: 360px;
     }
 
+    .hover-item-text{
+        width: 390px!important;
+        bottom:15px;
+    }
     .text-reserv{
         font-size: 30px;
     }
@@ -2393,6 +2435,11 @@ color:#F4DB8F;
         font-size: 20px;
         font-family: 'Proxima_Nova-reg';
         color: white;
+    }
+
+    .hover-item-text{
+        width: 330px!important;
+        bottom:13px;
     }
     hr{
         width: 84%;
@@ -2419,5 +2466,18 @@ color:#F4DB8F;
 
     .description-blog-p{
         font-size: 12px;
+    }
+
+    .hover-item-text{
+        width: 315px!important;
+        bottom:12px;
+    }
+}
+
+
+@media (max-width: 320px){
+    .hover-item-text{
+        width: 280px!important;
+        bottom:10px;
     }
 }
