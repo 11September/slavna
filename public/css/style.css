@@ -1807,6 +1807,12 @@ form {
         border-bottom-left-radius: 0;
     }
 
+    .cottagges_one_item .block_text {
+        padding: 30px 45px 25px 30px;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+
     /* latest_publication end */
     /* cottagges_one_item */
     .cottagges_one_item .photo_report_panel a {
