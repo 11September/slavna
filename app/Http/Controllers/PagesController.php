@@ -93,7 +93,7 @@ class PagesController extends Controller
         return view('arbour');
     }
 
-    public function form(Request $request)
+    public function form_reservation(Request $request)
     {
         $validator = Validator::make($request->all(),[
             'name' => 'required|min:3',

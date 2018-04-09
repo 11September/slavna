@@ -510,7 +510,11 @@ form button:hover {
 }
 
 .photo_report_link {
-    text-align: center;
+    text-align: right;
+}
+
+.latest_publication .photo_report_link {
+    text-align: left;
 }
 
 .photo_report_panel a {
@@ -1128,6 +1132,7 @@ textarea {
     font-family: 'Proxima_light';
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-size: 25px;
+    background: none;
     padding-top: 90px;
     text-align: left;
     margin: 0 auto;
@@ -1175,7 +1180,7 @@ textarea {
     margin-top: 80px;
     width: 80%;
     border: none;
-    border-bottom: 2px solid #74432F;
+    border-bottom: 2px solid #2D1C15;
     background: none;
 }
 
@@ -1326,6 +1331,7 @@ textarea {
     font-family: 'Proxima_Nova-reg';
     text-align: center;
     width: 100%;
+    background: white;
 }
 
 form {
@@ -1371,10 +1377,29 @@ form {
 
 }
 
+
+
 /*dance-for-clear*/
 
 /* BLOG-ONE*/
 
+.arrow-left-type{
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+.arrow-right-type{
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.arrow-text-left{
+    text-align: right;
+}
+
+.line-wr{
+    width: 100%;
+    text-align: center;
+}
 .Blog-list {
     margin: 0;
     padding: 0;
@@ -1427,6 +1452,55 @@ form {
     text-align: left;
 }
 
+.date-padidjg{
+padding-left: 7px;
+}
+
+.view-padidjg{
+    padding-left: 7px;
+}
+#circle{
+    width: 100px;
+    height: 100px;
+    background: red;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+.class-1{
+    color:white;
+    left:10px
+}
+.class-2{
+    color: white;
+    left:10px
+}
+.block-i{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.line-hr-hr{
+    background: #FFFFFF;
+    text-align: center;
+    min-width:  1300px;
+    margin-bottom: 30px;
+}
+
+.dance-eyes{
+   text-align: left!important;
+}
+
+.arrow-text-right{
+    color:#F4DB8F;
+    font-size: 30px;
+}
+
+.arrow-text-left{
+    color:#F4DB8F;
+    font-size: 30px;
+}
 .fa-eye {
     color: white;
     text-align: right;
@@ -1681,6 +1755,10 @@ form {
         width: 450px;
     }
 
+    .latest_publication .flexx {
+        justify-content: start;
+    }
+
     .photo_report .block_img img {
         border-radius: 25px;
         height: 450px;
@@ -1772,6 +1850,10 @@ form {
         height: 690px !important;
     }
 
+    .latest_publication .photo_report_panel a {
+        padding: 20px 50px;
+    }
+
     /* reviews end */
     /* latest_publication */
     .latest_publication h3 {
@@ -1785,7 +1867,7 @@ form {
     }
 
     .latest_publication .photo_report_panel a {
-        padding: 12px 40px;
+        padding: 15px 50px;
         font-size: 20px;
         letter-spacing: 3px;
     }
@@ -1829,6 +1911,10 @@ form {
 
     .reviews_slider_img {
         margin-left: 0px;
+    }
+
+    .reviews_slider_img {
+        margin-left: 6%;
     }
 
     /* reviews end */
@@ -2134,8 +2220,8 @@ form {
     }
 
     .slider_bg {
-        padding: 70px 35px 70px 450px;
-        width: 1100px;
+        padding: 70px 35px 70px 500px;
+        width: 1200px;
     }
 
     /* reviews end */
@@ -2847,6 +2933,14 @@ form {
 
 @media (max-width: 480px) {
     /* reviews */
+    .latest_publication .photo_report_link {
+        text-align: center;
+    }
+
+    .reviews .slider_bg {
+        background: none;
+    }
+
     .hover-item-text {
         width: 430px !important;
         bottom: 15px;

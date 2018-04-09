@@ -27,7 +27,8 @@ Route::get('/list/cottages', 'PagesController@cottages');
 Route::get('/one/{cottage}', 'PagesController@cottage');
 // 4 page but same structure
 
-Route::get('/contacts', 'PagesController@form');
+Route::post('/reservation-form', 'PagesController@form_reservation');
+Route::post('/question-form', 'PagesController@form_question');
 
 
 //Route::get('/houses', 'PagesController@houses');
