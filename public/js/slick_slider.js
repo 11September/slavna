@@ -11,10 +11,10 @@ $(document).ready(function(){
       infinite: false,
       centerMode: true,
       // vertical: true,
-      focusOnSelect: true,
+      focusOnSelect: false,
       responsive: [
       {
-        breakpoint: 1200,
+        breakpoint: 768,
         settings: {
           arrows: true,
           dots: true,
@@ -52,7 +52,7 @@ $(document).ready(function(){
       infinite: false,
       centerMode: true,
       vertical: true,
-      focusOnSelect: true,
+      focusOnSelect: false,
       responsive: [
       {
         breakpoint: 1200,
@@ -93,7 +93,7 @@ $(document).ready(function(){
       infinite: false,
       centerMode: true,
       // vertical: true,
-      focusOnSelect: true,
+      focusOnSelect: false,
       responsive: [
       {
         breakpoint: 1200,
@@ -125,6 +125,48 @@ $(document).ready(function(){
                 }
             }
         ]
+    });
+
+    $('.video_slider').slick({
+        centerMode: true,
+        centerPadding: '0px',
+        initialSlide: 0,
+        infinite: false,
+        slidesToShow: 1,
+        arrows: false,
+        vertical: false,
+        focusOnSelect: true,
+        asNavFor: '.video_menu_slider',
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    arrows: true,
+                    dots: true,
+                    centerMode: true,
+                    centerPadding: '0px',
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: true,
+                    dots: false
+                }
+            }
+        ]
+    });
+
+    $('.video_menu_slider').slick({
+        centerMode: false,
+        centerPadding: '0',
+        initialSlide: 0,
+        infinite: false,
+        slidesToShow: 5,
+        arrows: false,
+        focusOnSelect: true,
+        asNavFor: '.video_slider'
     });
 
   element = Number("1");
