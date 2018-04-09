@@ -502,6 +502,8 @@ form button:hover {
     font-size: 50px;
     color: #f5db90;
     padding-bottom: 20px;
+    font-family: 'Proxima_Nova-bold';
+    letter-spacing: 5px;
 }
 
 .reviews_slider_item > .row{
@@ -525,14 +527,15 @@ form button:hover {
 }
 
 .reviews_slider_head{
-    width: 740px;
-    margin-right: 500px;
+    width: 810px;
+    margin-right: 410px;
 }
 
 .reviews_slider_head p{
     font-size: 30px;
     color: #f3db95;
-    font-style: italic;
+    font-family: 'Proxima_Nova-reg';
+    letter-spacing: 3px;
 }
 
 .slider_bg{
@@ -699,7 +702,25 @@ form button:hover {
 
 /* latest_publication */
 .latest_publication{
+    padding: 0;
+}
 
+.latest_publication h2{
+    color: #f5db90;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 10px;
+    padding-bottom: 15px;
+    font-family: 'Proxima_Nova-bold';
+}
+
+.latest_publication h5{
+    color: #f5db90;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 5px;
+    padding-bottom: 35px;
+    font-family: 'Proxima_Nova-bold';
 }
 
 .latest_publication .block_text{
@@ -727,6 +748,7 @@ form button:hover {
 
 .latest_publication .photo_report_arrow{
     order: 2;
+    color: #f5da93;
 }
 /* latest_publication end */
 
@@ -1937,6 +1959,10 @@ form{
 .latest_publication p {
     font-size: 18px;
     height: 275px;
+}
+
+.latest_publication h2{
+    
 }
 /* latest_publication end */
 

@@ -1,5 +1,9 @@
 <section class="photo_report latest_publication">
 	<div class="container full_cr">
+
+		<h2>Последние публикации</h2>
+		<h5>Последние публикации</h5>
+
 		<div class="latest_publication_slider">
 
 		  <div class="latest_publication_slider_item">
