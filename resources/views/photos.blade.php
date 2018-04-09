@@ -15,6 +15,5 @@
 @endsection
 
 @section('scripts')
-
     <script type="text/javascript" src="{{ asset('js/jquery.fancybox.min.js') }}"></script>
 @endsection
