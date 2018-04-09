@@ -626,6 +626,30 @@ form button:hover {
 .reviews .slick-next:before{
     content: url(../images/photo_report_slider_bottom.png);
 }
+.hover-item-text{
+font-size: 30px;
+    color:#F4DB8F;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Proxima_Nova-reg';
+    position: absolute;
+    z-index: 9999;
+    background: #74432F;
+    width: 515px;
+    border-radius: 10px;
+    height: 130px;
+    padding-top: 50px;
+    left: 0;
+    right: 0;
+    opacity: 0.9;
+    bottom:10px;
+    visibility: hidden;
+}
+
+.twest-1:hover ~.hover-item-text{
+    visibility: visible;
+}
+
 
 .row_links{
     font-size: 30px;
@@ -1394,6 +1418,10 @@ color:#F4DB8F;
     font-size: 30px;
     letter-spacing: 5px;
 }
+
+.cottagges_one_item .block_text{
+    height: auto !important;
+}
 /* cottagges_one_item end*/
 
 /* artours_intro */
@@ -1409,8 +1437,9 @@ color:#F4DB8F;
 
 .artours_intro .block_text{
     width: 900px;
-    height: 540px;
+    height: auto;
     margin-left: 60px;
+    padding-bottom: 60px;
 }
 
 .artours_intro .line_logo_line{
@@ -1478,6 +1507,7 @@ color:#F4DB8F;
 
 .artours_about .artours_about_content img{
     margin-bottom: 30px;
+    width: 100%;
 }
 
 .artours_about .color_focus{
@@ -1566,6 +1596,13 @@ color:#F4DB8F;
 }
 /* photo_report */
 
+/* artours_intro */
+.artours_intro .block_text{
+    height: auto;
+    border-radius: 25px;
+}
+/* artours_intro end */
+
 /* reviews */
 .reviews .clider_info{
     display: none;
@@ -1612,6 +1649,17 @@ color:#F4DB8F;
     padding: 30px 45px 25px 30px;
 }
 /* latest_publication end */
+
+/* cottagges_one_item */
+.cottagges_one_item .photo_report_panel a {
+    padding: 25px 50px;
+}
+
+.cottagges_one_item .text_one_item {
+    height: auto;
+    padding-bottom: 25px;
+}
+/* cottagges_one_item end */
 }
 
 @media (max-width: 1880px){
@@ -1714,6 +1762,39 @@ color:#F4DB8F;
         padding-left: 20px;
     }
     /* Navbar */
+
+    /* cottagges_one_item */
+    .cottagges_one_item .text_one_item {
+        padding-bottom: 0;
+    }
+
+    .cottagges_one_item .link_one_item {
+        justify-content: space-evenly;
+        flex-direction: inherit;
+    }
+
+    .cottagges_one_item .photo_report_link {
+        margin: 20px auto;
+    }
+
+    .cottagges_one_item .photo_report_link {
+        justify-content: center;
+    }
+
+    .cottagges_one_item .main_head h3 {
+        font-size: 36px;
+    }
+
+    .cottagges_one_item .text_one_item {
+        padding-top: 30px;
+    }
+    /* cottagges_one_item end */
+
+    /* artours_intro */
+    .artours_intro .block_text{
+        height: auto !important;
+    }
+    /* artours_intro end */
 
     /* photo_report */
     .photo_report .block_text{
@@ -1877,6 +1958,10 @@ color:#F4DB8F;
 @media (max-width: 992px) {
     /* Navbar */
 
+    .hover-item-text{
+        width: 660px!important;
+        bottom:25px;
+    }
     hr{
         width: 92%;
     }
@@ -1969,6 +2054,21 @@ color:#F4DB8F;
     .unqiques {
         justify-content: space-between;
     }
+    /* cottagges_one_item*/
+   .cottagges_one_item h3 {
+        justify-content: center;
+        padding-top: 15px;
+    }
+
+    .cottagges_one_item .block_text {
+        width: auto !important;
+    }
+
+    .cottagges_one_item .latest_publication_slider_item{
+        padding: 0px 30px;
+    }
+    /* cottagges_one_item end */
+
     /* photo_report */
 .flexx {
     flex-direction: column;
@@ -2219,6 +2319,11 @@ color:#F4DB8F;
 
 @media (max-width: 576px) {
     /* photo_report */
+
+    .hover-item-text{
+        width: 490px!important;
+        bottom:20px;
+    }
 .photo_report .draggable {
     height: 685px;
 }
@@ -2252,6 +2357,17 @@ color:#F4DB8F;
 }
 /* photo_report end */
 
+/* artours_intro */
+.artours_intro .block_text {
+    width: 100% !important;
+}
+
+.artours_intro{
+    padding-left: 15px;
+    padding-right: 
+}
+/* artours_intro end */
+
 /* reviews */
 .add_reviews_div {
     padding-bottom: 10px;
@@ -2282,6 +2398,11 @@ color:#F4DB8F;
 
 @media (max-width: 480px) {
     /* reviews */
+
+    .hover-item-text{
+        width: 430px!important;
+        bottom:15px;
+    }
 .reviews .draggable {
     height: 890px !important;
 }
@@ -2310,6 +2431,42 @@ color:#F4DB8F;
         font-size: 16px;
     }
 /* reviews end */
+
+    /* cottagges_one_item*/
+
+    .cottagges_one_item .latest_publication_slider_item{
+        padding: 0;
+    }
+    /* cottagges_one_item end */
+
+/* artours_about */
+.artours_about{
+    padding: 0;
+    padding-bottom: 40px;
+    font-size: 18px;
+}
+
+.artours_intro .poema {
+    padding-left: 0px;
+    font-size: 20px;
+}
+
+.artours_intro {
+    padding-left: 0; 
+}
+
+.artours_about_content .head_content_p{
+    font-size: 18px;
+}
+
+.cottagges_one_item .block_img {
+     margin-left: 0; 
+}
+
+.artours_about_bg {
+    padding: 5px 15px 10px;
+}
+/* artours_intro end */
 
 /* latest_publication */
 .latest_publication .block_text {
@@ -2457,6 +2614,10 @@ color:#F4DB8F;
         height: 360px;
     }
 
+    .hover-item-text{
+        width: 390px!important;
+        bottom:15px;
+    }
     .text-reserv{
         font-size: 30px;
     }
@@ -2475,6 +2636,11 @@ color:#F4DB8F;
         font-size: 20px;
         font-family: 'Proxima_Nova-reg';
         color: white;
+    }
+
+    .hover-item-text{
+        width: 330px!important;
+        bottom:13px;
     }
     hr{
         width: 84%;
@@ -2501,5 +2667,18 @@ color:#F4DB8F;
 
     .description-blog-p{
         font-size: 12px;
+    }
+
+    .hover-item-text{
+        width: 315px!important;
+        bottom:12px;
+    }
+}
+
+
+@media (max-width: 320px){
+    .hover-item-text{
+        width: 280px!important;
+        bottom:10px;
     }
 }
