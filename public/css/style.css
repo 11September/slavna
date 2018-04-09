@@ -959,7 +959,7 @@ font-size: 30px;
 
 /* contactForm */
 .wrapper-text-left {
-    min-height: 875px;
+    height: 800px;
     background: #74432F;
 }
 
@@ -1044,7 +1044,7 @@ textarea {
     font-family: 'Proxima_light';
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     letter-spacing: 7px;
-    font-size: 18px;
+    font-size: 25px;
     padding-top: 90px;
     text-align: left;
     margin: 0 auto;
@@ -1057,7 +1057,6 @@ letter-spacing: 5px;
     color: white;
     letter-spacing: 2px;
     font-size: 24px;
-    margin-bottom:40px;
     font-family: 'Proxima_Nova-reg';
 
 }
@@ -1522,10 +1521,6 @@ color:#F4DB8F;
     height: 750px;
 }
 
-    .hover-item-text{
-        width: 520px!important;
-        bottom:20px;
-    }
 .photo_report .slick-slide{
     width: 1920px !important;
 }
@@ -1747,10 +1742,6 @@ color:#F4DB8F;
 
 @media (max-width: 1200px) {
     /* Navbar */
-
-    .hover-item-text{
-        bottom:20px;
-    }
     .information_part .main-header {
         font-size: 36px;
     }
@@ -2177,9 +2168,6 @@ color:#F4DB8F;
 .photo_report_arrow{
     display: none;
 }
-    .hover-item-text{
-      bottom:15px;
-  }
 
     .text-reserv{
         font-size: 40px;
@@ -2373,6 +2361,11 @@ color:#F4DB8F;
 .artours_intro .block_text {
     width: 100% !important;
 }
+
+.artours_intro{
+    padding-left: 15px;
+    padding-right: 
+}
 /* artours_intro end */
 
 /* reviews */
@@ -2445,6 +2438,27 @@ color:#F4DB8F;
         padding: 0;
     }
     /* cottagges_one_item end */
+
+/* artours_about */
+.artours_about{
+    padding: 0;
+    padding-bottom: 40px;
+    font-size: 18px;
+}
+
+.artours_intro .poema {
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.artours_intro {
+    padding-left: 0; 
+}
+
+.artours_about_content .head_content_p{
+    font-size: 18px;
+}
+/* artours_intro end */
 
 /* latest_publication */
 .latest_publication .block_text {
@@ -2608,14 +2622,7 @@ color:#F4DB8F;
     }
 }
 
-@media (max-width: 415px){
-    .hover-item-text{
-        width: 370px!important;
-        bottom:15px;
-    }
-}
-
-@media (max-width: 376px) {
+@media (max-width: 375px) {
     .main-menu li{
         padding-bottom: 20px;
         font-size: 20px;
