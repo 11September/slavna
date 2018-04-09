@@ -4,14 +4,19 @@
             <div class="row">
                 <div class="col-md-4 wrapper-thubnail-item">
                     <div class="thubnails-item">
-                        <img src="{{ asset('images/photo_report_slider_example1.png') }}" alt="thubnail">
+                        <a data-fancybox="gallery" data-caption="Caption #1"
+                           href="{{ asset('images/photo_report_slider_example1.png') }}">
+                            <img src="{{ asset('images/photo_report_slider_example1.png') }}" alt="thubnail">
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-4 wrapper-thubnail-item ">
                     <div class="thubnails-item thubnails-item-info">
                         <h5 class="thubnails-item-info-heading">Недавно добавленные фото</h5>
                         <p class="thubnails-item-info-content">
-                            Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не
+                            Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
+                            Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение
+                            шаблона, а также реальное распределение букв и пробелов в абзацах, которое не
                             получается при простой дубликации
                             "Здесь ваш текст.. Здесь ваш текст.. Здесь
                             ваш текст.."
@@ -20,22 +25,31 @@
                 </div>
                 <div class="col-md-4 wrapper-thubnail-item">
                     <div class="thubnails-item">
-                        <img src="{{ asset('images/photo_report_slider_example2.png') }}" alt="thubnail">
+                        <a data-fancybox="gallery" data-caption="Caption #1"
+                           href="{{ asset('images/photo_report_slider_example2.png') }}">
+                            <img src="{{ asset('images/photo_report_slider_example2.png') }}" alt="thubnail">
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-4 wrapper-thubnail-item">
                     <div class="thubnails-item">
-                        <img src="{{ asset('images/photo_report_slider_example3.png') }}" alt="thubnail">
+                        <a data-fancybox="gallery" data-caption="Caption #1" href="{{ asset('images/photo_report_slider_example3.png') }}">
+                            <img src="{{ asset('images/photo_report_slider_example3.png') }}" alt="thubnail">
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-4 wrapper-thubnail-item">
                     <div class="thubnails-item">
-                        <img src="{{ asset('images/photo_report_slider_example4.png') }}" alt="thubnail">
+                        <a data-fancybox="gallery" data-caption="Caption #1" href="{{ asset('images/photo_report_slider_example4.png') }}">
+                            <img src="{{ asset('images/photo_report_slider_example4.png') }}" alt="thubnail">
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-4 wrapper-thubnail-item">
                     <div class="thubnails-item">
-                        <img src="{{ asset('images/photo_report_slider_example5.png') }}" alt="thubnail">
+                        <a data-fancybox="gallery" data-caption="Caption #1" href="{{ asset('images/photo_report_slider_example5.png') }}">
+                            <img src="{{ asset('images/photo_report_slider_example5.png') }}" alt="thubnail">
+                        </a>
                     </div>
                 </div>
             </div>
