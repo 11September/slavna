@@ -24,11 +24,12 @@
 
                 <div class="my-fafa">
 
-                    <a href="#"> <i class="fab fa-facebook-square">facebook</i> </a>
-                   <a href="#"> <i class="fab fa-instagram">instagram </i> </a>
-                     <a href="#"> <i class="fab fa-google"> </i> </a>
+                    <a href="#">  <i class="fab fa-facebook-square"></i> </a>
+                   <a href="#"> <i class="fab fa-instagram"> </i> </a>
+                     <a href="#"><i class="fab fa-google"> </i> </a>
 
                 </div>
+          
             </div>
             <div class="wrapper-answer-form  col-lg-6 col-md-12 col-sm-12 col-xs-12">
 
