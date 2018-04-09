@@ -1359,6 +1359,50 @@ color:#F4DB8F;
 }
 /* cottagges_one_item end*/
 
+/* artours_intro */
+.artours_intro{
+
+}
+
+.artours_intro .block_img img {
+    border-radius: 25px;
+    height: 600px;
+    width: 960px;
+}
+
+.artours_intro .block_text{
+    width: 890px;
+    height: 540px;
+}
+
+.artours_intro .line_logo_line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.artours_intro .head_line{
+    width: 265px;
+    height: 2px;
+    background: #f5d6a8;
+}
+
+.artours_intro .line_logo_line img{
+    height: 84px;
+    width: 155px;
+    padding: 0 20px;
+}
+
+.artours_intro .poema{
+    font-size: 40px;
+    font-family: 'Proxima_Nova-reg-it';
+    color: #f6dc91;
+    letter-spacing: 5px;
+    padding-left: 70px;
+}
+/* artours_intro end */
+
 @media (min-width: 1920px) {
 /* photo_report */
 .photo_report .draggable{
