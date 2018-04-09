@@ -25,6 +25,7 @@
                 <input name="date_start" value="{{ old('date_start') }}" type="date" class="form-control" id="place-3" placeholder="Дата заезда">
             </div>
 
+
             <div class="form-group">
                 <input name="date_end" value="{{ old('date_end') }}" type="date" class="form-control" id="place-4" placeholder="Дата выезда">
             </div>
@@ -32,10 +33,12 @@
                 <input name="phone" value="{{ old('phone') }}" type="text" class="form-control" id="place-5" placeholder="Телефон">
             </div>
 
+
+
+
             <textarea name="message" id="reserve-area" cols="30" rows="10">
                 {{ old('message') }}
             </textarea>
-
             <button type="submit" class="reserv-span">
                 Забронировать
             </button>
@@ -43,6 +46,15 @@
         </form>
 
 
+
+        </div>
+    <script>
+        jQuery(function($){
+            $("#phone").mask(" +38(0) 999-9999");
+        });
+    </script>
+
     </div>
+
 
 </section>
