@@ -114,7 +114,7 @@ $(document).ready(function(){
         centerPadding: '0px',
         infinite: false,
         centerMode: true,
-        focusOnSelect: true,
+        focusOnSelect: false,
         responsive: [
             {
                 breakpoint: 1200,
@@ -135,7 +135,7 @@ $(document).ready(function(){
         slidesToShow: 1,
         arrows: false,
         vertical: false,
-        focusOnSelect: true,
+        focusOnSelect: false,
         asNavFor: '.video_menu_slider',
         responsive: [
             {
@@ -165,7 +165,7 @@ $(document).ready(function(){
         infinite: false,
         slidesToShow: 5,
         arrows: false,
-        focusOnSelect: true,
+        focusOnSelect: false,
         asNavFor: '.video_slider'
     });
 
