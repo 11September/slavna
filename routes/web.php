@@ -27,6 +27,8 @@ Route::get('/list/cottages', 'PagesController@cottages');
 Route::get('/one/{cottage}', 'PagesController@cottage');
 // 4 page but same structure
 
+Route::get('/contacts', 'PagesController@form');
+
 
 //Route::get('/houses', 'PagesController@houses');
 //Route::get('/house/{house}', 'PagesController@house');

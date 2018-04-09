@@ -30,5 +30,11 @@
 @endsection
 
 @section('scripts')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
     <script type="text/javascript" src="{{ asset('js/jquery.fancybox.min.js') }}"></script>
+
+    <script src="{{ asset('js/sly.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="{{ asset('js/horizontal.js') }}"></script>
 @endsection

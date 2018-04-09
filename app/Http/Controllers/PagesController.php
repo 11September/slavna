@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Reservation;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class PagesController extends Controller
 {
@@ -91,39 +93,38 @@ class PagesController extends Controller
         return view('arbour');
     }
 
-    public function sendEmail(Request $request)
+    public function form(Request $request)
     {
         $validator = Validator::make($request->all(),[
             'name' => 'required|min:3',
-            'cottage' => 'required',
+            'cottage_id' => 'required',
             'date_start' => 'required|date',
             'date_end' => 'required|date',
-            'phone' => 'required|email',
+            'phone' => 'required|max:15',
             'message' => 'required|min:5',
         ]);
 
         if ($validator->fails()) {
-            return redirect('/contacts')
+            return redirect()
+                ->back()
                 ->withErrors($validator)
                 ->withInput();
         } else {
             try{
-                $message = $request->all();
-
-//                $contact = new Contact;
-//                $contact->name = $request->name;
-//                $contact->email = $request->email;
-//                $contact->phone = $request->phone;
-//                $contact->message = $request->message;
-//                $contact->save();
-//
-//                return response()->json('Ваше сообщение доставлено!');
+                $contact = new Reservation();
+                $contact->name = $request->name;
+                $contact->cottage_id = $request->cottage_id;
+                $contact->date_start = $request->date_start;
+                $contact->date_end = $request->date_end;
+                $contact->phone = $request->phone;
+                $contact->message = $request->message;
+                $contact->save();
             }
             catch (Exception $exception){
                 $request->session()->flash('alert-success', 'Email not send!');
                 return redirect()->back();
             }
-            $request->session()->flash('alert-success', 'Email send successully!');
+
             return redirect()->back();
         }
     }
