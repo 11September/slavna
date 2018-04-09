@@ -26,12 +26,10 @@
 
                     <a href="#"> <i class="fab fa-facebook-square">facebook</i> </a>
                    <a href="#"> <i class="fab fa-instagram">instagram </i> </a>
-                     <a href="#"> <i class="fab fa-google"> </i></a>
+                     <a href="#"> <i class="fab fa-google"> </i> </a>
 
                 </div>
             </div>
-
-
             <div class="wrapper-answer-form col-lg-6">
 
 
@@ -58,15 +56,15 @@
                         администратор ответит на ваши вопросы.
                     </p>
 
-                    <span href="#" class="question-span">
+                    <a href="#"> <span  class="question-span">
             Задать вопрос
-                </span>
+                </span></a>
 
                 </form>
 
 
 
-
+</div>
             </div>
         </div>
     </div>
