@@ -4,8 +4,7 @@
             <div class="row">
                 <div class="col-md-4 wrapper-thubnail-item">
                     <div class="thubnails-item">
-                        <a data-fancybox="gallery" data-caption="Caption #1"
-                           href="{{ asset('images/photo_report_slider_example1.png') }}">
+                        <a data-fancybox="gallery" href="{{ asset('images/photo_report_slider_example1.png') }}">
                             <img src="{{ asset('images/photo_report_slider_example1.png') }}" alt="thubnail">
                         </a>
                     </div>
@@ -25,29 +24,28 @@
                 </div>
                 <div class="col-md-4 wrapper-thubnail-item">
                     <div class="thubnails-item">
-                        <a data-fancybox="gallery" data-caption="Caption #1"
-                           href="{{ asset('images/photo_report_slider_example2.png') }}">
+                        <a data-fancybox="gallery" href="{{ asset('images/photo_report_slider_example2.png') }}">
                             <img src="{{ asset('images/photo_report_slider_example2.png') }}" alt="thubnail">
                         </a>
                     </div>
                 </div>
                 <div class="col-md-4 wrapper-thubnail-item">
                     <div class="thubnails-item">
-                        <a data-fancybox="gallery" data-caption="Caption #1" href="{{ asset('images/photo_report_slider_example3.png') }}">
+                        <a data-fancybox="gallery" href="{{ asset('images/photo_report_slider_example3.png') }}">
                             <img src="{{ asset('images/photo_report_slider_example3.png') }}" alt="thubnail">
                         </a>
                     </div>
                 </div>
                 <div class="col-md-4 wrapper-thubnail-item">
                     <div class="thubnails-item">
-                        <a data-fancybox="gallery" data-caption="Caption #1" href="{{ asset('images/photo_report_slider_example4.png') }}">
+                        <a data-fancybox="gallery" href="{{ asset('images/photo_report_slider_example4.png') }}">
                             <img src="{{ asset('images/photo_report_slider_example4.png') }}" alt="thubnail">
                         </a>
                     </div>
                 </div>
                 <div class="col-md-4 wrapper-thubnail-item">
                     <div class="thubnails-item">
-                        <a data-fancybox="gallery" data-caption="Caption #1" href="{{ asset('images/photo_report_slider_example5.png') }}">
+                        <a data-fancybox="gallery" href="{{ asset('images/photo_report_slider_example5.png') }}">
                             <img src="{{ asset('images/photo_report_slider_example5.png') }}" alt="thubnail">
                         </a>
                     </div>
@@ -55,7 +53,7 @@
             </div>
         </div>
         <div class="wrapper-button-all-photos">
-            <a class="button-all-photos" href="{{ url('/') }}">СМОТРЕТЬ ВСЕ ФОТО</a>
+            <a class="button-all-photos" href="{{ url('/albums') }}">СМОТРЕТЬ ВСЕ ФОТО</a>
         </div>
     </div>
 </section>
