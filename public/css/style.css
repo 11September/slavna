@@ -1418,6 +1418,10 @@ color:#F4DB8F;
     font-size: 30px;
     letter-spacing: 5px;
 }
+
+.cottagges_one_item .block_text{
+    height: auto !important;
+}
 /* cottagges_one_item end*/
 
 /* artours_intro */
@@ -1640,6 +1644,17 @@ color:#F4DB8F;
     padding: 30px 45px 25px 30px;
 }
 /* latest_publication end */
+
+/* cottagges_one_item */
+.cottagges_one_item .photo_report_panel a {
+    padding: 25px 50px;
+}
+
+.cottagges_one_item .text_one_item {
+    height: auto;
+    padding-bottom: 25px;
+}
+/* cottagges_one_item end */
 }
 
 @media (max-width: 1880px){
@@ -1746,6 +1761,33 @@ color:#F4DB8F;
         padding-left: 20px;
     }
     /* Navbar */
+
+    /* cottagges_one_item */
+    .cottagges_one_item .text_one_item {
+        padding-bottom: 0;
+    }
+
+    .cottagges_one_item .link_one_item {
+        justify-content: space-evenly;
+        flex-direction: inherit;
+    }
+
+    .cottagges_one_item .photo_report_link {
+        margin: 20px auto;
+    }
+
+    .cottagges_one_item .photo_report_link {
+        justify-content: center;
+    }
+
+    .cottagges_one_item .main_head h3 {
+        font-size: 36px;
+    }
+
+    .cottagges_one_item .text_one_item {
+        padding-top: 30px;
+    }
+    /* cottagges_one_item end */
 
     /* photo_report */
     .photo_report .block_text{
@@ -2005,6 +2047,21 @@ color:#F4DB8F;
     .unqiques {
         justify-content: space-between;
     }
+    /* cottagges_one_item*/
+   .cottagges_one_item h3 {
+        justify-content: center;
+        padding-top: 15px;
+    }
+
+    .cottagges_one_item .block_text {
+        width: auto !important;
+    }
+
+    .cottagges_one_item .latest_publication_slider_item{
+        padding: 0px 30px;
+    }
+    /* cottagges_one_item end */
+
     /* photo_report */
 .flexx {
     flex-direction: column;
@@ -2359,6 +2416,13 @@ color:#F4DB8F;
         font-size: 16px;
     }
 /* reviews end */
+
+    /* cottagges_one_item*/
+
+    .cottagges_one_item .latest_publication_slider_item{
+        padding: 0;
+    }
+    /* cottagges_one_item end */
 
 /* latest_publication */
 .latest_publication .block_text {

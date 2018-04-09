@@ -7,10 +7,10 @@
 		  	<div class="flexx">
 		  		<div class="block_text">
 		  			<div class="row">
-		  				<div class="col-xl-8 main_head">
+		  				<div class="col-xl-8 col-lg-7 main_head">
 		  					<h3>Коттедж №n</h3>
 		  				</div>
-		  				<div class="col-xl-4 main_link">
+		  				<div class="col-xl-4 col-lg-5 main_link">
 		  					<a href="#">Подробнее</a>
 		  				</div>
 		  			</div>
@@ -33,7 +33,7 @@
 		  			</div>
 
 		  			<div class="row photo_report_panel">
-		  				<div class="col-xl-4 item_prise_div">
+		  				<div class="col-xl-6 item_prise_div">
 		  					<div class="weekday_price">
 		  						Будний <span>5500</span> грн
 		  					</div>
@@ -41,7 +41,7 @@
 		  						Выходной <span>6000</span> грн
 		  					</div>
 		  				</div>
-		  				<div class="col-xl-8 photo_report_link">
+		  				<div class="col-xl-6 photo_report_link">
 		  					<a href="#">Забронировать</a>
 		  				</div>
 		  			</div>
