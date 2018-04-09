@@ -57,9 +57,7 @@
                         администратор ответит на ваши вопросы.
                     </p>
 
-                    <a href="#"> <span  class="question-span">
-            Задать вопрос
-                </span></a>
+                    <a href="#"> <button  type="submit" class="question-span">Задать вопрос</button></a>
 
                 </form>
 
