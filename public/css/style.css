@@ -2859,7 +2859,7 @@ form {
     }
 
     .artours_intro .poema {
-        padding-left: 0px;
+        padding-left: 0;
         font-size: 20px;
     }
 
@@ -2993,7 +2993,7 @@ form {
     }
 
     .wrapper-button-all-photos {
-        width: 250px;
+        width: 100%;
         height: 56px;
     }
 
