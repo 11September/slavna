@@ -1438,8 +1438,9 @@ color:#F4DB8F;
 
 .artours_intro .block_text{
     width: 900px;
-    height: 540px;
+    height: auto;
     margin-left: 60px;
+    padding-bottom: 60px;
 }
 
 .artours_intro .line_logo_line{
@@ -1507,6 +1508,7 @@ color:#F4DB8F;
 
 .artours_about .artours_about_content img{
     margin-bottom: 30px;
+    width: 100%;
 }
 
 .artours_about .color_focus{
@@ -1598,6 +1600,13 @@ color:#F4DB8F;
     width: 790px;
 }
 /* photo_report */
+
+/* artours_intro */
+.artours_intro .block_text{
+    height: auto;
+    border-radius: 25px;
+}
+/* artours_intro end */
 
 /* reviews */
 .reviews .clider_info{
@@ -1789,6 +1798,12 @@ color:#F4DB8F;
         padding-top: 30px;
     }
     /* cottagges_one_item end */
+
+    /* artours_intro */
+    .artours_intro .block_text{
+        height: auto !important;
+    }
+    /* artours_intro end */
 
     /* photo_report */
     .photo_report .block_text{
@@ -2353,6 +2368,12 @@ color:#F4DB8F;
     font-size: 18px;
 }
 /* photo_report end */
+
+/* artours_intro */
+.artours_intro .block_text {
+    width: 100% !important;
+}
+/* artours_intro end */
 
 /* reviews */
 .add_reviews_div {
