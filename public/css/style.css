@@ -1515,6 +1515,10 @@ color:#F4DB8F;
     height: 750px;
 }
 
+    .hover-item-text{
+        width: 520px!important;
+        bottom:20px;
+    }
 .photo_report .slick-slide{
     width: 1920px !important;
 }
@@ -1718,6 +1722,10 @@ color:#F4DB8F;
 
 @media (max-width: 1200px) {
     /* Navbar */
+
+    .hover-item-text{
+        bottom:20px;
+    }
     .information_part .main-header {
         font-size: 36px;
     }
@@ -2096,6 +2104,9 @@ color:#F4DB8F;
 .photo_report_arrow{
     display: none;
 }
+    .hover-item-text{
+      bottom:15px;
+  }
 
     .text-reserv{
         font-size: 40px;
@@ -2511,7 +2522,14 @@ color:#F4DB8F;
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 415px){
+    .hover-item-text{
+        width: 370px!important;
+        bottom:15px;
+    }
+}
+
+@media (max-width: 376px) {
     .main-menu li{
         padding-bottom: 20px;
         font-size: 20px;
