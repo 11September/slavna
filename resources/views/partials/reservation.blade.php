@@ -43,9 +43,4 @@
         });
     </script>
 
-
-    <script src="jquery.mask.js" type="text/javascript"></script>
-    <script src="jquery.mask.min.js"  type=text/javascript"></script>
-
-
 </section>
