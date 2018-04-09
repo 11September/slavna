@@ -3,14 +3,21 @@
         <div class="wrapper-thubnails">
             <div class="row">
                 <div class="col-md-4 wrapper-thubnail-item">
-                    <div class="thubnails-item">
-                        <a data-fancybox="gallery" data-caption="Caption #1"
-                           href="{{ asset('images/photo_report_slider_example1.png') }}">
+                    <div class="thubnails-item thubnails-hover-item">
+                        <a data-fancybox="gallery" href="{{ asset('images/photo_report_slider_example1.png') }}">
                             <img src="{{ asset('images/photo_report_slider_example1.png') }}" alt="thubnail">
                         </a>
+
+                        <div class="thubnails-item-hidden-zoom">
+                            <a data-fancybox="gallery"
+                               href="{{ asset('images/photo_report_slider_example1.png') }}">
+                                <i class="fas fa-search-plus"></i>
+                                <p class="thubnails-text-zoom">Нажмите чтобы увеличить</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 wrapper-thubnail-item ">
+                <div class="col-md-4 wrapper-thubnail-item">
                     <div class="thubnails-item thubnails-item-info">
                         <h5 class="thubnails-item-info-heading">Недавно добавленные фото</h5>
                         <p class="thubnails-item-info-content">
@@ -24,38 +31,69 @@
                     </div>
                 </div>
                 <div class="col-md-4 wrapper-thubnail-item">
-                    <div class="thubnails-item">
-                        <a data-fancybox="gallery" data-caption="Caption #1"
-                           href="{{ asset('images/photo_report_slider_example2.png') }}">
+                    <div class="thubnails-item thubnails-hover-item">
+                        <a data-fancybox="gallery" href="{{ asset('images/photo_report_slider_example2.png') }}">
                             <img src="{{ asset('images/photo_report_slider_example2.png') }}" alt="thubnail">
                         </a>
+
+                        <div class="thubnails-item-hidden-zoom">
+                            <a data-fancybox="gallery"
+                               href="{{ asset('images/photo_report_slider_example2.png') }}">
+                                <i class="fas fa-search-plus"></i>
+                                <p class="thubnails-text-zoom">Нажмите чтобы увеличить</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4 wrapper-thubnail-item">
-                    <div class="thubnails-item">
-                        <a data-fancybox="gallery" data-caption="Caption #1" href="{{ asset('images/photo_report_slider_example3.png') }}">
+                    <div class="thubnails-item thubnails-hover-item">
+                        <a data-fancybox="gallery" href="{{ asset('images/photo_report_slider_example3.png') }}">
                             <img src="{{ asset('images/photo_report_slider_example3.png') }}" alt="thubnail">
                         </a>
+
+                        <div class="thubnails-item-hidden-zoom">
+                            <a data-fancybox="gallery"
+                               href="{{ asset('images/photo_report_slider_example3.png') }}">
+                                <i class="fas fa-search-plus"></i>
+                                <p class="thubnails-text-zoom">Нажмите чтобы увеличить</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4 wrapper-thubnail-item">
-                    <div class="thubnails-item">
-                        <a data-fancybox="gallery" data-caption="Caption #1" href="{{ asset('images/photo_report_slider_example4.png') }}">
+                    <div class="thubnails-item thubnails-hover-item">
+                        <a data-fancybox="gallery" href="{{ asset('images/photo_report_slider_example4.png') }}">
                             <img src="{{ asset('images/photo_report_slider_example4.png') }}" alt="thubnail">
                         </a>
+
+                        <div class="thubnails-item-hidden-zoom">
+                            <a data-fancybox="gallery"
+                               href="{{ asset('images/photo_report_slider_example4.png') }}">
+                                <i class="fas fa-search-plus"></i>
+                                <p class="thubnails-text-zoom">Нажмите чтобы увеличить</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4 wrapper-thubnail-item">
-                    <div class="thubnails-item">
-                        <a data-fancybox="gallery" data-caption="Caption #1" href="{{ asset('images/photo_report_slider_example5.png') }}">
+                    <div class="thubnails-item thubnails-hover-item">
+                        <a data-fancybox="gallery" href="{{ asset('images/photo_report_slider_example5.png') }}">
                             <img src="{{ asset('images/photo_report_slider_example5.png') }}" alt="thubnail">
                         </a>
+
+                        <div class="thubnails-item-hidden-zoom">
+                            <a data-fancybox="gallery"
+                               href="{{ asset('images/photo_report_slider_example5.png') }}">
+                                <i class="fas fa-search-plus"></i>
+                                <p class="thubnails-text-zoom">Нажмите чтобы увеличить</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="wrapper-button-all-photos">
-            <a class="button-all-photos" href="{{ url('/') }}">СМОТРЕТЬ ВСЕ ФОТО</a>
+            <a class="button-all-photos" href="{{ url('/albums') }}">СМОТРЕТЬ ВСЕ ФОТО</a>
         </div>
     </div>
 </section>

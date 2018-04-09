@@ -10,9 +10,9 @@
             </div>
 
             <div class="links-part">
-                <a href="">(095) 65-02-810</a>
-                <a href="">(05446) 3-13-36</a>
-                <a href="">pk_slаvnа@ukr.net</a>
+                <a href="tel:+1234567890">(095) 65-02-810</a>
+                <a href="tel:+1234567890">(05446) 3-13-36</a>
+                <a href="mailto:pk_slаvnа@ukr.net">pk_slаvnа@ukr.net</a>
             </div>
         </div>
 

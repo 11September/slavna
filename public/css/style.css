@@ -7,6 +7,31 @@ body {
     background-color: #2D1C15;
 }
 
+a.active.focus,
+a.active:focus,
+a.focus,
+a:active.focus,
+a:active:focus,
+a:focus,
+button.active.focus,
+button.active:focus,
+button.focus,
+button:active.focus,
+button:active:focus,
+button:focus,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+    outline: 0;
+    outline-color: transparent;
+    outline-width: 0;
+    outline-style: none;
+    box-shadow: 0 0 0 0 rgba(0,123,255,0);
+}
+
 @font-face {
     font-family: 'Monotype_Corsiva'; /* Имя шрифта */
     src: url(../fonts/Monotype_Corsiva.ttf); /* Путь к файлу со шрифтом */
@@ -782,10 +807,16 @@ form button:hover {
     padding: 0 80px;
 }
 
+.thumbnails .row{
+    width: 100%;
+    padding: 0;
+    margin: 0 !important;
+}
+
 .wrapper-thubnails {
     width: 100%;
     border-radius: 30px;
-    height: 1000px;
+    overflow: hidden;
 }
 
 .wrapper-thubnail-item {
@@ -793,31 +824,33 @@ form button:hover {
 }
 
 .thubnails-item {
-    height: 500px;
+    height: 370px;
+    position: relative;
 }
 
 .thubnails-item-info {
     background-color: #ffffff;
-    padding: 22px 35px 140px;
+    padding: 20px 30px 50px;
     color: #2D1C15;
 }
 
 .thubnails-item-info .thubnails-item-info-heading {
-    font-size: 50px;
+    font-size: 34px;
     color: #2D1C15;
-    text-align: center;
+    text-align: left;
 }
 
 .thubnails-item-info .thubnails-item-info-content {
-    font-size: 30px;
+    font-size: 22px;
     overflow: hidden;
     height: 180px;
+    margin-top: 15px;
 }
 
 .thubnails-item img {
     width: 100%;
     height: 100%;
-    opacity: 0.5;
+    /*opacity: 0.5;*/
 }
 
 .wrapper-button-all-photos {
@@ -840,6 +873,42 @@ form button:hover {
 
 .button-all-photos:hover {
     color: #F4DB8F;
+}
+
+.thubnails-item-hidden-zoom{
+    display: none;
+}
+
+.thubnails-item-hidden-zoom svg{
+    font-size: 40px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.thubnails-text-zoom{
+    color: #ffffff;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.thubnails-item-hidden-zoom a{
+    text-align: center;
+}
+
+.thubnails-hover-item:hover{
+    opacity: 0.8;
+}
+
+.thubnails-hover-item:hover .thubnails-item-hidden-zoom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    height: 100px;
+    width:100%;
+    margin-top: -50px;
 }
 
 /* Thubnails end */
@@ -941,7 +1010,7 @@ hr {
     margin-top: 50px;
     margin-bottom: 0;
     height: 2px;
-    width: 80%;
+    width: 92%;
     background: #2D1C15;
     margin-left: 95px;
 
@@ -962,7 +1031,7 @@ hr {
     text-align: center;
     font-size: 41px;
     margin-top: 85px;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
 }
 
 textarea {
@@ -981,7 +1050,7 @@ textarea {
 
 .question-span {
     background: #2D1C15;
-
+letter-spacing: 5px;
     color: white;
     letter-spacing: 2px;
     font-size: 24px;
@@ -1002,7 +1071,7 @@ textarea {
     text-align: center;
     padding-top: 20px;
     border-radius: 5px;
-    width: 653px;
+    width: 100%;
     height: 68px;
 }
 
@@ -1092,7 +1161,7 @@ textarea {
     text-align: center;
      font-size: 25px;   font-family: 'Proxima_Nova-reg';
      letter-spacing: 5px;
-margin-top: 40px;
+margin-top: 40px;    margin-bottom: 50px;
 }
 
 
@@ -1167,6 +1236,10 @@ form{
 .Blog-list{
     margin: 0;
     padding: 0;
+}
+
+.dance-blog-h2:hover{
+color:#F4DB8F;
 }
 .dance-blog-h2{
     font-size: 40px;
@@ -1245,6 +1318,193 @@ form{
 
 }
 /* all-photos*/
+
+/* cottagges_one_item */
+.cottagges_one_item{
+
+}
+
+.cottagges_one_item .block_img{
+    margin-left: 30px;
+}
+
+.cottagges_one_item h3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 0; 
+}
+
+.cottagges_one_item .main_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cottagges_one_item .main_link a{
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.cottagges_one_item .text_one_item{
+    padding-top: 50px;
+    font-size: 30px;
+    line-height: 1.2;
+    height: 430px;
+}
+
+.cottagges_one_item .flexx {
+    padding: 30px 0;
+}
+
+.cottagges_one_item .photo_report_link{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    order: 2;
+}
+
+.cottagges_one_item .photo_report_link {
+    text-align: right;
+}
+
+.cottagges_one_item .item_prise_div{
+    color: #f5db91;
+    font-size: 30px;
+}
+
+.cottagges_one_item .weekday_price{
+    padding-bottom: 12px;
+}
+
+.cottagges_one_item .item_prise_div span{
+    font-size: 36px;
+    border-bottom: 2px solid #f5db91;
+}
+
+.cottagges_one_item .link_one_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cottagges_one_item .link_one_item .link_one_item_a{
+    width: 50px;
+    height: 50px;
+    background: #ffffff;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 18px 0;
+}
+
+.cottagges_one_item .link_one_item_a a{
+    color: #271d1b;
+    font-size: 30px;
+    font-family: 'Proxima_light';
+}
+
+.cottagges_one_item .photo_report_panel a {
+    color: #271e19;
+    background: #fff;
+    padding: 25px 50px;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+/* cottagges_one_item end*/
+
+/* artours_intro */
+.artours_intro{
+
+}
+
+.artours_intro .block_img img {
+    border-radius: 25px;
+    height: 600px;
+    width: 960px;
+}
+
+.artours_intro .block_text{
+    width: 900px;
+    height: 540px;
+    margin-left: 60px;
+}
+
+.artours_intro .line_logo_line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.artours_intro .head_line{
+    width: 265px;
+    height: 2px;
+    background: #f5d6a8;
+}
+
+.artours_intro .line_logo_line img{
+    height: 84px;
+    width: 155px;
+    padding: 0 20px;
+}
+
+.artours_intro .poema{
+    font-size: 40px;
+    font-family: 'Proxima_Nova-reg-it';
+    color: #f6dc91;
+    letter-spacing: 5px;
+    padding-left: 70px;
+}
+/* artours_intro end */
+
+/* artours_about */
+.artours_about{
+    padding: 0 60px 125px 60px;
+}
+
+.artours_about_bg{
+    background: #73432f;
+    border-radius: 25px;
+    padding: 5px 45px 10px;
+}
+
+.artours_about_content{
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-family: 'Proxima_Nova-reg';
+    line-height: 1.3;
+}
+
+.artours_about_content .head_content_p{
+    padding-bottom: 40px;
+}
+
+.artours_about_content .content_p{
+    padding-bottom: 60px;
+}
+
+.artours_about .content_strong{
+    font-family: 'Proxima_Nova-bold';
+}
+
+.artours_about .content_underline{
+    text-decoration: underline;
+}
+
+.artours_about .artours_about_content img{
+    margin-bottom: 30px;
+}
+
+.artours_about .color_focus{
+    color: #f5db90;
+}
+/* artours_about end */
 
 @media (min-width: 1920px) {
 /* photo_report */
@@ -1834,7 +2094,7 @@ form{
     }
 
     .thubnails-item {
-        height: 300px;
+        height: 260px;
     }
 
     .thubnails-item-info {
@@ -1863,6 +2123,15 @@ form{
 
 @media (max-width: 992px) {
     /* Navbar */
+
+    hr{
+        width: 92%;
+    }
+    #reserve-area{
+        padding-top: 0;
+
+        width: 100%;
+    }
     .links-part{
         flex-direction: column;
         padding-left: 20px;
@@ -1876,6 +2145,55 @@ form{
     .photos-in-album {
         padding-left: 50px;
         padding-right: 50px;
+    }
+
+    .wrapper-answer-form {
+        right: 0;
+        flex-direction: column;
+    }
+
+    .flex-repair{
+        flex-direction: column-reverse;
+
+    }
+
+    .question-span{
+       margin-bottom: 70px;
+    }
+
+    .wrapper-answer-form{
+        border-top-left-radius:10px;
+        border-top-right-radius:10px;
+        border-bottom-right-radius:0;
+        border-bottom-left-radius:0;
+    }
+
+    .wrapper-text-left{
+        border-bottom-left-radius:10px;
+        border-bottom-right-radius:10px;
+        border-top-right-radius:0;
+        border-top-left-radius:0;
+    }
+
+
+    .text-ua{
+       margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .wrapper-text-left{
+        min-height: 900px;
+    }
+
+
+    .dance-blog-one-list{
+        margin: 0 auto!important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .description-blog-p{
+        font-size: 25px;
+        text-align: center!important;
     }
 
     .links-part a {
@@ -2008,7 +2326,15 @@ form{
 }
 
     .photos-in-album .albom-header {
-        font-size: 18px;
+            font-size: 18px;
+        }
+
+    .text-reserv{
+        font-size: 40px;
+    }
+
+    .dance-blog-h2{
+        font-size: 35px;
     }
 
 .photo_report .block_text {
@@ -2129,6 +2455,9 @@ form{
         margin-top: 15px;
         border-right: 2px solid #74432F;
     }
+    .dance-blog-h2{  font-size: 27px;  }
+
+    .description-blog-p{  font-size: 20px;  }
 
     .three-part .left p:nth-child(1),
     .three-part .right p:nth-child(1){
@@ -2153,7 +2482,20 @@ form{
 .photo_report .draggable {
     height: 685px;
 }
+    .dance-blog-h2{
+        font-size: 25px;
+    }
 
+    .wrapper-text-left{
+        min-height: 100%;
+    }
+    hr{
+        width: 85%;
+    }
+
+    .h2-text-quest{
+        font-size: 34px;
+    }
 .photo_report .block_text {
     height: 380px;
     width: 320px;
@@ -2203,6 +2545,30 @@ form{
 .reviews .draggable {
     height: 890px !important;
 }
+
+    .text-ua{
+        font-size: 35px;
+    }
+
+    .text-p-ua{
+        font-size: 25px;
+    }
+    hr{
+        margin-top: 50px;
+        margin-bottom: 0;
+        height: 2px;
+        width: 94%;
+        background: #2D1C15;
+        margin-left: 45px;
+    }
+
+    .dance-blog-h2{
+        font-size: 21px;
+    }
+
+    .description-blog-p{
+        font-size: 16px;
+    }
 /* reviews end */
 
 /* latest_publication */
@@ -2350,6 +2716,17 @@ form{
     .map {
         height: 360px;
     }
+
+    .text-reserv{
+        font-size: 30px;
+    }
+    .dance-blog-h2{
+        font-size: 18px;
+    }
+    .dance-blog-one-list{
+        width: 300px;
+        height: 300px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -2358,5 +2735,31 @@ form{
         font-size: 20px;
         font-family: 'Proxima_Nova-reg';
         color: white;
+    }
+    hr{
+        width: 84%;
+
+    }
+
+    .h2-text-quest{
+        font-size: 30px;
+    }
+
+    .dance-blog-h2{
+        font-size: 16px;
+    }
+
+    .description-blog-p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 360px){
+    .dance-blog-h2{
+        font-size: 13px;
+    }
+
+    .description-blog-p{
+        font-size: 12px;
     }
 }
