@@ -1,7 +1,7 @@
 <header class="header-wrapper">
     <div class="header-body">
         <div class="logo">
-            <a href=""><img src="{{ asset('images/slavna-logo.png') }}" alt=""></a>
+            <a href="{{ url('/') }}"><img src="{{ asset('images/slavna-logo.png') }}" alt=""></a>
         </div>
 
         <div class="information_part">
