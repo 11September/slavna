@@ -828,6 +828,7 @@ font-size: 30px;
 
 .thubnails-item {
     height: 370px;
+    position: relative;
 }
 
 .thubnails-item-info {
@@ -852,7 +853,7 @@ font-size: 30px;
 .thubnails-item img {
     width: 100%;
     height: 100%;
-    opacity: 0.5;
+    /*opacity: 0.5;*/
 }
 
 .wrapper-button-all-photos {
@@ -875,6 +876,42 @@ font-size: 30px;
 
 .button-all-photos:hover {
     color: #F4DB8F;
+}
+
+.thubnails-item-hidden-zoom{
+    display: none;
+}
+
+.thubnails-item-hidden-zoom svg{
+    font-size: 40px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.thubnails-text-zoom{
+    color: #ffffff;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.thubnails-item-hidden-zoom a{
+    text-align: center;
+}
+
+.thubnails-hover-item:hover{
+    opacity: 0.8;
+}
+
+.thubnails-hover-item:hover .thubnails-item-hidden-zoom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    height: 100px;
+    width:100%;
+    margin-top: -50px;
 }
 
 /* Thubnails end */
@@ -1395,8 +1432,9 @@ color:#F4DB8F;
 }
 
 .artours_intro .block_text{
-    width: 890px;
+    width: 900px;
     height: 540px;
+    margin-left: 60px;
 }
 
 .artours_intro .line_logo_line{
@@ -1426,6 +1464,50 @@ color:#F4DB8F;
     padding-left: 70px;
 }
 /* artours_intro end */
+
+/* artours_about */
+.artours_about{
+    padding: 0 60px 125px 60px;
+}
+
+.artours_about_bg{
+    background: #73432f;
+    border-radius: 25px;
+    padding: 5px 45px 10px;
+}
+
+.artours_about_content{
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-family: 'Proxima_Nova-reg';
+    line-height: 1.3;
+}
+
+.artours_about_content .head_content_p{
+    padding-bottom: 40px;
+}
+
+.artours_about_content .content_p{
+    padding-bottom: 60px;
+}
+
+.artours_about .content_strong{
+    font-family: 'Proxima_Nova-bold';
+}
+
+.artours_about .content_underline{
+    text-decoration: underline;
+}
+
+.artours_about .artours_about_content img{
+    margin-bottom: 30px;
+}
+
+.artours_about .color_focus{
+    color: #f5db90;
+}
+/* artours_about end */
 
 @media (min-width: 1920px) {
 /* photo_report */
