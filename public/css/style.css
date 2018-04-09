@@ -7,6 +7,31 @@ body {
     background-color: #2D1C15;
 }
 
+a.active.focus,
+a.active:focus,
+a.focus,
+a:active.focus,
+a:active:focus,
+a:focus,
+button.active.focus,
+button.active:focus,
+button.focus,
+button:active.focus,
+button:active:focus,
+button:focus,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+    outline: 0;
+    outline-color: transparent;
+    outline-width: 0;
+    outline-style: none;
+    box-shadow: 0 0 0 0 rgba(0,123,255,0);
+}
+
 @font-face {
     font-family: 'Monotype_Corsiva'; /* Имя шрифта */
     src: url(../fonts/Monotype_Corsiva.ttf); /* Путь к файлу со шрифтом */
@@ -761,10 +786,16 @@ form button:hover {
     padding: 0 80px;
 }
 
+.thumbnails .row{
+    width: 100%;
+    padding: 0;
+    margin: 0 !important;
+}
+
 .wrapper-thubnails {
     width: 100%;
     border-radius: 30px;
-    height: 1000px;
+    overflow: hidden;
 }
 
 .wrapper-thubnail-item {
@@ -772,25 +803,26 @@ form button:hover {
 }
 
 .thubnails-item {
-    height: 500px;
+    height: 370px;
 }
 
 .thubnails-item-info {
     background-color: #ffffff;
-    padding: 22px 35px 140px;
+    padding: 20px 30px 50px;
     color: #2D1C15;
 }
 
 .thubnails-item-info .thubnails-item-info-heading {
-    font-size: 50px;
+    font-size: 34px;
     color: #2D1C15;
-    text-align: center;
+    text-align: left;
 }
 
 .thubnails-item-info .thubnails-item-info-content {
-    font-size: 30px;
+    font-size: 22px;
     overflow: hidden;
     height: 180px;
+    margin-top: 15px;
 }
 
 .thubnails-item img {
@@ -1689,7 +1721,7 @@ color:#F4DB8F;
     }
 
     .thubnails-item {
-        height: 300px;
+        height: 260px;
     }
 
     .thubnails-item-info {
