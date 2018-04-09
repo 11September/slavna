@@ -13,7 +13,7 @@
 						<div class="reviews_slider_img">
 							<img src="{{ asset('images/reviews_slider_example.png') }}">
 							<div class="bg_i_text">
-								Михаил Ивановз
+								Михаил Иванов
 							</div>
 						</div>
 						<div class="reviews_slider_head">
