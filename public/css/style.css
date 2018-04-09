@@ -804,6 +804,7 @@ form button:hover {
 
 .thubnails-item {
     height: 370px;
+    position: relative;
 }
 
 .thubnails-item-info {
@@ -828,7 +829,7 @@ form button:hover {
 .thubnails-item img {
     width: 100%;
     height: 100%;
-    opacity: 0.5;
+    /*opacity: 0.5;*/
 }
 
 .wrapper-button-all-photos {
@@ -851,6 +852,42 @@ form button:hover {
 
 .button-all-photos:hover {
     color: #F4DB8F;
+}
+
+.thubnails-item-hidden-zoom{
+    display: none;
+}
+
+.thubnails-item-hidden-zoom svg{
+    font-size: 40px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.thubnails-text-zoom{
+    color: #ffffff;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.thubnails-item-hidden-zoom a{
+    text-align: center;
+}
+
+.thubnails-hover-item:hover{
+    opacity: 0.8;
+}
+
+.thubnails-hover-item:hover .thubnails-item-hidden-zoom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    height: 100px;
+    width:100%;
+    margin-top: -50px;
 }
 
 /* Thubnails end */
