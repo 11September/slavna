@@ -952,7 +952,7 @@ hr {
     margin-top: 50px;
     margin-bottom: 0;
     height: 2px;
-    width: 80%;
+    width: 92%;
     background: #2D1C15;
     margin-left: 95px;
 
@@ -973,7 +973,7 @@ hr {
     text-align: center;
     font-size: 41px;
     margin-top: 85px;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
 }
 
 textarea {
@@ -992,7 +992,7 @@ textarea {
 
 .question-span {
     background: #2D1C15;
-
+letter-spacing: 5px;
     color: white;
     letter-spacing: 2px;
     font-size: 24px;
@@ -1780,8 +1780,19 @@ color:#F4DB8F;
     }
 
     .wrapper-answer-form{
-        border-radius:0;
+        border-top-left-radius:10px;
+        border-top-right-radius:10px;
+        border-bottom-right-radius:0;
+        border-bottom-left-radius:0;
     }
+
+    .wrapper-text-left{
+        border-bottom-left-radius:10px;
+        border-bottom-right-radius:10px;
+        border-top-right-radius:0;
+        border-top-left-radius:0;
+    }
+
 
     .text-ua{
        margin-top: 40px;
@@ -2089,6 +2100,9 @@ color:#F4DB8F;
         font-size: 25px;
     }
 
+    .wrapper-text-left{
+        min-height: 100%;
+    }
     hr{
         width: 85%;
     }
