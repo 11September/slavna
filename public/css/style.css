@@ -137,11 +137,12 @@ form button:hover {
     background: #2D1C15;
     width: 100%;
     height: 100vh;
-    z-index: 2;
+    z-index: 5;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow: auto;
 }
 
 .hider{
@@ -161,35 +162,46 @@ form button:hover {
     cursor: pointer;
 }
 
-.main-menu li{
+.main-menu li a{
+    display: inline-block;
     padding-bottom: 20px;
     font-size: 40px;
     font-family: 'Proxima_Nova-reg';
     color: white;
 }
 
-.main-menu li:hover{
+.main-menu li a:hover{
     color: #F4DB8F;
 }
 
-.main-menu li:before{
+.main-menu li a:before{
     content: '';
     width: 60px;
-    height: 2px;
+    height: 3px;
     background: #F4DB8F;
     display: inline-block;
     margin-bottom: 16px;
     margin-right: 12px;
+    visibility: hidden;
 }
 
-.main-menu li:after{
+.main-menu li a:hover:before{
+    visibility: visible;
+}
+
+.main-menu li a:after{
     content: '';
     width: 40px;
-    height: 2px;
+    height: 3px;
     background: #F4DB8F;
     display: inline-block;
     margin-bottom: 16px;
     margin-left: 12px;
+    visibility: hidden;
+}
+
+.main-menu li a:hover:after{
+    visibility: visible;
 }
 
 .under-text{
@@ -214,10 +226,16 @@ form button:hover {
 .intro_slider .slick-prev {
     left: 40px;
     z-index: 2;
+
+    width: 50px;
+    height: 50px;
 }
 
 .intro_slider .slick-next{
     right: 40px;
+
+    width: 50px;
+    height: 50px;
 }
 
 /* Navbar */
@@ -2325,6 +2343,11 @@ color:#F4DB8F;
     display: none;
 }
 
+    .close-btn {
+        right: 25px;
+        top: 25px;
+    }
+
     .photos-in-album .albom-header {
             font-size: 18px;
         }
@@ -2645,26 +2668,9 @@ color:#F4DB8F;
         color: #F4DB8F;
     }
 
-    .main-menu li:before{
-        content: '';
-        width: 30px;
-        height: 2px;
-        background: #F4DB8F;
-        display: inline-block;
-        margin-bottom: 10px;
-        margin-right: 12px;
+    .main-menu li a{
+        font-size: 26px;
     }
-
-    .main-menu li:after{
-        content: '';
-        width: 30px;
-        height: 2px;
-        background: #F4DB8F;
-        display: inline-block;
-        margin-bottom: 10px;
-        margin-left: 12px;
-    }
-
 
     .header-body{
         flex-direction: column;

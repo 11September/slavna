@@ -105,27 +105,29 @@ $(document).ready(function(){
       }
     ]
   });
-
-    $('.intro_slider').slick({
-        initialSlide: 0,
-        slidesToShow: 1,
-        rows: 1,
-        arrows: true,
-        centerPadding: '0px',
-        infinite: false,
-        centerMode: true,
-        focusOnSelect: false,
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    arrows: true,
-                    dots: true,
-                    slidesToShow: 1
-                }
-            }
-        ]
-    });
+    //
+    // $('.intro_slider').slick({
+    //     initialSlide: 0,
+    //     slidesToShow: 1,
+    //     rows: 1,
+    //     arrows: true,
+    //     prevArrow:"<img class='slick-prev' src='../images/left-arrow.png'>",
+    //     nextArrow:"<img class='slick-next' src='../images/right-arrow.png'>",
+    //     centerPadding: '0px',
+    //     infinite: false,
+    //     centerMode: true,
+    //     focusOnSelect: false,
+    //     responsive: [
+    //         {
+    //             breakpoint: 1200,
+    //             settings: {
+    //                 arrows: true,
+    //                 dots: true,
+    //                 slidesToShow: 1
+    //             }
+    //         }
+    //     ]
+    // });
 
     $('.video_slider').slick({
         centerMode: true,
