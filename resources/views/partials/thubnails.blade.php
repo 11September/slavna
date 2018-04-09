@@ -7,7 +7,7 @@
                         <img src="{{ asset('images/photo_report_slider_example1.png') }}" alt="thubnail">
 
                         <div class="thubnails-item-hidden-zoom">
-                            <a data-fancybox="gallery"
+                            <a data-fancybox="gallery" data-trigger="gallery"
                                href="{{ asset('images/photo_report_slider_example1.png') }}">
                                 <i class="fas fa-search-plus"></i>
                                 <p class="thubnails-text-zoom">Нажмите чтобы увеличить</p>
@@ -33,7 +33,7 @@
                         <img src="{{ asset('images/photo_report_slider_example2.png') }}" alt="thubnail">
 
                         <div class="thubnails-item-hidden-zoom">
-                            <a data-fancybox="gallery"
+                            <a data-fancybox="gallery" data-trigger="gallery"
                                href="{{ asset('images/photo_report_slider_example2.png') }}">
                                 <i class="fas fa-search-plus"></i>
                                 <p class="thubnails-text-zoom">Нажмите чтобы увеличить</p>
@@ -46,7 +46,7 @@
                         <img src="{{ asset('images/photo_report_slider_example3.png') }}" alt="thubnail">
 
                         <div class="thubnails-item-hidden-zoom">
-                            <a data-fancybox="gallery"
+                            <a data-fancybox="gallery" data-trigger="gallery"
                                href="{{ asset('images/photo_report_slider_example3.png') }}">
                                 <i class="fas fa-search-plus"></i>
                                 <p class="thubnails-text-zoom">Нажмите чтобы увеличить</p>
@@ -59,7 +59,7 @@
                         <img src="{{ asset('images/photo_report_slider_example4.png') }}" alt="thubnail">
 
                         <div class="thubnails-item-hidden-zoom">
-                            <a data-fancybox="gallery"
+                            <a data-fancybox="gallery" data-trigger="gallery"
                                href="{{ asset('images/photo_report_slider_example4.png') }}">
                                 <i class="fas fa-search-plus"></i>
                                 <p class="thubnails-text-zoom">Нажмите чтобы увеличить</p>
@@ -72,7 +72,7 @@
                         <img src="{{ asset('images/photo_report_slider_example5.png') }}" alt="thubnail">
 
                         <div class="thubnails-item-hidden-zoom">
-                            <a data-fancybox="gallery"
+                            <a data-fancybox="gallery" data-trigger="gallery"
                                href="{{ asset('images/photo_report_slider_example5.png') }}">
                                 <i class="fas fa-search-plus"></i>
                                 <p class="thubnails-text-zoom">Нажмите чтобы увеличить</p>

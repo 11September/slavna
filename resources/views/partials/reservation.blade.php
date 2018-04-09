@@ -2,7 +2,7 @@
     <div class="container">
         <h2 class="text-reserv">Бронирование</h2>
 
-        <form action="{{ action('PagesController@form') }}">
+        <form method="post" action="{{ action('PagesController@form_reservation') }}">
             {{ csrf_field() }}
 
             <div class="form-group">
