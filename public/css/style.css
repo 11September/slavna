@@ -105,6 +105,14 @@ form button:hover {
     font-weight: 300;
 }
 
+.wrapper-text-left{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    left:20px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
+}
 .menu-part {
     display: flex;
     align-items: center;
@@ -502,7 +510,11 @@ form button:hover {
 }
 
 .photo_report_link {
-    text-align: center;
+    text-align: right;
+}
+
+.latest_publication .photo_report_link {
+    text-align: left;
 }
 
 .photo_report_panel a {
@@ -710,7 +722,7 @@ form button:hover {
 }
 
 .reviews .draggable {
-    height: 670px !important;
+    height: 700px !important;
 }
 
 .reviews .bg_i_text {
@@ -1004,13 +1016,14 @@ form button:hover {
 
 /* contactForm */
 .wrapper-text-left {
-    min-height: 895px;
+    min-height: 800px;
     background: #74432F;
 }
 
 
 .contactForm{
     margin-top: 50px;
+    min-height: 1050px;
 }
 .padding-phone-p{
     padding-top: 15px}
@@ -1023,11 +1036,12 @@ form button:hover {
 .wrapper-answer-form {
     background: whitesmoke;
     position: relative;
-    right: 60px;
+    right: 0px;
     border-radius: 30px;
 }
 
 .text-ua {
+    margin-top: 35px;
     font-size: 50px;
     color: #F4DB8F;
     text-align: center;
@@ -1043,22 +1057,35 @@ form button:hover {
 .my-fafa {
     padding-top: 75px;
 }
+ .fa-instagram{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+ .fa-google{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.my-fafa svg{
+    color:white;
+}
 
 .fa-facebook-square {
-    margin-left: 35px;
+    margin-left: 50px;
+    margin-right: 50px;
     text-align: center;
     color: black;
 
 }
 
 .fa-instagram {
-    margin-left: 35px;
+
     text-align: center;
     color: black;
 }
 
 .fa-google {
-    margin-left: 35px;
+
     text-align: center;
     color: black;
 }
@@ -1097,13 +1124,16 @@ textarea {
     min-height: 200px;
     font-family: 'Proxima_light';
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    letter-spacing: 7px;
     font-size: 25px;
     padding-top: 90px;
     text-align: left;
     margin: 0 auto;
     color: #2D1C15;
 }
+  textarea::-webkit-input-placeholder { letter-spacing: 7px; color:#2D1C15; font-size: 25px; text-align: center;}
+ textarea::-moz-placeholder          {letter-spacing: 7px; color:#2D1C15; font-size: 25px; text-align: center;}/* Firefox 19+ */
+ textarea:-moz-placeholder           {letter-spacing: 7px; color:#2D1C15; font-size: 25px; text-align: center;}/* Firefox 18- */
+ textarea:-ms-input-placeholder      {letter-spacing: 7px; color:#2D1C15; font-size: 25px; text-align: center;}
 
 .question-span {
     background: #2D1C15;
@@ -1129,7 +1159,7 @@ textarea {
     text-align: center;
     padding-top: 20px;
     border-radius: 5px;
-    width: 100%;
+    width: 80%;
     height: 68px;
 }
 
@@ -1646,6 +1676,10 @@ form {
         width: 450px;
     }
 
+    .latest_publication .flexx {
+        justify-content: start;
+    }
+
     .photo_report .block_img img {
         border-radius: 25px;
         height: 450px;
@@ -1737,6 +1771,10 @@ form {
         height: 690px !important;
     }
 
+    .latest_publication .photo_report_panel a {
+        padding: 20px 50px;
+    }
+
     /* reviews end */
     /* latest_publication */
     .latest_publication h3 {
@@ -1750,7 +1788,7 @@ form {
     }
 
     .latest_publication .photo_report_panel a {
-        padding: 12px 40px;
+        padding: 15px 50px;
         font-size: 20px;
         letter-spacing: 3px;
     }
@@ -1794,6 +1832,10 @@ form {
 
     .reviews_slider_img {
         margin-left: 0px;
+    }
+
+    .reviews_slider_img {
+        margin-left: 6%;
     }
 
     /* reviews end */
@@ -2099,8 +2141,8 @@ form {
     }
 
     .slider_bg {
-        padding: 70px 35px 70px 450px;
-        width: 1100px;
+        padding: 70px 35px 70px 500px;
+        width: 1200px;
     }
 
     /* reviews end */
@@ -2380,6 +2422,7 @@ form {
         border-top-right-radius: 10px;
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
+        margin-bottom: 50px;
     }
 
     .wrapper-text-left {
@@ -2395,6 +2438,7 @@ form {
     }
 
     .wrapper-text-left {
+
         min-height: 900px;
     }
 
@@ -2810,6 +2854,14 @@ form {
 
 @media (max-width: 480px) {
     /* reviews */
+    .latest_publication .photo_report_link {
+        text-align: center;
+    }
+
+    .reviews .slider_bg {
+        background: none;
+    }
+
     .hover-item-text {
         width: 430px !important;
         bottom: 15px;
@@ -2850,6 +2902,15 @@ form {
         padding: 0;
     }
 
+    .latest_publication h2 {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+
+    .latest_publication h5{
+        font-size: 18px;
+        letter-spacing: 0;
+    }
     /* cottagges_one_item end */
     /* artours_about */
     .artours_about {
