@@ -8,10 +8,10 @@
 
 @include('partials.intro')
 
-<h2>КОТТЕДЖ-ПАРК «СЛАВНА» <br>
+<h2 class="sub-header-section first">КОТТЕДЖ-ПАРК «СЛАВНА» <br>
     В С. ЧЕРНЕТЧИНА.</h2>
-<h4>СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ</h4>
-<h5>Акции, специальные предложения и системы скидок от коттедж-парк Славна</h5>
+<h4 class="sub-header-section second">СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ</h4>
+<h5 class="sub-header-section third">Акции, специальные предложения и системы скидок от коттедж-парк Славна</h5>
 
 @include('partials.photo_report')
 

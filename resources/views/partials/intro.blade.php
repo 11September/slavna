@@ -14,10 +14,12 @@
     </div>
 
     <div class="arrows-intro">
-        
+
     </div>
 
 
 
     <p class="under-text">Украина, Сумская область, Ахтырский район, с.Чернетчина, ул. Монастырская, 5</p>
+
+    <hr>
 </section>
