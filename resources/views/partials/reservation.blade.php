@@ -22,12 +22,11 @@
                     <input type="text" class="form-control" id="place-4" placeholder="Дата выезда">
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="place-5" placeholder="Телефон">
+                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Введите ваш телефон">
                 </div>
 
                 <textarea name="" id="reserve-area" cols="30" rows="10">
 
-                    Оставьте свое сообщение
                 </textarea>
 
                 <button type="submit" class="reserv-span">
@@ -38,5 +37,15 @@
 
 
         </div>
+    <script>
+        jQuery(function($){
+            $("#phone").mask(" +38(0) 999-9999");
+        });
+    </script>
+
+
+    <script src="jquery.mask.js" type="text/javascript"></script>
+    <script src="jquery.mask.min.js"  type=text/javascript"></script>
+
 
 </section>
