@@ -1795,6 +1795,8 @@ form {
 
     .latest_publication .block_text {
         padding: 30px 45px 25px 30px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
     }
 
     /* latest_publication end */
