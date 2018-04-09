@@ -4,39 +4,45 @@
     <div class="container">
         <h2 class="text-reserv">Бронирование</h2>
 
-            <form>
-            <div class="form-group">
+        <form action="{{ action('PagesController@form') }}">
+            {{ csrf_field() }}
 
-                <input type="text" class="form-control" id="place-1" placeholder="ФИО">
+            <div class="form-group">
+                <input name="name" type="text" class="form-control" id="place-1" placeholder="ФИО">
+            </div>
+
+            <div class="form-group">
+                <select name="cottage_id" class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <input name="date_start" type="date" class="form-control" id="place-3" placeholder="Дата заезда">
+            </div>
+
+            <div class="form-group">
+                <input name="date_end" type="date" class="form-control" id="place-4" placeholder="Дата выезда">
             </div>
             <div class="form-group">
-
-                <input type="text" class="form-control" id="place-2" placeholder="Номера/Котеджи">
+                <input name="phone" type="text" class="form-control" id="place-5" placeholder="Телефон">
             </div>
-                <div class="form-group">
 
-                    <input type="text" class="form-control" id="place-3" placeholder="Дата заезда">
-                </div>
-                <div class="form-group">
+            <textarea name="message" id="reserve-area" cols="30" rows="10">
+                Оставьте свое сообщение
+            </textarea>
 
-                    <input type="text" class="form-control" id="place-4" placeholder="Дата выезда">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="place-5" placeholder="Телефон">
-                </div>
+            <button type="submit" class="reserv-span">
+                Забронировать
+            </button>
 
-                <textarea name="" id="reserve-area" cols="30" rows="10">
-
-                    Оставьте свое сообщение
-                </textarea>
-
-                <button type="submit" class="reserv-span">
-                    Забронировать
-                </button>
-
-            </form>
+        </form>
 
 
-        </div>
+    </div>
 
 </section>
