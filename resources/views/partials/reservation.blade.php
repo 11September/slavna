@@ -21,7 +21,8 @@
             </div>
 
             <div class="form-group">
-                <input name="date_start" id="date_start" value="{{ old('date_start') }}" type="date" class="form-control"
+                <input name="date_start" id="date_start" value="{{ old('date_start') }}" type="date"
+                       class="form-control"
                        placeholder="Дата заезда">
             </div>
 
@@ -31,13 +32,16 @@
                        placeholder="Дата выезда">
             </div>
             <div class="form-group">
+                <input name="phone" id="phone" value="{{ old('phone') }}" type="text" class="form-control"
+                       placeholder="Телефон">
             </div>
-            <input name="phone" id="phone" value="{{ old('phone') }}" type="text" class="form-control" placeholder="Телефон">
 
+            <div class="form-group">
+                <textarea name="message" id="reserve-area" cols="30" rows="10">
+                    {{ old('message') }}
+                </textarea>
+            </div>
 
-            <textarea name="message" id="reserve-area" cols="30" rows="10">
-                {{ old('message') }}
-            </textarea>
             <button type="submit" class="reserv-span">
                 Забронировать
             </button>
