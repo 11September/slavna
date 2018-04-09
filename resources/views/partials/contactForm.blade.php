@@ -3,9 +3,9 @@
 <section class="contactForm">
 
     <div class="container-fluid">
-        <div class="row">
+        <div class="row flex-repair">
 
-            <div class="wrapper-text-left col-lg-6">
+            <div class="wrapper-text-left col-lg-6 col-md-12 col-sm-12 col-xs-12">
                 <h2 class="text-ua">Украина<br>
                     Сумская область<br>
                     Ахтырский район<br>
@@ -30,7 +30,7 @@
 
                 </div>
             </div>
-            <div class="wrapper-answer-form col-lg-6">
+            <div class="wrapper-answer-form  col-lg-6 col-md-12 col-sm-12 col-xs-12">
 
 
                 <form style="background: whitesmoke" action="">

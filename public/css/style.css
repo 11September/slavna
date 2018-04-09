@@ -981,7 +981,7 @@ textarea {
     text-align: center;
     padding-top: 20px;
     border-radius: 5px;
-    width: 653px;
+    width: 100%;
     height: 68px;
 }
 
@@ -1071,7 +1071,7 @@ textarea {
     text-align: center;
      font-size: 25px;   font-family: 'Proxima_Nova-reg';
      letter-spacing: 5px;
-margin-top: 40px;
+margin-top: 40px;    margin-bottom: 50px;
 }
 
 
@@ -1146,6 +1146,10 @@ form{
 .Blog-list{
     margin: 0;
     padding: 0;
+}
+
+.dance-blog-h2:hover{
+color:#F4DB8F;
 }
 .dance-blog-h2{
     font-size: 40px;
@@ -1616,12 +1620,58 @@ form{
 
 @media (max-width: 992px) {
     /* Navbar */
+
+    hr{
+        width: 92%;
+    }
+    #reserve-area{
+        padding-top: 0;
+
+        width: 100%;
+    }
     .links-part{
         flex-direction: column;
         padding-left: 20px;
         padding-right: 20px;
     }
 
+    .wrapper-answer-form {
+        right: 0;
+        flex-direction: column;
+    }
+
+    .flex-repair{
+        flex-direction: column-reverse;
+
+    }
+
+    .question-span{
+       margin-bottom: 70px;
+    }
+
+    .wrapper-answer-form{
+        border-radius:0;
+    }
+
+    .text-ua{
+       margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .wrapper-text-left{
+        min-height: 900px;
+    }
+
+
+    .dance-blog-one-list{
+        margin: 0 auto!important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .description-blog-p{
+        font-size: 25px;
+        text-align: center!important;
+    }
     .links-part a {
         margin-bottom: 10px;
     }
@@ -1752,6 +1802,14 @@ form{
     display: none;
 }
 
+    .text-reserv{
+        font-size: 40px;
+    }
+
+    .dance-blog-h2{
+        font-size: 35px;
+    }
+
 .photo_report .block_text {
     height: 285px;
     width: 550px;
@@ -1870,6 +1928,9 @@ form{
         margin-top: 15px;
         border-right: 2px solid #74432F;
     }
+    .dance-blog-h2{  font-size: 27px;  }
+
+    .description-blog-p{  font-size: 20px;  }
 
     .three-part .left p:nth-child(1),
     .three-part .right p:nth-child(1){
@@ -1894,7 +1955,17 @@ form{
 .photo_report .draggable {
     height: 685px;
 }
+    .dance-blog-h2{
+        font-size: 25px;
+    }
 
+    hr{
+        width: 85%;
+    }
+
+    .h2-text-quest{
+        font-size: 34px;
+    }
 .photo_report .block_text {
     height: 380px;
     width: 320px;
@@ -1944,6 +2015,30 @@ form{
 .reviews .draggable {
     height: 890px !important;
 }
+
+    .text-ua{
+        font-size: 35px;
+    }
+
+    .text-p-ua{
+        font-size: 25px;
+    }
+    hr{
+        margin-top: 50px;
+        margin-bottom: 0;
+        height: 2px;
+        width: 94%;
+        background: #2D1C15;
+        margin-left: 45px;
+    }
+
+    .dance-blog-h2{
+        font-size: 21px;
+    }
+
+    .description-blog-p{
+        font-size: 16px;
+    }
 /* reviews end */
 
 /* latest_publication */
@@ -2091,6 +2186,17 @@ form{
     .map {
         height: 360px;
     }
+
+    .text-reserv{
+        font-size: 30px;
+    }
+    .dance-blog-h2{
+        font-size: 18px;
+    }
+    .dance-blog-one-list{
+        width: 300px;
+        height: 300px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -2099,5 +2205,31 @@ form{
         font-size: 20px;
         font-family: 'Proxima_Nova-reg';
         color: white;
+    }
+    hr{
+        width: 84%;
+
+    }
+
+    .h2-text-quest{
+        font-size: 30px;
+    }
+
+    .dance-blog-h2{
+        font-size: 16px;
+    }
+
+    .description-blog-p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 360px){
+    .dance-blog-h2{
+        font-size: 13px;
+    }
+
+    .description-blog-p{
+        font-size: 12px;
     }
 }
