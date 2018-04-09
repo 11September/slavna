@@ -718,7 +718,7 @@ form button:hover {
 }
 
 .reviews .draggable {
-    height: 670px !important;
+    height: 700px !important;
 }
 
 .reviews .bg_i_text {
@@ -2878,6 +2878,15 @@ form {
         padding: 0;
     }
 
+    .latest_publication h2 {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+
+    .latest_publication h5{
+        font-size: 18px;
+        letter-spacing: 0;
+    }
     /* cottagges_one_item end */
     /* artours_about */
     .artours_about {

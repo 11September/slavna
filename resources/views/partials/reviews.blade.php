@@ -3,6 +3,12 @@
 		<div class="reviews_slider">
 
 			<div class="reviews_slider_item">
+					<div class="row position_line">
+						<div class=" reviews_slide_line">
+							<div class="left_point"></div>
+							<div class="right_point"></div>
+						</div>
+					</div>
 					<div class="row row_head_info">
 						<div class="reviews_slider_img">
 							<img src="{{ asset('images/reviews_slider_example.png') }}">
@@ -46,11 +52,17 @@
 			</div>
 
 			<div class="reviews_slider_item">
+					<div class="row position_line">
+						<div class=" reviews_slide_line">
+							<div class="left_point"></div>
+							<div class="right_point"></div>
+						</div>
+					</div>
 					<div class="row row_head_info">
 						<div class="reviews_slider_img">
 							<img src="{{ asset('images/reviews_slider_example.png') }}">
 							<div class="bg_i_text">
-								Михаил Иванов
+								Михаил Ивановз
 							</div>
 						</div>
 						<div class="reviews_slider_head">
@@ -89,11 +101,17 @@
 			</div>
 
 			<div class="reviews_slider_item">
+					<div class="row position_line">
+						<div class=" reviews_slide_line">
+							<div class="left_point"></div>
+							<div class="right_point"></div>
+						</div>
+					</div>
 					<div class="row row_head_info">
 						<div class="reviews_slider_img">
 							<img src="{{ asset('images/reviews_slider_example.png') }}">
 							<div class="bg_i_text">
-								Михаил Иванов
+								Михаил Ивановз
 							</div>
 						</div>
 						<div class="reviews_slider_head">
@@ -132,11 +150,17 @@
 			</div>
 
 			<div class="reviews_slider_item">
+					<div class="row position_line">
+						<div class=" reviews_slide_line">
+							<div class="left_point"></div>
+							<div class="right_point"></div>
+						</div>
+					</div>
 					<div class="row row_head_info">
 						<div class="reviews_slider_img">
 							<img src="{{ asset('images/reviews_slider_example.png') }}">
 							<div class="bg_i_text">
-								Михаил Иванов
+								Михаил Ивановз
 							</div>
 						</div>
 						<div class="reviews_slider_head">
@@ -175,11 +199,17 @@
 			</div>
 
 			<div class="reviews_slider_item">
+					<div class="row position_line">
+						<div class=" reviews_slide_line">
+							<div class="left_point"></div>
+							<div class="right_point"></div>
+						</div>
+					</div>
 					<div class="row row_head_info">
 						<div class="reviews_slider_img">
 							<img src="{{ asset('images/reviews_slider_example.png') }}">
 							<div class="bg_i_text">
-								Михаил Иванов
+								Михаил Ивановз
 							</div>
 						</div>
 						<div class="reviews_slider_head">
