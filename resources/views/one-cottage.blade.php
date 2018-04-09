@@ -7,6 +7,8 @@
 @section('content')
     @include('partials.servieces-info')
 
+    @include('partials.reviews')
+
     @include('partials.contactForm')
 @endsection
 

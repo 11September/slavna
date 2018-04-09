@@ -62,7 +62,7 @@
                     </div>
                 </div>
 
-                <a href="" class="brony-btn">Забронировать</a>
+                <a href="{{ url('/reservation') }}" class="brony-btn">Забронировать</a>
 
                 <p class="unique-header">ОСОБЕННОСТИ</p>
                 <div class="unqiques">

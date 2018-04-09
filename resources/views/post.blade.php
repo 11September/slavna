@@ -5,6 +5,10 @@
 @endsection
 
 @section('content')
+    @include('partials.dance')
+
+    @include('partials.latest_publications')
+
     @include('partials.thubnails')
 
     @include('partials.contactForm')

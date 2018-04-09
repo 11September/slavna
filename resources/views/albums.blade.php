@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    @include('partials.thubnails-about')
+    @include('partials.album-items')
 
     @include('partials.latest_publications')
 

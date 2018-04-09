@@ -7,6 +7,8 @@
 @section('content')
     @include('partials.reservation')
 
+    @include('partials.latest_publications')
+
     @include('partials.thubnails')
 
     @include('partials.contactForm')

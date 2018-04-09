@@ -31,9 +31,14 @@ class PagesController extends Controller
         return view('reservation');
     }
 
+    public function albums()
+    {
+        return view('albums');
+    }
+
     public function photos()
     {
-        return view('all-photos');
+        return view('photos');
     }
 
     public function cottages()

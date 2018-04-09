@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-
+    @include('partials.cottages-list')
 @endsection
 
 @section('scripts')
