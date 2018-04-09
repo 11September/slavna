@@ -727,6 +727,16 @@ form button:hover {
     visibility: visible;
 }
 
+.icons-blog-one{
+    padding: 10px;
+}
+
+.color-date{
+    color:white;
+}
+.icons-blog-two{
+    padding: 10px;
+}
 .row_links {
     font-size: 30px;
     margin-top: -105px;
@@ -1430,14 +1440,14 @@ form {
 }
 
 .dance-blog-h2 {
-    font-size: 40px;
+    font-size: 42px;
     color: white;
     font-family: 'Proxima_Nova-bold';
 }
 
 .description-blog-p {
 
-    font-size: 30px;
+    font-size: 23px;
     color: white;
     font-family: 'Proxima_Nova-reg';
     line-height: 45px;
@@ -1446,6 +1456,7 @@ form {
 
 .hr-blog {
     margin: 0 auto;
+    margin-bottom: 25px;
 }
 
 .wrapper-all-item-blog {
@@ -3044,7 +3055,7 @@ padding-left: 7px;
         margin-top: 50px;
         margin-bottom: 0;
         height: 2px;
-        width: 94%;
+        width: 88%;
         background: #2D1C15;
         margin-left: 45px;
     }
