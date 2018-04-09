@@ -2447,7 +2447,7 @@ color:#F4DB8F;
 }
 
 .artours_intro .poema {
-    padding-left: 15px;
+    padding-left: 0px;
     font-size: 20px;
 }
 
@@ -2457,6 +2457,14 @@ color:#F4DB8F;
 
 .artours_about_content .head_content_p{
     font-size: 18px;
+}
+
+.cottagges_one_item .block_img {
+     margin-left: 0; 
+}
+
+.artours_about_bg {
+    padding: 5px 15px 10px;
 }
 /* artours_intro end */
 
