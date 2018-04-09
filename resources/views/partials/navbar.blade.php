@@ -27,16 +27,16 @@
                     <img src="{{ asset('images/closer.png') }}" alt="">
                 </div>
                 <ul>
-                    <a href=""><li>ГЛАВНАЯ</li></a>
-                    <a href=""><li>КОТТЕДЖИ</li></a>
-                    <a href=""><li>НОМЕРА</li></a>
-                    <a href=""><li>ДОМА С САУНОЙ</li></a>
-                    <a href=""><li>БАНИ</li></a>
-                    <a href=""><li>БЛОГ</li></a>
-                    <a href=""><li>БЕСЕДКИ</li></a>
-                    <a href=""><li>О НАС</li></a>
-                    <a href=""><li>УСЛУГИ</li></a>
-                    <a href=""><li>КОНТАКТЫ</li></a>
+                    <li><a href="{{ url('/') }}">ГЛАВНАЯ</a></li>
+                    <li><a href="{{ url('/list/cottages') }}">КОТТЕДЖИ</a></li>
+                    <li><a href="{{ url('/list/cottages') }}">НОМЕРА</a></li>
+                    <li><a href="{{ url('/list/cottages') }}">ДОМА С САУНОЙ</a></li>
+                    <li><a href="{{ url('/list/cottages') }}">БАНИ</a></li>
+                    <li><a href="{{ url('/news') }}">БЛОГ</a></li>
+                    <li><a href="{{ url('/arbours') }}">БЕСЕДКИ</a></li>
+                    <li><a href="{{ url('/about') }}">О НАС</a></li>
+                    <li><a href="{{ url('/services') }}">УСЛУГИ</a></li>
+                    <li><a href="{{ url('/contacts') }}">КОНТАКТЫ</a></li>
                 </ul>
             </div>
 </header>
