@@ -360,6 +360,27 @@ form button:hover {
 
 
 /* Serviece info */
+.photos-in-album{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}
+
+.photos-in-album .albom-header{
+    color: #f5db90;
+    text-align: left;
+    font-size: 50px;
+    letter-spacing: 10px;
+    font-family: 'Proxima_Nova-bold';
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+.all-photos img{
+    width: 100%;
+}
 
 /* photo_report */
 .photo_report{
@@ -1378,6 +1399,224 @@ form{
 /* reviews end */
 }
 
+/* Sly Part */
+
+.wrap {
+    position: relative;
+    margin: 3em 0;
+}
+
+/* Frame */
+.frame {
+    height: 250px;
+    line-height: 250px;
+    overflow: hidden;
+}
+.frame ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 50px;
+}
+.frame ul li {
+    float: left;
+    width: 227px;
+    height: 100%;
+    margin: 0 1px 0 0;
+    padding: 0;
+    background: #333;
+    color: #ddd;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+}
+.frame ul li.active {
+    color: #fff;
+}
+
+.about-slider{
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.about-slide-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.about-item{
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+.black-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+
+    background: #00000070;
+}
+
+.about-item p{
+    position: relative;
+    z-index: 2;
+    line-height: 25px;
+    width: 100%;
+
+    font-weight: 600;
+    color: white;
+
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.about-item.first{
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.left-align{
+    text-align: left;
+
+    font-size: 14px;
+}
+
+.about-item a{
+    color: white;
+}
+
+.slide-name{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.about-item .bottom{
+    height: 45%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+.about-item .top{
+    height: 55%;
+
+    background: white;
+    color: black;
+}
+
+.about-item .sub-head{
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.about-item .top .head{
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
+
+.about-item .top .info{
+    font-size: 12px;
+    color: black;
+    text-align: left;
+}
+
+.about-item.second{
+    display: flex;
+    flex-direction: column;
+}
+
+.left-align a{
+    margin-bottom: 20px;
+    display: inline-block;
+    font-size: 12px;
+
+}
+
+
+
+.frame {
+    height: 400px;
+}
+
+/* Scrollbar */
+.scrollbar {
+    margin: 0 0 1em 0;
+    height: 2px;
+    background: #ccc;
+    line-height: 0;
+    margin-top: 40px;
+    height: 15px;
+    border-radius: 10px;
+}
+.scrollbar .handle {
+    width: 100px;
+    height: 100%;
+    cursor: pointer;
+    background: #74432F;
+    border-radius: 10px;
+}
+.scrollbar .handle .mousearea {
+    position: absolute;
+    top: -9px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+}
+
+/* Pages */
+.pages {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+    text-align: center;
+}
+.pages li {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin: 0 4px;
+    text-indent: -999px;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.2);
+}
+.pages li:hover {
+    background: #aaa;
+}
+.pages li.active {
+    background: #666;
+}
+
+/* Controls */
+.controls { margin: 25px 0; text-align: center; }
+
+/* One Item Per Frame example*/
+.oneperframe { height: 300px; line-height: 300px; }
+.oneperframe ul li { width: 1140px; }
+.oneperframe ul li.active { background: #333; }
+
+/* Crazy example */
+.crazy ul li:nth-child(2n) { width: 100px; margin: 0 4px 0 20px; }
+.crazy ul li:nth-child(3n) { width: 300px; margin: 0 10px 0 5px; }
+.crazy ul li:nth-child(4n) { width: 400px; margin: 0 30px 0 2px; }
+
+/* Sly Part */
+
 @media (max-width: 1700px) {
     /* Navbar */
     .information_part .main-header {
@@ -1429,7 +1668,6 @@ form{
         width: 1100px;
     }
     /* reviews end */
-
 }
 
 @media (max-width: 1200px) {
@@ -1454,6 +1692,15 @@ form{
         padding-left: 20px;
     }
     /* Navbar */
+
+    .photos-in-album .albom-header {
+        font-size: 34px;
+    }
+
+    .photos-in-album .albom-header {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 
     /* photo_report */
     .photo_report .block_text{
@@ -1622,6 +1869,15 @@ form{
         padding-right: 20px;
     }
 
+    .photos-in-album .albom-header {
+        font-size: 24px;
+    }
+
+    .photos-in-album {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
     .links-part a {
         margin-bottom: 10px;
     }
@@ -1745,12 +2001,15 @@ form{
 /* latest_publication end */
 }
 
-
 @media (max-width: 768px) {
     /* photo_report */
 .photo_report_arrow{
     display: none;
 }
+
+    .photos-in-album .albom-header {
+        font-size: 18px;
+    }
 
 .photo_report .block_text {
     height: 285px;
