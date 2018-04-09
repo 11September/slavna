@@ -37,8 +37,11 @@
 							<a class="all_reviews" href="#">Читать все отзывы</a>
 						</div>
 					</div>
-					<div class="row row_line">
-						<img src="">
+					<div class="row position_line">
+						<div class=" reviews_slide_line">
+							<div class="left_point"></div>
+							<div class="right_point"></div>
+						</div>
 					</div>
 			</div>
 
@@ -77,8 +80,11 @@
 							<a class="all_reviews" href="#">Читать все отзывы</a>
 						</div>
 					</div>
-					<div class="row row_line">
-						<img src="">
+					<div class="row position_line">
+						<div class=" reviews_slide_line">
+							<div class="left_point"></div>
+							<div class="right_point"></div>
+						</div>
 					</div>
 			</div>
 
@@ -117,8 +123,11 @@
 							<a class="all_reviews" href="#">Читать все отзывы</a>
 						</div>
 					</div>
-					<div class="row row_line">
-						<img src="">
+					<div class="row position_line">
+						<div class=" reviews_slide_line">
+							<div class="left_point"></div>
+							<div class="right_point"></div>
+						</div>
 					</div>
 			</div>
 
@@ -157,8 +166,11 @@
 							<a class="all_reviews" href="#">Читать все отзывы</a>
 						</div>
 					</div>
-					<div class="row row_line">
-						<img src="">
+					<div class="row position_line">
+						<div class=" reviews_slide_line">
+							<div class="left_point"></div>
+							<div class="right_point"></div>
+						</div>
 					</div>
 			</div>
 
@@ -197,8 +209,11 @@
 							<a class="all_reviews" href="#">Читать все отзывы</a>
 						</div>
 					</div>
-					<div class="row row_line">
-						<img src="">
+					<div class="row position_line">
+						<div class=" reviews_slide_line">
+							<div class="left_point"></div>
+							<div class="right_point"></div>
+						</div>
 					</div>
 			</div>
 
