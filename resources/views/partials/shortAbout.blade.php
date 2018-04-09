@@ -24,9 +24,9 @@
                     <li class="about-item second">
                         <div class="top">
                             <p class="head">Коротко</p>
-                            <p class="sub-head">О нас</p>
+                            <p class="sub-head">о нас</p>
 
-                            <p class="info">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.</p>
+                            <p class="info">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает .</p>
                         </div>
                         <div class="bottom">
                             <p class="slide-name">

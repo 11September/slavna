@@ -83,6 +83,7 @@ form button:hover {
     padding-top: 55px;
     padding-bottom: 35px;
     justify-content: space-between;
+    border-bottom: 2px solid #74432F;
 }
 
 .information_part .main-header{
@@ -274,6 +275,8 @@ form button:hover {
 .video_menu_slider .slick-slide {
     padding-right: 15px;
     padding-top: 15px;
+    outline: none;
+    cursor: pointer;
 }
 
 .top-part{
@@ -353,6 +356,12 @@ form button:hover {
 .three-part .middle img{
     width: 190px;
     height: 130px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.serviece-info{
+    margin-top: 80px;
 }
 
 .three-part .left p:nth-child(1),
@@ -1839,24 +1848,28 @@ color:#F4DB8F;
 }
 
 .about-item .sub-head{
-    font-size: 20px;
+    font-size: 35px;
+    font-family: 'Proxima_Nova-bold';
     color: black;
     text-align: left;
     margin-bottom: 10px;
 }
 
 .about-item .top .head{
-    font-size: 20px;
+    font-size: 25px;
     color: black;
     text-align: left;
-    margin-bottom: 10px;
     padding-top: 20px;
+    font-family: 'Proxima_Nova-bold';
 }
 
 .about-item .top .info{
-    font-size: 12px;
     color: black;
     text-align: left;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Proxima_Nova-reg';
+    letter-spacing: 1px;
 }
 
 .about-item.second{
@@ -2442,6 +2455,19 @@ color:#F4DB8F;
 .photo_report_arrow{
     display: none;
 }
+
+    .cottage-name {
+        padding-top: 0px;
+    }
+
+    .three-part {
+        margin-top: 40px;
+    }
+
+    .three-part .middle img {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
     .close-btn {
         right: 25px;

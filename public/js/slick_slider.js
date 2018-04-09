@@ -105,46 +105,46 @@ $(document).ready(function(){
       }
     ]
   });
-    //
-    // $('.intro_slider').slick({
-    //     initialSlide: 0,
-    //     slidesToShow: 1,
-    //     rows: 1,
-    //     arrows: true,
-    //     prevArrow:"<img class='slick-prev' src='../images/left-arrow.png'>",
-    //     nextArrow:"<img class='slick-next' src='../images/right-arrow.png'>",
-    //     centerPadding: '0px',
-    //     infinite: false,
-    //     centerMode: true,
-    //     focusOnSelect: false,
-    //     responsive: [
-    //         {
-    //             breakpoint: 1200,
-    //             settings: {
-    //                 arrows: true,
-    //                 dots: true,
-    //                 slidesToShow: 1
-    //             }
-    //         }
-    //     ]
-    // });
 
-    $('.video_slider').slick({
-        centerMode: true,
-        centerPadding: '0px',
+    $('.intro_slider').slick({
         initialSlide: 0,
-        infinite: false,
         slidesToShow: 1,
-        arrows: false,
-        vertical: false,
-        focusOnSelect: false,
-        asNavFor: '.video_menu_slider',
+        rows: 1,
+        arrows: true,
+        prevArrow:"<img class='slick-prev' src='../images/left-arrow.png'>",
+        nextArrow:"<img class='slick-next' src='../images/right-arrow.png'>",
+        centerPadding: '0px',
+        infinite: false,
+        centerMode: true,
+        focusOnSelect: true,
         responsive: [
             {
                 breakpoint: 1200,
                 settings: {
                     arrows: true,
                     dots: true,
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
+    $('.video_slider').slick({
+        centerMode: true,
+        centerPadding: '0px',
+        initialSlide: 0,
+        infinite: true,
+        slidesToShow: 1,
+        arrows: false,
+        vertical: false,
+        focusOnSelect: true,
+        asNavFor: '.video_menu_slider',
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    arrows: false,
+                    dots: false,
                     centerMode: true,
                     centerPadding: '0px',
                     slidesToShow: 1
@@ -153,7 +153,7 @@ $(document).ready(function(){
             {
                 breakpoint: 480,
                 settings: {
-                    arrows: true,
+                    arrows: false,
                     dots: false
                 }
             }
@@ -164,11 +164,19 @@ $(document).ready(function(){
         centerMode: false,
         centerPadding: '0',
         initialSlide: 0,
-        infinite: false,
+        infinite: true,
         slidesToShow: 5,
         arrows: false,
-        focusOnSelect: false,
-        asNavFor: '.video_slider'
+        focusOnSelect: true,
+        asNavFor: '.video_slider',
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3
+                }
+            }
+        ]
     });
 
   element = Number("1");
