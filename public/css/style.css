@@ -1313,6 +1313,14 @@ form{
     font-size: 30px;
     font-family: 'Proxima_light';
 }
+
+.cottagges_one_item .photo_report_panel a {
+    color: #271e19;
+    background: #fff;
+    padding: 25px 50px;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
 /* cottagges_one_item end*/
 
 @media (min-width: 1920px) {
