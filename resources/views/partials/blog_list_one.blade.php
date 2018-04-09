@@ -6,7 +6,7 @@
             <img class="dance-blog-one-list" src="images/dance-blog.png" alt="">
         </div>
         <div class="wrapper-blog-list-right col-lg-8">
-            <a href="{{ url('one/1') }}"> <h2 class="text-daneclear">Танец Чистоты - свидетельство целомудрия</h2></a>
+            <a href="{{ url('one/1') }}"> <h2 class="dance-blog-h2">Танец Чистоты - свидетельство целомудрия</h2></a>
             <hr class="hr-blog" style="width:100%; background:white;">
             <p class="description-blog-p">  Несколько десятилетий назад евангельский проповедник Рэнди Вильсон
                 впервые предложил такое свадебное понятие, как «танец чистоты».
@@ -45,7 +45,7 @@
             <img class="dance-blog-one-list" src="images/dance-blog.png" alt="">
         </div>
         <div class="wrapper-blog-list-right col-lg-8">
-            <a href="{{ url('one/1') }}"> <h2 class="text-daneclear">Танец Чистоты - свидетельство целомудрия</h2></a>
+            <a href="{{ url('one/1') }}"> <h2 class="dance-blog-h2">Танец Чистоты - свидетельство целомудрия</h2></a>
             <hr class="hr-blog" style="width:100%; background:white;">
             <p class="description-blog-p">  Несколько десятилетий назад евангельский проповедник Рэнди Вильсон
                 впервые предложил такое свадебное понятие, как «танец чистоты».
@@ -81,8 +81,9 @@
         <div class="wrapper-blog-list-left col-lg-4">
             <img class="dance-blog-one-list" src="images/dance-blog.png" alt="">
         </div>
+
         <div class="wrapper-blog-list-right col-lg-8">
-            <a href="{{ url('one/1') }}"> <h2 class="text-daneclear">Танец Чистоты - свидетельство целомудрия</h2></a>
+            <a href="{{ url('one/1') }}"> <h2 class="dance-blog-h2">Танец Чистоты - свидетельство целомудрия</h2></a>
             <hr class="hr-blog" style="width:100%; background:white;">
             <p class="description-blog-p">  Несколько десятилетий назад евангельский проповедник Рэнди Вильсон
                 впервые предложил такое свадебное понятие, как «танец чистоты».
