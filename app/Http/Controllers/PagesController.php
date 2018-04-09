@@ -90,4 +90,41 @@ class PagesController extends Controller
     {
         return view('arbour');
     }
+
+    public function sendEmail(Request $request)
+    {
+        $validator = Validator::make($request->all(),[
+            'name' => 'required|min:3',
+            'cottage' => 'required',
+            'date_start' => 'required|date',
+            'date_end' => 'required|date',
+            'phone' => 'required|email',
+            'message' => 'required|min:5',
+        ]);
+
+        if ($validator->fails()) {
+            return redirect('/contacts')
+                ->withErrors($validator)
+                ->withInput();
+        } else {
+            try{
+                $message = $request->all();
+
+//                $contact = new Contact;
+//                $contact->name = $request->name;
+//                $contact->email = $request->email;
+//                $contact->phone = $request->phone;
+//                $contact->message = $request->message;
+//                $contact->save();
+//
+//                return response()->json('Ваше сообщение доставлено!');
+            }
+            catch (Exception $exception){
+                $request->session()->flash('alert-success', 'Email not send!');
+                return redirect()->back();
+            }
+            $request->session()->flash('alert-success', 'Email send successully!');
+            return redirect()->back();
+        }
+    }
 }
