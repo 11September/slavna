@@ -11,10 +11,10 @@ $(document).ready(function(){
       infinite: false,
       centerMode: true,
       // vertical: true,
-      focusOnSelect: true,
+      focusOnSelect: false,
       responsive: [
       {
-        breakpoint: 1200,
+        breakpoint: 768,
         settings: {
           arrows: true,
           dots: true,
@@ -52,7 +52,7 @@ $(document).ready(function(){
       infinite: false,
       centerMode: true,
       vertical: true,
-      focusOnSelect: true,
+      focusOnSelect: false,
       responsive: [
       {
         breakpoint: 1200,
@@ -93,7 +93,7 @@ $(document).ready(function(){
       infinite: false,
       centerMode: true,
       // vertical: true,
-      focusOnSelect: true,
+      focusOnSelect: false,
       responsive: [
       {
         breakpoint: 1200,

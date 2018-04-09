@@ -407,10 +407,6 @@ form button:hover {
     padding: 0 !important;
 }
 
-.photo_report .slick-slide{
-    width: 1920px !important;
-}
-
 .photo_report_slider h3{
     font-family: "Arial";
     font-size: 50px;
@@ -552,7 +548,7 @@ form button:hover {
 }
 
 .reviews .row_content_slider{
-    margin-top: -320px;
+    margin-top: -330px;
     margin-bottom: 150px;
 }
 
@@ -569,11 +565,24 @@ form button:hover {
     position: relative;
 }
 
+.reviews .slick-dots li button:before {
+    color: #ece7e3;
+}
+
+.reviews .slick-dots {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    left: -50px;
+    top: -55px;
+}
+
 .reviews .slick-prev{
     left: inherit;
     right: 50px;
     position: relative;
-    top: -100px;
+    top: 10px;
 }
 
 .reviews .slick-prev:before{
@@ -583,7 +592,7 @@ form button:hover {
 .reviews .slick-next{
     right: 50px;
     position: relative;
-    margin-top: -75px;
+    margin-top: 25px;
 }
 
 .reviews .slick-next:before{
@@ -612,8 +621,8 @@ form button:hover {
     width: 100%;
     position: relative;
     z-index: 3;
-    height: 95px;
-    margin-top: -95px;
+    height: 90px;
+    margin-top: -90px;
     background: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
@@ -626,8 +635,34 @@ form button:hover {
 }
 
 .clider_info span{
-    top: -45px;
+    top: 55px;
     position: relative;
+    font-size: 30px;
+}
+
+.clider_info_line{
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    margin: 3px 0;
+}
+
+.add_reviews_div{
+    text-align: right;
+}
+
+.all_reviews_div{
+    text-align: center;
+}
+
+.reviews .slick-dots li {
+    width: 5px;
+    height: 25px;
+    background: #ece7e3;
+}
+
+.reviews li button:before {
+    display: none;
 }
 /* reviews end */
 
@@ -661,7 +696,7 @@ form button:hover {
 .latest_publication .photo_report_arrow{
     order: 2;
 }
-/* latest_publication end 
+/* latest_publication end */
 
 /* Thubnails */
 .thumbnails {
@@ -1080,15 +1115,24 @@ form{
     background: #74432F;
 }
 
-.all-icons-wrapper{
-    display: flex;
+.icons-blog-two{
+   padding-left: 50px;
+    text-align: right;
 }
 .icons-blog-one svg{
     color:white;
     text-align: right;
 }
+.padding-assist{
+    margin-top: 50px;
+}
 
-.fa-clock{
+.fa-clock {
+    color: white;
+    text-align: left;
+}
+.fa-eye {
+    color: white;
     text-align: right;
 }
 
@@ -1127,7 +1171,152 @@ form{
 /* all-photos*/
 
 @media (min-width: 1920px) {
+/* photo_report */
+.photo_report .draggable{
+    height: 750px;
+}
 
+.photo_report .slick-slide{
+    width: 1920px !important;
+}
+/* photo_report end */
+}
+
+@media (max-width: 1919px) {
+/* photo_report */
+.photo_report .block_img {
+    border-radius: 25px;
+    box-shadow: 0 0 20px 0 rgba( 0, 0, 0, 0.8);
+    height: 450px;
+    width: 450px;
+}
+
+.photo_report .block_img img {
+    border-radius: 25px;
+    height: 450px;
+    width: 450px;
+}
+
+.photo_report_slider h3 {
+    font-size: 36px;
+    padding-bottom: 30px;
+}
+
+.photo_report_slider p {
+    font-size: 24px;
+    line-height: 1.2;
+    height: 205px;
+    padding-bottom: 20px;
+}
+
+.photo_report_panel a {
+    color: #271e19;
+    background: #fff;
+    padding: 20px 50px;
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+.photo_report_panel span {
+    font-size: 24px;
+}
+
+.photo_report_arrow .slick-dots li {
+    width: 30px;
+}
+
+.flexx {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo_report_slider_item{
+    width: 100vw;
+}
+
+.photo_report .draggable{
+    height: 480px;
+}
+
+.photo_report .block_text {
+    background: #683d2c;
+    margin-left: 0;
+    margin: 0;
+    height: 400px;
+    padding: 35px 50px 30px 35px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    width: 790px;
+}
+/* photo_report */
+
+/* reviews */
+.reviews .clider_info{
+    display: none;
+}
+
+.reviews_slider_head {
+    width: 740px;
+    margin-right: 500px;
+    padding-left: 45px; 
+}
+
+.slider_bg {
+    padding: 70px 35px 70px 300px;
+    width: 1100px;
+}
+
+.reviews_slider_img {
+    margin-left: 180px;
+}
+/* reviews end */
+
+/* latest_publication */
+.latest_publication h3 {
+    font-size: 36px;
+    padding-bottom: 30px;
+}
+
+.latest_publication p {
+    font-size: 24px;
+    height: 225px;
+}
+
+.latest_publication .photo_report_panel a {
+    padding: 12px 40px;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.latest_publication .block_text {
+    padding: 30px 45px 25px 30px;
+}
+/* latest_publication end */
+}
+
+@media (max-width: 1880px){
+/* reviews */
+.reviews_slider_head {
+    width: 740px;
+    margin-right: 400px;
+    padding-left: 45px;
+}
+/* reviews end */
+}
+
+@media (max-width: 1765px){
+/* reviews */
+.reviews_slider_head {
+    width: 740px;
+    margin-right: 265px;
+    padding-left: 45px;
+}
+
+.reviews_slider_img {
+    margin-left: 0px;
+}
+/* reviews end */
 }
 
 @media (max-width: 1700px) {
@@ -1136,6 +1325,21 @@ form{
         font-size: 55px;
     }
     /* Navbar */
+}
+
+@media (max-width: 1500px){
+/* reviews */
+.reviews_slider_head {
+    width: 740px;
+    margin-right: 150px;
+    padding-left: 0px;
+}
+
+.slider_bg {
+    padding: 70px 35px 70px 350px;
+    width: 1100px;
+}
+/* reviews end */
 }
 
 @media (max-width: 1400px) {
@@ -1149,6 +1353,20 @@ form{
         font-size: 20px;
     }
     /* Navbar */
+
+    /* reviews */
+    .reviews_slider_head {
+        width: 740px;
+        margin-right: 0px;
+        padding-left: 20px;
+    }
+
+    .slider_bg {
+        padding: 70px 35px 70px 450px;
+        width: 1100px;
+    }
+    /* reviews end */
+
 }
 
 @media (max-width: 1200px) {
@@ -1173,6 +1391,132 @@ form{
         padding-left: 20px;
     }
     /* Navbar */
+
+    /* photo_report */
+    .photo_report .block_text{
+        height: 260px;
+        width: 600px;
+        padding: 25px 35px 15px 30px;
+    }
+
+    .photo_report_slider p {
+        font-size: 18px;
+        height: 125px;
+    }
+
+    .photo_report_slider h3 {
+        font-size: 24px;
+        padding-bottom: 15px;
+    }
+
+    .photo_report .block_img {
+        height: 300px;
+        width: 300px;
+    } 
+
+    .photo_report .block_img img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .photo_report_panel a {
+        padding: 12px 35px;
+        font-size: 18px;
+    }
+
+    .photo_report_panel span {
+        font-size: 18px;
+    }
+
+    .photo_report_arrow .slick-dots li {
+        width: 25px;
+    }
+
+    .photo_report .draggable {
+        height: 325px;
+    }    
+    /* photo_report end */
+
+    /* reviews */
+    .reviews_slider_img img {
+        height: 430px;
+        width: 380px; 
+        border-radius: 25px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .reviews h2 {
+        font-size: 36px;
+        padding-bottom: 15px;
+    }
+
+    .reviews_slider_head p {
+        font-size: 24px;
+    }
+
+    .reviews .row_content_slider {
+        margin-top: -315px;
+        margin-bottom: 150px;
+    }
+
+    .slider_bg {
+        padding: 30px 30px 30px 35%;
+        width: 900px;
+    }
+
+    .slider_bg p {
+        font-size: 24px;
+    }
+
+    .reviews_slider_head {
+        width: 600px;
+        padding-left: 0; 
+    }
+
+    .row_links {
+        font-size: 24px;
+        margin-bottom: 100px;
+    }
+
+    .reviews .bg_i_text {
+        font-size: 24px;
+    }
+
+    .reviews .draggable {
+        height: 520px !important;
+    }
+    /* reviews end */
+
+    /* latest_publication */
+    .latest_publication h3 {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+
+    .latest_publication .block_text {
+        height: 300px;
+    }
+
+    .latest_publication .draggable {
+        height: 380px;
+    }
+
+    .latest_publication .photo_report_arrow {
+        display: none;
+    }
+
+    .latest_publication p {
+        font-size: 18px;
+        height: 170px;
+    }
+
+    .latest_publication .photo_report_panel a {
+        padding: 10px 35px;
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+    /* latest_publication end */
 
 
     .wrapper-thubnails {
@@ -1224,6 +1568,7 @@ form{
     }
     /* Navbar */
 
+<<<<<<< HEAD
     .top-part {
         display: flex;
         flex-direction: column;
@@ -1245,6 +1590,95 @@ form{
     .unqiques {
         justify-content: space-between;
     }
+=======
+    /* photo_report */
+.flexx {
+    flex-direction: column;
+}
+
+.photo_report .draggable {
+    height: 580px;
+}
+
+.photo_report .block_text{
+    order: 2;
+    margin-top: -20px;
+    border-radius: 25px;
+}
+
+.photo_report .block_img img {
+    position: relative;
+}
+
+.photo_report_slider p {
+    height: 130px;
+}
+/* photo_report end */
+
+/* reviews */
+.reviews_slider_img {
+    width: 100%;
+    text-align: center;
+    box-shadow: none;
+}
+
+.reviews .slick-slide img {
+    display: inline;
+}
+
+.reviews .bg_i_text {
+    margin-top: 0;
+    background: none; 
+    height: 80px;
+}
+
+.reviews .row_content_slider {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.slider_bg {
+    padding: 30px;
+    width: 100%;
+    border-radius: 0;
+}
+
+.reviews_slider_head p {
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.row_links {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 80px;
+}
+
+.reviews .draggable {
+    height: 920px !important;
+}
+
+.reviews_slider_head {
+    width: 560px;
+    padding-left: 0;
+    text-align: center;
+}
+
+.add_reviews {
+     padding-left: 0; 
+}
+
+.add_reviews_div {
+    text-align: center;
+}
+/* reviews end */
+
+/* latest_publication */
+.latest_publication .draggable {
+    height: 625px;
+}
+/* latest_publication end */
+>>>>>>> b7e2538055b18de996774d6283124bb2a31c674c
 }
 
 
@@ -1252,6 +1686,79 @@ form{
 
 
 @media (max-width: 768px) {
+    /* photo_report */
+.photo_report_arrow{
+    display: none;
+}
+
+.photo_report .block_text {
+    height: 285px;
+    width: 550px;
+}
+
+.photo_report_slider p {
+    height: 150px;
+}
+/* photo_report end */
+
+/* reviews */
+.reviews .bg_i_text {
+    font-size: 18px;
+    height: 50px;
+}
+
+.reviews_slider_img img {
+    height: 360px;
+    width: 300px;
+}
+
+.reviews h2 {
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.reviews_slider_head p {
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.slider_bg p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.row_links {
+    font-size: 18px;
+}
+
+.reviews .draggable {
+    height: 745px !important;
+}
+
+.reviews_slider_head {
+    padding: 0 15px; 
+    width: 100%;
+    text-align: center;
+}
+/* reviews end */
+
+/* latest_publication */
+.latest_publication .block_text {
+    height: 430px;
+    width: 320px;
+    padding: 15px;
+}
+
+.latest_publication p {
+    font-size: 18px;
+    height: 280px;
+}
+
+.latest_publication .draggable {
+    height: 745px;
+}
+/* latest_publication end */
+
     .map {
         height: 500px;
     }
@@ -1322,12 +1829,78 @@ form{
 }
 
 @media (max-width: 576px) {
+    /* photo_report */
+.photo_report .draggable {
+    height: 685px;
+}
+
+.photo_report .block_text {
+    height: 380px;
+    width: 320px;
+    padding: 25px 25px 15px 25px;
+}
+
+.photo_report_slider p {
+    height: 225px;
+}
+
+.photo_report_panel a {
+    padding: 10px 30px;
+    font-size: 18px;
+}
+/* photo_report end */
+
+/* reviews */
+.add_reviews_div {
+    padding-bottom: 10px;
+}
+
+.reviews .draggable {
+    height: 800px !important;
+}
+/* reviews end */
+
+/* latest_publication */
+.latest_publication p {
+    font-size: 18px;
+    height: 200px;
+}
+
+.latest_publication .block_text {
+    height: 330px;
+    width: 100%;
+    padding: 25px 25px 15px 25px;
+}
+/* latest_publication end */
+
     .footer-copyright {
         text-align: center;
     }
 }
 
 @media (max-width: 480px) {
+    /* reviews */
+.reviews .draggable {
+    height: 890px !important;
+}
+/* reviews end */
+
+/* latest_publication */
+.latest_publication .block_text {
+    height: 420px;
+    padding: 20px;
+}
+
+.latest_publication .draggable {
+    height: 720px;
+}
+
+.latest_publication p {
+    font-size: 18px;
+    height: 275px;
+}
+/* latest_publication end */
+
     .main-menu li{
         padding-bottom: 20px;
         font-size: 30px;

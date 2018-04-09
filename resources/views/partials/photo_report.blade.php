@@ -8,8 +8,8 @@
 				В роли гаранта целомудрия своей дочери выступает отец невесты, которому и предоставляется первоочередное право танца с дочерью на ее же свадьбе, перед тем, как уступить ее в танце жениху.</p>
 		</div>
 
-		<i class="far fa-clock"></i>
-		<i class="fas fa-eye"></i>
+		<i class="far fa-clock"> </i>
+		<i class="fas fa-eye"> </i>
 	</div>
 
 </section>
@@ -27,10 +27,10 @@
 		  				Пусть в этот славный новогодний вечер, Сказка к вам волшебная придет. А Дед Мороз в своем мешке зветном Подарков в "Славну" непременно принесет <span>&#128516;</span> Коттедж-парк "Славна" Ваш природных отдых в комфортных условиях.
 		  			</p>
 		  			<div class="row photo_report_panel">
-		  				<div class="col-xl-4 photo_report_arrow">
+		  				<div class="col-xl-4 col-md-5 photo_report_arrow">
 		  					<span class="current_number_slide"></span> <span>/</span> <span class="all_number_slide"></span>
 		  				</div>
-		  				<div class="col-xl-8 photo_report_link">
+		  				<div class="col-xl-8 col-md-7 photo_report_link">
 		  					<a href="#">Подробней</a>
 		  				</div>
 		  			</div>
@@ -49,10 +49,10 @@
 		  				Пусть в этот славный новогодний вечер, Сказка к вам волшебная придет. А Дед Мороз в своем мешке зветном Подарков в "Славну" непременно принесет <span>&#128516;</span> Коттедж-парк "Славна" Ваш природных отдых в комфортных условиях.
 		  			</p>
 		  			<div class="row photo_report_panel">
-		  				<div class="col-xl-4 photo_report_arrow">
+		  				<div class="col-xl-4 col-md-5 photo_report_arrow">
 		  					<span class="current_number_slide"></span> <span>/</span> <span class="all_number_slide"></span>
 		  				</div>
-		  				<div class="col-xl-8 photo_report_link">
+		  				<div class="col-xl-8 col-md-7 photo_report_link">
 		  					<a href="#">Подробней</a>
 		  				</div>
 		  			</div>
@@ -71,10 +71,10 @@
 		  				Пусть в этот славный новогодний вечер, Сказка к вам волшебная придет. А Дед Мороз в своем мешке зветном Подарков в "Славну" непременно принесет <span>&#128516;</span> Коттедж-парк "Славна" Ваш природных отдых в комфортных условиях.
 		  			</p>
 		  			<div class="row photo_report_panel">
-		  				<div class="col-xl-4 photo_report_arrow">
+		  				<div class="col-xl-4 col-md-5 photo_report_arrow">
 		  					<span class="current_number_slide"></span> <span>/</span> <span class="all_number_slide"></span>
 		  				</div>
-		  				<div class="col-xl-8 photo_report_link">
+		  				<div class="col-xl-8 col-md-7 photo_report_link">
 		  					<a href="#">Подробней</a>
 		  				</div>
 		  			</div>
@@ -93,10 +93,10 @@
 		  				Пусть в этот славный новогодний вечер, Сказка к вам волшебная придет. А Дед Мороз в своем мешке зветном Подарков в "Славну" непременно принесет <span>&#128516;</span> Коттедж-парк "Славна" Ваш природных отдых в комфортных условиях.
 		  			</p>
 		  			<div class="row photo_report_panel">
-		  				<div class="col-xl-4 photo_report_arrow">
+		  				<div class="col-xl-4 col-md-5 photo_report_arrow">
 		  					<span class="current_number_slide"></span> <span>/</span> <span class="all_number_slide"></span>
 		  				</div>
-		  				<div class="col-xl-8 photo_report_link">
+		  				<div class="col-xl-8 col-md-7 photo_report_link">
 		  					<a href="#">Подробней</a>
 		  				</div>
 		  			</div>
@@ -115,10 +115,10 @@
 		  				Пусть в этот славный новогодний вечер, Сказка к вам волшебная придет. А Дед Мороз в своем мешке зветном Подарков в "Славну" непременно принесет <span>&#128516;</span> Коттедж-парк "Славна" Ваш природных отдых в комфортных условиях.
 		  			</p>
 		  			<div class="row photo_report_panel">
-		  				<div class="col-xl-4 photo_report_arrow">
+		  				<div class="col-xl-4 col-md-5 photo_report_arrow">
 		  					<span class="current_number_slide"></span> <span>/</span> <span class="all_number_slide"></span>
 		  				</div>
-		  				<div class="col-xl-8 photo_report_link">
+		  				<div class="col-xl-8 col-md-7 photo_report_link">
 		  					<a href="#">Подробней</a>
 		  				</div>
 		  			</div>
