@@ -24,9 +24,9 @@
 
                 <div class="my-fafa">
 
-                    <a href="#">  <i class="fab fa-facebook-square"></i> </a>
-                   <a href="#"> <i class="fab fa-instagram"> </i> </a>
-                     <a href="#"><i class="fab fa-google"> </i> </a>
+                    <a href="#">  <i class="fab fa-facebook-square"></i>  </a>
+                   <a href="#"> <i class="fab fa-instagram"> </i>  </a>
+                     <a href="#"> <i class="fab fa-google"> </i>   </a>
 
                 </div>
 
@@ -34,7 +34,7 @@
             <div class="wrapper-answer-form  col-lg-6 col-md-12 col-sm-12 col-xs-12">
 
 
-                <form style="background: whitesmoke" action="">
+                <form  action="">
                     <h2 class="h2-text-quest">ЗАДАТЬ ВОПРОС </h2>
                     <HR>
 
@@ -48,8 +48,8 @@
                     <div class="input-special">
                         <input class="checkout-input input-bot" type="text"  placeholder="Т е л е ф о н*">
                     </div>
-                    <textarea name="" id="">
-                         Задайте свой вопрос
+                    <textarea  placeholder=" Задайте свой вопрос" name="" id="">
+
                 </textarea>
 
                     <p class="under-form-text">
