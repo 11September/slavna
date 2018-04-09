@@ -381,7 +381,7 @@ form button:hover {
 }
 
 .photo_report .block_text{
-    background: #683d2c;
+    background: linear-gradient(to right, #42261b, #673c2b);
     margin-left: 70px;
     height: 640px;
     padding: 35px 50px 30px 35px;
@@ -536,7 +536,7 @@ form button:hover {
 }
 
 .slider_bg{
-    background: #4d2d20;
+    background: linear-gradient(to right, #673c2b, #42261b);
     padding: 70px 35px 70px 500px;
     width: 1570px;
     border-radius: 25px;
@@ -672,6 +672,7 @@ form button:hover {
 }
 
 .latest_publication .block_text{
+    background: linear-gradient(to right, #673c2b, #42261b);
     order: 2;
     margin-left: 0;
     border-top-left-radius: 0; 
