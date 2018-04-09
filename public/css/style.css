@@ -446,6 +446,18 @@ form button:hover {
     color: #fff;
 }
 
+.photo_report .block_bg_img{
+    background: url('../images/flower.png') 100% 100% no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.latest_publication .block_bg_img{
+    background: url('../images/flower.png') 100% 100% no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
 .full_cr {
     max-width: 100%;
     padding-left: 0;
@@ -1737,7 +1749,6 @@ form {
     }
 
     .photo_report .block_text {
-        background: #683d2c;
         margin-left: 0;
         margin: 0;
         height: 400px;
@@ -2197,12 +2208,25 @@ form {
     }
 
     /* cottagges_one_item */
+
+    .artours_about_content .content_p {
+        font-size: 18px;
+    }
+
+    .artours_intro .flexx {
+        flex-direction: column;
+    }
+
     .cottagges_one_item .item_prise_div {
         font-size: 18px;
     }
 
     .cottagges_one_item .item_prise_div span {
         font-size: 24px;
+    }
+
+    .artours_intro .block_text {
+        padding: 25px 25px 40px 25px;
     }
 
     .cottagges_one_item .text_one_item {
@@ -2372,6 +2396,20 @@ form {
         letter-spacing: 2px;
     }
 
+    .artours_intro .block_img img {
+        height: 400px;
+        width: 400px;
+    }
+
+    .artours_intro .block_img {
+        height: 400px;
+        width: 400px;
+        order: 1;
+    }
+
+    .artours_intro .block_text {
+        order: 2;
+    }
     /* latest_publication end */
     .wrapper-thubnails {
         height: auto;
@@ -2888,6 +2926,16 @@ form {
 
 @media (max-width: 480px) {
     /* reviews */
+    .artours_intro .block_img img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .artours_intro .block_img {
+        height: 300px;
+        width: 300px;
+    }
+
     .latest_publication .photo_report_link {
         text-align: center;
     }
