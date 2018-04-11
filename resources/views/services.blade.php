@@ -6,7 +6,7 @@
 
 @section('content')
 
-    @include('partials.servieces-info')
+    @include('partials.service-one-item')
 
     @include('partials.latest_publications')
 

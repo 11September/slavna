@@ -1638,6 +1638,11 @@ padding-left: 7px;
     font-family: 'Proxima_Nova-reg';
 }
 
+.cottagges_one_item .text_one_item *{
+    background-color: transparent !important;
+    color: #ffffff !important;
+}
+
 .cottagges_one_item .flexx {
     padding: 30px 0;
 }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Reservation;
+use App\Service;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -20,7 +21,9 @@ class PagesController extends Controller
 
     public function services()
     {
-        return view('services');
+        $services = Service::all();
+
+        return view('services', compact('services'));
     }
 
     public function contacts()
