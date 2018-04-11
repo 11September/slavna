@@ -3185,8 +3185,9 @@ padding-left: 7px;
     /* artours_intro end */
     /* latest_publication */
     .latest_publication .block_text {
-        height: 420px;
         padding: 20px;
+        height: auto;
+        padding-bottom: 30px;
     }
 
     .cottagges_one_item .block_text {
