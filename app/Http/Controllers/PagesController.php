@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Photo;
 use App\Reservation;
 use App\Service;
+use App\Video;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -41,14 +43,18 @@ class PagesController extends Controller
         return view('albums');
     }
 
-    public function photos()
+    public function photos($albumId = null)
     {
-        return view('photos');
+        $photos = Photo::where('album_id', $albumId)->get();
+
+        return view('photos', compact('photos'));
     }
 
     public function videos()
     {
-        return view('videos');
+        $videos = Video::all();
+
+        return view('videos', compact('videos'));
     }
 
     public function cottages()

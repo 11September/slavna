@@ -28,7 +28,7 @@
                     </div>
 
                     <div class="thubnails-item-wrapper-lines">
-                        <a class="thubnails-item-line-link" href="#">Видео</a>
+                        <a class="thubnails-item-line-link" href="{{ url('/videos') }}">Видео</a>
                     </div>
                 </div>
                 <div class="col-md-4 wrapper-thubnail-item">

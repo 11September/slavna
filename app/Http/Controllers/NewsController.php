@@ -3,16 +3,23 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use TCG\Voyager\Models\Post;
 
 class NewsController extends Controller
 {
     public function index()
     {
-        return view('blog');
+        $posts = Post::where('status', 'PUBLISHED')->get();
+
+        return view('blog', compact('posts'));
     }
 
-    public function post($post = null)
+    public function post($id = null)
     {
-        return view('post');
+        $post = Post::where('id', $id)->firstOrFail();
+
+        $next = Post::where('id', '>', $post->id)->orderBy('id')->first();
+
+        return view('post',compact('post', 'next'));
     }
 }

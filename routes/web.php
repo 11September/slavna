@@ -20,7 +20,7 @@ Route::get('/reservation', 'PagesController@reservation');
 Route::get('/arbours', 'PagesController@arbours');
 
 Route::get('/albums', 'PagesController@albums');
-Route::get('/photos', 'PagesController@photos');
+Route::get('/photos/{albumId}', 'PagesController@photos');
 Route::get('/videos', 'PagesController@videos');
 
 // 4 page but same structure
