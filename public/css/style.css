@@ -1254,6 +1254,19 @@ textarea {
 
 /* Map section end */
 
+/* video_items */
+.video_items .wrapper-twest-hover{
+    height: 500px;
+    padding-top: 40px;
+    border-radius: 20px;
+}
+
+.video_items video{
+   object-fit: inherit;
+   background: #fff;
+}
+/* video_items end */
+
 /* footer */
 .footer {
     padding: 24px 0 15px 0;
