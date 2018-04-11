@@ -1255,10 +1255,15 @@ textarea {
 /* Map section end */
 
 /* video_items */
+.video_items{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .video_items .wrapper-twest-hover{
     height: 500px;
-    padding-top: 40px;
     border-radius: 20px;
+    padding: 25px 0;
 }
 
 .video_items video{
@@ -2320,6 +2325,12 @@ padding-left: 7px;
 }
 
 @media (max-width: 1200px) {
+    /* video_items */
+    .video_items .wrapper-twest-hover{
+        height: 350px;
+    }
+    /* video_items end */
+
     /* Navbar */
     .information_part .main-header {
         font-size: 36px;
@@ -2988,6 +2999,11 @@ padding-left: 7px;
 }
 
 @media (max-width: 576px) {
+    /* video_items */
+    .video_items .wrapper-twest-hover{
+        height: 250px;
+    }
+    /* video_items end */
     /* photo_report */
     .hover-item-text {
         width: 490px !important;
