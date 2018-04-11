@@ -2,19 +2,7 @@
     <div class="container-fluid">
         <div class="wrapper-thubnails">
             <div class="row">
-                <div class="col-md-4 wrapper-thubnail-item">
-                    <div class="thubnails-item thubnails-hover-item">
-                        <img src="{{ asset('images/photo_report_slider_example1.png') }}" alt="thubnail">
 
-                        <div class="thubnails-item-hidden-zoom">
-                            <a data-fancybox="gallery" data-trigger="gallery"
-                               href="{{ asset('images/photo_report_slider_example1.png') }}">
-                                <i class="fas fa-search-plus"></i>
-                                <p class="thubnails-text-zoom">Нажмите чтобы увеличить</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
                 <div class="col-md-4 wrapper-thubnail-item">
                     <div class="thubnails-item thubnails-item-info">
                         <h5 class="thubnails-item-info-heading">Недавно добавленные фото</h5>
@@ -28,58 +16,23 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-4 wrapper-thubnail-item">
-                    <div class="thubnails-item thubnails-hover-item">
-                        <img src="{{ asset('images/photo_report_slider_example2.png') }}" alt="thubnail">
 
-                        <div class="thubnails-item-hidden-zoom">
-                            <a data-fancybox="gallery" data-trigger="gallery"
-                               href="{{ asset('images/photo_report_slider_example2.png') }}">
-                                <i class="fas fa-search-plus"></i>
-                                <p class="thubnails-text-zoom">Нажмите чтобы увеличить</p>
-                            </a>
+                @foreach($thubnails as $thubnail)
+                    <div class="col-md-4 wrapper-thubnail-item">
+                        <div class="thubnails-item thubnails-hover-item">
+                            <img src="{{ asset('storage/' . $thubnail->image) }}" alt="{{ $thubnail->description }}">
+
+                            <div class="thubnails-item-hidden-zoom">
+                                <a data-fancybox="gallery" data-trigger="gallery"
+                                   href="{{ asset('storage/' . $thubnail->image) }}">
+                                    <i class="fas fa-search-plus"></i>
+                                    <p class="thubnails-text-zoom">Нажмите чтобы увеличить</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 wrapper-thubnail-item">
-                    <div class="thubnails-item thubnails-hover-item">
-                        <img src="{{ asset('images/photo_report_slider_example3.png') }}" alt="thubnail">
+                @endforeach
 
-                        <div class="thubnails-item-hidden-zoom">
-                            <a data-fancybox="gallery" data-trigger="gallery"
-                               href="{{ asset('images/photo_report_slider_example3.png') }}">
-                                <i class="fas fa-search-plus"></i>
-                                <p class="thubnails-text-zoom">Нажмите чтобы увеличить</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 wrapper-thubnail-item">
-                    <div class="thubnails-item thubnails-hover-item">
-                        <img src="{{ asset('images/photo_report_slider_example4.png') }}" alt="thubnail">
-
-                        <div class="thubnails-item-hidden-zoom">
-                            <a data-fancybox="gallery" data-trigger="gallery"
-                               href="{{ asset('images/photo_report_slider_example4.png') }}">
-                                <i class="fas fa-search-plus"></i>
-                                <p class="thubnails-text-zoom">Нажмите чтобы увеличить</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 wrapper-thubnail-item">
-                    <div class="thubnails-item thubnails-hover-item">
-                        <img src="{{ asset('images/photo_report_slider_example5.png') }}" alt="thubnail">
-
-                        <div class="thubnails-item-hidden-zoom">
-                            <a data-fancybox="gallery" data-trigger="gallery"
-                               href="{{ asset('images/photo_report_slider_example5.png') }}">
-                                <i class="fas fa-search-plus"></i>
-                                <p class="thubnails-text-zoom">Нажмите чтобы увеличить</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
         <div class="wrapper-button-all-photos">

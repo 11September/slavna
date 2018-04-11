@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Photo;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,6 +24,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        view()->composer('partials.thubnails', function ($view){
+            $view->with('thubnails', Photo::thubnails_photos());
+        });
     }
 }

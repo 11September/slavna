@@ -7,7 +7,7 @@
 
                 @foreach($services as $service)
 
-                    <div class="flexx">
+                    <div class="flexx" id="service-item-foreach">
                         <div class="block_text">
                             <div class="row">
                                 <div class="col-xl-8 col-lg-7 main_head">
@@ -23,15 +23,25 @@
                                     {!! $service->body !!}
                                 </div>
                                 <div class="col-xl-2 link_one_item">
-                                    <div class="link_one_item_a">
-                                        <a href="#">f</a>
-                                    </div>
-                                    <div class="link_one_item_a">
-                                        <a href="#">i</a>
-                                    </div>
-                                    <div class="link_one_item_a">
-                                        <a href="#">g</a>
-                                    </div>
+
+                                    @if(setting('site.facebook_link'))
+                                        <div class="link_one_item_a">
+                                            <a href="{{ setting('site.facebook_link') }}">f</a>
+                                        </div>
+                                    @endif
+
+                                    @if(setting('site.instagram_link'))
+                                        <div class="link_one_item_a">
+                                            <a href="{{ setting('site.instagram_link') }}">i</a>
+                                        </div>
+                                    @endif
+
+                                    @if(setting('site.google_link'))
+                                        <div class="link_one_item_a">
+                                            <a href="{{ setting('site.google_link') }}">g</a>
+                                        </div>
+                                    @endif
+
                                 </div>
                             </div>
 

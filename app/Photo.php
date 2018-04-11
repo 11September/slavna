@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Photo extends Model
 {
-    
+    public static function thubnails_photos()
+    {
+        $photos = Photo::select('image', 'description')->latest()->take(5)->get();
+        return $photos;
+    }
 }
