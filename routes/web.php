@@ -21,6 +21,7 @@ Route::get('/arbours', 'PagesController@arbours');
 
 Route::get('/albums', 'PagesController@albums');
 Route::get('/photos', 'PagesController@photos');
+Route::get('/videos', 'PagesController@videos');
 
 // 4 page but same structure
 Route::get('/list/cottages', 'PagesController@cottages');

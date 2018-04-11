@@ -43,6 +43,11 @@ class PagesController extends Controller
         return view('photos');
     }
 
+    public function videos()
+    {
+        return view('videos');
+    }
+
     public function cottages()
     {
         return view('cottages');
