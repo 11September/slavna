@@ -1685,7 +1685,7 @@ padding-left: 7px;
     padding-top: 50px;
     font-size: 30px;
     line-height: 1.2;
-    height: 430px;
+    height: auto;
     font-family: 'Proxima_Nova-reg';
 }
 
