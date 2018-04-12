@@ -126,13 +126,13 @@ return [
         /*
          * Select default language
          */
-        'default' => 'en',
+        'default' => 'ru',
 
         /*
          * Select languages that are supported.
          */
         'locales' => [
-            'en',
+            'ru',
             //'pt',
         ],
     ],
@@ -149,11 +149,11 @@ return [
     'dashboard' => [
         // Add custom list items to navbar's dropdown
         'navbar_items' => [
-            'Profile' => [
-                'route'      => 'voyager.profile',
-                'classes'    => 'class-full-of-rum',
-                'icon_class' => 'voyager-person',
-            ],
+//            'Profile' => [
+//                'route'      => 'voyager.profile',
+//                'classes'    => 'class-full-of-rum',
+//                'icon_class' => 'voyager-person',
+//            ],
             'Home' => [
                 'route'        => '/',
                 'icon_class'   => 'voyager-home',
@@ -166,9 +166,12 @@ return [
         ],
 
         'widgets' => [
-            'TCG\\Voyager\\Widgets\\UserDimmer',
-            'TCG\\Voyager\\Widgets\\PostDimmer',
-            'TCG\\Voyager\\Widgets\\PageDimmer',
+            'TCG\\Voyager\\Widgets\\NumberDimmer',
+            'TCG\\Voyager\\Widgets\\AlbumsDimmer',
+            'TCG\\Voyager\\Widgets\\ReservationDimmer',
+//            'TCG\\Voyager\\Widgets\\UserDimmer',
+//            'TCG\\Voyager\\Widgets\\PostDimmer',
+//            'TCG\\Voyager\\Widgets\\PageDimmer',
         ],
 
     ],
@@ -199,7 +202,7 @@ return [
 
     'primary_color' => '#22A7F0',
 
-    'show_dev_tips' => true, // Show development tip "How To Use:" in Menu and Settings
+    'show_dev_tips' => false, // Show development tip "How To Use:" in Menu and Settings
 
     // Here you can specify additional assets you would like to be included in the master.blade
     'additional_css' => [

@@ -72,8 +72,12 @@ class PagesController extends Controller
         return view('cottages', compact('numbers'));
     }
 
-    public function cottage(Number $number)
+    public function cottage($id = null)
     {
+        $number = Number::whereId($id)->with('features', 'photos')->first();
+
+//        dd($number);
+
         return view('one-cottage', compact('number'));
     }
 

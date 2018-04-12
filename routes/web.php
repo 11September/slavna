@@ -26,7 +26,7 @@ Route::get('/videos', 'PagesController@videos');
 
 // 4 page but same structure
 Route::get('/numbers/{type}', 'PagesController@cottages');
-Route::get('/number/{number}', 'PagesController@cottage');
+Route::get('/number/{id}', 'PagesController@cottage');
 // 4 page but same structure
 
 Route::post('/reservation-form', 'PagesController@form_reservation');

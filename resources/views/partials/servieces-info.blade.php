@@ -3,45 +3,23 @@
         <div class="top-part">
             <div class="slider-part">
                 <div class="video_slider">
-                    <div>
-                        <img src="{{ asset('images/photo_report_slider_example.png') }}">
-                    </div>
-                    <div>
-                        <img src="{{ asset('images/photo_report_slider_example.png') }}">
-                    </div>
-                    <div>
-                        <img src="{{ asset('images/photo_report_slider_example.png') }}">
-                    </div>
-                    <div>
-                        <img src="{{ asset('images/photo_report_slider_example.png') }}">
-                    </div>
-                    <div>
-                        <img src="{{ asset('images/photo_report_slider_example.png') }}">
-                    </div>
-                    <div>
-                        <img src="{{ asset('images/photo_report_slider_example.png') }}">
-                    </div>
+
+                    @foreach($number->photos as $photo)
+                        <div>
+                            <img src="{{ asset('storage/' . $photo->image) }}">
+                        </div>
+                    @endforeach
+
                 </div>
 
                 <div class="video_menu_slider">
-                    <div class="first">
-                        <img src="{{ asset('images/photo_report_slider_example.png') }}">
-                    </div>
-                    <div class="video_menu_slider_2">
-                        <img src="{{ asset('images/photo_report_slider_example.png') }}">
-                    </div>
-                    <div>
-                        <img src="{{ asset('images/photo_report_slider_example.png') }}">
-                    </div>
-                    <div>
-                        <img src="{{ asset('images/photo_report_slider_example.png') }}">
-                    </div>
-                    <div>
-                        <img src="{{ asset('images/photo_report_slider_example.png') }}">
-                    </div>
-                    <div class="video_menu_slider_last">
-                        <img src="{{ asset('images/photo_report_slider_example.png') }}">
-                    </div>
+
+                    @foreach($number->photos as $photo)
+                        <div>
+                            <img src="{{ asset('storage/' . $photo->image) }}">
+                        </div>
+                    @endforeach
+
                 </div>
             </div>
             <div class="details-part">
@@ -66,21 +44,15 @@
 
                 <p class="unique-header">ОСОБЕННОСТИ</p>
                 <div class="unqiques">
-                    <div class="left-uniques">
-                        <ul>
-                            <li>10 max</li>
-                            <li>Free WiFi</li>
-                            <li>Кухня</li>
-                        </ul>
-                    </div>
 
-                    <div class="right-uniques">
-                        <ul>
-                            <li> Кондиционер</li>
-                            <li>TV</li>
-                            <li>5000 грн</li>
-                        </ul>
-                    </div>
+                    @foreach($number->features as $feature)
+                        <div class="features">
+                            <ul>
+                                <li>{{ $feature->name }}</li>
+                            </ul>
+                        </div>
+                    @endforeach
+
                 </div>
             </div>
         </div>
