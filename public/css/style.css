@@ -877,6 +877,7 @@ form button:hover {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px;
+    overflow: scroll;
 }
 
 .latest_publication h3 {
@@ -889,9 +890,17 @@ form button:hover {
 .latest_publication p {
     font-size: 30px;
     line-height: 1.2;
-    height: 400px;
+    height: auto;
     font-family: 'Proxima_Nova-reg';
     letter-spacing: 0px;
+    padding-bottom: 15px;
+    background: transparent !important;
+    color: #fff !important;
+}
+
+.photo_report_panel {
+    margin-top: 35px;
+    margin-bottom: 25px;
 }
 
 .latest_publication .photo_report_arrow {
@@ -1976,7 +1985,7 @@ padding-left: 7px;
 
     .latest_publication p {
         font-size: 24px;
-        height: 225px;
+        height: auto;
     }
 
     .latest_publication .photo_report_panel a {
@@ -2334,6 +2343,10 @@ padding-left: 7px;
 
     /* Navbar */
     /* reviews */
+    .reviews_slider_img {
+        margin-left: 0%;
+    }
+
     .reviews_slider_head {
         width: 740px;
         margin-right: 0px;
@@ -2352,6 +2365,10 @@ padding-left: 7px;
     /* video_items */
     .video_items .wrapper-twest-hover{
         height: 350px;
+    }
+
+    .reviews_slider_img {
+        margin-left: 7%;
     }
     /* video_items end */
 
@@ -2556,7 +2573,7 @@ padding-left: 7px;
 
     .latest_publication p {
         font-size: 18px;
-        height: 170px;
+        height: auto;
     }
 
     .latest_publication .photo_report_panel a {
@@ -2620,6 +2637,14 @@ padding-left: 7px;
     .button-all-photos {
         font-size: 20px;
     }
+}
+
+@media (max-width: 1200px) {
+    /* reviews */
+    .reviews_slider_img {
+        margin-left: 1%;
+    }
+    /* reviews end */
 }
 
 @media (max-width: 992px) {
@@ -2940,7 +2965,7 @@ padding-left: 7px;
 
     .latest_publication p {
         font-size: 18px;
-        height: 280px;
+        height: auto;
     }
 
     .latest_publication .draggable {
@@ -3093,7 +3118,7 @@ padding-left: 7px;
     /* latest_publication */
     .latest_publication p {
         font-size: 18px;
-        height: 200px;
+        height: auto;
     }
 
     .latest_publication .block_text {
@@ -3224,7 +3249,7 @@ padding-left: 7px;
 
     .latest_publication p {
         font-size: 18px;
-        height: 275px;
+        height: auto;
     }
 
     .latest_publication h2 {
