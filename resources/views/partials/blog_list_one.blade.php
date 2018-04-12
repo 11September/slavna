@@ -3,10 +3,10 @@
 
         @foreach($posts as $post)
             <div class="row wrapper-all-item-blog padding-assist">
-                <div class="wrapper-blog-list-left col-lg-4">
+                <div class="wrapper-blog-list-left col-lg-4 col-xl-3">
                     <img class="dance-blog-one-list" src="{{ asset('storage/' . $post->image) }}" alt="">
                 </div>
-                <div class="wrapper-blog-list-right col-lg-8">
+                <div class="wrapper-blog-list-right col-lg-8 col-xl-9">
                     <a href="{{ url('news', $post->id ) }}"><h2 class="dance-blog-h2">{{ $post->title }}</h2></a>
                     <hr class="hr-blog" style="width:100%; background:white;">
                     <p class="description-blog-p">

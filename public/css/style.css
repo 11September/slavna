@@ -1521,6 +1521,23 @@ form {
     background: transparent !important;
 }
 
+.Blog-list .wrapper-blog-list-left{
+    text-align: center;
+}
+
+.Blog-list{
+    padding-top: 25px;
+}
+
+.Blog-list .padding-assist{
+    margin: 50px 0;
+    padding: 15px 0;
+}
+
+.Blog-list .wrapper-blog-list-left {
+    margin: auto;
+}
+
 /*dance-for-clear*/
 
 /* BLOG-ONE*/
@@ -1589,6 +1606,7 @@ form {
 
 .padding-assist {
     margin-top: 50px;
+    background: linear-gradient(to left, #42261b, #673c2b);
 }
 
 .fa-clock {
