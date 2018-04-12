@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Number;
 use App\Photo;
 use App\Reservation;
 use App\Service;
@@ -43,7 +44,14 @@ class PagesController extends Controller
         return view('albums');
     }
 
-    public function photos($albumId = null)
+    public function photos()
+    {
+        $photos = Photo::all();
+
+        return view('photos', compact('photos'));
+    }
+
+    public function photosAlbum($albumId = null)
     {
         $photos = Photo::where('album_id', $albumId)->get();
 
@@ -57,14 +65,16 @@ class PagesController extends Controller
         return view('videos', compact('videos'));
     }
 
-    public function cottages()
+    public function cottages($type = null)
     {
-        return view('cottages');
+        $numbers = Number::where('type', $type)->latest()->get();
+
+        return view('cottages', compact('numbers'));
     }
 
-    public function cottage()
+    public function cottage(Number $number)
     {
-        return view('one-cottage');
+        return view('one-cottage', compact('number'));
     }
 
     public function houses()

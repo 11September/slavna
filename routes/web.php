@@ -20,12 +20,13 @@ Route::get('/reservation', 'PagesController@reservation');
 Route::get('/arbours', 'PagesController@arbours');
 
 Route::get('/albums', 'PagesController@albums');
-Route::get('/photos/{albumId}', 'PagesController@photos');
+Route::get('/photos', 'PagesController@photos');
+Route::get('/photos/{albumId}', 'PagesController@photosAlbum');
 Route::get('/videos', 'PagesController@videos');
 
 // 4 page but same structure
-Route::get('/list/cottages', 'PagesController@cottages');
-Route::get('/one/{cottage}', 'PagesController@cottage');
+Route::get('/numbers/{type}', 'PagesController@cottages');
+Route::get('/number/{number}', 'PagesController@cottage');
 // 4 page but same structure
 
 Route::post('/reservation-form', 'PagesController@form_reservation');

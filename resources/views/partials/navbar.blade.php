@@ -28,10 +28,10 @@
         </div>
         <ul>
             <li><a href="{{ url('/') }}">ГЛАВНАЯ</a></li>
-            <li><a href="{{ url('/list/cottages') }}">КОТТЕДЖИ</a></li>
-            <li><a href="{{ url('/list/cottages') }}">НОМЕРА</a></li>
-            <li><a href="{{ url('/list/cottages') }}">ДОМА С САУНОЙ</a></li>
-            <li><a href="{{ url('/list/cottages') }}">БАНИ</a></li>
+            <li><a href="{{ url('/numbers/cottage') }}">КОТТЕДЖИ</a></li>
+            <li><a href="{{ url('/numbers/number') }}">НОМЕРА</a></li>
+            <li><a href="{{ url('/numbers/sauna') }}">ДОМА С САУНОЙ</a></li>
+            <li><a href="{{ url('/numbers/bathhouse') }}">БАНИ</a></li>
             <li><a href="{{ url('/news') }}">БЛОГ</a></li>
             <li><a href="{{ url('/arbours') }}">БЕСЕДКИ</a></li>
             <li><a href="{{ url('/about') }}">О НАС</a></li>
