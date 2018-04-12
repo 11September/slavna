@@ -671,7 +671,7 @@ form button:hover {
     display: flex;
     flex-direction: column;
     height: 230px;
-    justify-content: center;
+    justify-content: flex-start;
     color: #f5db90;
 }
 
@@ -696,7 +696,7 @@ form button:hover {
 
 .reviews .slick-prev {
     left: inherit;
-    right: 50px;
+    right: 0;
     position: relative;
     top: 10px;
 }
@@ -706,7 +706,7 @@ form button:hover {
 }
 
 .reviews .slick-next {
-    right: 50px;
+    right: 0;
     position: relative;
     margin-top: 25px;
 }
