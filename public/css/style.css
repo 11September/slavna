@@ -1674,8 +1674,9 @@ padding-left: 7px;
 }
 
 .dance-blog-one-list {
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 /* BLOG-ONE*/
