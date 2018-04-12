@@ -107,13 +107,13 @@ form button:hover {
 }
 
 .wrapper-text-left{
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin-top: 75px;
+    margin-bottom: 75px;
     left:20px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
-
 }
+
 .menu-part {
     display: flex;
     align-items: center;
