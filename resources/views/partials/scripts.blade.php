@@ -17,4 +17,4 @@
 <script src="{{ asset('js/main.js') }}"></script>
 <script src="{{ asset('js/slick.min.js') }}"></script>
 <script src="{{ asset('js/slick_slider.js') }}"></script>
-
+<script src="{{ asset('js/toastr.js') }}"></script>

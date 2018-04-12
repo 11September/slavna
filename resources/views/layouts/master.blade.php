@@ -16,6 +16,7 @@
     <meta name="author" content="">
 
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/slavna-logo-tab.png') }}">
+    <link href="{{ asset('css/toastr.css') }}" rel="stylesheet">
 
     @include('partials.css')
 
