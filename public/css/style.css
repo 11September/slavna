@@ -820,7 +820,13 @@ form button:hover {
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
+    margin-top: -10px;
+}
+
+.reviews .position_line:nth-child(0){
+    margin-bottom: 45px;
+    margin-top: -10px;
 }
 
 .reviews_slide_line {
