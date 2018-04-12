@@ -479,7 +479,7 @@ form button:hover {
 .photo_report .block_text {
     background: linear-gradient(to right, #42261b, #673c2b);
     margin-left: 70px;
-    height: 640px;
+    height: auto;
     padding: 35px 50px 30px 35px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
@@ -1927,7 +1927,7 @@ padding-left: 7px;
     }
 
     .photo_report .draggable {
-        height: 480px;
+        height: auto;
     }
 
     .photo_report .block_text {
@@ -2459,8 +2459,9 @@ padding-left: 7px;
     /* artours_intro end */
     /* photo_report */
     .photo_report .block_text {
-        height: 260px;
+        height: auto;
         width: 600px;
+        border-radius: 25px;
         padding: 25px 35px 15px 30px;
     }
 
