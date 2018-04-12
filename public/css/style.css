@@ -1103,7 +1103,7 @@ form button:hover {
 /* contactForm */
 .wrapper-text-left {
     min-height: 800px;
-    background: #74432F;
+    background: linear-gradient(to left, #673c2b, #42261b);
 }
 
 
@@ -1142,8 +1142,22 @@ form button:hover {
 }
 
 .my-fafa {
-    padding-top: 75px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
 }
+
+.my-fafa p{
+    color: #fff;
+    font-family: 'Proxima_Nova-reg';
+    font-size: 24px;
+}
+
+.contactForm .wrapper-text-left{
+    border-radius: 25px;
+}
+
  .fa-instagram{
     margin-left: 50px;
     margin-right: 50px;
@@ -1253,7 +1267,7 @@ textarea {
 .question-span {
     display: inline-block;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 5px;
     border-radius: 5px;
     width: 80%;
     height: 68px;

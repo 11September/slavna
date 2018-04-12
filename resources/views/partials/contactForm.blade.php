@@ -18,9 +18,18 @@
                 <p class="text-p-ua  padding-phone-p"> PK_SLАVNА@UKR.NET</p>
 
                 <div class="my-fafa">
-                    <a href="#"> <i class="fab fa-facebook-square"></i> </a>
-                    <a href="#"> <i class="fab fa-instagram"> </i> </a>
-                    <a href="#"><i class="fab fa-google"> </i> </a>
+                    <a href="#"> 
+                        <i class="fab fa-facebook-square"></i> 
+                        <p>facebook</p> 
+                    </a>
+                    <a href="#"> 
+                        <i class="fab fa-instagram"></i>
+                        <p>instagram</p>  
+                    </a>
+                    <a href="#"> 
+                        <i class="fab fa-google"></i>
+                        <p>google+</p>  
+                    </a>
                 </div>
 
             </div>
