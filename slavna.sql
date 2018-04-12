@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Апр 11 2018 г., 18:59
+-- Время создания: Апр 12 2018 г., 19:13
 -- Версия сервера: 5.7.19
 -- Версия PHP: 7.1.7
 
@@ -181,7 +181,34 @@ INSERT INTO `data_rows` (`id`, `data_type_id`, `field`, `type`, `display_name`, 
 (84, 11, 'created_at', 'timestamp', 'Время создания', 0, 1, 1, 0, 0, 0, NULL, 4),
 (85, 11, 'updated_at', 'timestamp', 'Время обновления', 0, 0, 0, 0, 0, 0, NULL, 5),
 (86, 1, 'total_views', 'hidden', 'Total Views', 0, 0, 0, 0, 0, 0, NULL, 14),
-(87, 7, 'description', 'text', 'Описание альбома', 0, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:255\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 3);
+(87, 7, 'description', 'text', 'Описание альбома', 0, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:255\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 3),
+(88, 12, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 1),
+(89, 12, 'name', 'text', 'Название', 1, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:255\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 2),
+(90, 12, 'image', 'image', 'Картинка', 1, 1, 1, 1, 1, 1, '{\"resize\":{\"width\":\"1000\",\"height\":null},\"quality\":\"65%\",\"upsize\":true}', 3),
+(91, 12, 'body', 'rich_text_box', 'Описание', 1, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:2000\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 4),
+(92, 12, 'price_weekday', 'number', 'Цена в рабочий день', 1, 0, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:11\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 5),
+(93, 12, 'price_holiday', 'number', 'Цена в выходной день', 1, 0, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:11\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 6),
+(94, 12, 'type', 'radio_btn', 'Тип номера', 1, 1, 1, 1, 1, 1, '{\"default\":\"cottage\",\"options\":{\"cottage\":\"Котедж\",\"number\":\"Номер\",\"sauna\":\"Сауна\",\"bathhouse\":\"Баня\"}}', 7),
+(95, 12, 'created_at', 'timestamp', 'Время создания', 0, 1, 1, 0, 0, 0, NULL, 8),
+(96, 12, 'updated_at', 'timestamp', 'Время обновления', 0, 0, 0, 0, 0, 0, NULL, 9),
+(97, 13, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 1),
+(98, 13, 'name', 'text', 'Название', 1, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:255\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 2),
+(99, 13, 'created_at', 'timestamp', 'Время создания', 0, 1, 1, 0, 0, 0, NULL, 3),
+(100, 13, 'updated_at', 'timestamp', 'Время обновления', 0, 0, 0, 0, 0, 0, NULL, 4),
+(102, 13, 'number_id', 'hidden', 'Number Id', 1, 1, 1, 1, 1, 1, NULL, 2),
+(103, 13, 'feature_belongsto_number_relationship', 'relationship', 'numbers', 0, 1, 1, 1, 1, 1, '{\"model\":\"App\\\\Number\",\"table\":\"numbers\",\"type\":\"belongsTo\",\"column\":\"number_id\",\"key\":\"id\",\"label\":\"name\",\"pivot_table\":\"albums\",\"pivot\":\"0\"}', 5),
+(104, 14, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 1),
+(105, 14, 'number_id', 'hidden', 'Номер', 0, 1, 1, 1, 1, 1, NULL, 2),
+(106, 14, 'image', 'image', 'Картинка', 1, 1, 1, 1, 1, 1, '{\"resize\":{\"width\":\"1000\",\"height\":null},\"quality\":\"65%\",\"upsize\":true}', 3),
+(107, 14, 'created_at', 'timestamp', 'Время создания', 0, 1, 1, 0, 0, 0, NULL, 4),
+(108, 14, 'updated_at', 'timestamp', 'Время обновления', 0, 0, 0, 0, 0, 0, NULL, 5),
+(109, 14, 'photo_number_belongsto_number_relationship', 'relationship', 'numbers', 0, 1, 1, 1, 1, 1, '{\"model\":\"App\\\\Number\",\"table\":\"numbers\",\"type\":\"belongsTo\",\"column\":\"number_id\",\"key\":\"id\",\"label\":\"name\",\"pivot_table\":\"albums\",\"pivot\":\"0\"}', 6),
+(110, 15, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 1),
+(111, 15, 'name', 'text', 'Имя', 1, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:255\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 2),
+(112, 15, 'image', 'image', 'Картинка', 0, 1, 1, 1, 1, 1, '{\"resize\":{\"width\":\"1000\",\"height\":null},\"quality\":\"65%\",\"upsize\":true}', 3),
+(113, 15, 'review', 'text_area', 'Отзыв', 1, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:500\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 4),
+(114, 15, 'created_at', 'timestamp', 'Время создания', 0, 1, 1, 0, 0, 0, NULL, 5),
+(115, 15, 'updated_at', 'timestamp', 'Время обновления', 0, 0, 0, 0, 0, 0, NULL, 6);
 
 -- --------------------------------------------------------
 
@@ -221,7 +248,35 @@ INSERT INTO `data_types` (`id`, `name`, `slug`, `display_name_singular`, `displa
 (8, 'photos', 'photos', 'Photo', 'Photos', 'voyager-photo', 'App\\Photo', NULL, NULL, NULL, 1, 0, '2018-04-09 10:11:45', '2018-04-09 10:11:45'),
 (9, 'reservations', 'reservations', 'Reservation', 'Reservations', 'voyager-buy', 'App\\Reservation', NULL, NULL, NULL, 1, 0, '2018-04-09 10:28:22', '2018-04-09 10:28:22'),
 (10, 'services', 'services', 'Service', 'Services', 'voyager-book', 'App\\Service', NULL, NULL, NULL, 1, 0, '2018-04-11 10:26:46', '2018-04-11 10:26:46'),
-(11, 'videos', 'videos', 'Video', 'Videos', 'voyager-video', 'App\\Video', NULL, NULL, NULL, 1, 0, '2018-04-11 11:01:01', '2018-04-11 11:01:01');
+(11, 'videos', 'videos', 'Video', 'Videos', 'voyager-video', 'App\\Video', NULL, NULL, NULL, 1, 0, '2018-04-11 11:01:01', '2018-04-11 11:01:01'),
+(12, 'numbers', 'numbers', 'Number', 'Numbers', 'voyager-company', 'App\\Number', NULL, NULL, NULL, 1, 0, '2018-04-12 07:42:14', '2018-04-12 07:43:11'),
+(13, 'features', 'features', 'Feature', 'Features', 'voyager-thumb-tack', 'App\\Feature', NULL, NULL, NULL, 1, 0, '2018-04-12 08:31:22', '2018-04-12 08:31:22'),
+(14, 'photo_numbers', 'photo-numbers', 'Photo Number', 'Photo Numbers', 'voyager-photos', 'App\\PhotoNumber', NULL, NULL, NULL, 1, 0, '2018-04-12 12:17:28', '2018-04-12 12:17:28'),
+(15, 'reviews', 'reviews', 'Review', 'Reviews', 'voyager-chat', 'App\\Review', NULL, NULL, NULL, 1, 0, '2018-04-12 13:01:38', '2018-04-12 13:02:00');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `features`
+--
+
+CREATE TABLE `features` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `number_id` int(11) DEFAULT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Дамп данных таблицы `features`
+--
+
+INSERT INTO `features` (`id`, `number_id`, `name`, `created_at`, `updated_at`) VALUES
+(3, 1, 'Wi-fi', '2018-04-12 11:55:47', '2018-04-12 11:55:47'),
+(4, 1, 'Кухня', '2018-04-12 12:04:28', '2018-04-12 12:04:28'),
+(5, 1, '10 Max', '2018-04-12 12:04:39', '2018-04-12 12:04:39'),
+(6, 1, 'bathroom', '2018-04-12 12:12:01', '2018-04-12 12:12:01');
 
 -- --------------------------------------------------------
 
@@ -270,9 +325,9 @@ CREATE TABLE `menu_items` (
 --
 
 INSERT INTO `menu_items` (`id`, `menu_id`, `title`, `url`, `target`, `icon_class`, `color`, `parent_id`, `order`, `created_at`, `updated_at`, `route`, `parameters`) VALUES
-(1, 1, 'Dashboard', '', '_self', 'voyager-boat', NULL, NULL, 1, '2018-03-31 09:13:14', '2018-03-31 09:13:14', 'voyager.dashboard', NULL),
+(1, 1, 'Приборная панель', '', '_self', 'voyager-boat', '#000000', NULL, 1, '2018-03-31 09:13:14', '2018-04-12 13:03:22', 'voyager.dashboard', 'null'),
 (2, 1, 'Media', '', '_self', 'voyager-images', NULL, NULL, 5, '2018-03-31 09:13:14', '2018-03-31 09:13:14', 'voyager.media.index', NULL),
-(3, 1, 'Posts', '', '_self', 'voyager-news', NULL, NULL, 6, '2018-03-31 09:13:14', '2018-03-31 09:13:14', 'voyager.posts.index', NULL),
+(3, 1, 'Новости', '', '_self', 'voyager-news', '#000000', NULL, 6, '2018-03-31 09:13:14', '2018-04-12 07:45:13', 'voyager.posts.index', 'null'),
 (4, 1, 'Users', '', '_self', 'voyager-person', NULL, NULL, 3, '2018-03-31 09:13:14', '2018-03-31 09:13:14', 'voyager.users.index', NULL),
 (5, 1, 'Categories', '', '_self', 'voyager-categories', NULL, NULL, 8, '2018-03-31 09:13:14', '2018-03-31 09:13:14', 'voyager.categories.index', NULL),
 (6, 1, 'Pages', '', '_self', 'voyager-file-text', NULL, NULL, 7, '2018-03-31 09:13:14', '2018-03-31 09:13:14', 'voyager.pages.index', NULL),
@@ -281,13 +336,17 @@ INSERT INTO `menu_items` (`id`, `menu_id`, `title`, `url`, `target`, `icon_class
 (9, 1, 'Menu Builder', '', '_self', 'voyager-list', NULL, 8, 10, '2018-03-31 09:13:14', '2018-03-31 09:13:14', 'voyager.menus.index', NULL),
 (10, 1, 'Database', '', '_self', 'voyager-data', NULL, 8, 11, '2018-03-31 09:13:14', '2018-03-31 09:13:14', 'voyager.database.index', NULL),
 (11, 1, 'Compass', '', '_self', 'voyager-compass', NULL, 8, 12, '2018-03-31 09:13:14', '2018-03-31 09:13:14', 'voyager.compass.index', NULL),
-(12, 1, 'Settings', '', '_self', 'voyager-settings', NULL, NULL, 14, '2018-03-31 09:13:14', '2018-03-31 09:13:14', 'voyager.settings.index', NULL),
+(12, 1, 'Настройки', '', '_self', 'voyager-settings', '#000000', NULL, 14, '2018-03-31 09:13:14', '2018-04-12 07:45:00', 'voyager.settings.index', 'null'),
 (13, 1, 'Hooks', '', '_self', 'voyager-hook', NULL, 8, 13, '2018-03-31 09:13:14', '2018-03-31 09:13:14', 'voyager.hooks', NULL),
-(14, 1, 'Albums', '/admin/albums', '_self', 'voyager-photos', '#000000', NULL, 15, '2018-04-09 10:08:20', '2018-04-09 10:12:07', NULL, ''),
-(15, 1, 'Photos', '/admin/photos', '_self', 'voyager-photo', NULL, NULL, 16, '2018-04-09 10:11:45', '2018-04-09 10:11:45', NULL, NULL),
-(16, 1, 'Reservations', '/admin/reservations', '_self', 'voyager-buy', NULL, NULL, 17, '2018-04-09 10:28:22', '2018-04-09 10:28:22', NULL, NULL),
-(17, 1, 'Services', '/admin/services', '_self', 'voyager-book', NULL, NULL, 18, '2018-04-11 10:26:46', '2018-04-11 10:26:46', NULL, NULL),
-(18, 1, 'Videos', '/admin/videos', '_self', 'voyager-video', NULL, NULL, 19, '2018-04-11 11:01:01', '2018-04-11 11:01:01', NULL, NULL);
+(14, 1, 'Альбомы', '/admin/albums', '_self', 'voyager-photos', '#000000', NULL, 15, '2018-04-09 10:08:20', '2018-04-12 07:44:50', NULL, ''),
+(15, 1, 'Фото', '/admin/photos', '_self', 'voyager-photo', '#000000', NULL, 16, '2018-04-09 10:11:45', '2018-04-12 07:44:40', NULL, ''),
+(16, 1, 'Бронирование', '/admin/reservations', '_self', 'voyager-buy', '#000000', NULL, 17, '2018-04-09 10:28:22', '2018-04-12 07:44:33', NULL, ''),
+(17, 1, 'Услуги', '/admin/services', '_self', 'voyager-book', '#000000', NULL, 18, '2018-04-11 10:26:46', '2018-04-12 07:44:21', NULL, ''),
+(18, 1, 'Видео', '/admin/videos', '_self', 'voyager-video', '#000000', NULL, 19, '2018-04-11 11:01:01', '2018-04-12 07:44:13', NULL, ''),
+(19, 1, 'Котеджы', '/admin/numbers', '_self', 'voyager-company', '#000000', NULL, 20, '2018-04-12 07:42:14', '2018-04-12 07:44:04', NULL, ''),
+(20, 1, 'Особенности номеров', '/admin/features', '_self', 'voyager-thumb-tack', '#000000', NULL, 21, '2018-04-12 08:31:22', '2018-04-12 12:52:51', NULL, ''),
+(21, 1, 'Фото намеров', '/admin/photo-numbers', '_self', 'voyager-photos', '#000000', NULL, 22, '2018-04-12 12:17:28', '2018-04-12 12:52:41', NULL, ''),
+(22, 1, 'Отзывы', '/admin/reviews', '_self', 'voyager-chat', '#000000', NULL, 23, '2018-04-12 13:01:39', '2018-04-12 13:02:42', NULL, '');
 
 -- --------------------------------------------------------
 
@@ -329,6 +388,31 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (21, '2017_04_21_000000_add_order_to_data_rows_table', 1),
 (22, '2017_07_05_210000_add_policyname_to_data_types_table', 1),
 (23, '2017_08_05_000000_add_group_to_settings_table', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `numbers`
+--
+
+CREATE TABLE `numbers` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `image` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `body` text COLLATE utf8_unicode_ci NOT NULL,
+  `price_weekday` int(11) NOT NULL,
+  `price_holiday` int(11) NOT NULL,
+  `type` enum('cottage','number','sauna','bathhouse') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'cottage',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Дамп данных таблицы `numbers`
+--
+
+INSERT INTO `numbers` (`id`, `name`, `image`, `body`, `price_weekday`, `price_holiday`, `type`, `created_at`, `updated_at`) VALUES
+(1, 'Коттедж №1', 'numbers/April2018/CNFhXuVitUyH2WUlxOTz.jpg', '<p><span style=\"color: #333333; font-family: \'Open Sans\', sans-serif; font-size: 18px; text-align: justify; background-color: #fefaf1;\">В доме есть телевизоры, интернет, кондиционер, холодильник. В стомость включено пользование мангалом и баней. Баня топится строго дровами без применения посторонних источников энергии, используются только натуральные веники. Сюда входят душ, ведро водопад, банные принадлежности, веники. Баня превосходно помогает обрести душевное равновесие, все проблемы попросту уходят на второй план, открывая путь к спокойствию и умиротворению. К тому же неоспорим оздоровительный эффект банных процедур &mdash; вместе с потом из организма уходит огромное количество вредных веществ &mdash; шлаков и токсинов. Но для достижения положительного эффекта баня должна быть организована с&nbsp;</span><br style=\"box-sizing: border-box; color: #333333; font-family: \'Open Sans\', sans-serif; font-size: 18px; text-align: justify; background-color: #fefaf1;\" /><span style=\"color: #333333; font-family: \'Open Sans\', sans-serif; font-size: 18px; text-align: justify; background-color: #fefaf1;\">соблюдением строгих правил &mdash; именно так обстоят дела в Коттедж-парк Славна. По традиции, здесь все обустроено по высшему разряду и удовлетворит даже самых взыскательных гостей.</span></p>', 5500, 6000, 'cottage', '2018-04-12 07:46:57', '2018-04-12 07:46:57');
 
 -- --------------------------------------------------------
 
@@ -454,7 +538,27 @@ INSERT INTO `permissions` (`id`, `key`, `table_name`, `created_at`, `updated_at`
 (62, 'read_videos', 'videos', '2018-04-11 11:01:01', '2018-04-11 11:01:01', NULL),
 (63, 'edit_videos', 'videos', '2018-04-11 11:01:01', '2018-04-11 11:01:01', NULL),
 (64, 'add_videos', 'videos', '2018-04-11 11:01:01', '2018-04-11 11:01:01', NULL),
-(65, 'delete_videos', 'videos', '2018-04-11 11:01:01', '2018-04-11 11:01:01', NULL);
+(65, 'delete_videos', 'videos', '2018-04-11 11:01:01', '2018-04-11 11:01:01', NULL),
+(66, 'browse_numbers', 'numbers', '2018-04-12 07:42:14', '2018-04-12 07:42:14', NULL),
+(67, 'read_numbers', 'numbers', '2018-04-12 07:42:14', '2018-04-12 07:42:14', NULL),
+(68, 'edit_numbers', 'numbers', '2018-04-12 07:42:14', '2018-04-12 07:42:14', NULL),
+(69, 'add_numbers', 'numbers', '2018-04-12 07:42:14', '2018-04-12 07:42:14', NULL),
+(70, 'delete_numbers', 'numbers', '2018-04-12 07:42:14', '2018-04-12 07:42:14', NULL),
+(71, 'browse_features', 'features', '2018-04-12 08:31:22', '2018-04-12 08:31:22', NULL),
+(72, 'read_features', 'features', '2018-04-12 08:31:22', '2018-04-12 08:31:22', NULL),
+(73, 'edit_features', 'features', '2018-04-12 08:31:22', '2018-04-12 08:31:22', NULL),
+(74, 'add_features', 'features', '2018-04-12 08:31:22', '2018-04-12 08:31:22', NULL),
+(75, 'delete_features', 'features', '2018-04-12 08:31:22', '2018-04-12 08:31:22', NULL),
+(76, 'browse_photo_numbers', 'photo_numbers', '2018-04-12 12:17:28', '2018-04-12 12:17:28', NULL),
+(77, 'read_photo_numbers', 'photo_numbers', '2018-04-12 12:17:28', '2018-04-12 12:17:28', NULL),
+(78, 'edit_photo_numbers', 'photo_numbers', '2018-04-12 12:17:28', '2018-04-12 12:17:28', NULL),
+(79, 'add_photo_numbers', 'photo_numbers', '2018-04-12 12:17:28', '2018-04-12 12:17:28', NULL),
+(80, 'delete_photo_numbers', 'photo_numbers', '2018-04-12 12:17:28', '2018-04-12 12:17:28', NULL),
+(81, 'browse_reviews', 'reviews', '2018-04-12 13:01:38', '2018-04-12 13:01:38', NULL),
+(82, 'read_reviews', 'reviews', '2018-04-12 13:01:38', '2018-04-12 13:01:38', NULL),
+(83, 'edit_reviews', 'reviews', '2018-04-12 13:01:38', '2018-04-12 13:01:38', NULL),
+(84, 'add_reviews', 'reviews', '2018-04-12 13:01:38', '2018-04-12 13:01:38', NULL),
+(85, 'delete_reviews', 'reviews', '2018-04-12 13:01:38', '2018-04-12 13:01:38', NULL);
 
 -- --------------------------------------------------------
 
@@ -484,6 +588,7 @@ CREATE TABLE `permission_role` (
 
 INSERT INTO `permission_role` (`permission_id`, `role_id`) VALUES
 (1, 1),
+(1, 3),
 (2, 1),
 (3, 1),
 (4, 1),
@@ -508,45 +613,112 @@ INSERT INTO `permission_role` (`permission_id`, `role_id`) VALUES
 (23, 1),
 (24, 1),
 (25, 1),
+(25, 3),
 (26, 1),
+(26, 3),
 (27, 1),
+(27, 3),
 (28, 1),
+(28, 3),
 (29, 1),
+(29, 3),
 (30, 1),
 (31, 1),
 (32, 1),
 (33, 1),
 (34, 1),
 (35, 1),
+(35, 3),
 (36, 1),
+(36, 3),
 (37, 1),
+(37, 3),
 (38, 1),
 (39, 1),
 (41, 1),
+(41, 3),
 (42, 1),
+(42, 3),
 (43, 1),
+(43, 3),
 (44, 1),
+(44, 3),
 (45, 1),
+(45, 3),
 (46, 1),
+(46, 3),
 (47, 1),
+(47, 3),
 (48, 1),
+(48, 3),
 (49, 1),
+(49, 3),
 (50, 1),
+(50, 3),
 (51, 1),
+(51, 3),
 (52, 1),
+(52, 3),
 (53, 1),
+(53, 3),
 (54, 1),
 (55, 1),
+(55, 3),
 (56, 1),
+(56, 3),
 (57, 1),
+(57, 3),
 (58, 1),
+(58, 3),
 (59, 1),
+(59, 3),
 (60, 1),
+(60, 3),
 (61, 1),
+(61, 3),
 (62, 1),
+(62, 3),
 (63, 1),
+(63, 3),
 (64, 1),
-(65, 1);
+(64, 3),
+(65, 1),
+(65, 3),
+(66, 1),
+(66, 3),
+(67, 1),
+(67, 3),
+(68, 1),
+(68, 3),
+(69, 1),
+(69, 3),
+(70, 1),
+(70, 3),
+(71, 1),
+(71, 3),
+(72, 1),
+(72, 3),
+(73, 1),
+(73, 3),
+(74, 1),
+(74, 3),
+(75, 1),
+(75, 3),
+(76, 1),
+(76, 3),
+(77, 1),
+(77, 3),
+(78, 1),
+(78, 3),
+(79, 1),
+(79, 3),
+(80, 1),
+(80, 3),
+(81, 1),
+(82, 1),
+(83, 1),
+(84, 1),
+(85, 1);
 
 -- --------------------------------------------------------
 
@@ -575,6 +747,31 @@ INSERT INTO `photos` (`id`, `album_id`, `image`, `description`, `created_at`, `u
 (5, 1, 'photos/April2018/fyDnCQXt5CeUb8LiyUpp.jpg', NULL, '2018-04-11 11:07:49', '2018-04-11 11:07:49'),
 (6, 1, 'photos/April2018/r6UN5ECjCgl65Thf8iO4.jpg', NULL, '2018-04-11 11:07:59', '2018-04-11 11:07:59'),
 (7, 1, 'photos/April2018/Y6gEJtDRWZ2DLmDh83Uf.jpg', NULL, '2018-04-11 11:08:07', '2018-04-11 11:08:07');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `photo_numbers`
+--
+
+CREATE TABLE `photo_numbers` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `number_id` int(11) DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Дамп данных таблицы `photo_numbers`
+--
+
+INSERT INTO `photo_numbers` (`id`, `number_id`, `image`, `created_at`, `updated_at`) VALUES
+(1, 1, 'photo-numbers/April2018/yTxLi9GjmomrOwASqSzn.jpg', '2018-04-12 12:19:20', '2018-04-12 12:19:20'),
+(2, 1, 'photo-numbers/April2018/NmPOdJjVpmP3gqCi6jJO.jpg', '2018-04-12 12:19:30', '2018-04-12 12:19:30'),
+(3, 1, 'photo-numbers/April2018/NeSRoKx4sJwlU5iX48ii.jpg', '2018-04-12 12:19:40', '2018-04-12 12:19:40'),
+(4, 1, 'photo-numbers/April2018/Gk3i1St7C1nguU4NB7Jk.jpg', '2018-04-12 12:19:50', '2018-04-12 12:19:50'),
+(5, 1, 'photo-numbers/April2018/SHFoOpIjCKL9yMrhnLOG.jpg', '2018-04-12 12:19:59', '2018-04-12 12:19:59');
 
 -- --------------------------------------------------------
 
@@ -637,6 +834,28 @@ INSERT INTO `reservations` (`id`, `name`, `cottage_id`, `date_start`, `date_end`
 -- --------------------------------------------------------
 
 --
+-- Структура таблицы `reviews`
+--
+
+CREATE TABLE `reviews` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `image` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `review` text COLLATE utf8_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Дамп данных таблицы `reviews`
+--
+
+INSERT INTO `reviews` (`id`, `name`, `image`, `review`, `created_at`, `updated_at`) VALUES
+(1, 'Павлова Арина', 'reviews/April2018/4wOUBlycIjknwRn3t5BI.jpg', 'Довольно неплохо, все понравилось, море емоций!', '2018-04-12 13:10:59', '2018-04-12 13:10:59');
+
+-- --------------------------------------------------------
+
+--
 -- Структура таблицы `roles`
 --
 
@@ -654,7 +873,8 @@ CREATE TABLE `roles` (
 
 INSERT INTO `roles` (`id`, `name`, `display_name`, `created_at`, `updated_at`) VALUES
 (1, 'admin', 'Administrator', '2018-03-31 09:13:14', '2018-03-31 09:13:14'),
-(2, 'user', 'Normal User', '2018-03-31 09:13:14', '2018-03-31 09:13:14');
+(2, 'user', 'Normal User', '2018-03-31 09:13:14', '2018-03-31 09:13:14'),
+(3, 'moderator', 'Moderator', '2018-04-12 12:53:50', '2018-04-12 12:53:50');
 
 -- --------------------------------------------------------
 
@@ -706,11 +926,11 @@ INSERT INTO `settings` (`id`, `key`, `display_name`, `value`, `details`, `type`,
 (2, 'site.description', 'Site Description', 'Site Description', '', 'text', 2, 'Site'),
 (3, 'site.logo', 'Site Logo', '', '', 'image', 3, 'Site'),
 (4, 'site.google_analytics_tracking_id', 'Google Analytics Tracking ID', '', '', 'text', 4, 'Site'),
-(5, 'admin.bg_image', 'Admin Background Image', '', '', 'image', 5, 'Admin'),
-(6, 'admin.title', 'Admin Title', 'Voyager', '', 'text', 1, 'Admin'),
-(7, 'admin.description', 'Admin Description', 'Welcome to Voyager. The Missing Admin for Laravel', '', 'text', 2, 'Admin'),
-(8, 'admin.loader', 'Admin Loader', '', '', 'image', 3, 'Admin'),
-(9, 'admin.icon_image', 'Admin Icon Image', '', '', 'image', 4, 'Admin'),
+(5, 'admin.bg_image', 'Admin Background Image', 'settings/April2018/qun2PgeAyjWKb3j21aug.jpg', '', 'image', 5, 'Admin'),
+(6, 'admin.title', 'Admin Title', 'Slavna', '', 'text', 1, 'Admin'),
+(7, 'admin.description', 'Admin Description', 'КОТТЕДЖ-ПАРК «СЛАВНА» В С. ЧЕРНЕТЧИНА. Отдых со вкусом в Сумской области!', '', 'text', 2, 'Admin'),
+(8, 'admin.loader', 'Admin Loader', 'settings/April2018/lO2lSv7j0mF2d0ir60cd.png', '', 'image', 3, 'Admin'),
+(9, 'admin.icon_image', 'Admin Icon Image', 'settings/April2018/B4EtScFuvdjgZM6EEbLq.png', '', 'image', 4, 'Admin'),
 (10, 'admin.google_analytics_client_id', 'Google Analytics Client ID (used for admin dashboard)', '', '', 'text', 1, 'Admin'),
 (11, 'site.facebook_link', 'facebook', 'https://www.facebook.com/', NULL, 'text', 6, 'Site'),
 (12, 'site.instagram_link', 'instagram', 'https://www.instagram.com/', NULL, 'text', 7, 'Site'),
@@ -792,7 +1012,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `role_id`, `name`, `email`, `avatar`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 1, 'Admin', 'admin@admin.com', 'users/default.png', '$2y$10$QBr1Yzhs7iMMHuGDdvklneVgx2BbY8gtCz9pT6KVFIIIUoJQkJOkG', 'k6sEgxKEHS8GsUCVps9kmqe3cQeastWUFanzsiDjktat6QKDNuMzZXd78hlD', '2018-03-31 09:13:14', '2018-03-31 09:13:14');
+(1, 1, 'Admin', 'admin@admin.com', 'users/default.png', '$2y$10$QBr1Yzhs7iMMHuGDdvklneVgx2BbY8gtCz9pT6KVFIIIUoJQkJOkG', 'HHno0U11Bo11hsa5n2Jul3pa1rFuWPgP0z8RQD0WJy8luimNdCUQYtCCVdMN', '2018-03-31 09:13:14', '2018-03-31 09:13:14'),
+(2, 3, 'Slavna', 'park-slavna@admin.com', 'users/April2018/lLRcJoj5vm3ftcFtSHxO.png', '$2y$10$Vy3W0HlRzJ0WYzjH7S6UfuL53vjNsjzjaCi6/XYsf6mxStx/zB3nq', NULL, '2018-04-12 13:04:29', '2018-04-12 13:04:29');
 
 -- --------------------------------------------------------
 
@@ -850,6 +1071,12 @@ ALTER TABLE `data_types`
   ADD UNIQUE KEY `data_types_slug_unique` (`slug`);
 
 --
+-- Индексы таблицы `features`
+--
+ALTER TABLE `features`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Индексы таблицы `menus`
 --
 ALTER TABLE `menus`
@@ -867,6 +1094,12 @@ ALTER TABLE `menu_items`
 -- Индексы таблицы `migrations`
 --
 ALTER TABLE `migrations`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `numbers`
+--
+ALTER TABLE `numbers`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -911,6 +1144,12 @@ ALTER TABLE `photos`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Индексы таблицы `photo_numbers`
+--
+ALTER TABLE `photo_numbers`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Индексы таблицы `posts`
 --
 ALTER TABLE `posts`
@@ -921,6 +1160,12 @@ ALTER TABLE `posts`
 -- Индексы таблицы `reservations`
 --
 ALTER TABLE `reservations`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `reviews`
+--
+ALTER TABLE `reviews`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -981,12 +1226,17 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT для таблицы `data_rows`
 --
 ALTER TABLE `data_rows`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=88;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=116;
 --
 -- AUTO_INCREMENT для таблицы `data_types`
 --
 ALTER TABLE `data_types`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+--
+-- AUTO_INCREMENT для таблицы `features`
+--
+ALTER TABLE `features`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT для таблицы `menus`
 --
@@ -996,12 +1246,17 @@ ALTER TABLE `menus`
 -- AUTO_INCREMENT для таблицы `menu_items`
 --
 ALTER TABLE `menu_items`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 --
 -- AUTO_INCREMENT для таблицы `migrations`
 --
 ALTER TABLE `migrations`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+--
+-- AUTO_INCREMENT для таблицы `numbers`
+--
+ALTER TABLE `numbers`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT для таблицы `pages`
 --
@@ -1011,7 +1266,7 @@ ALTER TABLE `pages`
 -- AUTO_INCREMENT для таблицы `permissions`
 --
 ALTER TABLE `permissions`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=86;
 --
 -- AUTO_INCREMENT для таблицы `permission_groups`
 --
@@ -1023,6 +1278,11 @@ ALTER TABLE `permission_groups`
 ALTER TABLE `photos`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
+-- AUTO_INCREMENT для таблицы `photo_numbers`
+--
+ALTER TABLE `photo_numbers`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+--
 -- AUTO_INCREMENT для таблицы `posts`
 --
 ALTER TABLE `posts`
@@ -1033,10 +1293,15 @@ ALTER TABLE `posts`
 ALTER TABLE `reservations`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
+-- AUTO_INCREMENT для таблицы `reviews`
+--
+ALTER TABLE `reviews`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
 -- AUTO_INCREMENT для таблицы `roles`
 --
 ALTER TABLE `roles`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT для таблицы `services`
 --
@@ -1056,7 +1321,7 @@ ALTER TABLE `translations`
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT для таблицы `videos`
 --
