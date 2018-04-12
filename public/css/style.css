@@ -1501,7 +1501,23 @@ form {
 
 }
 
+.dance-for-clear p{
+    color: #fff !important;
+    background: transparent !important;
+}
 
+.dance-for-clear .arrow-text-right {
+    color: #F4DB8F !important;
+}
+
+.dance-for-clear .arrow-text-left {
+    color: #F4DB8F !important;
+}
+
+.Blog-list .wrapper-blog-list-right p{
+    color: #fff !important;
+    background: transparent !important;
+}
 
 /*dance-for-clear*/
 
