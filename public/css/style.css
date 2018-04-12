@@ -1486,7 +1486,7 @@ form {
     width: 100%;
     padding-top: 300px;
     position: absolute;
-    z-index: 999;
+    z-index: 1;
     font-family: 'Proxima_Nova-bold';
 }
 
