@@ -612,7 +612,7 @@ form button:hover {
 
 .reviews_slider_item > .row {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .reviews_slider_img {
@@ -739,6 +739,10 @@ form button:hover {
     visibility: visible;
 }
 
+.hover-item-text:hover {
+    visibility: visible;
+}
+
 .icons-blog-one{
     padding: 10px;
 }
@@ -822,6 +826,7 @@ form button:hover {
     align-items: center;
     margin-bottom: 45px;
     margin-top: -10px;
+    padding-top: 30px;
 }
 
 .reviews .position_line:nth-child(0){
@@ -1375,6 +1380,7 @@ textarea {
     font-family: 'Proxima_Nova-bold';
     letter-spacing: 8px;
     margin-bottom: 40px;
+    padding-top: 50px;
 }
 
 .sub-header-section.first {
@@ -1990,7 +1996,7 @@ padding-left: 7px;
     .photo_report .block_text {
         margin-left: 0;
         margin: 0;
-        height: 400px;
+        height: auto;
         padding: 35px 50px 30px 35px;
         border-top-left-radius: 25px;
         border-bottom-left-radius: 25px;
@@ -2420,6 +2426,10 @@ padding-left: 7px;
 
 @media (max-width: 1200px) {
     /* video_items */
+    .reviews .position_line{
+        display: none;
+    }
+
     .video_items .wrapper-twest-hover{
         height: 350px;
     }
