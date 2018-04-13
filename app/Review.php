@@ -12,5 +12,4 @@ class Review extends Model
         $reviews = Review::select('id', 'image', 'name' ,'review')->latest()->take(5)->get();
         return $reviews;
     }
-
 }

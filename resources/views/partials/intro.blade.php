@@ -1,16 +1,23 @@
 <section class="slider-part">
     <div class="intro_slider">
-        <div class="intro-slider_item">
-            <img src="{{ asset('images/slide-intro.png') }}" alt="">
-        </div>
 
-        <div class="intro-slider_item">
-            <img src="{{ asset('images/slide-intro.png') }}" alt="">
-        </div>
+        @foreach($sliders as $slider)
+            <div class="intro-slider_item">
+                <img src="{{ asset('storage/' . $slider->image) }}" alt="">
+            </div>
+        @endforeach
 
-        <div class="intro-slider_item">
-            <img src="{{ asset('images/slide-intro.png') }}" alt="">
-        </div>
+        {{--<div class="intro-slider_item">--}}
+            {{--<img src="{{ asset('images/slide-intro.png') }}" alt="">--}}
+        {{--</div>--}}
+
+        {{--<div class="intro-slider_item">--}}
+            {{--<img src="{{ asset('images/slide-intro.png') }}" alt="">--}}
+        {{--</div>--}}
+
+        {{--<div class="intro-slider_item">--}}
+            {{--<img src="{{ asset('images/slide-intro.png') }}" alt="">--}}
+        {{--</div>--}}
     </div>
 
     <div class="arrows-intro">

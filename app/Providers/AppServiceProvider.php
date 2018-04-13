@@ -5,6 +5,7 @@ namespace App\Providers;
 use App\Album;
 use App\Post;
 use App\Photo;
+use App\Slider;
 use App\Review;
 use Illuminate\Support\ServiceProvider;
 
@@ -36,11 +37,15 @@ class AppServiceProvider extends ServiceProvider
         });
 
         view()->composer('partials.photo_report', function ($view){
-            $view->with('photos', Album::thubnails_albums());
+            $view->with('photos', Slider::thubnails_slider());
         });
 
         view()->composer('partials.reviews', function ($view){
             $view->with('reviews', Review::thubnails_reviews());
+        });
+
+        view()->composer('partials.intro', function ($view){
+            $view->with('sliders', Slider::thubnails_slider());
         });
     }
 }
