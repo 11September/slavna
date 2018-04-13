@@ -555,6 +555,7 @@ form button:hover {
 
 .photo_report_arrow .slick-prev {
     left: 15px;
+    top: 5px;
 }
 
 .photo_report_arrow .slick-prev:before {
@@ -562,7 +563,8 @@ form button:hover {
 }
 
 .photo_report_arrow .slick-next {
-    right: -5px;
+    right: 0;
+    top: 5px;
 }
 
 .photo_report_arrow .slick-next:before {
@@ -612,7 +614,7 @@ form button:hover {
 
 .reviews_slider_item > .row {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .reviews_slider_img {
@@ -739,6 +741,10 @@ form button:hover {
     visibility: visible;
 }
 
+.hover-item-text:hover {
+    visibility: visible;
+}
+
 .icons-blog-one{
     padding: 10px;
 }
@@ -765,6 +771,7 @@ form button:hover {
 
 .reviews .draggable {
     height: 700px !important;
+    padding: 30px 0 50px !important;
 }
 
 .reviews .bg_i_text {
@@ -821,7 +828,8 @@ form button:hover {
     justify-content: center;
     align-items: center;
     margin-bottom: 45px;
-    margin-top: -10px;
+    margin-top: -35px;
+    padding-top: 30px;
 }
 
 .reviews .position_line:nth-child(0){
@@ -917,6 +925,13 @@ form button:hover {
 }
 
 /* latest_publication end */
+
+/* serviece-info */
+.serviece-info span{
+    color: #fff !important;
+    background: transparent !important;
+}
+/* serviece-info end */
 
 /* Thubnails */
 .thumbnails {
@@ -1375,6 +1390,7 @@ textarea {
     font-family: 'Proxima_Nova-bold';
     letter-spacing: 8px;
     margin-bottom: 40px;
+    padding-top: 50px;
 }
 
 .sub-header-section.first {
@@ -1928,6 +1944,10 @@ padding-left: 7px;
 
 @media (max-width: 1919px) {
     /* photo_report */
+    .reviews .position_line {
+        padding-top: 60px;
+    }
+
     .photo_report .block_img {
         border-radius: 25px;
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
@@ -1990,7 +2010,7 @@ padding-left: 7px;
     .photo_report .block_text {
         margin-left: 0;
         margin: 0;
-        height: 400px;
+        height: auto;
         padding: 35px 50px 30px 35px;
         border-top-left-radius: 25px;
         border-bottom-left-radius: 25px;
@@ -2420,6 +2440,10 @@ padding-left: 7px;
 
 @media (max-width: 1200px) {
     /* video_items */
+    .reviews .position_line{
+        display: none;
+    }
+
     .video_items .wrapper-twest-hover{
         height: 350px;
     }
@@ -2607,7 +2631,15 @@ padding-left: 7px;
     }
 
     .reviews .draggable {
-        height: 590px !important
+        height: 540px !important
+    }
+
+    .reviews .slick-vertical .slick-slide{
+        height: inherit;
+    }
+
+    .reviews {
+        padding: 90px 0 70px;
     }
 
     /* reviews end */
