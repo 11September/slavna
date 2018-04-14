@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Album;
 use App\Number;
 use App\Photo;
 use App\Reservation;
@@ -41,7 +42,9 @@ class PagesController extends Controller
 
     public function albums()
     {
-        return view('albums');
+        $albums = Album::all();
+
+        return view('albums', compact('albums'));
     }
 
     public function photos()
