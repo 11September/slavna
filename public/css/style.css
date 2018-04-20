@@ -87,7 +87,7 @@ form button:hover {
 }
 
 .information_part .main-header {
-    font-size: 70px;
+    font-size: 64px;
     font-family: 'Monotype_Corsiva';
     color: #F4DB8F;
     text-decoration: underline;
@@ -232,7 +232,7 @@ form button:hover {
 
 .intro-slider_item img {
     display: block;
-    height: 500px;
+    height: 650px;
     width: 100%;
 }
 
@@ -1218,7 +1218,7 @@ hr {
     margin-top: 50px;
     margin-bottom: 0;
     height: 2px;
-    width: 92%;
+    width: 80%;
     background: #2D1C15;
     margin-left: 95px;
 
@@ -1974,6 +1974,7 @@ padding-left: 7px;
         font-size: 24px;
         line-height: 1.2;
         height: 205px;
+        word-break: break-all;
         padding-bottom: 20px;
     }
 
@@ -2381,7 +2382,7 @@ padding-left: 7px;
 @media (max-width: 1700px) {
     /* Navbar */
     .information_part .main-header {
-        font-size: 55px;
+        font-size: 50px;
     }
 
     /* Navbar */
@@ -2410,7 +2411,7 @@ padding-left: 7px;
 @media (max-width: 1400px) {
     /* Navbar */
     .information_part .main-header {
-        font-size: 40px;
+        font-size: 38px;
         text-align: center;
     }
 
@@ -2965,8 +2966,12 @@ padding-left: 7px;
         display: none;
     }
 
+    .thumbnails .container-fluid {
+        padding: 0 170px;
+    }
+
     .cottage-name {
-        padding-top: 0px;
+        padding-top: 0;
     }
 
     .three-part {
@@ -3402,7 +3407,7 @@ padding-left: 7px;
     }
 
     .main-menu li a {
-        font-size: 26px;
+        font-size: 22px;
     }
 
     .header-body {

@@ -37,7 +37,7 @@ class AppServiceProvider extends ServiceProvider
         });
 
         view()->composer('partials.photo_report', function ($view){
-            $view->with('photos', Slider::thubnails_slider());
+            $view->with('photos', Album::thubnails_albums());
         });
 
         view()->composer('partials.reviews', function ($view){
