@@ -13,6 +13,13 @@ $(document).ready(function(){
       // vertical: true,
       focusOnSelect: false,
       responsive: [
+      // {
+      //   breakpoint: 1200,
+      //   settings: {
+      //     arrows: true,
+      //     dots: true,
+      //     slidesToShow: 1
+      //   },
       {
         breakpoint: 768,
         settings: {
