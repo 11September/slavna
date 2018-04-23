@@ -481,22 +481,26 @@ form button:hover {
     margin-left: 70px;
     height: auto;
     padding: 35px 50px 30px 35px;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    width: 1000px;
+    /*border-top-left-radius: 25px;*/
+    /*border-bottom-left-radius: 25px;*/
+    border-radius: 25px;
+    /*width: 1000px;*/
+    width: calc(50% - 35px);
 }
 
 .photo_report .block_img {
     border-radius: 25px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
-    width: 850px;
+    /*width: 850px;*/
+    width: calc(50% - 35px);
     margin: 10px 0;
 }
 
 .photo_report .block_img img {
     border-radius: 25px;
     height: 700px;
-    width: 850px;
+    /*width: 850px;*/
+    width: 100%;
 }
 
 .photo_report .draggable {
@@ -507,28 +511,68 @@ form button:hover {
     font-family: "Arial";
     font-size: 50px;
     font-weight: bold;
-    padding-bottom: 50px;
+    margin-bottom: 30px;
     letter-spacing: 2px;
+    height: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .photo_report_slider p {
     font-size: 30px;
     line-height: 1.2;
-    height: 400px;
+    height: 365px;
     font-family: 'Proxima_Nova-reg';
     letter-spacing: 1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 67px;
+    display: -webkit-box;
+    -webkit-line-clamp: 10; 
+    -webkit-box-orient: vertical;
+}
+
+.photo_report_slider .slick-dots {
+    bottom: 105px;
+    width: 25%;
+    padding: 0 8%;
+    /*height: 8px;*/
+    /*background: #ece7e3;*/
+}
+
+.photo_report_slider .slick-dots li button {
+    height: 10px;
+    width: 100%;
+    cursor: pointer;
+    top: -1px;
+}
+
+.photo_report_slider .slick-dots li{
+    background: #ece7e3 !important;
+    height: 5px;
+    margin: 0;
+    width: 50%;
+}
+
+.photo_report_slider .slick-dots .slick-active{
+    background: #f5db90 !important;
+    box-shadow: 0 0 10px 0 rgba(245, 219, 144, 0.9);
+    height: 7px;
+    top: -1px;
+}
+
+.photo_report_slider .slick-dots li button:before {
+    content: '' !important;
 }
 
 .block_text p span {
     color: #fdc83c;
 }
 
-.photo_report_panel {
-
-}
-
 .photo_report_arrow {
     text-align: center;
+    position: relative;
+    top: -30px;
 }
 
 .photo_report_link {
@@ -554,8 +598,7 @@ form button:hover {
 }
 
 .photo_report_arrow .slick-prev {
-    left: 15px;
-    top: 5px;
+    left: 50px;
 }
 
 .photo_report_arrow .slick-prev:before {
@@ -563,30 +606,32 @@ form button:hover {
 }
 
 .photo_report_arrow .slick-next {
-    right: 0;
-    top: 5px;
+    right: 50px;
 }
 
-.photo_report_arrow .slick-next:before {
+.photo_report_slider .slick-prev {
+    left: 100px;
+    z-index: 2;
+    top: 633px;
+}
+
+.photo_report_slider .slick-next {
+    left: 360px;
+    z-index: 2;
+    top: 633px;
+}
+
+.photo_report_slider .slick-prev:before {
+    content: url(../images/photo_report_slider_left.png);
+}
+
+.photo_report_slider .slick-next:before {
     content: url(../images/photo_report_slider_right.png);
 }
 
-.photo_report_arrow .slick-dots li {
-    height: 3px;
-    background: #eee6e4;
-    margin: 0;
-    width: 38px;
-}
 
-.photo_report_arrow .slick-active {
-    background: #f3d99e;
-    border: none;
-    box-shadow: 0 0 5px 1px rgba(243, 217, 158, 0.8);
-}
-
-.photo_report_arrow .slick-dots li button:before {
-    content: '';
-    top: -8px;
+.photo_report_arrow .slick-next:before {
+    content: url(../images/photo_report_slider_right.png);
 }
 
 .photo_report_panel span {
@@ -893,7 +938,6 @@ form button:hover {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px;
-    overflow: scroll;
 }
 
 .latest_publication h3 {

@@ -5,9 +5,9 @@ $(document).ready(function(){
       slidesToShow: 1,
       rows: 1,
       arrows: true,
-      appendArrows: $('.photo_report_arrow'),
-      dots: false,
-      appendDots: $('.photo_report_arrow'),
+      // appendArrows: $('.photo_report_arrow'),
+      dots: true,
+      // appendDots: $('.photo_report_arrow'),
       infinite: false,
       centerMode: true,
       // vertical: true,
@@ -39,6 +39,9 @@ $(document).ready(function(){
     $(this).find('.current_number_slide').text("0" + current);
     $(this).find('.all_number_slide').text("0" + last_n);
   });
+
+  photo_report_slider_width = 100 / last_n;
+  $('.photo_report_slider').find('.slick-dots li').css("width", photo_report_slider_width  + "%");
 
   $('.reviews_slider').slick({
       initialSlide: 0,
