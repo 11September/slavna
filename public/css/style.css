@@ -469,17 +469,15 @@ form button:hover {
     margin-left: 70px;
     height: auto;
     padding: 35px 50px 30px 35px;
-    /*border-top-left-radius: 25px;*/
-    /*border-bottom-left-radius: 25px;*/
-    border-radius: 25px;
-    /*width: 1000px;*/
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    /*border-radius: 25px;*/
     width: calc(50% - 35px);
 }
 
 .photo_report .block_img {
     border-radius: 25px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
-    /*width: 850px;*/
     width: calc(50% - 35px);
     margin: 10px 0;
 }
@@ -2624,7 +2622,6 @@ padding-left: 7px;
     /* photo_report */
     .photo_report .block_text {
         height: auto;
-        border-radius: 25px;
         padding: 25px 35px 15px 30px;
     }
 
@@ -3038,6 +3035,8 @@ padding-left: 7px;
         right: 35px;
         top: 490px;
     }
+
+    
     /* photo_report end */
     /* reviews */
     .reviews_slider_img {
