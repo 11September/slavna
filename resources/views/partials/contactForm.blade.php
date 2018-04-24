@@ -48,7 +48,6 @@
                             <p>google+</p>
                         </a>
                     @endif
-
                 </div>
 
             </div>

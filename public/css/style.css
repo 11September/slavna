@@ -332,6 +332,10 @@ form button:hover {
     letter-spacing: 2px;
 }
 
+.checkout-input {
+    padding-bottom: 10px;
+}
+
 .brony-btn {
     display: inline-block;
     background: white;
@@ -1252,7 +1256,7 @@ form button:hover {
     background: whitesmoke;
     position: relative;
     right: 0;
-    border-radius: 30px;
+    border-radius: 30px 0 0 30px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
 }
 
@@ -1278,6 +1282,7 @@ form button:hover {
     display: flex;
     justify-content: center;
     padding-bottom: 25px;
+    justify-content: space-evenly;
 }
 
 .my-fafa p{
@@ -1322,12 +1327,16 @@ form button:hover {
 }
 
 hr {
-    margin-top: 50px;
     margin-bottom: 0;
     height: 2px;
     width: 80%;
     background: #2D1C15;
-    margin-left: 95px;
+    position: absolute;
+    right: 0;
+}
+
+form .input-special:first-child{
+    margin-top: 50px;
 }
 
 .text-p-ua {
@@ -1344,8 +1353,9 @@ hr {
     font-family: 'Proxima_Nova-bold';
     text-align: center;
     font-size: 41px;
-    margin-top: 85px;
+    margin-top: 50px;
     letter-spacing: 5px;
+    margin-bottom: 50px;
 }
 
 .photo-left img{
@@ -1391,6 +1401,8 @@ textarea {
     margin-top: 20px;
     font-family: 'Proxima_light';
     margin-bottom: 40px;
+    text-align: left;
+    padding-left: 75px;
 }
 
 .question-span {
@@ -1537,6 +1549,7 @@ textarea {
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
+    position: static;
 }
 
 .reserv-span {
@@ -2111,6 +2124,7 @@ padding-left: 7px;
 
     .photo_report_slider_item {
         width: 100vw;
+        outline: none;
     }
 
     .photo_report .draggable {
@@ -2604,6 +2618,51 @@ padding-left: 7px;
         display: none;
     }
 
+    ::-webkit-input-placeholder {
+        color: #2D1C15 !important;
+        font-size: 22px;
+        font-family: 'Proxima_Nova-reg';
+    }
+
+    ::-moz-placeholder {
+        font-size: 18px;
+        font-family: 'Proxima_Nova-reg';
+    }
+
+
+
+    /* Firefox 19+ */
+    :-moz-placeholder {
+        font-size: 18px;
+    }
+
+    /* Firefox 18- */
+    :-ms-input-placeholder {
+        font-size: 18px;
+    }
+
+    .text-p-ua {
+        font-size: 26px;
+    }
+
+    .my-fafa p {
+        font-size: 20px;
+    }
+
+    .h2-text-quest {
+        font-size: 36px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .my-fafa img{
+        width: 50px;
+    }
+
+    .text-ua {
+        font-size: 40px;
+    }
+
     .under-text {
         font-size: 23px;
     }
@@ -2947,6 +3006,11 @@ padding-left: 7px;
         bottom: 25px;
     }
 
+    .wrapper-text-left,.wrapper-answer-form{
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
     .sub-header-section.first {
         font-size: 36px;
     }
@@ -3231,6 +3295,11 @@ padding-left: 7px;
     /* photo_report */
     .photo_report_arrow {
         display: none;
+    }
+
+    .thubnails-item img {
+        width: 100%;
+        height: auto;
     }
 
     .sub-header-section.first {
