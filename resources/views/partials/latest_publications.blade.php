@@ -12,9 +12,11 @@
                         <div class="block_text">
                             <div class="block_bg_img">
                                 <h3>{{ $post->title }}</h3>
-                                <p>
+
+                                <div class="wrapper-latest-bublication-text">
                                     {!! $post->body !!}
-                                </p>
+                                </div>
+
                                 <div class="row photo_report_panel">
                                     <div class="col-xl-4 latest_publication_arrow photo_report_arrow">
                                         <span class="current_number_slide"></span> <span>/</span> <span
