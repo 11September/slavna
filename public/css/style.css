@@ -2858,6 +2858,19 @@ padding-left: 7px;
     .reviews_slider_img {
         margin-left: 1%;
     }
+
+    .photo_report_arrow {
+        top: -5px;
+    }
+
+    .photo_report_slider .slick-prev {
+        left: 80px;
+        top: 415px;
+    }
+
+    .photo_report_slider .slick-next {
+        left: 255px;
+    }
     /* reviews end */
 }
 
@@ -2995,7 +3008,7 @@ padding-left: 7px;
     }
 
     .photo_report .draggable {
-        height: 580px;
+        /*height: 580px;*/
     }
 
     .photo_report .block_text {
@@ -3012,6 +3025,24 @@ padding-left: 7px;
         height: 130px;
     }
 
+    .photo_report .block_img {
+        width: calc(85%);
+    }
+
+    .photo_report .block_text {
+        width: calc(85%);
+    }
+
+    .photo_report_slider .slick-prev {
+        left: 35px;
+        top: 490px;
+    }
+
+    .photo_report_slider .slick-next {
+        left: inherit;
+        right: 35px;
+        top: 490px;
+    }
     /* photo_report end */
     /* reviews */
     .reviews_slider_img {
@@ -3124,12 +3155,23 @@ padding-left: 7px;
     }
 
     .photo_report .block_text {
-        height: 285px;
-        width: 550px;
+        /*height: 285px;*/
+        /*width: 550px;*/
     }
 
     .photo_report_slider p {
         height: 150px;
+    }
+
+    .photo_report_slider .slick-prev {
+        left: 15px;
+        top: 490px;
+    }
+
+    .photo_report_slider .slick-next {
+        left: inherit;
+        right: 15px;
+        top: 490px;
     }
 
     /* photo_report end */
@@ -3278,7 +3320,7 @@ padding-left: 7px;
     }
 
     .photo_report .draggable {
-        height: 685px;
+        /*height: 685px;*/
     }
 
     .dance-blog-h2 {
@@ -3298,8 +3340,8 @@ padding-left: 7px;
     }
 
     .photo_report .block_text {
-        height: 380px;
-        width: 320px;
+        /*height: 380px;*/
+        /*width: 320px;*/
         padding: 25px 25px 15px 25px;
     }
 
@@ -3405,6 +3447,23 @@ padding-left: 7px;
         font-size: 16px;
     }
 
+    .photo_report .block_img {
+        height: 300px;
+    }
+
+    .photo_report_slider h3 {
+        height: 70px;
+    }
+
+    .photo_report_slider .slick-prev {
+        left: 5px;
+        top: 490px;
+    }
+
+    .photo_report_slider .slick-next {
+        right: 5px;
+        top: 490px;
+    }
     /* reviews end */
     /* cottagges_one_item*/
     .cottagges_one_item .latest_publication_slider_item {
