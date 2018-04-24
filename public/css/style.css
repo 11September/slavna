@@ -139,6 +139,11 @@ form button:hover {
     letter-spacing: 2px;
 }
 
+.checkout-input{
+    outline: none!important;
+    font-size: 24px;
+}
+
 .main-menu {
     color: white;
     font-size: 40px;
@@ -509,7 +514,7 @@ form button:hover {
 .photo_report_slider p {
     font-size: 30px;
     line-height: 1.2;
-    height: 250px;
+    height: 235px;
     font-family: 'Proxima_Nova-reg';
     letter-spacing: 1px;
     overflow: hidden;
@@ -570,7 +575,7 @@ form button:hover {
 }
 
 .wrapper-latest-bublication-text{
-    height: 235px;
+    height: 225px;
     margin-bottom: 60px;
     overflow: hidden;
 }
@@ -610,13 +615,15 @@ form button:hover {
 .photo_report_slider .slick-prev {
     left: 100px;
     z-index: 2;
-    top: 633px;
+    bottom: 75px;
+    top: auto;
 }
 
 .photo_report_slider .slick-next {
     left: 360px;
     z-index: 2;
-    top: 633px;
+    bottom: 75px;
+    top: auto;
 }
 
 .photo_report_slider .slick-prev:before {
@@ -2070,7 +2077,7 @@ padding-left: 7px;
     }
 
     .photo_report_slider .slick-dots {
-        bottom: 75px;
+        bottom: 85px;
     }
 
     .photo_report_arrow {
@@ -2086,7 +2093,7 @@ padding-left: 7px;
     }
 
     .photo_report .block_img img {
-        border-radius: 25px;
+        border-radius: 0 25px 25px 0;
     }
 
     .photo_report_slider h3 {
@@ -2165,6 +2172,7 @@ padding-left: 7px;
     .latest_publication p {
         font-size: 24px;
         height: auto;
+        line-height: 25px!important;
     }
 
     .latest_publication .photo_report_panel a {
@@ -2512,6 +2520,10 @@ padding-left: 7px;
         padding: 0 3% 0 9%;
     }
 
+    .reviews_slider_img img {
+        width: 400px;
+    }
+
     .latest_publication .slick-next {
         left: 92%;
         top: 490px;
@@ -2616,6 +2628,10 @@ padding-left: 7px;
     /* video_items */
     .reviews .position_line{
         display: none;
+    }
+
+    .reviews_slider .slick-list.draggable{
+        height: 490px!important;
     }
 
     ::-webkit-input-placeholder {
@@ -2795,10 +2811,6 @@ padding-left: 7px;
         font-size: 18px;
     }
 
-    .photo_report_slider .slick-next {
-        top: 415px;
-    }
-
     .photo_report_slider .slick-dots {
         width: 325px;
         padding: 0 3% 0 6%;
@@ -2807,7 +2819,6 @@ padding-left: 7px;
     .photo_report_slider .slick-prev {
         left: 40px;
         z-index: 2;
-        top: 415px;
     }
 
     .photo_report_panel span {
@@ -2966,13 +2977,20 @@ padding-left: 7px;
         margin-left: 3%;
     }
 
+    .photo_report_slider .slick-prev {
+        bottom: 124px;
+    }
+
+    .photo_report_slider .slick-next {
+        bottom: 124px;
+    }
+
     .photo_report_arrow {
         top: -5px;
     }
 
     .photo_report_slider .slick-prev {
         left: 80px;
-        top: 415px;
     }
 
     .photo_report_slider .slick-next {
@@ -3006,10 +3024,45 @@ padding-left: 7px;
         bottom: 25px;
     }
 
-    .wrapper-text-left,.wrapper-answer-form{
-        max-width: 70%;
-        margin: 0 auto;
+    .slider_bg {
+        margin-left: 25px;
+        margin-right: 25px;
     }
+
+    .clider_info span{
+        display: none;
+    }
+
+    .wrapper-latest-bublication-text {
+        height: 205px;
+    }
+
+    .photo_report .block_img img {
+        border-radius: 25px 25px 0 0;
+    }
+
+
+
+    .wrapper-text-left,.wrapper-answer-form{
+        max-width: 600px;
+        margin: 0 auto;
+        left: 0;
+        margin-bottom: 0!important;
+        border-radius: 0!important;
+        box-shadow: none!important;
+    }
+
+    .wrapper-answer-form{
+        border-radius: 20px 20px 0 0 !important;
+    }
+
+    .wrapper-text-left {
+        min-height: 700px!important;
+        margin-bottom: 50px!important;
+        border-radius: 0 0 20px 20px  !important;
+    }
+
+
 
     .sub-header-section.first {
         font-size: 36px;
@@ -3164,7 +3217,7 @@ padding-left: 7px;
     .photo_report .block_text {
         order: 2;
         margin-top: -20px;
-        border-radius: 25px;
+        border-radius: 0 0 25px 25px;
     }
 
     .photo_report .block_img img {
@@ -3176,11 +3229,11 @@ padding-left: 7px;
     }
 
     .photo_report .block_img {
-        width: calc(85%);
+        width: 60%;
     }
 
     .photo_report .block_text {
-        width: calc(85%);
+        width: 60%;
     }
 
     .photo_report_slider .slick-prev {
@@ -3285,7 +3338,7 @@ padding-left: 7px;
 
     .latest_publication .slick-next {
         top: 500px;
-        left: 98%;
+        left: 96%;
     }
 
     /* latest_publication end */
@@ -3295,6 +3348,51 @@ padding-left: 7px;
     /* photo_report */
     .photo_report_arrow {
         display: none;
+    }
+
+    .reviews_slider_item .row_content_slider{
+        flex-wrap: nowrap;
+    }
+
+    .reviews .slick-list.draggable {
+        height: auto!important;
+    }
+
+    .reviews .draggable{
+    }
+
+
+
+    .photo_report .block_text,.photo_report .block_img{
+        width: 80%;
+    }
+
+    footer p{
+        font-size: 18px;
+    }
+
+    .wrapper-text-left,.wrapper-answer-form {
+        max-width: 500px;
+    }
+
+    .h2-text-quest {
+        font-size: 30px;
+    }
+
+    .text-ua {
+        font-size: 34px;
+    }
+
+    .text-p-ua {
+        font-size: 22px;
+    }
+
+    .my-fafa svg {
+        width: 40px !important;
+    }
+
+    .under-form-text {
+        padding-left: 20px;
     }
 
     .thubnails-item img {
@@ -3414,6 +3512,8 @@ padding-left: 7px;
     .slider_bg p {
         font-size: 20px;
         text-align: center;
+        background: #593425;
+        padding: 15px;
     }
 
     .row_links {
@@ -3531,6 +3631,11 @@ padding-left: 7px;
     .video_items .wrapper-twest-hover{
         height: 250px;
     }
+
+    .wrapper-latest-bublication-text {
+        height: 190px;
+    }
+
     /* video_items end */
     /* photo_report */
     .hover-item-text {
@@ -3550,6 +3655,10 @@ padding-left: 7px;
         font-size: 16px;
     }
 
+    .wrapper-text-left, .wrapper-answer-form {
+        max-width: 90%;
+    }
+
     .photo_report .draggable {
         /*height: 685px;*/
     }
@@ -3567,7 +3676,7 @@ padding-left: 7px;
     }
 
     .h2-text-quest {
-        font-size: 34px;
+        font-size: 28px;
     }
 
     .photo_report .block_text {
@@ -3577,7 +3686,8 @@ padding-left: 7px;
     }
 
     .photo_report_slider p {
-        height: 225px;
+        height: auto;
+        max-height: 225px;
     }
 
     .photo_report_panel a {
@@ -3627,6 +3737,35 @@ padding-left: 7px;
         width: 280px;
     }
 
+    .wrapper-latest-bublication-text {
+        height: 195px;
+    }
+
+    footer p {
+        font-size: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .text-ua {
+        font-size: 28px;
+    }
+
+    .text-p-ua {
+        font-size: 20px;
+    }
+
+    .special-padding-top {
+        padding-top: 30px;
+    }
+
+    .wrapper-text-left, .wrapper-answer-form {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+
+
     .artours_intro .block_img img {
         height: 300px;
         width: 300px;
@@ -3673,14 +3812,6 @@ padding-left: 7px;
         bottom: 15px;
     }
 
-    .text-ua {
-        font-size: 35px;
-    }
-
-    .text-p-ua {
-        font-size: 25px;
-    }
-
     hr {
         margin-top: 50px;
         margin-bottom: 0;
@@ -3688,6 +3819,41 @@ padding-left: 7px;
         width: 88%;
         background: #2D1C15;
         margin-left: 45px;
+    }
+
+    .fa-facebook-square,.fa-instagram,.fa-google{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .h2-text-quest {
+        margin-bottom: 0;
+    }
+
+    .my-fafa p {
+        font-size: 16px;
+        margin-top: -20px;
+    }
+
+    .h2-text-quest {
+        font-size: 22px!important;
+    }
+
+    form hr {
+        margin-top: 35px;
+    }
+
+    .wrapper-text-left {
+        min-height: 600px !important;
+    }
+
+    .question-span {
+        font-size: 20px;
+    }
+
+    .under-form-text {
+        padding-left: 30px;
+        font-size: 14px;
     }
 
     .dance-blog-h2 {
@@ -3891,6 +4057,13 @@ padding-left: 7px;
     .map {
         height: 360px;
     }
+
+    .photo_report_slider .slick-prev,
+    .photo_report_slider .slick-next{
+        display: none!important;
+    }
+
+
 
     .hover-item-text {
         width: 390px !important;

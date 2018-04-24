@@ -64,7 +64,7 @@
                     </div>
 
                     <div class="input-special">
-                        <input class="checkout-input" type="number" placeholder="E-mail*">
+                        <input class="checkout-input" type="email" placeholder="E-mail*">
                     </div>
                     <div class="input-special">
                         <input class="checkout-input input-bot" type="text" placeholder="Т е л е ф о н*">
