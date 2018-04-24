@@ -16,4 +16,10 @@ class Number extends Model
     {
         return $this->hasMany(PhotoNumber::class);
     }
+
+    public static function reservation()
+    {
+        $numbers = Number::select('id', 'name')->latest()->take(5)->get();
+        return $numbers;
+    }
 }

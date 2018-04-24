@@ -52,22 +52,21 @@
 
             </div>
             <div class="wrapper-answer-form  col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                <form action="{{ action('PagesController@form_question') }}">
+                <form id="form" action="{{ action('PagesController@form_question') }}">
                     {{ csrf_field() }}
 
                     <h2 class="h2-text-quest">ЗАДАТЬ ВОПРОС </h2>
-                        <HR>
-
+                    <hr>
 
                     <div class="input-special">
-                        <input class="checkout-input" type="text" placeholder="И м я*">
+                        <input class="checkout-input" value="{{ old('name') }}" name="name" type="text" placeholder="Имя *">
                     </div>
 
                     <div class="input-special">
-                        <input class="checkout-input" type="email" placeholder="E-mail*">
+                        <input class="checkout-input" value="{{ old('email') }}" name="email" type="email" placeholder="E-mail *">
                     </div>
                     <div class="input-special">
-                        <input class="checkout-input input-bot" type="text" placeholder="Т е л е ф о н*">
+                        <input class="checkout-input input-bot" value="{{ old('phone') }}" name="phone" type="text" placeholder="Телефон *">
                     </div>
                     <textarea placeholder=" Задайте свой вопрос" name="message" id="">
                         {{ old('message') }}
@@ -78,9 +77,9 @@
                         администратор ответит на ваши вопросы.
                     </p>
 
+                    <div class="alert" style="display:none"></div>
+
                     <button type="submit" class="question-span"> Задать вопрос</button>
-
-
                 </form>
             </div>
         </div>

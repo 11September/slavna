@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Album;
+use App\Number;
 use App\Post;
 use App\Photo;
 use App\Slider;
@@ -46,6 +47,10 @@ class AppServiceProvider extends ServiceProvider
 
         view()->composer('partials.intro', function ($view){
             $view->with('sliders', Slider::thubnails_slider());
+        });
+
+        view()->composer('partials.reservation', function ($view){
+            $view->with('numbers', Number::reservation());
         });
     }
 }

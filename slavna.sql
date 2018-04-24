@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Апр 24 2018 г., 12:33
+-- Время создания: Апр 24 2018 г., 18:15
 -- Версия сервера: 5.7.19
 -- Версия PHP: 7.1.7
 
@@ -70,6 +70,22 @@ CREATE TABLE `categories` (
 INSERT INTO `categories` (`id`, `parent_id`, `order`, `name`, `slug`, `created_at`, `updated_at`) VALUES
 (1, NULL, 1, 'Category 1', 'category-1', '2018-03-31 09:13:14', '2018-03-31 09:13:14'),
 (2, NULL, 1, 'Category 2', 'category-2', '2018-03-31 09:13:14', '2018-03-31 09:13:14');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `contacts`
+--
+
+CREATE TABLE `contacts` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `phone` varchar(15) COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `message` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -215,7 +231,14 @@ INSERT INTO `data_rows` (`id`, `data_type_id`, `field`, `type`, `display_name`, 
 (116, 16, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 1),
 (117, 16, 'image', 'image', 'Картинка', 0, 1, 1, 1, 1, 1, '{\"resize\":{\"width\":\"1000\",\"height\":null},\"quality\":\"65%\",\"upsize\":true}', 2),
 (118, 16, 'created_at', 'timestamp', 'Время создания', 0, 1, 1, 0, 0, 0, NULL, 3),
-(119, 16, 'updated_at', 'timestamp', 'Время обновления', 0, 0, 0, 0, 0, 0, NULL, 4);
+(119, 16, 'updated_at', 'timestamp', 'Время обновления', 0, 0, 0, 0, 0, 0, NULL, 4),
+(120, 17, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 1),
+(121, 17, 'name', 'text', 'Имя', 1, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:255\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 2),
+(122, 17, 'phone', 'text', 'Телефон', 1, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:255\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 3),
+(123, 17, 'email', 'text', 'Email', 1, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|email\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 4),
+(124, 17, 'message', 'text_area', 'Сообщение', 1, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:255\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 5),
+(125, 17, 'created_at', 'timestamp', 'Время создания', 0, 1, 1, 0, 0, 0, NULL, 6),
+(126, 17, 'updated_at', 'timestamp', 'Время обновления', 0, 0, 0, 0, 0, 0, NULL, 7);
 
 -- --------------------------------------------------------
 
@@ -260,7 +283,8 @@ INSERT INTO `data_types` (`id`, `name`, `slug`, `display_name_singular`, `displa
 (13, 'features', 'features', 'Feature', 'Features', 'voyager-thumb-tack', 'App\\Feature', NULL, NULL, NULL, 1, 0, '2018-04-12 08:31:22', '2018-04-12 08:31:22'),
 (14, 'photo_numbers', 'photo-numbers', 'Photo Number', 'Photo Numbers', 'voyager-photos', 'App\\PhotoNumber', NULL, NULL, NULL, 1, 0, '2018-04-12 12:17:28', '2018-04-12 12:17:28'),
 (15, 'reviews', 'reviews', 'Review', 'Reviews', 'voyager-chat', 'App\\Review', NULL, NULL, NULL, 1, 0, '2018-04-12 13:01:38', '2018-04-12 13:02:00'),
-(16, 'sliders', 'sliders', 'Slider', 'Sliders', 'voyager-crop', 'App\\Slider', NULL, NULL, NULL, 1, 0, '2018-04-13 04:30:02', '2018-04-13 04:30:02');
+(16, 'sliders', 'sliders', 'Slider', 'Sliders', 'voyager-crop', 'App\\Slider', NULL, NULL, NULL, 1, 0, '2018-04-13 04:30:02', '2018-04-13 04:30:02'),
+(17, 'contacts', 'contacts', 'Контакты', 'Контакты', 'voyager-mail', 'App\\Contact', NULL, NULL, NULL, 1, 0, '2018-04-24 11:22:29', '2018-04-24 11:22:29');
 
 -- --------------------------------------------------------
 
@@ -355,7 +379,8 @@ INSERT INTO `menu_items` (`id`, `menu_id`, `title`, `url`, `target`, `icon_class
 (20, 1, 'Особенности номеров', '/admin/features', '_self', 'voyager-thumb-tack', '#000000', NULL, 21, '2018-04-12 08:31:22', '2018-04-12 12:52:51', NULL, ''),
 (21, 1, 'Фото намеров', '/admin/photo-numbers', '_self', 'voyager-photos', '#000000', NULL, 22, '2018-04-12 12:17:28', '2018-04-12 12:52:41', NULL, ''),
 (22, 1, 'Отзывы', '/admin/reviews', '_self', 'voyager-chat', '#000000', NULL, 23, '2018-04-12 13:01:39', '2018-04-12 13:02:42', NULL, ''),
-(23, 1, 'Слайды', '/admin/sliders', '_self', 'voyager-crop', '#000000', NULL, 24, '2018-04-13 04:30:02', '2018-04-13 04:36:20', NULL, '');
+(23, 1, 'Слайды', '/admin/sliders', '_self', 'voyager-crop', '#000000', NULL, 24, '2018-04-13 04:30:02', '2018-04-13 04:36:20', NULL, ''),
+(24, 1, 'Контакты', '/admin/contacts', '_self', 'voyager-mail', NULL, NULL, 25, '2018-04-24 11:22:29', '2018-04-24 11:22:29', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -572,7 +597,12 @@ INSERT INTO `permissions` (`id`, `key`, `table_name`, `created_at`, `updated_at`
 (87, 'read_sliders', 'sliders', '2018-04-13 04:30:02', '2018-04-13 04:30:02', NULL),
 (88, 'edit_sliders', 'sliders', '2018-04-13 04:30:02', '2018-04-13 04:30:02', NULL),
 (89, 'add_sliders', 'sliders', '2018-04-13 04:30:02', '2018-04-13 04:30:02', NULL),
-(90, 'delete_sliders', 'sliders', '2018-04-13 04:30:02', '2018-04-13 04:30:02', NULL);
+(90, 'delete_sliders', 'sliders', '2018-04-13 04:30:02', '2018-04-13 04:30:02', NULL),
+(91, 'browse_contacts', 'contacts', '2018-04-24 11:22:29', '2018-04-24 11:22:29', NULL),
+(92, 'read_contacts', 'contacts', '2018-04-24 11:22:29', '2018-04-24 11:22:29', NULL),
+(93, 'edit_contacts', 'contacts', '2018-04-24 11:22:29', '2018-04-24 11:22:29', NULL),
+(94, 'add_contacts', 'contacts', '2018-04-24 11:22:29', '2018-04-24 11:22:29', NULL),
+(95, 'delete_contacts', 'contacts', '2018-04-24 11:22:29', '2018-04-24 11:22:29', NULL);
 
 -- --------------------------------------------------------
 
@@ -747,7 +777,16 @@ INSERT INTO `permission_role` (`permission_id`, `role_id`) VALUES
 (89, 1),
 (89, 3),
 (90, 1),
-(90, 3);
+(90, 3),
+(91, 1),
+(91, 3),
+(92, 1),
+(92, 3),
+(93, 1),
+(93, 3),
+(94, 1),
+(95, 1),
+(95, 3);
 
 -- --------------------------------------------------------
 
@@ -847,7 +886,7 @@ CREATE TABLE `reservations` (
   `cottage_id` int(11) DEFAULT NULL,
   `date_start` date DEFAULT NULL,
   `date_end` date DEFAULT NULL,
-  `phone` varchar(15) COLLATE utf8_unicode_ci NOT NULL,
+  `phone` varchar(17) COLLATE utf8_unicode_ci NOT NULL,
   `message` text COLLATE utf8_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
@@ -858,7 +897,7 @@ CREATE TABLE `reservations` (
 --
 
 INSERT INTO `reservations` (`id`, `name`, `cottage_id`, `date_start`, `date_end`, `phone`, `message`, `created_at`, `updated_at`) VALUES
-(1, 'sadasdasdasd', 2, '2018-01-01', '2018-01-02', '324564', 'Оставьтеdsadad свое сообщение', '2018-04-09 12:07:53', '2018-04-09 12:07:53');
+(3, 'sadada', 1, '2018-01-01', '2018-01-02', '+383-821-23-1231', 'asddasdad', '2018-04-24 12:10:57', '2018-04-24 12:10:57');
 
 -- --------------------------------------------------------
 
@@ -964,7 +1003,10 @@ INSERT INTO `settings` (`id`, `key`, `display_name`, `value`, `details`, `type`,
 (10, 'admin.google_analytics_client_id', 'Google Analytics Client ID (used for admin dashboard)', '', '', 'text', 1, 'Admin'),
 (11, 'site.facebook_link', 'facebook', 'https://www.facebook.com/', NULL, 'text', 6, 'Site'),
 (12, 'site.instagram_link', 'instagram', 'https://www.instagram.com/', NULL, 'text', 7, 'Site'),
-(13, 'site.google_link', 'googlePlus', 'https://plus.google.com/discover', NULL, 'text', 8, 'Site');
+(13, 'site.google_link', 'googlePlus', 'https://plus.google.com/discover', NULL, 'text', 8, 'Site'),
+(14, 'site.phone_1', 'phone1', '(095) 65-02-810', NULL, 'text', 9, 'Site'),
+(15, 'site.phone_2', 'phone2', '(098) 179-24-55', NULL, 'text', 10, 'Site'),
+(16, 'site.email', 'email', 'PK_SLАVNА@UKR.NET', NULL, 'text', 11, 'Site');
 
 -- --------------------------------------------------------
 
@@ -1105,6 +1147,12 @@ ALTER TABLE `categories`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `categories_slug_unique` (`slug`),
   ADD KEY `categories_parent_id_foreign` (`parent_id`);
+
+--
+-- Индексы таблицы `contacts`
+--
+ALTER TABLE `contacts`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Индексы таблицы `data_rows`
@@ -1280,15 +1328,20 @@ ALTER TABLE `albums`
 ALTER TABLE `categories`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
+-- AUTO_INCREMENT для таблицы `contacts`
+--
+ALTER TABLE `contacts`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+--
 -- AUTO_INCREMENT для таблицы `data_rows`
 --
 ALTER TABLE `data_rows`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=120;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=127;
 --
 -- AUTO_INCREMENT для таблицы `data_types`
 --
 ALTER TABLE `data_types`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 --
 -- AUTO_INCREMENT для таблицы `features`
 --
@@ -1303,7 +1356,7 @@ ALTER TABLE `menus`
 -- AUTO_INCREMENT для таблицы `menu_items`
 --
 ALTER TABLE `menu_items`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 --
 -- AUTO_INCREMENT для таблицы `migrations`
 --
@@ -1323,7 +1376,7 @@ ALTER TABLE `pages`
 -- AUTO_INCREMENT для таблицы `permissions`
 --
 ALTER TABLE `permissions`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=91;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
 --
 -- AUTO_INCREMENT для таблицы `permission_groups`
 --
@@ -1348,7 +1401,7 @@ ALTER TABLE `posts`
 -- AUTO_INCREMENT для таблицы `reservations`
 --
 ALTER TABLE `reservations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT для таблицы `reviews`
 --
@@ -1368,7 +1421,7 @@ ALTER TABLE `services`
 -- AUTO_INCREMENT для таблицы `settings`
 --
 ALTER TABLE `settings`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT для таблицы `sliders`
 --
