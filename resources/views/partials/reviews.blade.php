@@ -1,7 +1,7 @@
 <section class="reviews">
 	<div class="container-fluid">
 
-		<div class="row position_line">
+		<div class="row position_line position_line_top">
 			<div class=" reviews_slide_line">
 				<div class="left_point"></div>
 				<div class="right_point"></div>

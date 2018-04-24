@@ -48,7 +48,6 @@ $(document).ready(function(){
       arrows: true,
       dots: true,
       infinite: false,
-      centerMode: true,
       vertical: true,
       focusOnSelect: false,
       responsive: [
@@ -56,7 +55,7 @@ $(document).ready(function(){
         breakpoint: 1200,
         settings: {
           arrows: true,
-          dots: true,
+          dots: false,
           slidesToShow: 1
         }
       }
@@ -79,6 +78,9 @@ $(document).ready(function(){
     $(this).find('.reviews_current_number_slide').text("0" + current);
     $(this).find('.reviews_all_number_slide').text("0" + last_n);
   });
+
+  reviews_slider_height = 100 / last_n;
+  $('.reviews_slider').find('.slick-dots li').css("height", reviews_slider_height  + "%");
 
   $('.latest_publication_slider').slick({
       initialSlide: 0,
