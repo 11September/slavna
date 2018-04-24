@@ -1206,8 +1206,11 @@ form button:hover {
 }
 
 .text-p-ua, .my-fafa {
-
     text-align: center;
+    color: white;
+}
+
+.text-p-ua a{
     color: white;
 }
 
@@ -1422,6 +1425,10 @@ textarea {
     align-items: center;
     line-height: 31px;
     letter-spacing: 2px;
+}
+
+.develop a{
+    color: #F4DB8F;
 }
 
 /* footer end */

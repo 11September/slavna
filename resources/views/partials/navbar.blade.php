@@ -10,9 +10,16 @@
             </div>
 
             <div class="links-part">
-                <a href="tel:+1234567890">(095) 65-02-810</a>
-                <a href="tel:+1234567890">(05446) 3-13-36</a>
-                <a href="mailto:pk_slаvnа@ukr.net">pk_slаvnа@ukr.net</a>
+                @if(setting('site.phone_1'))
+                    <a href="tel:+1234567890">(095) 65-02-810</a>
+                @endif
+                @if(setting('site.phone_2'))
+                    <a href="tel:+{{ setting('site.phone_2') }}">{{ setting('site.phone_2') }}</a>
+                @endif
+
+                @if(setting('site.email'))
+                    <a href="mailto:{{ setting('site.email') }}">{{ setting('site.email') }}</a>
+                @endif
             </div>
         </div>
 
