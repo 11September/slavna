@@ -96,19 +96,15 @@ $(document).ready(function(){
       slidesToShow: 1,
       rows: 1,
       arrows: true,
-      appendArrows: $('.latest_publication_arrow'),
-      dots: false,
-      appendDots: $('.latest_publication_arrow'),
+      dots: true,
       infinite: false,
-      centerMode: true,
-      // vertical: true,
       focusOnSelect: false,
       responsive: [
       {
         breakpoint: 1200,
         settings: {
           arrows: true,
-          dots: true,
+          dots: false,
           slidesToShow: 1
         }
       }
