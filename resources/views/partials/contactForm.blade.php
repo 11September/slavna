@@ -38,7 +38,8 @@
                     {{ csrf_field() }}
 
                     <h2 class="h2-text-quest">ЗАДАТЬ ВОПРОС </h2>
-                    <HR>
+                        <HR>
+
 
                     <div class="input-special">
                         <input class="checkout-input" type="text" placeholder="И м я*">

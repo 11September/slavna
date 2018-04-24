@@ -246,7 +246,6 @@ form button:hover {
 
 .intro_slider .slick-next {
     right: 40px;
-
     width: 50px;
     height: 50px;
 }
@@ -278,9 +277,6 @@ form button:hover {
 .video_menu_slider img {
     width: 100%;
     height: auto;
-    /*padding-right: 15px;*/
-    /*padding-top: 15px;*/
-
     border-radius: 20px;
 }
 
@@ -299,10 +295,6 @@ form button:hover {
     width: 50%;
     position: relative;
     bottom: 20px;
-}
-
-.info-body .slider-part {
-
 }
 
 .text-part p {
@@ -331,10 +323,6 @@ form button:hover {
     width: 100%;
 }
 
-.info-body {
-
-}
-
 .cottage-name {
     text-align: center;
     color: white;
@@ -342,6 +330,10 @@ form button:hover {
     font-family: 'Proxima_Nova-bold';
     padding-top: 30px;
     letter-spacing: 2px;
+}
+
+.checkout-input {
+    padding-bottom: 10px;
 }
 
 .brony-btn {
@@ -711,7 +703,6 @@ form button:hover {
 
 .slider_bg p {
     font-size: 30px;
-
 }
 
 .reviews .row_content_slider {
@@ -769,11 +760,8 @@ form button:hover {
 }
 
 .hover-item-text {
-    font-size: 30px;
-    color: #F4DB8F;
-    margin: 0 auto;
     text-align: center;
-    font-family: 'Proxima_Nova-reg';
+    margin: 0 auto;
     position: absolute;
     z-index: 9999;
     background: #74432F;
@@ -786,6 +774,13 @@ form button:hover {
     opacity: 0.9;
     bottom: 70px;
     visibility: hidden;
+}
+
+.hover-item-text a{
+    font-size: 30px;
+    color: #F4DB8F;
+    text-align: center;
+    font-family: 'Proxima_Nova-reg';
 }
 
 .twest-1:hover ~ .hover-item-text {
@@ -1179,7 +1174,6 @@ form button:hover {
     background: linear-gradient(to left, #673c2b, #42261b);
 }
 
-
 .contactForm{
     margin-top: 50px;
     min-height: 1050px;
@@ -1195,8 +1189,8 @@ form button:hover {
 .wrapper-answer-form {
     background: whitesmoke;
     position: relative;
-    right: 0px;
-    border-radius: 30px;
+    right: 0;
+    border-radius: 30px 0 0 30px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
 }
 
@@ -1254,13 +1248,11 @@ form button:hover {
 }
 
 .fa-instagram {
-
     text-align: center;
     color: black;
 }
 
 .fa-google {
-
     text-align: center;
     color: black;
 }
@@ -1270,10 +1262,12 @@ hr {
     height: 2px;
     width: 80%;
     background: #2D1C15;
-    margin-left: 95px;
-    margin: 0 auto;
-    margin-top: 50px;
+    position: absolute;
+    right: 0;
+}
 
+form .input-special:first-child{
+    margin-top: 50px;
 }
 
 .text-p-ua {
@@ -1290,8 +1284,9 @@ hr {
     font-family: 'Proxima_Nova-bold';
     text-align: center;
     font-size: 41px;
-    margin-top: 85px;
+    margin-top: 50px;
     letter-spacing: 5px;
+    margin-bottom: 50px;
 }
 
 .photo-left img{
@@ -1337,6 +1332,8 @@ textarea {
     margin-top: 20px;
     font-family: 'Proxima_light';
     margin-bottom: 40px;
+    text-align: left;
+    padding-left: 75px;
 }
 
 .question-span {
@@ -1479,6 +1476,7 @@ textarea {
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
+    position: static;
 }
 
 .reserv-span {
@@ -1538,18 +1536,11 @@ form {
     text-align: center;
 }
 
+
+
 /*reservaion-form*/
 
 /*dance-for-clear*/
-
-/*.dance-for-clear{*/
-/*background-image: url("../images/dance-clear.png");*/
-/*background-size: 100% 100%;*/
-/*background-repeat: no-repeat;*/
-/*width: 100%;*/
-/*min-height: 700px;*/
-/*}*/
-
 .img-dance {
     width: 100%;
     height: 100%;
@@ -1574,7 +1565,6 @@ form {
     padding-left: 5%;
     padding-right: 5%;
     line-height: 45px;
-
 }
 
 .dance-for-clear p{
@@ -1646,16 +1636,14 @@ form {
     font-size: 42px;
     color: white;
     font-family: 'Proxima_Nova-bold';
-        letter-spacing: 2px;
+    letter-spacing: 2px;
 }
 
 .description-blog-p {
-
     font-size: 23px;
     color: white;
     font-family: 'Proxima_Nova-reg';
     line-height: 45px;
-
 }
 
 .hr-blog {
@@ -1767,11 +1755,6 @@ padding-left: 7px;
     height: 100%;
     position: relative;
 }
-
-.twest-1:hover {
-
-}
-
 /* all-photos*/
 
 /* cottagges_one_item */
@@ -1889,10 +1872,6 @@ padding-left: 7px;
 /* cottagges_one_item end*/
 
 /* artours_intro */
-.artours_intro {
-
-}
-
 .artours_intro .block_img img {
     border-radius: 25px;
     height: 600px;
@@ -2175,7 +2154,7 @@ padding-left: 7px;
     }
 
     .reviews_slider_img {
-        margin-left: 0px;
+        margin-left: 0;
     }
 
     .reviews_slider_img {
@@ -2242,7 +2221,6 @@ padding-left: 7px;
 
 .about-item {
     position: relative;
-
     display: flex;
     align-items: center;
 }
@@ -2252,7 +2230,6 @@ padding-left: 7px;
     width: 100%;
     height: 100%;
     top: 0;
-
     background: #00000070;
 }
 
@@ -2261,10 +2238,8 @@ padding-left: 7px;
     z-index: 2;
     line-height: 25px;
     width: 100%;
-
     font-weight: 600;
     color: white;
-
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -2299,7 +2274,6 @@ padding-left: 7px;
 
 .about-item .top {
     height: 55%;
-
     background: white;
     color: black;
 }
@@ -2338,7 +2312,6 @@ padding-left: 7px;
     margin-bottom: 20px;
     display: inline-block;
     font-size: 12px;
-
 }
 
 .frame {
@@ -2348,7 +2321,6 @@ padding-left: 7px;
 /* Scrollbar */
 .scrollbar {
     margin: 0 0 1em 0;
-    height: 2px;
     background: #ccc;
     line-height: 0;
     margin-top: 40px;
@@ -2470,7 +2442,7 @@ padding-left: 7px;
     .reviews_slider_head {
         width: 740px;
         margin-right: 150px;
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     .slider_bg {
@@ -2506,12 +2478,12 @@ padding-left: 7px;
     /* Navbar */
     /* reviews */
     .reviews_slider_img {
-        margin-left: 0%;
+        margin-left: 0;
     }
 
     .reviews_slider_head {
         width: 740px;
-        margin-right: 0px;
+        margin-right: 0;
         padding-left: 20px;
     }
 
@@ -2562,6 +2534,51 @@ padding-left: 7px;
     /* video_items */
     .reviews .position_line{
         display: none;
+    }
+
+    ::-webkit-input-placeholder {
+        color: #2D1C15 !important;
+        font-size: 22px;
+        font-family: 'Proxima_Nova-reg';
+    }
+
+    ::-moz-placeholder {
+        font-size: 18px;
+        font-family: 'Proxima_Nova-reg';
+    }
+
+
+
+    /* Firefox 19+ */
+    :-moz-placeholder {
+        font-size: 18px;
+    }
+
+    /* Firefox 18- */
+    :-ms-input-placeholder {
+        font-size: 18px;
+    }
+
+    .text-p-ua {
+        font-size: 26px;
+    }
+
+    .my-fafa p {
+        font-size: 20px;
+    }
+
+    .h2-text-quest {
+        font-size: 36px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .my-fafa img{
+        width: 50px;
+    }
+
+    .text-ua {
+        font-size: 40px;
     }
 
     .under-text {
@@ -2843,7 +2860,7 @@ padding-left: 7px;
     }
 
     .thubnails-item {
-        height: 260px;
+        height: 300px;
     }
 
     .thubnails-item-info {
@@ -2896,6 +2913,11 @@ padding-left: 7px;
     .hover-item-text {
         width: 660px !important;
         bottom: 25px;
+    }
+
+    .wrapper-text-left,.wrapper-answer-form{
+        max-width: 70%;
+        margin: 0 auto;
     }
 
     .sub-header-section.first {
@@ -3035,7 +3057,7 @@ padding-left: 7px;
     }
 
     .cottagges_one_item .latest_publication_slider_item {
-        padding: 0px 30px;
+        padding: 0 30px;
     }
 
     /* cottagges_one_item end */
@@ -3157,6 +3179,11 @@ padding-left: 7px;
         display: none;
     }
 
+    .thubnails-item img {
+        width: 100%;
+        height: auto;
+    }
+
     .sub-header-section.first {
         font-size: 30px;
     }
@@ -3191,14 +3218,12 @@ padding-left: 7px;
         height: 35px;
     }
 
-
-
     .intro-slider_item img {
         height: auto;
     }
 
     .thumbnails .container-fluid {
-        padding: 0 170px;
+        padding: 0 15%;
     }
 
     .cottage-name {
@@ -3229,11 +3254,6 @@ padding-left: 7px;
 
     .dance-blog-h2 {
         font-size: 35px;
-    }
-
-    .photo_report .block_text {
-        /*height: 285px;*/
-        /*width: 550px;*/
     }
 
     .photo_report_slider p {
@@ -3347,6 +3367,11 @@ padding-left: 7px;
     .brony-btn {
         font-size: 24px;
     }
+
+    .thumbnails .wrapper-button-all-photos{
+        border-radius: 0;
+        margin: 50px 0;
+    }
 }
 
 @media (max-width: 630px) {
@@ -3382,6 +3407,9 @@ padding-left: 7px;
         font-size: 22px;
     }
 
+    .thumbnails .wrapper-button-all-photos{
+        width: 250px;
+    }
 }
 
 @media (max-width: 576px) {
