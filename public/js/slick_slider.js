@@ -107,6 +107,14 @@ $(document).ready(function(){
           dots: false,
           slidesToShow: 1
         }
+      },
+      {
+        breakpoint: 410,
+        settings: {
+          arrows: false,
+          dots: false,
+          slidesToShow: 1
+        }
       }
     ]
   });
