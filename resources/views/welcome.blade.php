@@ -25,8 +25,6 @@
 
 @include('partials.contactForm')
 
-
-
 @endsection
 
 @section('scripts')

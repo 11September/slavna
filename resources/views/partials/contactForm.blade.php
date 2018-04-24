@@ -9,27 +9,45 @@
                     ул. Монастырська
                 </h2>
 
-                <P class="text-p-ua padding-phone-p"> (095) 65-02-810</P>
+                @if(setting('site.phone_1'))
+                    <p class="text-p-ua padding-phone-p"><a href="tel:+{{ setting('site.phone_1') }}">{{ setting('site.phone_1') }}</a></p>
+                @endif
+
+                @if(setting('site.phone_2'))
+                    <p class="text-p-ua padding-phone-p"><a href="tel:+{{ setting('site.phone_2') }}">{{ setting('site.phone_2') }}</a></p>
+                @endif
+
                 <P class="text-p-ua padding-phone-p">(05446) 3-13-36</P>
-                <P class="text-p-ua padding-phone-p"> (098) 179-24-55</P>
                 <p class="text-p-ua  padding-phone-p"> (прием банкетов - ресторан) </p>
 
                 <p class="text-p-ua  special-padding-top">WWW.PARK-SLAVNA.COM.UA</p>
-                <p class="text-p-ua  padding-phone-p"> PK_SLАVNА@UKR.NET</p>
+
+                @if(setting('site.email'))
+                    <p class="text-p-ua  padding-phone-p"><a href="mailto:{{ setting('site.email') }}">{{ setting('site.email') }}</a></p>
+                @endif
 
                 <div class="my-fafa">
-                    <a href="#">
-                        <img src="{{ asset('images/face.png') }}"  alt="">
-                        <p>facebook</p> 
-                    </a>
-                    <a href="#">
-                        <img src="{{ asset('images/insta.png') }}"  alt="">
-                        <p>instagram</p>  
-                    </a>
-                    <a href="#">
-                        <img src="{{ asset('images/goog.png') }}"  alt="">
-                        <p>google+</p>  
-                    </a>
+
+                    @if(setting('site.facebook_link'))
+                        <a href="{{ setting('site.facebook_link') }}">
+                            <i class="fab fa-facebook-square"></i>
+                            <p>facebook</p>
+                        </a>
+                    @endif
+
+                    @if(setting('site.instagram_link'))
+                        <a href="{{ setting('site.instagram_link') }}">
+                            <i class="fab fa-instagram"></i>
+                            <p>instagram</p>
+                        </a>
+                    @endif
+
+                    @if(setting('site.google_link'))
+                        <a href="{{ setting('site.google_link') }}">
+                            <i class="fab fa-google"></i>
+                            <p>google+</p>
+                        </a>
+                    @endif
                 </div>
 
             </div>
@@ -60,7 +78,7 @@
                         администратор ответит на ваши вопросы.
                     </p>
 
-                    <button  type="submit" class="question-span"> Задать вопрос </button>
+                    <button type="submit" class="question-span"> Задать вопрос</button>
 
 
                 </form>
