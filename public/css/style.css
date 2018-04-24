@@ -2029,6 +2029,26 @@ padding-left: 7px;
 @media (max-width: 1919px) {
     /* photo_report */
 
+    .latest_publication .slick-dots {
+        bottom: 115px;
+        width: 200px;
+        right: 7.8%;
+    }
+
+    .latest_publication .slick-next {
+        left: 93.5%;
+        top: 475px;
+    }
+
+    .latest_publication .slick-prev {
+        left: 78%;
+        top: 475px;
+    }
+
+    .latest_publication .photo_report_arrow {
+         padding-left: 0;
+    }
+
     .photo_report_slider .slick-dots {
         bottom: 75px;
     }

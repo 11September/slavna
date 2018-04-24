@@ -204,3 +204,6 @@ $('.latest_publication_slider_item').last().addClass("latest_publication_slider_
   });
 
 });
+
+latest_publication_slider_width = 100 / last_n;
+$('.latest_publication').find('.slick-dots li').css("width", latest_publication_slider_width  + "%");
