@@ -825,11 +825,6 @@ form button:hover {
     padding-left: 300px;
 }
 
-.reviews .draggable {
-    /*height: 700px !important;*/
-    /*padding: 30px 0 50px !important;*/
-}
-
 .reviews .bg_i_text {
     width: 100%;
     position: relative;
@@ -1981,9 +1976,6 @@ padding-left: 7px;
 
 @media (max-width: 1919px) {
     /* photo_report */
-    .reviews .position_line {
-        padding-top: 60px;
-    }
 
     .photo_report_slider .slick-dots {
         bottom: 75px;
@@ -2065,28 +2057,6 @@ padding-left: 7px;
 
     /* artours_intro end */
     /* reviews */
-    .reviews .clider_info {
-        display: none;
-    }
-
-    .reviews_slider_head {
-        width: 740px;
-        margin-right: 500px;
-        padding-left: 45px;
-    }
-
-    .slider_bg {
-        padding: 70px 35px 70px 300px;
-        width: 1100px;
-    }
-
-    .reviews_slider_img {
-        margin-left: 180px;
-    }
-
-    .reviews .draggable {
-        height: 690px !important;
-    }
 
     .latest_publication .photo_report_panel a {
         padding: 20px 50px;
@@ -2138,36 +2108,36 @@ padding-left: 7px;
 
 @media (max-width: 1880px) {
     /* reviews */
-    .reviews_slider_head {
-        width: 740px;
-        margin-right: 400px;
-        padding-left: 45px;
-    }
-
     .photo_report_slider .slick-dots {
         padding: 0 6% 0 8%;
+    }
+
+    .reviews .clider_info {
+        margin-left: 7%;
     }
     /* reviews end */
 }
 
 @media (max-width: 1765px) {
     /* reviews */
-    .reviews_slider_head {
-        width: 740px;
-        margin-right: 265px;
-        padding-left: 45px;
-    }
-
-    .reviews_slider_img {
-        margin-left: 0;
-    }
-
-    .reviews_slider_img {
-        margin-left: 6%;
-    }
-
     .photo_report_slider .slick-dots {
         padding: 0 5% 0 8%;
+    }
+
+    .reviews .slick-dots {
+        left: 95%;
+    }
+
+    .reviews .slick-prev {
+        left: 94.55%;
+    }
+
+    .reviews .slick-next {
+        left: 94.55%;
+    }
+
+    .reviews .clider_info {
+        margin-left: 5%;
     }
     /* reviews end */
 }
@@ -2431,6 +2401,15 @@ padding-left: 7px;
     .photo_report_slider .slick-dots {
         padding: 0 4% 0 8%;
     }
+
+    .reviews .clider_info {
+        margin-left: 30px;
+    }
+
+    .slider_bg {
+        padding: 60px 30px 60px 550px;
+        width: 85%;
+    }
     /* photo_report_slider end */
 }
 
@@ -2444,27 +2423,14 @@ padding-left: 7px;
 
 @media (max-width: 1500px) {
     /* reviews */
-    .reviews_slider_head {
-        width: 740px;
-        margin-right: 150px;
+    .reviews_slider_head p {
         padding-left: 0;
-    }
-
-    .slider_bg {
-        padding: 70px 35px 70px 350px;
-        width: 1100px;
-    }
-
-    .reviews .draggable {
-        height: 730px !important;
-    }
-
-    .photo_report_slider .slick-dots {
-        padding: 0 15px 0 9%;
-    }
-
-    .photo_report_arrow {
         padding-right: 0;
+    }
+
+    .reviews_slider_head{
+       padding-left: 37%;
+        padding-right: 15%;
     }
     /* reviews end */
 }
@@ -2482,19 +2448,9 @@ padding-left: 7px;
 
     /* Navbar */
     /* reviews */
-    .reviews_slider_img {
-        margin-left: 0;
-    }
-
-    .reviews_slider_head {
-        width: 740px;
-        margin-right: 0;
-        padding-left: 20px;
-    }
-
-    .slider_bg {
-        padding: 70px 35px 70px 500px;
-        width: 1200px;
+    .reviews_slider_head{
+        padding-left: 40%;
+        padding-right: 11%;
     }
 
     .under-text {
@@ -2531,6 +2487,11 @@ padding-left: 7px;
 
     .photo_report_slider .slick-dots {
         padding: 0 3% 0 7%;
+    }
+
+    .reviews_slider_head{
+        padding-left: 45%;
+        padding-right: 11%;
     }
     /* reviews end */
 }
@@ -2725,8 +2686,8 @@ padding-left: 7px;
     }
 
     .slider_bg {
-        padding: 30px 30px 30px 35%;
-        width: 900px;
+        padding: 25px 25px 25px 435px;
+        width: 88%;
     }
 
     .slider_bg p {
@@ -2734,8 +2695,8 @@ padding-left: 7px;
     }
 
     .reviews_slider_head {
-        width: 600px;
-        padding-left: 0;
+        /*width: 600px;*/
+        /*padding-left: 0;*/
     }
 
     .row_links {
@@ -2745,10 +2706,6 @@ padding-left: 7px;
 
     .reviews .bg_i_text {
         font-size: 24px;
-    }
-
-    .reviews .draggable {
-        height: 540px !important
     }
 
     .reviews .slick-vertical .slick-slide{
@@ -2849,7 +2806,7 @@ padding-left: 7px;
 @media (max-width: 1200px) {
     /* reviews */
     .reviews_slider_img {
-        margin-left: 1%;
+        margin-left: 3%;
     }
 
     .photo_report_arrow {
@@ -2863,6 +2820,24 @@ padding-left: 7px;
 
     .photo_report_slider .slick-next {
         left: 255px;
+    }
+
+    .reviews_slider_head {
+        width: 100%;
+        text-align: left;
+        margin-bottom: -125px;
+        padding-left: 40%;
+        padding-right: 11%;
+    }
+
+    .reviews .slick-prev {
+        top: 165px;
+        left: 93.55%;
+    }
+
+    .reviews .slick-next {
+        top: -180px;
+        left: 93.55%;
     }
     /* reviews end */
 }
@@ -3099,13 +3074,32 @@ padding-left: 7px;
     }
 
     .reviews .draggable {
-        height: 920px !important;
+        height: 680px !important;
     }
 
     .reviews_slider_head {
-        width: 560px;
-        padding-left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
         text-align: center;
+    }
+
+    .reviews_slider_head p {
+        padding: 0 15% 20px;
+    }
+
+    .reviews_slider_item .row_content_slider {
+        justify-content: center;
+    }
+
+    .reviews .slick-prev {
+        top: 40px;
+        left: 93%;
+    }
+
+    .reviews .slick-next {
+        top: -490px;
+        left: 93%;
     }
 
     .add_reviews {
@@ -3251,10 +3245,6 @@ padding-left: 7px;
 
     .row_links {
         font-size: 18px;
-    }
-
-    .reviews .draggable {
-        height: 745px !important;
     }
 
     .reviews_slider_head {
@@ -3438,10 +3428,6 @@ padding-left: 7px;
         padding-bottom: 10px;
     }
 
-    .reviews .draggable {
-        height: 800px !important;
-    }
-
     /* reviews end */
     /* latest_publication */
     .latest_publication p {
@@ -3463,6 +3449,11 @@ padding-left: 7px;
 
 @media (max-width: 480px) {
     /* reviews */
+    .reviews_slider_img img {
+        height: 280px;
+        width: 280px;
+    }
+    
     .artours_intro .block_img img {
         height: 300px;
         width: 300px;
@@ -3507,10 +3498,6 @@ padding-left: 7px;
     .hover-item-text {
         width: 430px !important;
         bottom: 15px;
-    }
-
-    .reviews .draggable {
-        height: 890px !important;
     }
 
     .text-ua {
