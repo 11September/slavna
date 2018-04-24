@@ -657,9 +657,9 @@ form button:hover {
     letter-spacing: 5px;
 }
 
-.reviews_slider_item > .row {
+.reviews_slider_item .row_content_slider {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: start;
 }
 
 .reviews_slider_img {
@@ -678,8 +678,9 @@ form button:hover {
 }
 
 .reviews_slider_head {
-    width: 810px;
-    margin-right: 410px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: -185px;
 }
 
 .reviews_slider_head p {
@@ -687,13 +688,17 @@ form button:hover {
     color: #f3db95;
     font-family: 'Proxima_Nova-reg';
     letter-spacing: 3px;
+    padding-left: 36%;
+    padding-right: 15%;
+    text-align: left;
 }
 
 .slider_bg {
     background: linear-gradient(to right, #673c2b, #42261b);
-    padding: 70px 35px 70px 500px;
+    padding: 70px 35px 70px 565px;
     width: 1570px;
     border-radius: 25px;
+    margin-left: 25px;
 }
 
 .artours_intro .photo_report .block_img img {
@@ -720,11 +725,12 @@ form button:hover {
     height: 230px;
     justify-content: flex-start;
     color: #f5db90;
+    margin-left: 10%;
 }
 
 .reviews .slick-prev:before,
 .reviews .slick-next:before {
-    z-index: 2;
+    z-index: 3 !important;
     position: relative;
 }
 
@@ -733,19 +739,19 @@ form button:hover {
 }
 
 .reviews .slick-dots {
-    position: relative;
+    position: absolute;
     flex-direction: column;
     display: flex;
     align-items: center;
-    left: -50px;
-    top: -55px;
+    top: 350px;
+    left: 91%;
+    width: auto !important;
 }
 
 .reviews .slick-prev {
-    left: inherit;
-    right: 0;
     position: relative;
-    top: 10px;
+    top: 275px;
+    left: 91%;
 }
 
 .reviews .slick-prev:before {
@@ -753,9 +759,9 @@ form button:hover {
 }
 
 .reviews .slick-next {
-    right: 0;
+    left: 91%;
     position: relative;
-    margin-top: 25px;
+    top: -210px;
 }
 
 .reviews .slick-next:before {
@@ -815,8 +821,8 @@ form button:hover {
 }
 
 .reviews .draggable {
-    height: 700px !important;
-    padding: 30px 0 50px !important;
+    /*height: 700px !important;*/
+    /*padding: 30px 0 50px !important;*/
 }
 
 .reviews .bg_i_text {
@@ -1992,11 +1998,16 @@ padding-left: 7px;
         padding-top: 60px;
     }
 
+    .photo_report_slider .slick-dots {
+        bottom: 75px;
+    }
+
+    .photo_report_arrow {
+        padding-left: 100px;
+    }
+
     .photo_report .block_img {
         border-radius: 25px;
-        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
-        height: 500px;
-        width: 500px;
     }
 
     .latest_publication .flexx {
@@ -2005,8 +2016,6 @@ padding-left: 7px;
 
     .photo_report .block_img img {
         border-radius: 25px;
-        height: 500px;
-        width: 500px;
     }
 
     .photo_report_slider h3 {
@@ -2017,9 +2026,7 @@ padding-left: 7px;
     .photo_report_slider p {
         font-size: 24px;
         line-height: 1.2;
-        height: 205px;
         word-break: break-all;
-        padding-bottom: 20px;
     }
 
     .photo_report_panel a {
@@ -2056,10 +2063,10 @@ padding-left: 7px;
         margin-left: 0;
         margin: 0;
         height: auto;
-        padding: 35px 50px 30px 35px;
+        /*padding: 35px 50px 30px 35px;*/
         border-top-left-radius: 25px;
         border-bottom-left-radius: 25px;
-        width: 790px;
+        /*width: 790px;*/
     }
 
     /* photo_report */
@@ -2150,6 +2157,9 @@ padding-left: 7px;
         padding-left: 45px;
     }
 
+    .photo_report_slider .slick-dots {
+        padding: 0 6% 0 8%;
+    }
     /* reviews end */
 }
 
@@ -2169,6 +2179,9 @@ padding-left: 7px;
         margin-left: 6%;
     }
 
+    .photo_report_slider .slick-dots {
+        padding: 0 5% 0 8%;
+    }
     /* reviews end */
 }
 
@@ -2429,7 +2442,24 @@ padding-left: 7px;
         font-size: 50px;
     }
 
+    .photo_report_arrow {
+        padding-left: 120px;
+    }
     /* Navbar */
+
+    /* photo_report_slider */
+    .photo_report_slider .slick-dots {
+        padding: 0 4% 0 8%;
+    }
+    /* photo_report_slider end */
+}
+
+@media (max-width: 1600px) {
+    /* reviews */
+    .photo_report_slider .slick-dots {
+        padding: 0 3% 0 9%;
+    }
+    /* reviews end */
 }
 
 @media (max-width: 1500px) {
@@ -2449,6 +2479,13 @@ padding-left: 7px;
         height: 730px !important;
     }
 
+    .photo_report_slider .slick-dots {
+        padding: 0 15px 0 9%;
+    }
+
+    .photo_report_arrow {
+        padding-right: 0;
+    }
     /* reviews end */
 }
 
@@ -2484,6 +2521,37 @@ padding-left: 7px;
         margin-top: -50px;
     }
 
+    .photo_report_slider .slick-dots {
+        padding: 0 0 0 10%;
+    }
+
+    .photo_report .block_text {
+        width: calc(50% - 10px);
+    }
+
+    .photo_report .block_img{
+        width: calc(50% - 10px);
+    }
+    /* reviews end */
+}
+
+@media (max-width: 1300px) {
+    /* reviews */
+    .photo_report_slider .slick-prev {
+        left: 55px;
+    }
+
+    .photo_report_slider .slick-next {
+        left: 300px;
+    }
+
+    .photo_report_arrow {
+        padding-left: 80px;
+    }
+
+    .photo_report_slider .slick-dots {
+        padding: 0 3% 0 7%;
+    }
     /* reviews end */
 }
 
@@ -2591,10 +2659,10 @@ padding-left: 7px;
     }
 
     /* artours_intro end */
+
     /* photo_report */
     .photo_report .block_text {
         height: auto;
-        width: 600px;
         border-radius: 25px;
         padding: 25px 35px 15px 30px;
     }
@@ -2610,18 +2678,35 @@ padding-left: 7px;
     }
 
     .photo_report .block_img {
-        height: 300px;
-        width: 300px;
+        height: 500px;
     }
 
     .photo_report .block_img img {
-        height: 300px;
-        width: 300px;
+        height: 100%;
+    }
+
+    .photo_report_slider .slick-dots {
+        bottom: 95px;
     }
 
     .photo_report_panel a {
         padding: 12px 35px;
         font-size: 18px;
+    }
+
+    .photo_report_slider .slick-next {
+        top: 415px;
+    }
+
+    .photo_report_slider .slick-dots {
+        width: 325px;
+        padding: 0 3% 0 6%;
+    }
+
+    .photo_report_slider .slick-prev {
+        left: 40px;
+        z-index: 2;
+        top: 415px;
     }
 
     .photo_report_panel span {
@@ -2633,7 +2718,7 @@ padding-left: 7px;
     }
 
     .photo_report .draggable {
-        height: 325px;
+        /*height: 325px;*/
     }
 
     /* photo_report end */
@@ -2786,6 +2871,19 @@ padding-left: 7px;
     /* reviews */
     .reviews_slider_img {
         margin-left: 1%;
+    }
+
+    .photo_report_arrow {
+        top: -5px;
+    }
+
+    .photo_report_slider .slick-prev {
+        left: 80px;
+        top: 415px;
+    }
+
+    .photo_report_slider .slick-next {
+        left: 255px;
     }
     /* reviews end */
 }
@@ -2944,7 +3042,7 @@ padding-left: 7px;
     }
 
     .photo_report .draggable {
-        height: 580px;
+        /*height: 580px;*/
     }
 
     .photo_report .block_text {
@@ -2961,6 +3059,24 @@ padding-left: 7px;
         height: 130px;
     }
 
+    .photo_report .block_img {
+        width: calc(85%);
+    }
+
+    .photo_report .block_text {
+        width: calc(85%);
+    }
+
+    .photo_report_slider .slick-prev {
+        left: 35px;
+        top: 490px;
+    }
+
+    .photo_report_slider .slick-next {
+        left: inherit;
+        right: 35px;
+        top: 490px;
+    }
     /* photo_report end */
     /* reviews */
     .reviews_slider_img {
@@ -3113,12 +3229,23 @@ padding-left: 7px;
     }
 
     .photo_report .block_text {
-        height: 285px;
-        width: 550px;
+        /*height: 285px;*/
+        /*width: 550px;*/
     }
 
     .photo_report_slider p {
         height: 150px;
+    }
+
+    .photo_report_slider .slick-prev {
+        left: 15px;
+        top: 490px;
+    }
+
+    .photo_report_slider .slick-next {
+        left: inherit;
+        right: 15px;
+        top: 490px;
     }
 
     /* photo_report end */
@@ -3279,7 +3406,7 @@ padding-left: 7px;
     }
 
     .photo_report .draggable {
-        height: 685px;
+        /*height: 685px;*/
     }
 
     .dance-blog-h2 {
@@ -3299,8 +3426,8 @@ padding-left: 7px;
     }
 
     .photo_report .block_text {
-        height: 380px;
-        width: 320px;
+        /*height: 380px;*/
+        /*width: 320px;*/
         padding: 25px 25px 15px 25px;
     }
 
@@ -3429,6 +3556,23 @@ padding-left: 7px;
         font-size: 16px;
     }
 
+    .photo_report .block_img {
+        height: 300px;
+    }
+
+    .photo_report_slider h3 {
+        height: 70px;
+    }
+
+    .photo_report_slider .slick-prev {
+        left: 5px;
+        top: 490px;
+    }
+
+    .photo_report_slider .slick-next {
+        right: 5px;
+        top: 490px;
+    }
     /* reviews end */
     /* cottagges_one_item*/
     .cottagges_one_item .latest_publication_slider_item {

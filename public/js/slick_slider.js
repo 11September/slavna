@@ -5,19 +5,16 @@ $(document).ready(function(){
       slidesToShow: 1,
       rows: 1,
       arrows: true,
-      // appendArrows: $('.photo_report_arrow'),
       dots: true,
-      // appendDots: $('.photo_report_arrow'),
       infinite: false,
       centerMode: true,
-      // vertical: true,
       focusOnSelect: false,
       responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1200,
         settings: {
           arrows: true,
-          dots: true,
+          dots: false,
           slidesToShow: 1
         }
       }
@@ -49,9 +46,7 @@ $(document).ready(function(){
       verticalSwiping: true,
       rows: 1,
       arrows: true,
-      appendArrows: $('.clider_info'),
-      dots: false,
-      appendDots: $('.clider_info'),
+      dots: true,
       infinite: false,
       centerMode: true,
       vertical: true,
