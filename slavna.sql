@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Апр 13 2018 г., 15:02
+-- Время создания: Апр 24 2018 г., 12:33
 -- Версия сервера: 5.7.19
 -- Версия PHP: 7.1.7
 
@@ -42,7 +42,10 @@ CREATE TABLE `albums` (
 --
 
 INSERT INTO `albums` (`id`, `name`, `description`, `image`, `created_at`, `updated_at`) VALUES
-(1, 'Украшение залов', NULL, 'albums/April2018/6koCEj4mfxzexUgttFKX.png', '2018-04-09 10:08:55', '2018-04-09 10:08:55');
+(1, 'Украшение залов', 'thubnails_albumsthubnails_albumsthubnails_albumsthubnails_albumsthubnails_albumsthubnails_albumsthubnails_albumsthubnails_albums', 'albums/April2018/6koCEj4mfxzexUgttFKX.png', '2018-04-09 10:08:55', '2018-04-20 08:05:44'),
+(2, 'Украшение залов', NULL, 'albums/April2018/6koCEj4mfxzexUgttFKX.png', '2018-04-09 10:08:55', '2018-04-09 10:08:55'),
+(3, 'Украшение залов', NULL, 'albums/April2018/6koCEj4mfxzexUgttFKX.png', '2018-04-09 10:08:55', '2018-04-09 10:08:55'),
+(4, 'Украшение залов', NULL, 'albums/April2018/6koCEj4mfxzexUgttFKX.png', '2018-04-09 10:08:55', '2018-04-09 10:08:55');
 
 -- --------------------------------------------------------
 
@@ -726,15 +729,25 @@ INSERT INTO `permission_role` (`permission_id`, `role_id`) VALUES
 (80, 1),
 (80, 3),
 (81, 1),
+(81, 3),
 (82, 1),
+(82, 3),
 (83, 1),
+(83, 3),
 (84, 1),
+(84, 3),
 (85, 1),
+(85, 3),
 (86, 1),
+(86, 3),
 (87, 1),
+(87, 3),
 (88, 1),
+(88, 3),
 (89, 1),
-(90, 1);
+(89, 3),
+(90, 1),
+(90, 3);
 
 -- --------------------------------------------------------
 
@@ -972,7 +985,7 @@ CREATE TABLE `sliders` (
 
 INSERT INTO `sliders` (`id`, `image`, `created_at`, `updated_at`) VALUES
 (1, 'sliders/April2018/DKjzqnh1GtcJCEp4BlAR.png', '2018-04-13 04:30:49', '2018-04-13 04:30:49'),
-(2, 'sliders/April2018/IR3662KbO0L1bPKfVsfG.png', '2018-04-13 04:31:01', '2018-04-13 04:31:01');
+(2, 'sliders/April2018/psaYG3ocPFkg0zM002Ex.jpg', '2018-04-13 04:31:01', '2018-04-20 07:44:31');
 
 -- --------------------------------------------------------
 
@@ -1260,7 +1273,7 @@ ALTER TABLE `videos`
 -- AUTO_INCREMENT для таблицы `albums`
 --
 ALTER TABLE `albums`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT для таблицы `categories`
 --
