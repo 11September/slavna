@@ -18,11 +18,11 @@
                                 </div>
 
                                 <div class="row photo_report_panel">
-                                    <div class="col-xl-4 latest_publication_arrow photo_report_arrow">
+                                    <div class="col-xl-4 col-sm-4 latest_publication_arrow photo_report_arrow">
                                         <span class="current_number_slide"></span> <span>/</span> <span
                                                 class="all_number_slide"></span>
                                     </div>
-                                    <div class="col-xl-8 photo_report_link">
+                                    <div class="col-xl-8 col-sm-8 photo_report_link">
                                         <a href="{{ url('news', $post->id ) }}">Подробней</a>
                                     </div>
                                 </div>

@@ -48,7 +48,6 @@ $(document).ready(function(){
       arrows: true,
       dots: true,
       infinite: false,
-      centerMode: true,
       vertical: true,
       focusOnSelect: false,
       responsive: [
@@ -56,7 +55,16 @@ $(document).ready(function(){
         breakpoint: 1200,
         settings: {
           arrows: true,
-          dots: true,
+          dots: false,
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 410,
+        settings: {
+          arrows: false,
+          vertical: false,
+          dots: false,
           slidesToShow: 1
         }
       }
@@ -80,24 +88,31 @@ $(document).ready(function(){
     $(this).find('.reviews_all_number_slide').text("0" + last_n);
   });
 
+  reviews_slider_height = 100 / last_n;
+  $('.reviews_slider').find('.slick-dots li').css("height", reviews_slider_height  + "%");
+
   $('.latest_publication_slider').slick({
       initialSlide: 0,
       slidesToShow: 1,
       rows: 1,
       arrows: true,
-      appendArrows: $('.latest_publication_arrow'),
-      dots: false,
-      appendDots: $('.latest_publication_arrow'),
+      dots: true,
       infinite: false,
-      centerMode: true,
-      // vertical: true,
       focusOnSelect: false,
       responsive: [
       {
         breakpoint: 1200,
         settings: {
           arrows: true,
-          dots: true,
+          dots: false,
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 410,
+        settings: {
+          arrows: false,
+          dots: false,
           slidesToShow: 1
         }
       }
@@ -197,3 +212,6 @@ $('.latest_publication_slider_item').last().addClass("latest_publication_slider_
   });
 
 });
+
+latest_publication_slider_width = 100 / last_n;
+$('.latest_publication').find('.slick-dots li').css("width", latest_publication_slider_width  + "%");
