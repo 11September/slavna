@@ -113,6 +113,7 @@ $(document).ready(function(){
         initialSlide: 0,
         slidesToShow: 1,
         rows: 1,
+        adaptiveHeight: true,
         arrows: true,
         prevArrow:"<img class='slick-prev' src='../images/left-arrow.png'>",
         nextArrow:"<img class='slick-next' src='../images/right-arrow.png'>",
@@ -125,10 +126,11 @@ $(document).ready(function(){
                 breakpoint: 1200,
                 settings: {
                     arrows: true,
-                    dots: true,
+                    dots: false,
                     slidesToShow: 1
                 }
             }
+
         ]
     });
 

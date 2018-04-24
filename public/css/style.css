@@ -221,7 +221,7 @@ form button:hover {
     text-align: center;
     background: url(../images/under-bg.png);
     background-size: 100% 100%;
-    margin-top: -50px;
+    margin-top: -48px;
     padding-top: 80px;
     z-index: 2;
     position: relative;
@@ -232,7 +232,7 @@ form button:hover {
 
 .intro-slider_item img {
     display: block;
-    height: 650px;
+    height: 600px;
     width: 100%;
 }
 
@@ -2480,6 +2480,10 @@ padding-left: 7px;
         width: 1200px;
     }
 
+    .under-text {
+        margin-top: -50px;
+    }
+
     /* reviews end */
 }
 
@@ -2487,6 +2491,10 @@ padding-left: 7px;
     /* video_items */
     .reviews .position_line{
         display: none;
+    }
+
+    .under-text {
+        font-size: 23px;
     }
 
     .video_items .wrapper-twest-hover{
@@ -2789,6 +2797,26 @@ padding-left: 7px;
         bottom: 25px;
     }
 
+    .sub-header-section.first {
+        font-size: 36px;
+    }
+
+    .sub-header-section.second {
+        font-size: 26px;
+    }
+
+    .sub-header-section.third{
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .under-text {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     hr {
         width: 92%;
     }
@@ -3010,6 +3038,46 @@ padding-left: 7px;
         display: none;
     }
 
+    .sub-header-section.first {
+        font-size: 30px;
+    }
+
+    .sub-header-section.second {
+        font-size: 22px;
+    }
+
+    .sub-header-section.third {
+        font-size: 18px;
+    }
+
+    .under-text {
+        margin-top: -25px;
+        margin-bottom: 65px;
+    }
+
+    .intro_slider .slick-prev {
+        left: 15px;
+    }
+
+    .intro_slider .slick-next {
+        right: 15px;
+    }
+
+    .under-text {
+        background: none;
+    }
+
+    .intro_slider .slick-prev,.intro_slider .slick-next{
+        width: 35px;
+        height: 35px;
+    }
+
+
+
+    .intro-slider_item img {
+        height: auto;
+    }
+
     .thumbnails .container-fluid {
         padding: 0 170px;
     }
@@ -3198,6 +3266,18 @@ padding-left: 7px;
         bottom: 20px;
     }
 
+    .sub-header-section.first {
+        font-size: 26px;
+    }
+
+    .sub-header-section.second {
+        font-size: 20px;
+    }
+
+    .sub-header-section.third {
+        font-size: 16px;
+    }
+
     .photo_report .draggable {
         height: 685px;
     }
@@ -3277,6 +3357,29 @@ padding-left: 7px;
     .artours_intro .block_img img {
         height: 300px;
         width: 300px;
+    }
+
+    .under-text {
+        margin-bottom: 90px;
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .sub-header-section.first {
+        font-size: 22px;
+    }
+
+    .sub-header-section.second {
+        font-size: 18px;
+    }
+
+    .sub-header-section.third {
+        font-size: 14px;
+    }
+
+    .intro_slider .slick-prev, .intro_slider .slick-next {
+        width: 25px;
+        height: 25px;
     }
 
     .artours_intro .block_img {
@@ -3523,6 +3626,18 @@ padding-left: 7px;
 }
 
 @media (max-width: 375px) {
+    .sub-header-section.first {
+        font-size: 16px;
+    }
+
+    .sub-header-section.second {
+        font-size: 14px;
+    }
+
+    .sub-header-section.third {
+        font-size: 12px;
+    }
+
     .main-menu li {
         padding-bottom: 20px;
         font-size: 20px;
