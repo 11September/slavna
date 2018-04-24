@@ -5,19 +5,16 @@ $(document).ready(function(){
       slidesToShow: 1,
       rows: 1,
       arrows: true,
-      appendArrows: $('.photo_report_arrow'),
-      dots: false,
-      appendDots: $('.photo_report_arrow'),
+      dots: true,
       infinite: false,
       centerMode: true,
-      // vertical: true,
       focusOnSelect: false,
       responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1200,
         settings: {
           arrows: true,
-          dots: true,
+          dots: false,
           slidesToShow: 1
         }
       }
@@ -40,15 +37,16 @@ $(document).ready(function(){
     $(this).find('.all_number_slide').text("0" + last_n);
   });
 
+  photo_report_slider_width = 100 / last_n;
+  $('.photo_report_slider').find('.slick-dots li').css("width", photo_report_slider_width  + "%");
+
   $('.reviews_slider').slick({
       initialSlide: 0,
       slidesToShow: 1,
       verticalSwiping: true,
       rows: 1,
       arrows: true,
-      appendArrows: $('.clider_info'),
-      dots: false,
-      appendDots: $('.clider_info'),
+      dots: true,
       infinite: false,
       centerMode: true,
       vertical: true,
@@ -110,6 +108,7 @@ $(document).ready(function(){
         initialSlide: 0,
         slidesToShow: 1,
         rows: 1,
+        adaptiveHeight: true,
         arrows: true,
         prevArrow:"<img class='slick-prev' src='../images/left-arrow.png'>",
         nextArrow:"<img class='slick-next' src='../images/right-arrow.png'>",
@@ -122,10 +121,11 @@ $(document).ready(function(){
                 breakpoint: 1200,
                 settings: {
                     arrows: true,
-                    dots: true,
+                    dots: false,
                     slidesToShow: 1
                 }
             }
+
         ]
     });
 

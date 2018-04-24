@@ -1,15 +1,24 @@
 <section class="reviews">
 	<div class="container-fluid">
+
+		<div class="row position_line">
+			<div class=" reviews_slide_line">
+				<div class="left_point"></div>
+				<div class="right_point"></div>
+			</div>
+		</div>
+
+		<div class="reviews_slider_head">
+			<h2>Что о нас говорят?</h2>
+			<p>
+				Предлагаем вам прочесть отзывы наших гостей, мы будем очень рады, если вы оставите свой.
+			</p>
+		</div>
+
 		<div class="reviews_slider">
 
 			@foreach($reviews as $review)
 				<div class="reviews_slider_item">
-					<div class="row position_line">
-						<div class=" reviews_slide_line">
-							<div class="left_point"></div>
-							<div class="right_point"></div>
-						</div>
-					</div>
 					<div class="row row_head_info">
 						<div class="reviews_slider_img">
 							<img src="{{ asset('storage/' . $review->image) }}">
@@ -17,12 +26,7 @@
 								{{ $review->name }}
 							</div>
 						</div>
-						<div class="reviews_slider_head">
-							<h2>Что о нас говорят?</h2>
-							<p>
-								Предлагаем вам прочесть отзывы наших гостей, мы будем очень рады, если вы оставите свой.
-							</p>
-						</div>
+						
 					</div>
 					<div class="row row_content_slider">
 						<div class="slider_bg">
@@ -36,17 +40,8 @@
 							<span class="reviews_all_number_slide"></span>
 						</div>
 					</div>
-					<div class="row position_line">
-						<div class=" reviews_slide_line">
-							<div class="left_point"></div>
-							<div class="right_point"></div>
-						</div>
-					</div>
 				</div>
 			@endforeach
-
-
-
 
 			{{--<div class="reviews_slider_item">--}}
 				{{--<div class="row position_line">--}}
@@ -97,6 +92,12 @@
 				{{--</div>--}}
 				{{--</div>--}}
 
+		</div>
+		<div class="row position_line">
+			<div class=" reviews_slide_line">
+				<div class="left_point"></div>
+				<div class="right_point"></div>
+			</div>
 		</div>
 	</div>
 </section>
