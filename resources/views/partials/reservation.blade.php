@@ -2,7 +2,7 @@
     <div class="container">
         <h2 class="text-reserv">Бронирование</h2>
 
-        <form method="post" action="{{ action('PagesController@form_reservation') }}">
+        <form id="reservation" method="post" action="{{ action('PagesController@form_reservation') }}">
             {{ csrf_field() }}
 
             <div class="form-group">
@@ -11,12 +11,12 @@
             </div>
 
             <div class="form-group">
-                <select name="cottage_id" class="form-control" id="exampleFormControlSelect1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
+                <select name="cottage_id" class="form-control">
+
+                    @foreach($numbers as $number)
+                        <option value="{{ $number->id }}">{{ $number->name }}</option>
+                    @endforeach
+
                 </select>
             </div>
 
@@ -41,6 +41,8 @@
                     {{ old('message') }}
                 </textarea>
             </div>
+
+            <div class="alert" style="display:none"></div>
 
             <button type="submit" class="reserv-span">
                 Забронировать

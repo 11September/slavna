@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Album;
+use App\Contact;
 use App\Number;
 use App\Photo;
 use App\Reservation;
@@ -124,39 +125,62 @@ class PagesController extends Controller
         return view('arbour');
     }
 
-    public function form_reservation(Request $request)
+    public function form_question(Request $request)
     {
-        $validator = Validator::make($request->all(),[
+        $validator = Validator::make($request->all(), [
             'name' => 'required|min:3',
-            'cottage_id' => 'required',
-            'date_start' => 'required|date',
-            'date_end' => 'required|date',
-            'phone' => 'required|max:15',
+            'email' => 'required|email',
+            'phone' => 'required|max:17',
             'message' => 'required|min:5',
         ]);
 
         if ($validator->fails()) {
-            return redirect()
-                ->back()
-                ->withErrors($validator)
-                ->withInput();
-        } else {
-            try{
-                $contact = new Reservation();
-                $contact->name = $request->name;
-                $contact->cottage_id = $request->cottage_id;
-                $contact->date_start = $request->date_start;
-                $contact->date_end = $request->date_end;
-                $contact->phone = $request->phone;
-                $contact->message = $request->message;
-                $contact->save();
-            }
-            catch (Exception $exception){
-                $request->session()->flash('alert-success', 'Email not send!');
-                return redirect()->back();
-            }
-
-            return redirect()->back();
+//            return redirect()
+//                ->back()
+//                ->withErrors($validator)
+//                ->withInput();
+            return response()->json(['text' => 'Извините, заполните корректно форму!', 'type' => 'alert-warning']);
         }
+
+        $contact = new Contact();
+        $contact->name = $request->name;
+        $contact->email = $request->email;
+        $contact->phone = $request->phone;
+        $contact->message = $request->message;
+        $contact->save();
+
+        return response()->json(['text' => 'Спасибо, мы скоро Вам ответим!', 'type' => 'alert-success']);
+
+    }
+
+    public function form_reservation(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|min:3',
+            'cottage_id' => 'required|int',
+            'date_start' => 'required',
+            'date_end' => 'required',
+            'phone' => 'required|max:17',
+            'message' => 'required|min:5',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json(['text' => 'Извините, заполните корректно форму!', 'type' => 'alert-warning']);
+//            return redirect()
+//                ->back()
+//                ->withErrors($validator)
+//                ->withInput();
+        }
+
+        $contact = new Reservation();
+        $contact->name = $request->name;
+        $contact->cottage_id = $request->cottage_id;
+        $contact->date_start = $request->date_start;
+        $contact->date_end = $request->date_end;
+        $contact->phone = $request->phone;
+        $contact->message = $request->message;
+        $contact->save();
+
+        return response()->json(['text' => 'Спасибо, за бронь, мы скоро Вам ответим!', 'type' => 'alert-success']);
     }
 }
