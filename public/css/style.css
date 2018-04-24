@@ -1219,6 +1219,7 @@ form button:hover {
     display: flex;
     justify-content: center;
     padding-bottom: 25px;
+    justify-content: space-evenly;
 }
 
 .my-fafa p{
@@ -1265,12 +1266,13 @@ form button:hover {
 }
 
 hr {
-    margin-top: 50px;
     margin-bottom: 0;
     height: 2px;
     width: 80%;
     background: #2D1C15;
     margin-left: 95px;
+    margin: 0 auto;
+    margin-top: 50px;
 
 }
 
@@ -2053,6 +2055,7 @@ padding-left: 7px;
 
     .photo_report_slider_item {
         width: 100vw;
+        outline: none;
     }
 
     .photo_report .draggable {
