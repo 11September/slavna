@@ -818,7 +818,7 @@ form button:hover {
 }
 
 .icons-blog-one{
-    padding: 10px;
+    padding: 10px 15px;
 }
 
 .color-date{
@@ -1682,7 +1682,7 @@ form {
 
 .Blog-list .padding-assist{
     margin: 50px 0;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .Blog-list .wrapper-blog-list-left {
@@ -1720,7 +1720,7 @@ form {
 }
 
 .dance-blog-h2 {
-    font-size: 42px;
+    font-size: 36px;
     color: white;
     font-family: 'Proxima_Nova-bold';
     letter-spacing: 2px;
@@ -1736,6 +1736,16 @@ form {
 .hr-blog {
     margin: 0 auto;
     margin-bottom: 25px;
+    position: static;
+}
+
+.wrapper-blog-list-right a{
+    display: block;
+    width: 80%;
+}
+
+.wrapper-blog-list-right{
+    padding-right: 50px;
 }
 
 .wrapper-all-item-blog {
@@ -2222,7 +2232,7 @@ padding-left: 7px;
     .cottagges_one_item .text_one_item {
         padding-bottom: 25px;
         overflow: hidden;
-        height: 470px;
+        height: 465px;
     }
 
     /* cottagges_one_item end */
@@ -2651,6 +2661,11 @@ padding-left: 7px;
         display: none;
     }
 
+    .wrapper-blog-list-right a {
+        display: block;
+        width: 100%;
+    }
+
     .video_menu_slider img {
         width: 100%;
         height: 60%;
@@ -3066,6 +3081,25 @@ padding-left: 7px;
     .hover-item-text {
         width: 660px !important;
         bottom: 25px;
+    }
+
+    .wrapper-blog-list-right {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .wrapper-blog-list-right {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .dance-blog-one-list {
+        width: 80%;
+    }
+
+    .dance-blog-h2 {
+        margin-top: 30px;
+        text-align: center;
     }
 
     .features{
@@ -3814,6 +3848,11 @@ padding-left: 7px;
         width: 280px;
     }
 
+    .dance-blog-one-list {
+        width: 100%!important;
+        height: auto!important;
+    }
+
     .serviece-info span {
         font-size: 18px!important;
     }
@@ -3946,7 +3985,8 @@ padding-left: 7px;
     }
 
     .dance-blog-h2 {
-        font-size: 21px;
+        font-size: 21px!important;
+        padding-bottom: 5px;
     }
 
     .description-blog-p {
@@ -4169,10 +4209,6 @@ padding-left: 7px;
         font-size: 30px;
     }
 
-    .dance-blog-h2 {
-        font-size: 18px;
-    }
-
     .dance-blog-one-list {
         width: 300px;
         height: 300px;
@@ -4223,9 +4259,6 @@ padding-left: 7px;
 }
 
 @media (max-width: 360px) {
-    .dance-blog-h2 {
-        font-size: 13px;
-    }
 
     .description-blog-p {
         font-size: 12px;
