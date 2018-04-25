@@ -20,6 +20,9 @@ class NewsController extends Controller
 
         $next = Post::where('id', '>', $post->id)->orderBy('id')->first();
 
+        $post->total_views = $post->total_views + 1;
+        $post->save();
+
         return view('post',compact('post', 'next'));
     }
 }
