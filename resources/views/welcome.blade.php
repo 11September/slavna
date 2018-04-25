@@ -33,5 +33,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="{{ asset('js/toastr.js') }}"></script>
     <script src="{{ asset('js/sly.js') }}"></script>
-    <script src="{{ asset('js/main.js') }}"></script>
 @endsection
