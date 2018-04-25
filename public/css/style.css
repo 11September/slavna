@@ -1209,6 +1209,30 @@ form button:hover {
     margin: 100px 0;
 }
 
+#thumbnails-about .wrapper-thubnail-item:nth-child(1){
+    order: 1;
+}
+
+#thumbnails-about .wrapper-thubnail-item:nth-child(2) {
+    order: 2;
+}
+
+#thumbnails-about .wrapper-thubnail-item:nth-child(3) {
+    order: 3;
+}
+
+#thumbnails-about .wrapper-thubnail-item:nth-child(4) {
+    order: 4;
+}
+
+#thumbnails-about .wrapper-thubnail-item:nth-child(5) {
+    order: 5;
+}
+
+#thumbnails-about .wrapper-thubnail-item:nth-child(6) {
+    order: 6;
+}
+
 #thumbnails-about .thubnails-item {
     position: relative;
 }
