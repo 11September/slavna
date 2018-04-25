@@ -281,7 +281,7 @@ form button:hover {
 
 .video_menu_slider img {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 20px;
 }
 
@@ -348,7 +348,7 @@ form button:hover {
     padding: 20px 30px;
     font-size: 30px;
     font-family: 'Proxima_light';
-    margin-bottom: 100px;
+    margin-bottom: 75px;
     border-radius: 10px;
     letter-spacing: 3px;
 }
@@ -410,6 +410,7 @@ form button:hover {
 .unqiques {
     text-align: left;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -680,6 +681,11 @@ form button:hover {
     border-radius: 25px;
     position: relative;
     z-index: 1;
+}
+
+.wrapper-cottages-list{
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .reviews_slider_head {
@@ -1048,6 +1054,7 @@ form button:hover {
 .serviece-info span{
     color: #fff !important;
     background: transparent !important;
+    font-size: 22px!important;
 }
 /* serviece-info end */
 
@@ -1850,7 +1857,7 @@ padding-left: 7px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-bottom: 0;
+    padding-bottom: 0!important;
     font-family: 'Proxima_Nova-reg';
     letter-spacing: 2px;
 }
@@ -1859,6 +1866,10 @@ padding-left: 7px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.cottagges_one_item .main_link{
+    margin-top: 20px;
 }
 
 .cottagges_one_item .main_link a {
@@ -1904,7 +1915,7 @@ padding-left: 7px;
 }
 
 .cottagges_one_item .weekday_price {
-    padding-bottom: 12px;
+    padding-bottom: 20px;
 }
 
 .cottagges_one_item .item_prise_div span {
@@ -2189,8 +2200,17 @@ padding-left: 7px;
 
     .cottagges_one_item .block_text {
         padding: 30px 45px 25px 30px;
-        border-top-left-radius: 25px;
-        border-bottom-left-radius: 25px;
+        border-radius: 0px 25px 25px 0px;
+        -moz-border-radius: 0px 25px 25px 0px;
+        -webkit-border-radius: 0px 25px 25px 0px;
+        border: 0px solid #000000;
+    }
+
+    .cottagges_one_item .block_img img{
+        border-radius: 25px 0px 0px 25px!important;
+        -moz-border-radius: 25px 0px 0px 25px!important;
+        -webkit-border-radius: 25px 0px 0px 25px!important;
+        border: 0px solid #000000!important;
     }
 
     /* latest_publication end */
@@ -2200,8 +2220,9 @@ padding-left: 7px;
     }
 
     .cottagges_one_item .text_one_item {
-        height: auto;
         padding-bottom: 25px;
+        overflow: hidden;
+        height: 470px;
     }
 
     /* cottagges_one_item end */
@@ -2630,6 +2651,29 @@ padding-left: 7px;
         display: none;
     }
 
+    .video_menu_slider img {
+        width: 100%;
+        height: 60%;
+    }
+
+    .info-body .slider-part {
+        width: 45%;
+    }
+
+    .details-part {
+        width: 55%;
+    }
+
+    .cottagges_one_item .weekday_price {
+        text-align: center;
+    }
+
+    .cottagges_one_item .output_price{
+        text-align: center;
+    }
+
+
+
     .reviews_slider .slick-list.draggable{
         height: 490px!important;
     }
@@ -3024,6 +3068,30 @@ padding-left: 7px;
         bottom: 25px;
     }
 
+    .features{
+        margin: 0;
+    }
+
+    .details-part {
+        width: 75%;
+    }
+
+    .cottagges_one_item .text_one_item{
+        overflow: hidden;
+        height: 335px;
+    }
+
+    .cottagges_one_item  .block_text {
+        margin-top: -10px!important;
+    }
+
+    .cottagges_one_item .block_img img{
+        border-radius: 25px 25px 0px 0px!important;
+        -moz-border-radius: 25px 25px 0px 0px!important;
+        -webkit-border-radius: 25px 25px 0px 0px!important;
+        border: 0px solid #000000!important;
+    }
+
     .slider_bg {
         margin-left: 25px;
         margin-right: 25px;
@@ -3350,8 +3418,12 @@ padding-left: 7px;
         display: none;
     }
 
-    .reviews_slider_item .row_content_slider{
-        flex-wrap: nowrap;
+    .features{
+        margin: 0 30px;
+    }
+
+    .unqiques {
+        flex-wrap: wrap;
     }
 
     .reviews .slick-list.draggable {
@@ -3632,6 +3704,11 @@ padding-left: 7px;
         height: 250px;
     }
 
+    .video_menu_slider img {
+        width: 100%;
+        height: 60%;
+    }
+
     .wrapper-latest-bublication-text {
         height: 190px;
     }
@@ -3735,6 +3812,18 @@ padding-left: 7px;
     .reviews_slider_img img {
         height: 280px;
         width: 280px;
+    }
+
+    .serviece-info span {
+        font-size: 18px!important;
+    }
+
+    .slider_bg {
+        padding: 0;
+    }
+
+    .brony-btn {
+        margin-bottom: 50px;
     }
 
     .wrapper-latest-bublication-text {
@@ -3971,11 +4060,12 @@ padding-left: 7px;
     }
 
     .brony-btn {
-        font-size: 22px;
+        font-size: 18px;
+        padding: 20px 20px;
     }
 
     .cottage-name {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     .three-part .middle {
@@ -3989,12 +4079,17 @@ padding-left: 7px;
     }
 
     .unique-header {
-        font-size: 26px;
+        font-size: 20px;
     }
 
     .unqiques {
         flex-direction: column;
         align-items: center;
+    }
+
+    .info-body{
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .left-uniques {

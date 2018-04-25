@@ -3,7 +3,6 @@
         <div class="top-part">
             <div class="slider-part">
                 <div class="video_slider">
-
                     @foreach($number->photos as $photo)
                         <div>
                             <img src="{{ asset('storage/' . $photo->image) }}">
