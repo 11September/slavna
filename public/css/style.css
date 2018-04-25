@@ -1489,6 +1489,11 @@ textarea {
     height: 500px;
     border-radius: 20px;
     padding: 25px 0;
+    width: 100%;
+}
+
+.wrapper-twest-hover iframe{
+    width:100% !important;
 }
 
 .video_items video{
