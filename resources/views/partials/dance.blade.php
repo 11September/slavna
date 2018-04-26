@@ -46,7 +46,10 @@
 
             <div class="row">
                 <div class="wrapper-one-post-line">
-                    <hr id="#circle" class="line-hr-hr">
+                    <div class=" reviews_slide_line">
+                        <div class="left_point"></div>
+                        <div class="right_point"></div>
+                    </div>
                 </div>
             </div>
         </div>
