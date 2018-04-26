@@ -269,6 +269,8 @@ form button:hover {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#74432f', endColorstr='#3a2218', GradientType=1);
     margin: 0 30px 100px 30px;
     border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .video_menu_slider img {
@@ -300,6 +302,7 @@ form button:hover {
     font-size: 30px;
     line-height: 40px;
     padding-bottom: 30px;
+
 }
 
 .video_slider img {
@@ -781,7 +784,7 @@ form button:hover {
     position: absolute;
     z-index: 9999;
     background: #74432F;
-    width: 515px;
+    width: 100%;
     border-radius: 10px;
     height: 130px;
     padding-top: 50px;
@@ -790,6 +793,10 @@ form button:hover {
     opacity: 0.9;
     bottom: 70px;
     visibility: hidden;
+}
+
+.photo-right{
+    padding: 0;
 }
 
 .hover-item-text a {
@@ -1427,7 +1434,7 @@ textarea::-webkit-input-placeholder {
     letter-spacing: 7px;
     color: #2D1C15;
     font-size: 25px;
-    padding: 40px 0 0 0;
+    padding: 0 0 0 0;
 }
 
 textarea::-moz-placeholder {
@@ -1435,7 +1442,7 @@ textarea::-moz-placeholder {
     color: #2D1C15;
     font-size: 25px;
     text-align: center;
-    padding: 40px 0 0 0;
+    padding: 0 0 0 0;
 }
 
 /* Firefox 19+ */
@@ -1444,7 +1451,7 @@ textarea:-moz-placeholder {
     color: #2D1C15;
     font-size: 25px;
     text-align: center;
-    padding: 40px 0 0 0;
+    padding: 0 0 0 0;
 }
 
 /* Firefox 18- */
@@ -1453,7 +1460,7 @@ textarea:-ms-input-placeholder {
     color: #2D1C15;
     font-size: 25px;
     text-align: center;
-    padding: 40px 0 0 0;
+    padding: 0 0 0 0;
 }
 
 .question-span {
@@ -1674,6 +1681,7 @@ textarea:-ms-input-placeholder {
     font-family: 'Proxima_Nova-reg';
     width: 100%;
     background: white;
+    padding-top: 40px;
 }
 
 form {
@@ -1685,6 +1693,7 @@ form {
 .img-dance {
     width: 100%;
     height: 100%;
+    max-height: 600px;
 }
 
 .text-daneclear {
@@ -1692,7 +1701,7 @@ form {
     font-size: 50px;
     text-align: center;
     width: 100%;
-    padding-top: 300px;
+    padding-top: 180px;
     position: absolute;
     z-index: 1;
     font-family: 'Proxima_Nova-bold';
@@ -1719,6 +1728,9 @@ form {
 .dance-for-clear p {
     color: #fff !important;
     background: transparent !important;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
 }
 
 .dance-for-clear .arrow-text-right {
@@ -1873,12 +1885,25 @@ form {
 
 .class-1 {
     color: white;
-    left: 10px
+    left: 0;
+    position: relative;
 }
 
 .class-2 {
     color: white;
-    left: 10px
+    left: 0;
+    position: relative;
+}
+
+.dance-for-clear .overlay{
+    width: 100%;
+    height: 100%;
+    background: #00000075;
+    position: absolute;
+}
+
+.dance-for-clear .row{
+    position: relative;
 }
 
 .block-i {
@@ -1905,22 +1930,35 @@ form {
     text-align: left !important;
 }
 
-.arrow-text-right {
-    color: #F4DB8F;
-    font-size: 30px;
+.arrow-text-right{
+    color:#F4DB8F;
+    font-size: 24px;
+}
+
+.arrow-text-left{
+    color:#F4DB8F;
+    font-size: 24px;
 }
 
 .arrow-text-right svg{
     margin-right: 10px;
+    position: relative;
+    top: 2px;
 }
 
 .arrow-text-left svg{
     margin-left: 10px;
+    position: relative;
+    top: 2px;
+}
+
+.line-hr{
+    display: none;
 }
 
 .arrow-text-left {
     color: #F4DB8F;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .fa-eye {
@@ -1949,12 +1987,18 @@ form {
     width: 100%;
     height: 100%;
     position: relative;
+    cursor: pointer;
+}
+
+.photo-items{
+    margin-top: 50px;
 }
 
 .photo-right img {
     width: 100%;
     height: 100%;
     position: relative;
+    cursor: pointer;
 }
 
 /* all-photos*/
@@ -2086,7 +2130,7 @@ form {
 .artours_intro .block_img img {
     border-radius: 25px;
     height: 600px;
-    width: 960px;
+    width: 100%;
 }
 
 .artours_intro .block_text {
@@ -2116,11 +2160,12 @@ form {
 }
 
 .artours_intro .poema {
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Proxima_Nova-reg-it';
     color: #f6dc91;
     letter-spacing: 5px;
     padding-left: 70px;
+    line-height: 35px;
 }
 
 /* artours_intro end */
@@ -2225,6 +2270,19 @@ form {
         border-radius: 0 25px 25px 0;
     }
 
+    .artours_intro .block_img img{
+        border-radius: 25px 0px 0px 25px;
+        -moz-border-radius: 25px 0px 0px 25px;
+        -webkit-border-radius: 25px 0px 0px 25px;
+        border: 0px solid #000000;
+    }
+
+    .artours_intro .block_text{
+        border-radius: 25px 0px 0px 25px;
+        -moz-border-radius: 25px 0px 0px 25px;
+        -webkit-border-radius: 25px 0px 0px 25px;
+    }
+
     .photo_report_slider h3 {
         font-size: 36px;
         padding-bottom: 30px;
@@ -2278,8 +2336,15 @@ form {
     /* artours_intro */
     .artours_intro .block_text {
         height: auto;
-        border-radius: 25px;
     }
+
+    .artours_intro .block_img{
+        margin: 0;
+    }
+
+
+
+
 
     /* artours_intro end */
     /* reviews */
@@ -2760,6 +2825,31 @@ form {
         display: none;
     }
 
+    .artours_intro .block_img img{
+        border-radius: 25px 25px 0px 0px!important;
+        -moz-border-radius: 25px 25px 0px 0px!important;
+        -webkit-border-radius: 25px 25px 0px 0px!important;
+        border: 0px solid #000000;
+    }
+
+    .artours_intro .poema {
+        font-size: 24px;
+    }
+
+    .artours_intro .poema {
+        padding-left: 30px;
+    }
+
+    .artours_about_content .head_content_p {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .text-daneclear {
+        font-size: 42px;
+        padding-top: 120px;
+    }
+
     .wrapper-blog-list-right a {
         display: block;
         width: 100%;
@@ -2938,6 +3028,7 @@ form {
     .photo_report .block_text {
         height: auto;
         padding: 25px 35px 15px 30px;
+        padding-bottom: 50px;
     }
 
     .photo_report_slider p {
@@ -3032,7 +3123,7 @@ form {
     }
 
     .reviews {
-        padding: 90px 0 70px;
+        padding: 90px 0 0;
     }
     /* reviews end */
 
@@ -3073,7 +3164,7 @@ form {
 
     .artours_intro .block_img img {
         height: 400px;
-        width: 400px;
+        width: 100%;
     }
 
     .artours_intro .block_img {
@@ -3169,6 +3260,37 @@ form {
     .hover-item-text {
         width: 660px !important;
         bottom: 25px;
+    }
+
+    textarea::-webkit-input-placeholder {
+        font-size: 18px;
+    }
+
+    textarea::-moz-placeholder {
+        font-size: 18px;
+    }
+
+    /* Firefox 19+ */
+    textarea:-moz-placeholder {
+        font-size: 18px;
+
+    }
+
+    /* Firefox 18- */
+    textarea:-ms-input-placeholder {
+        font-size: 18px;
+    }
+
+    .artours_intro .block_img img{
+        border-radius: 25px 25px 0px 0px;
+        -moz-border-radius: 25px 25px 0px 0px;
+        -webkit-border-radius: 25px 25px 0px 0px;
+        border: 0px solid #000000;
+    }
+
+    .text-daneclear {
+        font-size: 36px;
+        padding-top: 80px;
     }
 
     .wrapper-blog-list-right {
@@ -3276,6 +3398,7 @@ form {
     #reserve-area {
         padding-top: 0;
         width: 100%;
+        padding-top: 20px;
     }
 
     .links-part {
@@ -3524,7 +3647,19 @@ form {
         display: none;
     }
 
-    .features {
+    .img-dance {
+        height: 250px;
+    }
+
+    .text-daneclear {
+        font-size: 26px;
+    }
+
+    .text-daneclear {
+        font-size: 22px;
+    }
+
+    .features{
         margin: 0 30px;
     }
 
@@ -3533,7 +3668,7 @@ form {
     }
 
     .reviews .slick-list.draggable {
-        height: 600px !important;
+        height: 650px !important;
     }
 
     .photo_report .block_text, .photo_report .block_img {
@@ -3685,7 +3820,6 @@ form {
     .slider_bg p {
         font-size: 20px;
         text-align: center;
-        background: #593425;
         padding: 15px;
     }
 
@@ -3850,6 +3984,7 @@ form {
 
     .photo_report .block_text {
         padding: 25px 25px 15px 25px;
+        padding-bottom: 50px;
     }
 
     .photo_report_slider p {
@@ -3868,8 +4003,8 @@ form {
         width: 100% !important;
     }
 
-    .artours_intro {
-        padding-left: 15px;
+    .artours_about {
+        padding: 0 60px 0 60px;
     }
     /* artours_intro end */
 
@@ -3904,6 +4039,33 @@ form {
     .reviews_slider_img img {
         height: 280px;
         width: 280px;
+    }
+
+    .arrow-text-left {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .arrow-text-right {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .text-daneclear{
+        font-size: 18px;
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .dance-for-clear p {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .arrow-right-type {
+        margin-top: 20px;
+        margin-bottom: 0;
     }
 
     .dance-blog-one-list {
@@ -3987,10 +4149,6 @@ form {
         text-align: center;
     }
 
-    .reviews .slider_bg {
-        background: none;
-    }
-
     .hover-item-text {
         width: 430px !important;
         bottom: 15px;
@@ -4068,7 +4226,7 @@ form {
     }
 
     .reviews .slick-list.draggable {
-        height: 470px !important;
+        height: 500px !important;
     }
     /* reviews end */
 
@@ -4121,7 +4279,7 @@ form {
     .latest_publication .block_text {
         padding: 20px;
         height: auto;
-        padding-bottom: 30px;
+        padding-bottom: 50px;
     }
 
     .cottagges_one_item .block_text {
@@ -4279,6 +4437,10 @@ form {
 
 @media (max-width: 375px) {
     .sub-header-section.first {
+        font-size: 16px;
+    }
+
+    .latest_publication .photo_report_panel a {
         font-size: 16px;
     }
 

@@ -3,6 +3,7 @@
         <div class="row">
             <h2 class="text-daneclear">{{ $post->title }}</h2>
             <img class="img-dance" src="{{ asset('storage/' . $post->image) }}" alt="">
+            <div class="overlay"></div>
         </div>
 
         <div class="wrapper-one-post">
