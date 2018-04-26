@@ -12,4 +12,9 @@ class Photo extends Model
         $photos = Photo::select('id','image', 'description')->latest()->take(5)->get();
         return $photos;
     }
+
+    public function album()
+    {
+        return $this->belongsTo(Album::class);
+    }
 }

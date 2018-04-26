@@ -8,7 +8,7 @@
                     </div>
 
                     <div class="thubnails-item-wrapper-lines">
-                        <a class="thubnails-item-line-link" href="#">Фото</a>
+                        <a class="thubnails-item-line-link" href="{{ url('/albums') }}">Альбомы</a>
                     </div>
                 </div>
                 <div class="col-md-4 wrapper-thubnail-item ">
@@ -46,7 +46,7 @@
                     </div>
 
                     <div class="thubnails-item-wrapper-lines">
-                        <a class="thubnails-item-line-link" href="#">Территория</a>
+                        <a class="thubnails-item-line-link" href="{{ url('/arbours') }}">Территория</a>
                     </div>
                 </div>
                 <div class="col-md-4 wrapper-thubnail-item">

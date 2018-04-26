@@ -57,9 +57,11 @@ class PagesController extends Controller
 
     public function photosAlbum($albumId = null)
     {
-        $photos = Photo::where('album_id', $albumId)->get();
+        $photos = Photo::where('album_id', $albumId)->with('album')->get();
 
-        return view('photos', compact('photos'));
+        $album = Album::where('id', $albumId)->first();
+
+        return view('photos', compact('photos', 'album'));
     }
 
     public function videos()

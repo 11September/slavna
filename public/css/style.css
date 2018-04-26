@@ -353,7 +353,7 @@ form button:hover {
 
 .intro-slider_item img {
     display: block;
-    height: 600px;
+    height: auto;
     width: 100%;
 }
 
@@ -561,7 +561,7 @@ form button:hover {
 
 .photos-in-album .albom-header {
     color: #f5db90;
-    text-align: left;
+    text-align: center;
     font-size: 50px;
     letter-spacing: 10px;
     font-family: 'Proxima_Nova-bold';
@@ -569,8 +569,13 @@ form button:hover {
     padding-bottom: 50px;
 }
 
+.all-photos .sorry{
+    color: #ea4c4c;
+}
+
 .all-photos img {
     width: 100%;
+    height: 300px;
 }
 
 /* photo_report */
@@ -2107,8 +2112,8 @@ form {
 
 .grid-fix{
     position: relative;
+    height: 380px;
 }
-
 /* all-photos*/
 
 /* cottagges_one_item */
@@ -2612,7 +2617,7 @@ form {
     width: 100%;
     height: 100%;
     top: 0;
-    background: #787878;
+    background: #0000006b;
 }
 
 .about-item p {
@@ -3745,6 +3750,10 @@ form {
 }
 
 @media (max-width: 768px) {
+    .hover-item-text{
+        visibility: visible;
+    }
+
     /* photo_report */
     .photo_report_arrow {
         display: none;
@@ -3942,6 +3951,7 @@ form {
         /*height: 430px;*/
         /*width: 320px;*/
         padding: 15px;
+        padding-bottom: 50px;
     }
 
     .latest_publication p {
@@ -4126,6 +4136,10 @@ form {
 
     .footer-copyright {
         text-align: center;
+    }
+
+    .grid-fix{
+        height: 320px;
     }
 }
 
@@ -4536,6 +4550,14 @@ form {
 @media (max-width: 375px) {
     .sub-header-section.first {
         font-size: 16px;
+    }
+
+    .reviews .slick-list.draggable {
+        height: 550px !important;
+    }
+
+    .links-part a {
+        font-size: 10px;
     }
 
     .latest_publication .photo_report_panel a {

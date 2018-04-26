@@ -22,7 +22,7 @@
 		  			</div>
 		  		</div>
 		  		<div class="block_img">
-		  			<img src="{{ asset('images/artours_intro_example.png') }}">
+		  			<img src="{{ asset('images/sadovye-besedki6.jpg') }}">
 		  		</div>
 		  	</div>
 		  </div>
