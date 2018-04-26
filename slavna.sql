@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Апр 24 2018 г., 18:15
+-- Время создания: Апр 26 2018 г., 19:59
 -- Версия сервера: 5.7.19
 -- Версия PHP: 7.1.7
 
@@ -42,10 +42,8 @@ CREATE TABLE `albums` (
 --
 
 INSERT INTO `albums` (`id`, `name`, `description`, `image`, `created_at`, `updated_at`) VALUES
-(1, 'Украшение залов', 'thubnails_albumsthubnails_albumsthubnails_albumsthubnails_albumsthubnails_albumsthubnails_albumsthubnails_albumsthubnails_albums', 'albums/April2018/6koCEj4mfxzexUgttFKX.png', '2018-04-09 10:08:55', '2018-04-20 08:05:44'),
-(2, 'Украшение залов', NULL, 'albums/April2018/6koCEj4mfxzexUgttFKX.png', '2018-04-09 10:08:55', '2018-04-09 10:08:55'),
-(3, 'Украшение залов', NULL, 'albums/April2018/6koCEj4mfxzexUgttFKX.png', '2018-04-09 10:08:55', '2018-04-09 10:08:55'),
-(4, 'Украшение залов', NULL, 'albums/April2018/6koCEj4mfxzexUgttFKX.png', '2018-04-09 10:08:55', '2018-04-09 10:08:55');
+(5, 'Украшение залов', 'Вы можете заказать и другие свадебные услуги по оформлению свадебного зала в стиле и цвете Вашей свадьбы. Например, свадебные свечи, свадебное шампанское и декорированные бокалы, подвязку невесты, подушечку для колец и многое другое.', 'albums/April2018/lnJEUk5aAFCJMl67P5Z9.jpg', '2018-04-26 13:13:15', '2018-04-26 13:13:15'),
+(6, 'Торты на заказ', 'Наши торты предназначены для тех, кто еще молод душой и безумно счастлив полакомится вкуснейшим десертом!', 'albums/April2018/4esMcVN2Qfol1IrUGRe8.jpg', '2018-04-26 13:14:51', '2018-04-26 13:15:49');
 
 -- --------------------------------------------------------
 
@@ -86,6 +84,13 @@ CREATE TABLE `contacts` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Дамп данных таблицы `contacts`
+--
+
+INSERT INTO `contacts` (`id`, `name`, `phone`, `email`, `message`, `created_at`, `updated_at`) VALUES
+(2, 'Бойко Юрий', '0959275048', 'Informator1994@gmail.com', 'asgsgasgasgasgasgasgasga', '2018-04-26 13:49:03', '2018-04-26 13:49:03');
 
 -- --------------------------------------------------------
 
@@ -170,14 +175,14 @@ INSERT INTO `data_rows` (`id`, `data_type_id`, `field`, `type`, `display_name`, 
 (54, 7, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 1),
 (55, 7, 'name', 'text', 'Название', 1, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:255\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 2),
 (56, 7, 'image', 'image', 'Картинка', 0, 1, 1, 1, 1, 1, '{\"resize\":{\"width\":\"1000\",\"height\":null},\"quality\":\"65%\",\"upsize\":true}', 3),
-(57, 7, 'created_at', 'timestamp', 'Created At', 0, 1, 0, 0, 0, 0, NULL, 4),
-(58, 7, 'updated_at', 'timestamp', 'Updated At', 0, 0, 0, 0, 0, 0, NULL, 5),
+(57, 7, 'created_at', 'timestamp', 'Время создания', 0, 1, 0, 0, 0, 0, NULL, 4),
+(58, 7, 'updated_at', 'timestamp', 'Время обновления', 0, 0, 0, 0, 0, 0, NULL, 5),
 (59, 8, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 1),
-(60, 8, 'album_id', 'checkbox', 'Album Id', 1, 1, 1, 1, 1, 1, NULL, 2),
+(60, 8, 'album_id', 'hidden', 'Album Id', 1, 1, 1, 1, 1, 1, NULL, 2),
 (61, 8, 'image', 'image', 'Картинка', 1, 1, 1, 1, 1, 1, '{\"resize\":{\"width\":\"1000\",\"height\":null},\"quality\":\"65%\",\"upsize\":true}', 3),
 (62, 8, 'description', 'text_area', 'Описание', 0, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"max:255\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 4),
-(63, 8, 'created_at', 'timestamp', 'Created At', 0, 1, 1, 1, 0, 1, NULL, 5),
-(64, 8, 'updated_at', 'timestamp', 'Updated At', 0, 0, 0, 0, 0, 0, NULL, 6),
+(63, 8, 'created_at', 'timestamp', 'Время создания', 0, 1, 1, 1, 0, 1, NULL, 5),
+(64, 8, 'updated_at', 'timestamp', 'Время обновления', 0, 0, 0, 0, 0, 0, NULL, 6),
 (65, 8, 'photo_belongsto_album_relationship', 'relationship', 'Альбом', 0, 1, 1, 1, 1, 1, '{\"model\":\"App\\\\Album\",\"table\":\"albums\",\"type\":\"belongsTo\",\"column\":\"album_id\",\"key\":\"id\",\"label\":\"name\",\"pivot_table\":\"albums\",\"pivot\":\"0\"}', 7),
 (66, 9, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 1),
 (67, 9, 'name', 'text', 'Имя', 1, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:255\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 2),
@@ -200,7 +205,7 @@ INSERT INTO `data_rows` (`id`, `data_type_id`, `field`, `type`, `display_name`, 
 (84, 11, 'created_at', 'timestamp', 'Время создания', 0, 1, 1, 0, 0, 0, NULL, 4),
 (85, 11, 'updated_at', 'timestamp', 'Время обновления', 0, 0, 0, 0, 0, 0, NULL, 5),
 (86, 1, 'total_views', 'hidden', 'Total Views', 0, 0, 0, 0, 0, 0, NULL, 14),
-(87, 7, 'description', 'text', 'Описание альбома', 0, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:255\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 3),
+(87, 7, 'description', 'text_area', 'Описание альбома', 0, 0, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:255\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 3),
 (88, 12, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 1),
 (89, 12, 'name', 'text', 'Название', 1, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:255\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 2),
 (90, 12, 'image', 'image', 'Картинка', 1, 1, 1, 1, 1, 1, '{\"resize\":{\"width\":\"1000\",\"height\":null},\"quality\":\"65%\",\"upsize\":true}', 3),
@@ -229,7 +234,7 @@ INSERT INTO `data_rows` (`id`, `data_type_id`, `field`, `type`, `display_name`, 
 (114, 15, 'created_at', 'timestamp', 'Время создания', 0, 1, 1, 0, 0, 0, NULL, 5),
 (115, 15, 'updated_at', 'timestamp', 'Время обновления', 0, 0, 0, 0, 0, 0, NULL, 6),
 (116, 16, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 1),
-(117, 16, 'image', 'image', 'Картинка', 0, 1, 1, 1, 1, 1, '{\"resize\":{\"width\":\"1000\",\"height\":null},\"quality\":\"65%\",\"upsize\":true}', 2),
+(117, 16, 'image', 'image', 'Картинка', 0, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required\",\"messages\":{\"required\":\"Поле обязательное к заполнению\"}},\"resize\":{\"width\":\"1000\",\"height\":null},\"quality\":\"65%\",\"upsize\":true}', 2),
 (118, 16, 'created_at', 'timestamp', 'Время создания', 0, 1, 1, 0, 0, 0, NULL, 3),
 (119, 16, 'updated_at', 'timestamp', 'Время обновления', 0, 0, 0, 0, 0, 0, NULL, 4),
 (120, 17, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 1),
@@ -808,13 +813,12 @@ CREATE TABLE `photos` (
 --
 
 INSERT INTO `photos` (`id`, `album_id`, `image`, `description`, `created_at`, `updated_at`) VALUES
-(1, 1, 'photos/April2018/JIkKqLwq1QSLOWD80IXS.png', 'Краткое описание', '2018-04-09 10:14:23', '2018-04-09 10:14:23'),
-(2, 1, 'photos/April2018/OdSTWKPCwQyufLeDqN6l.jpg', NULL, '2018-04-11 11:07:24', '2018-04-11 11:07:24'),
-(3, 1, 'photos/April2018/ib59vCdd1B7dSVH3bunA.jpg', NULL, '2018-04-11 11:07:33', '2018-04-11 11:07:33'),
-(4, 1, 'photos/April2018/tfRqrzpFszYw5t5hMphP.jpg', NULL, '2018-04-11 11:07:41', '2018-04-11 11:07:41'),
-(5, 1, 'photos/April2018/fyDnCQXt5CeUb8LiyUpp.jpg', NULL, '2018-04-11 11:07:49', '2018-04-11 11:07:49'),
-(6, 1, 'photos/April2018/r6UN5ECjCgl65Thf8iO4.jpg', NULL, '2018-04-11 11:07:59', '2018-04-11 11:07:59'),
-(7, 1, 'photos/April2018/Y6gEJtDRWZ2DLmDh83Uf.jpg', NULL, '2018-04-11 11:08:07', '2018-04-11 11:08:07');
+(9, 6, 'photos/April2018/QI1BYT7uHgLqt3oQGyzF.jpg', NULL, '2018-04-26 13:27:47', '2018-04-26 13:27:47'),
+(10, 6, 'photos/April2018/3tdtQFzaP84lA7sEpDko.jpg', NULL, '2018-04-26 13:27:57', '2018-04-26 13:27:57'),
+(11, 6, 'photos/April2018/pqcLYyVWBPoK12uwmH5Q.jpg', NULL, '2018-04-26 13:28:45', '2018-04-26 13:28:45'),
+(12, 5, 'photos/April2018/JBlTkFql0MoswS2L5Gfq.JPG', NULL, '2018-04-26 13:30:51', '2018-04-26 13:30:51'),
+(13, 5, 'photos/April2018/Hq3lX1c8ErybjJ8Bi4uw.jpg', NULL, '2018-04-26 13:31:00', '2018-04-26 13:31:00'),
+(14, 5, 'photos/April2018/jyRg1USiBFJROlrqesF8.jpeg', NULL, '2018-04-26 13:34:33', '2018-04-26 13:34:33');
 
 -- --------------------------------------------------------
 
@@ -861,7 +865,7 @@ CREATE TABLE `posts` (
   `meta_keywords` text COLLATE utf8mb4_unicode_ci,
   `status` enum('PUBLISHED','DRAFT','PENDING') COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'DRAFT',
   `featured` tinyint(1) NOT NULL DEFAULT '0',
-  `total_views` int(11) DEFAULT NULL,
+  `total_views` int(11) DEFAULT '0',
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -871,8 +875,8 @@ CREATE TABLE `posts` (
 --
 
 INSERT INTO `posts` (`id`, `author_id`, `category_id`, `title`, `seo_title`, `excerpt`, `body`, `image`, `slug`, `meta_description`, `meta_keywords`, `status`, `featured`, `total_views`, `created_at`, `updated_at`) VALUES
-(5, 1, NULL, 'Танец чистоты - свидетельство целомудрия', NULL, NULL, '<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">Несколько десятилетий назад евангельский проповедник Рэнди Вильсон впервые предложил такое свадебное понятие, как &laquo;танец чистоты&raquo;. Данный танец преследует своей целью восхваление добродетели целомудрия.</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&nbsp;В роли гаранта целомудрия своей дочери выступает отец невесты, которому и предоставляется первоочередное право танца с дочерью на ее же свадьбе, перед тем, как уступить ее в танце жениху.</p>', 'posts/April2018/YJoE6kc3os62ghrHODHk.jpg', 'tanec-chistoty-svidetel-stvo-celomudriya', NULL, NULL, 'PUBLISHED', 0, NULL, '2018-04-11 11:51:19', '2018-04-11 12:21:59'),
-(6, 1, NULL, 'Свадебное дерево пожеланий своими руками', NULL, NULL, '<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&laquo;Свадебное дерево пожеланий&raquo; является классическим составляющим любой незабываемой свадьбы, &ndash; благодаря ему молодожёны навсегда сохранят в своей памяти пожелания многочисленных гостей их свадьбы!</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">Свадебное дерево печатается на матовой бумаге, которая в свою очередь закрепляется в рамку, размещённую на столе пожеланий.</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">При помощи специальной водорастворимой краски, гости свадебной церемонии оставляют на ветках &laquo;дерева&raquo; свои отпечатки пальцев, обозначают их своими инициалами и, по желанию, пишут рядом с ними краткое пожелание.</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\"><strong style=\"box-sizing: border-box; line-height: 1.5em;\">Советы:</strong></p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&ndash; предложите гостям несколько цветов краски на выбор;</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&ndash; предоставьте гостям гелиевые ручки, соответствующих цветов;</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&ndash; предоставьте гостям влажные салфетки, для снятия краски;</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&ndash; разместите рядом со &laquo;свадебным деревом&raquo; маленькие &laquo;деревца&raquo; пробники, на которых гости могли бы потренироваться оставлять свои отпечатки пальцев;</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&ndash; разместите рядом со &laquo;свадебным деревом&raquo; пожелание-инструкцию для ваших гостей: &laquo;Пожалуйста, оставьте на свадебном дереве нашей совместной жизни Ваш отпечаток и Ваши инициалы!&raquo;</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\"><strong style=\"box-sizing: border-box; line-height: 1.5em;\">Примечание:</strong></p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&ndash; вручение данного коллективного произведения искусства может стать прекрасным завершением праздничной программы;</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&ndash; молодая пара может стать первыми, кто демонстративно оставят свои пожелания на &laquo;дереве&raquo; их совместной жизни;</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&ndash; под деревом может быть написано: &laquo;Посадите любовь. Позвольте ей принести плоды...&raquo;.</p>', 'posts/April2018/zYmrjk5aJU9yInY6Pj3c.jpg', 'svadebnoe-derevo-pozhelanij-svoimi-rukami', NULL, NULL, 'PUBLISHED', 0, NULL, '2018-04-11 11:53:54', '2018-04-11 12:21:45');
+(5, 1, NULL, 'Танец чистоты - свидетельство целомудрия', NULL, NULL, '<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">Несколько десятилетий назад евангельский проповедник Рэнди Вильсон впервые предложил такое свадебное понятие, как &laquo;танец чистоты&raquo;. Данный танец преследует своей целью восхваление добродетели целомудрия.</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&nbsp;В роли гаранта целомудрия своей дочери выступает отец невесты, которому и предоставляется первоочередное право танца с дочерью на ее же свадьбе, перед тем, как уступить ее в танце жениху.</p>', 'posts/April2018/YJoE6kc3os62ghrHODHk.jpg', 'tanec-chistoty-svidetel-stvo-celomudriya', NULL, NULL, 'PUBLISHED', 0, 27, '2018-04-11 11:51:19', '2018-04-26 13:51:05'),
+(6, 1, NULL, 'Свадебное дерево пожеланий своими руками', NULL, NULL, '<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&laquo;Свадебное дерево пожеланий&raquo; является классическим составляющим любой незабываемой свадьбы, &ndash; благодаря ему молодожёны навсегда сохранят в своей памяти пожелания многочисленных гостей их свадьбы!</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">Свадебное дерево печатается на матовой бумаге, которая в свою очередь закрепляется в рамку, размещённую на столе пожеланий.</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">При помощи специальной водорастворимой краски, гости свадебной церемонии оставляют на ветках &laquo;дерева&raquo; свои отпечатки пальцев, обозначают их своими инициалами и, по желанию, пишут рядом с ними краткое пожелание.</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\"><strong style=\"box-sizing: border-box; line-height: 1.5em;\">Советы:</strong></p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&ndash; предложите гостям несколько цветов краски на выбор;</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&ndash; предоставьте гостям гелиевые ручки, соответствующих цветов;</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&ndash; предоставьте гостям влажные салфетки, для снятия краски;</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&ndash; разместите рядом со &laquo;свадебным деревом&raquo; маленькие &laquo;деревца&raquo; пробники, на которых гости могли бы потренироваться оставлять свои отпечатки пальцев;</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&ndash; разместите рядом со &laquo;свадебным деревом&raquo; пожелание-инструкцию для ваших гостей: &laquo;Пожалуйста, оставьте на свадебном дереве нашей совместной жизни Ваш отпечаток и Ваши инициалы!&raquo;</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\"><strong style=\"box-sizing: border-box; line-height: 1.5em;\">Примечание:</strong></p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&ndash; вручение данного коллективного произведения искусства может стать прекрасным завершением праздничной программы;</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&ndash; молодая пара может стать первыми, кто демонстративно оставят свои пожелания на &laquo;дереве&raquo; их совместной жизни;</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&ndash; под деревом может быть написано: &laquo;Посадите любовь. Позвольте ей принести плоды...&raquo;.</p>', 'posts/April2018/zYmrjk5aJU9yInY6Pj3c.jpg', 'svadebnoe-derevo-pozhelanij-svoimi-rukami', NULL, NULL, 'PUBLISHED', 0, 24, '2018-04-11 11:53:54', '2018-04-26 13:51:21');
 
 -- --------------------------------------------------------
 
@@ -891,13 +895,6 @@ CREATE TABLE `reservations` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Дамп данных таблицы `reservations`
---
-
-INSERT INTO `reservations` (`id`, `name`, `cottage_id`, `date_start`, `date_end`, `phone`, `message`, `created_at`, `updated_at`) VALUES
-(3, 'sadada', 1, '2018-01-01', '2018-01-02', '+383-821-23-1231', 'asddasdad', '2018-04-24 12:10:57', '2018-04-24 12:10:57');
 
 -- --------------------------------------------------------
 
@@ -920,7 +917,8 @@ CREATE TABLE `reviews` (
 
 INSERT INTO `reviews` (`id`, `name`, `image`, `review`, `created_at`, `updated_at`) VALUES
 (1, 'Павлова Арина', 'reviews/April2018/4wOUBlycIjknwRn3t5BI.jpg', 'Довольно неплохо, все понравилось, море емоций!', '2018-04-12 13:10:59', '2018-04-12 13:10:59'),
-(2, 'Екатерина Cкоба', 'reviews/April2018/gH1KzqzzG2WdRBq6sFE6.jpg', 'Очень понравилось! 20 гр. за вход это того стоит! вкусная кухня !спасибо повару!!!10 июня!!!', '2018-04-13 04:20:13', '2018-04-13 04:20:13');
+(2, 'Екатерина Cкоба', 'reviews/April2018/gH1KzqzzG2WdRBq6sFE6.jpg', 'Очень понравилось! 20 гр. за вход это того стоит! вкусная кухня !спасибо повару!!!10 июня!!!', '2018-04-13 04:20:13', '2018-04-13 04:20:13'),
+(3, 'Аноним', 'reviews/April2018/b3kaAUaFNL5hdNDweqnL.jpg', 'Часто отдыхаем с друзьями в высшем разряде. После ремонта всё стало значительно лучше. Отдельное спасибо банщикам. МОЛОДЦЫ! Так держать!', '2018-04-26 13:44:40', '2018-04-26 13:44:40');
 
 -- --------------------------------------------------------
 
@@ -991,22 +989,23 @@ CREATE TABLE `settings` (
 --
 
 INSERT INTO `settings` (`id`, `key`, `display_name`, `value`, `details`, `type`, `order`, `group`) VALUES
-(1, 'site.title', 'Site Title', 'Site Title', '', 'text', 1, 'Site'),
-(2, 'site.description', 'Site Description', 'Site Description', '', 'text', 2, 'Site'),
-(3, 'site.logo', 'Site Logo', '', '', 'image', 3, 'Site'),
-(4, 'site.google_analytics_tracking_id', 'Google Analytics Tracking ID', '', '', 'text', 4, 'Site'),
+(1, 'site.title', 'Site Title', 'Slavna', '', 'text', 1, 'Site'),
+(2, 'site.description', 'Site Description', 'Slavna park', '', 'text', 2, 'Site'),
+(3, 'site.logo', 'Site Logo', 'settings/April2018/ZDUhmXpiQ7hT99XrbKSZ.png', '', 'image', 4, 'Site'),
+(4, 'site.google_analytics_tracking_id', 'Google Analytics Tracking ID', '', '', 'text', 6, 'Site'),
 (5, 'admin.bg_image', 'Admin Background Image', 'settings/April2018/qun2PgeAyjWKb3j21aug.jpg', '', 'image', 5, 'Admin'),
 (6, 'admin.title', 'Admin Title', 'Slavna', '', 'text', 1, 'Admin'),
 (7, 'admin.description', 'Admin Description', 'КОТТЕДЖ-ПАРК «СЛАВНА» В С. ЧЕРНЕТЧИНА. Отдых со вкусом в Сумской области!', '', 'text', 2, 'Admin'),
 (8, 'admin.loader', 'Admin Loader', 'settings/April2018/lO2lSv7j0mF2d0ir60cd.png', '', 'image', 3, 'Admin'),
 (9, 'admin.icon_image', 'Admin Icon Image', 'settings/April2018/B4EtScFuvdjgZM6EEbLq.png', '', 'image', 4, 'Admin'),
 (10, 'admin.google_analytics_client_id', 'Google Analytics Client ID (used for admin dashboard)', '', '', 'text', 1, 'Admin'),
-(11, 'site.facebook_link', 'facebook', 'https://www.facebook.com/', NULL, 'text', 6, 'Site'),
-(12, 'site.instagram_link', 'instagram', 'https://www.instagram.com/', NULL, 'text', 7, 'Site'),
-(13, 'site.google_link', 'googlePlus', 'https://plus.google.com/discover', NULL, 'text', 8, 'Site'),
-(14, 'site.phone_1', 'phone1', '(095) 65-02-810', NULL, 'text', 9, 'Site'),
-(15, 'site.phone_2', 'phone2', '(098) 179-24-55', NULL, 'text', 10, 'Site'),
-(16, 'site.email', 'email', 'PK_SLАVNА@UKR.NET', NULL, 'text', 11, 'Site');
+(11, 'site.facebook_link', 'facebook', 'https://www.facebook.com/', NULL, 'text', 7, 'Site'),
+(12, 'site.instagram_link', 'instagram', 'https://www.instagram.com/', NULL, 'text', 8, 'Site'),
+(13, 'site.google_link', 'googlePlus', 'https://plus.google.com/discover', NULL, 'text', 9, 'Site'),
+(14, 'site.phone_1', 'phone1', '(095) 65-02-810', NULL, 'text', 10, 'Site'),
+(15, 'site.phone_2', 'phone2', '(098) 179-24-55', NULL, 'text', 11, 'Site'),
+(16, 'site.email', 'email', 'PK_SLАVNА@UKR.NET', NULL, 'text', 12, 'Site'),
+(17, 'site.keywords', 'keywords', '', NULL, 'text_area', 3, 'Site');
 
 -- --------------------------------------------------------
 
@@ -1026,8 +1025,9 @@ CREATE TABLE `sliders` (
 --
 
 INSERT INTO `sliders` (`id`, `image`, `created_at`, `updated_at`) VALUES
-(1, 'sliders/April2018/DKjzqnh1GtcJCEp4BlAR.png', '2018-04-13 04:30:49', '2018-04-13 04:30:49'),
-(2, 'sliders/April2018/psaYG3ocPFkg0zM002Ex.jpg', '2018-04-13 04:31:01', '2018-04-20 07:44:31');
+(2, 'sliders/April2018/psaYG3ocPFkg0zM002Ex.jpg', '2018-04-13 04:31:01', '2018-04-20 07:44:31'),
+(5, 'sliders/April2018/h7Zh4G4eGyqbNauWVa3Z.jpg', '2018-04-26 13:00:24', '2018-04-26 13:00:24'),
+(7, 'sliders/April2018/Se2Fbxm4Mk9ouslP0NpE.jpg', '2018-04-26 13:05:33', '2018-04-26 13:05:33');
 
 -- --------------------------------------------------------
 
@@ -1127,8 +1127,8 @@ CREATE TABLE `videos` (
 --
 
 INSERT INTO `videos` (`id`, `name`, `src`, `created_at`, `updated_at`) VALUES
-(1, 'Парк-коттедж Славна', 'https://www.youtube.com/watch?v=NZo4D_lPIjY', '2018-04-11 11:01:56', '2018-04-11 11:01:56'),
-(2, 'Новый год 2016 - коттедж-прак Славна', 'https://www.youtube.com/watch?v=49tP0X6DrrM', '2018-04-11 11:02:16', '2018-04-11 11:02:16');
+(1, 'Парк-коттедж Славна', 'https://www.youtube.com/embed/gOPYt8B4m-U', '2018-04-11 11:01:56', '2018-04-25 11:12:33'),
+(3, 'Ахтырка Коттедж парк Славна', 'https://www.youtube.com/embed/mHvqnimScsM', '2018-04-25 11:05:38', '2018-04-25 11:11:09');
 
 --
 -- Индексы сохранённых таблиц
@@ -1321,7 +1321,7 @@ ALTER TABLE `videos`
 -- AUTO_INCREMENT для таблицы `albums`
 --
 ALTER TABLE `albums`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT для таблицы `categories`
 --
@@ -1331,7 +1331,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT для таблицы `contacts`
 --
 ALTER TABLE `contacts`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT для таблицы `data_rows`
 --
@@ -1386,7 +1386,7 @@ ALTER TABLE `permission_groups`
 -- AUTO_INCREMENT для таблицы `photos`
 --
 ALTER TABLE `photos`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT для таблицы `photo_numbers`
 --
@@ -1401,12 +1401,12 @@ ALTER TABLE `posts`
 -- AUTO_INCREMENT для таблицы `reservations`
 --
 ALTER TABLE `reservations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT для таблицы `reviews`
 --
 ALTER TABLE `reviews`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT для таблицы `roles`
 --
@@ -1421,12 +1421,12 @@ ALTER TABLE `services`
 -- AUTO_INCREMENT для таблицы `settings`
 --
 ALTER TABLE `settings`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 --
 -- AUTO_INCREMENT для таблицы `sliders`
 --
 ALTER TABLE `sliders`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT для таблицы `translations`
 --
@@ -1441,7 +1441,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `videos`
 --
 ALTER TABLE `videos`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- Ограничения внешнего ключа сохраненных таблиц
 --
