@@ -80,8 +80,6 @@ class PagesController extends Controller
     {
         $number = Number::whereId($id)->with('features', 'photos')->first();
 
-//        dd($number);
-
         return view('one-cottage', compact('number'));
     }
 

@@ -57,8 +57,16 @@
         </div>
 
         <div class="bottom-part">
+
+            <div class=" reviews_slide_line">
+                <div class="left_point"></div>
+                <div class="right_point"></div>
+            </div>
+
             <div class="text-part">
-                <p>{!! $number->body !!}</p>
+                <div class="wrapper-about-one-number">
+                    {!! $number->body !!}
+                </div>
             </div>
         </div>
     </div>

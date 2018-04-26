@@ -6,10 +6,9 @@
     <meta http-equiv="x-ua-compatible" content="IE=9"/>
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Slavna</title>
-    {{--<title>{{ Voyager::setting('title') }}</title>--}}
-    {{--<meta name="description" content="{{ Voyager::setting('description') }}">--}}
-    {{--<meta name="keywords" content="{{ Voyager::setting('keywords') }}">--}}
+    <title>{{ setting('site.title') }}</title>
+    <meta name="description" content="{{ setting('site.description') }}">
+    <meta name="keywords" content="{{ setting('site.keywords') }}">
 
     <meta name="description" content="">
     <meta name="keywords" content="">
