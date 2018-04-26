@@ -129,7 +129,7 @@ class PagesController extends Controller
             'name' => 'required|min:3',
             'email' => 'required|email',
             'phone' => 'required|max:17',
-            'message' => 'required|min:5',
+            'message' => 'required',
         ]);
 
         if ($validator->fails()) {
@@ -159,7 +159,7 @@ class PagesController extends Controller
             'date_start' => 'required',
             'date_end' => 'required',
             'phone' => 'required|max:17',
-            'message' => 'required|min:5',
+            'message' => 'required',
         ]);
 
         if ($validator->fails()) {
