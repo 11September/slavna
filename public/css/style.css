@@ -3921,8 +3921,6 @@ padding-left: 7px;
         margin: 0 auto;
     }
 
-
-
     .artours_intro .block_img img {
         height: 300px;
         width: 300px;
@@ -4241,6 +4239,16 @@ padding-left: 7px;
     .dance-blog-one-list {
         width: 300px;
         height: 300px;
+    }
+
+    #thumbnails-about .thubnails-item-wrapper-lines{
+        height: 50px;
+        bottom: 0;
+        top: auto;
+    }
+
+    #thumbnails-about .thubnails-item-line-link{
+        font-size: 26px;
     }
 }
 
