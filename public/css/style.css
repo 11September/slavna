@@ -3594,7 +3594,7 @@ form {
     }
 
     .reviews .slick-list.draggable {
-        height: auto !important;
+        height: 600px !important;
     }
 
     .reviews .draggable {
@@ -3978,6 +3978,10 @@ form {
 
 @media (max-width: 480px) {
     /* reviews */
+    .reviews .slick-list.draggable {
+        height: 520px !important;
+    }
+
     .reviews_slider_img img {
         height: 280px;
         width: 280px;
@@ -4144,6 +4148,9 @@ form {
         top: 490px;
     }
 
+    .reviews .slick-list.draggable {
+        height: 470px !important;
+    }
     /* reviews end */
     /* cottagges_one_item*/
     .cottagges_one_item .latest_publication_slider_item {
