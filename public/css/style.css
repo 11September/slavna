@@ -919,19 +919,19 @@ form button:hover {
     position: absolute;
     z-index: 9999;
     background: #74432F;
-    width: 100%;
+    width: 100%!important;
     border-radius: 10px;
     height: 130px;
     padding-top: 50px;
     left: 0;
     right: 0;
     opacity: 0.9;
-    bottom: 70px;
+    bottom: 0!important;
     visibility: hidden;
 }
 
 .photo-right{
-    padding: 0;
+    margin-bottom: 50px;
 }
 
 .hover-item-text a {
@@ -1532,13 +1532,13 @@ form .input-special:first-child {
     margin-bottom: 50px;
 }
 
-.photo-left img {
-    padding-bottom: 50px
-}
+/*.photo-left img {*/
+    /*padding-bottom: 50px*/
+/*}*/
 
-.photo-right img {
-    padding-bottom: 50px
-}
+/*.photo-right img {*/
+    /*padding-bottom: 50px*/
+/*}*/
 
 textarea {
     width: 80%;
@@ -2135,6 +2135,7 @@ form {
     height: 100%;
     position: relative;
     cursor: pointer;
+    border-radius: 25px;
 }
 
 .photo-items{
@@ -2146,6 +2147,15 @@ form {
     height: 100%;
     position: relative;
     cursor: pointer;
+    border-radius: 25px;
+}
+
+.photo-left{
+    margin-bottom: 50px;
+}
+
+.grid-fix{
+    position: relative;
 }
 
 /* all-photos*/
@@ -3403,11 +3413,6 @@ form {
 }
 
 @media (max-width: 992px) {
-    /* Navbar */
-    .hover-item-text {
-        width: 660px !important;
-        bottom: 25px;
-    }
 
     textarea::-webkit-input-placeholder {
         font-size: 18px;
@@ -4092,10 +4097,6 @@ form {
     /* video_items end */
 
     /* photo_report */
-    .hover-item-text {
-        width: 490px !important;
-        bottom: 20px;
-    }
 
     .sub-header-section.first {
         font-size: 26px;
@@ -4181,6 +4182,15 @@ form {
     /* reviews */
     .reviews .slick-list.draggable {
         height: 520px !important;
+    }
+
+    .hover-item-text {
+        height: 90px;
+        padding-top: 35px;
+    }
+
+    .hover-item-text a {
+        font-size: 22px;
     }
 
     .reviews_slider_img img {
@@ -4294,11 +4304,6 @@ form {
 
     .latest_publication .photo_report_link {
         text-align: center;
-    }
-
-    .hover-item-text {
-        width: 430px !important;
-        bottom: 15px;
     }
 
     hr {
@@ -4555,11 +4560,6 @@ form {
     .photo_report_slider .slick-prev,
     .photo_report_slider .slick-next {
         display: none !important;
-    }
-
-    .hover-item-text {
-        width: 390px !important;
-        bottom: 15px;
     }
 
     .text-reserv {
