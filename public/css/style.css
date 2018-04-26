@@ -1800,7 +1800,7 @@ form {
     overflow: hidden;
 }
 
-.description-blog-p *{
+.description-blog-p *, .wrapper-about-one-number *{
     background-color: transparent !important;
     color: #ffffff !important;
     line-height: 1.2 !important;

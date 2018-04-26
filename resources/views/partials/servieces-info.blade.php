@@ -58,7 +58,9 @@
 
         <div class="bottom-part">
             <div class="text-part">
-                <p>{!! $number->body !!}</p>
+                <div class="wrapper-about-one-number">
+                    {!! $number->body !!}
+                </div>
             </div>
         </div>
     </div>
