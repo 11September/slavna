@@ -1730,9 +1730,16 @@ form {
     font-family: 'Proxima_Nova-reg';
     color: white;
     text-align: center;
-    padding-left: 5%;
-    padding-right: 5%;
     line-height: 45px;
+}
+
+.wrapper-date-and-total{
+    margin: 30px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .dance-for-clear p {
@@ -1777,11 +1784,13 @@ form {
 .arrow-left-type {
     margin-top: 25px;
     margin-bottom: 40px;
+    padding: 0;
 }
 
 .arrow-right-type {
     margin-top: 25px;
     margin-bottom: 40px;
+    padding: 0;
 }
 
 .arrow-text-left {
@@ -1877,6 +1886,10 @@ form {
     padding-left: 7px;
 }
 
+.wrapper-one-post{
+    padding: 50px 5% 50px 5%;
+}
+
 #circle {
     width: 100px;
     height: 100px;
@@ -1916,6 +1929,14 @@ form {
 .arrow-text-right {
     color: #F4DB8F;
     font-size: 30px;
+}
+
+.arrow-text-right svg{
+    margin-right: 10px;
+}
+
+.arrow-text-left svg{
+    margin-left: 10px;
 }
 
 .arrow-text-left {
