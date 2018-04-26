@@ -7,26 +7,22 @@
 
         <div class="wrapper-one-post">
             <div class="row">
-
                 <div class="description-dance">
                     {!! $post->body !!}
                 </div>
-
 
                 <div class="wrapper-date-and-total">
                     <p class="class-1">
                         <i class="far fa-clock dance-clock"></i>
                         <span class="date-padidjg">
-                                    {{ Carbon\Carbon::parse($post->created_at)->format('m.d.Y') }}
-                                </span>
+                            {{ Carbon\Carbon::parse($post->created_at)->format('m.d.Y') }}
+                        </span>
                     </p>
 
                     <p class="class-2"><i class="fas fa-eye dance-eyes "></i>
                         <span class="view-padidjg">{{ $post->total_views }}</span>
                     </p>
                 </div>
-
-
             </div>
 
             <div class="row">
@@ -48,7 +44,7 @@
             </div>
 
             <div class="row">
-                <div class="line-hr">
+                <div class="wrapper-one-post-line">
                     <hr id="#circle" class="line-hr-hr">
                 </div>
             </div>

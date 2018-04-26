@@ -1734,6 +1734,7 @@ form {
 }
 
 .wrapper-date-and-total{
+    font-size: 20px;
     margin: 30px 0;
     width: 100%;
     display: flex;
@@ -1782,13 +1783,11 @@ form {
 /* BLOG-ONE*/
 
 .arrow-left-type {
-    margin-top: 25px;
     margin-bottom: 40px;
     padding: 0;
 }
 
 .arrow-right-type {
-    margin-top: 25px;
     margin-bottom: 40px;
     padding: 0;
 }
@@ -1915,11 +1914,18 @@ form {
     justify-content: space-between;
 }
 
+.wrapper-one-post-line{
+    padding: 0 15%;
+    width:100%;
+    height:100%;
+}
+
 .line-hr-hr {
+    height: 2px;
+    margin: 0;
+    width: 100%;
     background: #FFFFFF;
-    text-align: center;
-    min-width: 1300px;
-    margin-bottom: 30px;
+    position: unset;
 }
 
 .dance-eyes {
