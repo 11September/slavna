@@ -791,7 +791,7 @@ form button:hover {
     position: absolute;
     z-index: 9999;
     background: #74432F;
-    width: 515px;
+    width: 100%;
     border-radius: 10px;
     height: 130px;
     padding-top: 50px;
@@ -800,6 +800,10 @@ form button:hover {
     opacity: 0.9;
     bottom: 70px;
     visibility: hidden;
+}
+
+.photo-right{
+    padding: 0;
 }
 
 .hover-item-text a{
@@ -1655,6 +1659,7 @@ form {
 .img-dance {
     width: 100%;
     height: 100%;
+    max-height: 500px;
 }
 
 .text-daneclear {
@@ -1662,7 +1667,7 @@ form {
     font-size: 50px;
     text-align: center;
     width: 100%;
-    padding-top: 300px;
+    padding-top: 180px;
     position: absolute;
     z-index: 1;
     font-family: 'Proxima_Nova-bold';
@@ -1681,6 +1686,9 @@ form {
 .dance-for-clear p{
     color: #fff !important;
     background: transparent !important;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
 }
 
 .dance-for-clear .arrow-text-right {
@@ -1814,11 +1822,13 @@ padding-left: 7px;
 }
 .class-1{
     color:white;
-    left:10px
+    left: -12px;
+    position: relative;
 }
 .class-2{
     color: white;
-    left:10px
+    left: 10px;
+    position: relative;
 }
 .block-i{
     display: flex;
@@ -1839,13 +1849,30 @@ padding-left: 7px;
 
 .arrow-text-right{
     color:#F4DB8F;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .arrow-text-left{
     color:#F4DB8F;
-    font-size: 30px;
+    font-size: 24px;
 }
+
+.arrow-text-right svg{
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}
+
+.arrow-text-left svg{
+    margin-left: 10px;
+    position: relative;
+    top: 2px;
+}
+
+.line-hr{
+    display: none;
+}
+
 .fa-eye {
     color: white;
     text-align: right;
@@ -1869,12 +1896,18 @@ padding-left: 7px;
     width: 100%;
     height: 100%;
     position: relative;
+    cursor: pointer;
+}
+
+.photo-items{
+    margin-top: 50px;
 }
 
 .photo-right img {
     width: 100%;
     height: 100%;
     position: relative;
+    cursor: pointer;
 }
 /* all-photos*/
 
@@ -2000,7 +2033,7 @@ padding-left: 7px;
 .artours_intro .block_img img {
     border-radius: 25px;
     height: 600px;
-    width: 960px;
+    width: 100%;
 }
 
 .artours_intro .block_text {
@@ -2030,11 +2063,12 @@ padding-left: 7px;
 }
 
 .artours_intro .poema {
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Proxima_Nova-reg-it';
     color: #f6dc91;
     letter-spacing: 5px;
     padding-left: 70px;
+    line-height: 35px;
 }
 
 /* artours_intro end */
@@ -2141,6 +2175,19 @@ padding-left: 7px;
         border-radius: 0 25px 25px 0;
     }
 
+    .artours_intro .block_img img{
+        border-radius: 25px 0px 0px 25px;
+        -moz-border-radius: 25px 0px 0px 25px;
+        -webkit-border-radius: 25px 0px 0px 25px;
+        border: 0px solid #000000;
+    }
+
+    .artours_intro .block_text{
+        border-radius: 25px 0px 0px 25px;
+        -moz-border-radius: 25px 0px 0px 25px;
+        -webkit-border-radius: 25px 0px 0px 25px;
+    }
+
     .photo_report_slider h3 {
         font-size: 36px;
         padding-bottom: 30px;
@@ -2197,8 +2244,15 @@ padding-left: 7px;
     /* artours_intro */
     .artours_intro .block_text {
         height: auto;
-        border-radius: 25px;
     }
+
+    .artours_intro .block_img{
+        margin: 0;
+    }
+
+
+
+
 
     /* artours_intro end */
     /* reviews */
@@ -2685,6 +2739,31 @@ padding-left: 7px;
         display: none;
     }
 
+    .artours_intro .block_img img{
+        border-radius: 25px 25px 0px 0px!important;
+        -moz-border-radius: 25px 25px 0px 0px!important;
+        -webkit-border-radius: 25px 25px 0px 0px!important;
+        border: 0px solid #000000;
+    }
+
+    .artours_intro .poema {
+        font-size: 24px;
+    }
+
+    .artours_intro .poema {
+        padding-left: 30px;
+    }
+
+    .artours_about_content .head_content_p {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .text-daneclear {
+        font-size: 42px;
+        padding-top: 120px;
+    }
+
     .wrapper-blog-list-right a {
         display: block;
         width: 100%;
@@ -3009,7 +3088,7 @@ padding-left: 7px;
 
     .artours_intro .block_img img {
         height: 400px;
-        width: 400px;
+        width: 100%;
     }
 
     .artours_intro .block_img {
@@ -3105,6 +3184,18 @@ padding-left: 7px;
     .hover-item-text {
         width: 660px !important;
         bottom: 25px;
+    }
+
+    .artours_intro .block_img img{
+        border-radius: 25px 25px 0px 0px;
+        -moz-border-radius: 25px 25px 0px 0px;
+        -webkit-border-radius: 25px 25px 0px 0px;
+        border: 0px solid #000000;
+    }
+
+    .text-daneclear {
+        font-size: 36px;
+        padding-top: 80px;
     }
 
     .wrapper-blog-list-right {
@@ -3476,6 +3567,18 @@ padding-left: 7px;
         display: none;
     }
 
+    .img-dance {
+        height: 250px;
+    }
+
+    .text-daneclear {
+        font-size: 26px;
+    }
+
+    .text-daneclear {
+        font-size: 22px;
+    }
+
     .features{
         margin: 0 30px;
     }
@@ -3836,8 +3939,8 @@ padding-left: 7px;
         width: 100% !important;
     }
 
-    .artours_intro {
-        padding-left: 15px;
+    .artours_about {
+        padding: 0 60px 0 60px;
     }
 
     /* artours_intro end */
@@ -3870,6 +3973,33 @@ padding-left: 7px;
     .reviews_slider_img img {
         height: 280px;
         width: 280px;
+    }
+
+    .arrow-text-left {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .arrow-text-right {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .text-daneclear{
+        font-size: 18px;
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .dance-for-clear p {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .arrow-right-type {
+        margin-top: 20px;
+        margin-bottom: 0;
     }
 
     .dance-blog-one-list {
