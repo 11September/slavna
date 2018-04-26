@@ -926,6 +926,11 @@ form button:hover {
     float: right;
 }
 
+.slick-slide:hover, .slick-slide:active, 
+.slick-slide:visited {
+    outline: 0;
+    outline-offset: 0;
+}
 /* reviews end */
 
 /* latest_publication */
