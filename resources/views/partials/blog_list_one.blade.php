@@ -14,9 +14,9 @@
                         <hr class="hr-blog" style="width:100%; background:white;">
                     </a>
 
-                    <p class="description-blog-p">
+                    <div class="description-blog-p">
                         {!! $post->body !!}
-                    </p>
+                    </div>
                     <div class="all-icons-wrapper">
                         <div class="row">
                             <div class="icons-blog-one col-lg-6 col-md-6 col-sm-6 col-6">

@@ -820,13 +820,19 @@ form button:hover {
     padding: 10px 15px;
 }
 
+.icons-blog-two {
+    padding: 10px;
+}
+
+.icons-blog-one, .icons-blog-two{
+    font-size: 18px;
+}
+
 .color-date {
     color: white;
 }
 
-.icons-blog-two {
-    padding: 10px;
-}
+
 
 .row_links {
     font-size: 30px;
@@ -1808,6 +1814,19 @@ form {
     color: white;
     font-family: 'Proxima_Nova-reg';
     line-height: 45px;
+    height: 170px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.description-blog-p *{
+    background-color: transparent !important;
+    color: #ffffff !important;
+    line-height: 1.2 !important;
+    font-family: 'Proxima_Nova-reg' !important;
+    font-size: 20px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
 }
 
 .hr-blog {
@@ -3776,6 +3795,10 @@ form {
     .thumbnails .wrapper-button-all-photos {
         border-radius: 0;
         margin: 50px auto;
+    }
+
+    .description-blog-p{
+
     }
 }
 
