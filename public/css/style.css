@@ -1969,6 +1969,10 @@ form {
 /* BLOG-ONE*/
 
 /* all-photos*/
+.photo-items{
+    margin-top: 80px;
+}
+
 .photo-left img {
     width: 100%;
     height: 100%;
