@@ -366,8 +366,27 @@ form button:hover {
     padding-right: 20px;
 }
 
+.bottom-part{
+    padding-top: 50px;
+}
+
 .serviece-info {
     margin-top: 80px;
+}
+
+.serviece-info .reviews_slide_line{
+    width:60%;
+    margin: 0 auto;
+}
+
+.serviece-info .left_point{
+    margin-top: -4px;
+    float: left;
+}
+
+.serviece-info .right_point{
+    margin-top: -4px;
+    float: right;
 }
 
 .three-part .left p:nth-child(1),
