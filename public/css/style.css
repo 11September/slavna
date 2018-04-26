@@ -1503,10 +1503,10 @@ form button:hover {
 hr {
     margin-bottom: 0;
     height: 2px;
-    width: 80%;
+    width: 100%;
     background: #2D1C15;
     position: absolute;
-    right: 0;
+    left: 0;
 }
 
 form .input-special:first-child {
