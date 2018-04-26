@@ -6,12 +6,12 @@
             {{ csrf_field() }}
 
             <div class="form-group">
-                <input name="name" value="{{ old('name') }}" type="text" class="form-control" id="place-1"
+                <input name="name" value="{{ old('name') }}" type="text" class="form-control"
                        placeholder="ФИО">
             </div>
 
             <div class="form-group">
-                <select name="cottage_id" class="form-control">
+                <select name="cottage_id" class="form-control" id="cottage_id">
 
                     @foreach($numbers as $number)
                         <option value="{{ $number->id }}">{{ $number->name }}</option>
@@ -37,9 +37,7 @@
             </div>
 
             <div class="form-group">
-                <textarea name="message" id="reserve-area" cols="30" rows="10">
-                    {{ old('message') }}
-                </textarea>
+                <textarea name="message" id="reserve-area" cols="30" rows="10" placeholder="Оставьте свое сообщение">{{ old('message') }}</textarea>
             </div>
 
             <div class="alert" style="display:none"></div>

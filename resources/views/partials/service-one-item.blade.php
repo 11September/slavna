@@ -19,8 +19,10 @@
                             </div>
 
                             <div class="row">
-                                <div class="col-xl-10 text_one_item">
-                                    {!! $service->body !!}
+                                <div class="col-xl-10">
+                                    <div class="text_one_item">
+                                        {!! $service->body !!}
+                                    </div>
                                 </div>
                                 <div class="col-xl-2 link_one_item">
 
