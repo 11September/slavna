@@ -52,7 +52,7 @@
                                     </div>
                                 </div>
                                 <div class="col-xl-6 photo_report_link">
-                                    <a href="{{ url('/reservation-form') }}">Забронировать</a>
+                                    <a href="{{ url('/reservation') }}">Забронировать</a>
                                 </div>
                             </div>
                         </div>
