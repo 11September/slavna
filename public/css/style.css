@@ -267,16 +267,10 @@ form button:hover {
     background: -ms-linear-gradient(45deg, rgba(116, 67, 47, 1) 0%, rgba(58, 34, 24, 1) 100%);
     background: linear-gradient(45deg, rgba(116, 67, 47, 1) 0%, rgba(58, 34, 24, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#74432f', endColorstr='#3a2218', GradientType=1);
-
-    margin-left: 30px;
-    margin-right: 30px;
-
+    margin: 0 30px 100px 30px;
+    border-radius: 20px;
     padding-left: 30px;
     padding-right: 30px;
-
-    margin-bottom: 100px;
-
-    border-radius: 20px;
 }
 
 .video_menu_slider img {
@@ -308,6 +302,7 @@ form button:hover {
     font-size: 30px;
     line-height: 40px;
     padding-bottom: 30px;
+
 }
 
 .video_slider img {
@@ -481,7 +476,6 @@ form button:hover {
     padding: 35px 50px 30px 35px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-    /*border-radius: 25px;*/
     width: calc(50% - 35px);
 }
 
@@ -824,12 +818,16 @@ form button:hover {
     padding: 10px 15px;
 }
 
-.color-date {
-    color: white;
-}
-
 .icons-blog-two {
     padding: 10px;
+}
+
+.icons-blog-one, .icons-blog-two{
+    font-size: 18px;
+}
+
+.color-date {
+    color: white;
 }
 
 .row_links {
@@ -891,7 +889,6 @@ form button:hover {
 }
 
 .reviews .slick-dots .slick-active {
-    background: #ece7e3;
     background: #f5db90 !important;
     box-shadow: 0 0 10px 0 rgba(245, 219, 144, 0.9);
 }
@@ -907,7 +904,6 @@ form button:hover {
     align-items: center;
     margin-bottom: 45px;
     margin-top: -35px;
-    /*padding-top: 30px;*/
 }
 
 .reviews .position_line_top {
@@ -1003,14 +999,12 @@ form button:hover {
 .latest_publication .slick-next {
     left: 93%;
     top: 520px;
-    /*position: relative;*/
     z-index: 2;
 }
 
 .latest_publication .slick-prev {
     left: 80%;
     top: 520px;
-    /*position: relative;*/
     z-index: 2;
 }
 
@@ -1052,7 +1046,6 @@ form button:hover {
 .latest_publication .slick-next:before {
     content: url(../images/photo_report_slider_right.png);
 }
-
 /* latest_publication end */
 
 /* serviece-info */
@@ -1061,7 +1054,6 @@ form button:hover {
     background: transparent !important;
     font-size: 22px !important;
 }
-
 /* serviece-info end */
 
 /* Thubnails */
@@ -1127,7 +1119,6 @@ form button:hover {
 .thubnails-item-info .thubnails-item-info-heading {
     font-size: 34px;
     color: #2D1C15;
-    text-align: left;
     font-family: 'Proxima_Nova-bold';
     text-align: center;
     padding-top: 25px;
@@ -1146,7 +1137,6 @@ form button:hover {
 .thubnails-item img {
     width: 100%;
     height: 100%;
-    /*opacity: 0.5;*/
 }
 
 .wrapper-button-all-photos {
@@ -1208,7 +1198,6 @@ form button:hover {
     font-family: 'Proxima_Nova-reg';
     letter-spacing: 2px;
 }
-
 /* Thubnails end */
 
 /* Thubnails-about */
@@ -1264,7 +1253,7 @@ form button:hover {
     font-size: 35px;
     font-family: 'Proxima_Nova-bold';
     text-align: center;
-    padding-top: 0px;
+    padding-top: 0;
     letter-spacing: 2px;
     text-decoration: none;
 }
@@ -1326,7 +1315,6 @@ form button:hover {
 .my-fafa {
     padding-top: 30px;
     display: flex;
-    justify-content: center;
     padding-bottom: 25px;
     justify-content: space-evenly;
 }
@@ -1360,7 +1348,6 @@ form button:hover {
     margin-right: 50px;
     text-align: center;
     color: black;
-
 }
 
 .fa-instagram {
@@ -1438,15 +1425,11 @@ textarea {
     /*padding: 50px 0 0 50px;*/
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
-    /*padding: 50px 0 0 50px;*/
-}
-
 textarea::-webkit-input-placeholder {
     letter-spacing: 7px;
     color: #2D1C15;
     font-size: 25px;
-    padding: 40px 0 0 0;
+    padding: 0 0 0 0;
 }
 
 textarea::-moz-placeholder {
@@ -1454,7 +1437,7 @@ textarea::-moz-placeholder {
     color: #2D1C15;
     font-size: 25px;
     text-align: center;
-    padding: 40px 0 0 0;
+    padding: 0 0 0 0;
 }
 
 /* Firefox 19+ */
@@ -1463,7 +1446,7 @@ textarea:-moz-placeholder {
     color: #2D1C15;
     font-size: 25px;
     text-align: center;
-    padding: 40px 0 0 0;
+    padding: 0 0 0 0;
 }
 
 /* Firefox 18- */
@@ -1472,7 +1455,7 @@ textarea:-ms-input-placeholder {
     color: #2D1C15;
     font-size: 25px;
     text-align: center;
-    padding: 40px 0 0 0;
+    padding: 0 0 0 0;
 }
 
 .question-span {
@@ -1483,7 +1466,6 @@ textarea:-ms-input-placeholder {
     font-size: 24px;
     font-family: 'Proxima_Nova-reg';
     margin-bottom: 40px;
-
 }
 
 .under-form-text {
@@ -1516,7 +1498,6 @@ textarea:-ms-input-placeholder {
     border-bottom: 2px solid #2D1C15;
     background: none;
 }
-
 /*contactForm*/
 
 /* Map section */
@@ -1553,7 +1534,6 @@ textarea:-ms-input-placeholder {
     object-fit: inherit;
     background: #fff;
 }
-
 /* video_items end */
 
 /* footer */
@@ -1598,7 +1578,6 @@ textarea:-ms-input-placeholder {
 .develop a {
     color: #F4DB8F;
 }
-
 /* footer end */
 
 /*reservaion-form*/
@@ -1642,7 +1621,6 @@ textarea:-ms-input-placeholder {
 .slider-part hr {
     width: 80%;
     background: #ffffff;
-    margin-left: 0;
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -1698,19 +1676,19 @@ textarea:-ms-input-placeholder {
     font-family: 'Proxima_Nova-reg';
     width: 100%;
     background: white;
+    padding-top: 40px;
 }
 
 form {
     text-align: center;
 }
-
 /*reservaion-form*/
 
 /*dance-for-clear*/
 .img-dance {
     width: 100%;
     height: 100%;
-    max-height: 500px;
+    max-height: 600px;
 }
 
 .text-daneclear {
@@ -1729,9 +1707,17 @@ form {
     font-family: 'Proxima_Nova-reg';
     color: white;
     text-align: center;
-    padding-left: 5%;
-    padding-right: 5%;
     line-height: 45px;
+}
+
+.wrapper-date-and-total{
+    font-size: 20px;
+    margin: 30px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .dance-for-clear p {
@@ -1777,13 +1763,13 @@ form {
 /* BLOG-ONE*/
 
 .arrow-left-type {
-    margin-top: 25px;
     margin-bottom: 40px;
+    padding: 0;
 }
 
 .arrow-right-type {
-    margin-top: 25px;
     margin-bottom: 40px;
+    padding: 0;
 }
 
 .arrow-text-left {
@@ -1816,6 +1802,19 @@ form {
     color: white;
     font-family: 'Proxima_Nova-reg';
     line-height: 45px;
+    height: 170px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.description-blog-p *{
+    background-color: transparent !important;
+    color: #ffffff !important;
+    line-height: 1.2 !important;
+    font-family: 'Proxima_Nova-reg' !important;
+    font-size: 20px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
 }
 
 .hr-blog {
@@ -1866,6 +1865,10 @@ form {
     padding-left: 7px;
 }
 
+.wrapper-one-post{
+    padding: 50px 5% 50px 5%;
+}
+
 #circle {
     width: 100px;
     height: 100px;
@@ -1877,13 +1880,24 @@ form {
 
 .class-1 {
     color: white;
-    left: -12px;
+    left: 0;
     position: relative;
 }
 
 .class-2 {
     color: white;
-    left: 10px;
+    left: 0;
+    position: relative;
+}
+
+.dance-for-clear .overlay{
+    width: 100%;
+    height: 100%;
+    background: #00000075;
+    position: absolute;
+}
+
+.dance-for-clear .row{
     position: relative;
 }
 
@@ -1893,11 +1907,18 @@ form {
     justify-content: space-between;
 }
 
+.wrapper-one-post-line{
+    padding: 0 15%;
+    width:100%;
+    height:100%;
+}
+
 .line-hr-hr {
+    height: 2px;
+    margin: 0;
+    width: 100%;
     background: #FFFFFF;
-    text-align: center;
-    min-width: 1300px;
-    margin-bottom: 30px;
+    position: unset;
 }
 
 .dance-eyes {
@@ -1930,6 +1951,11 @@ form {
     display: none;
 }
 
+.arrow-text-left {
+    color: #F4DB8F;
+    font-size: 24px;
+}
+
 .fa-eye {
     color: white;
     text-align: right;
@@ -1945,10 +1971,13 @@ form {
     height: auto;
     border-radius: 10px;
 }
-
 /* BLOG-ONE*/
 
 /* all-photos*/
+.photo-items{
+    margin-top: 80px;
+}
+
 .photo-left img {
     width: 100%;
     height: 100%;
@@ -2179,7 +2208,6 @@ form {
 .artours_about .color_focus {
     color: #f5db90;
 }
-
 /* artours_about end */
 
 @media (min-width: 1920px) {
@@ -2293,13 +2321,10 @@ form {
     }
 
     .photo_report .block_text {
-        margin-left: 0;
         margin: 0;
         height: auto;
-        /*padding: 35px 50px 30px 35px;*/
         border-top-left-radius: 25px;
         border-bottom-left-radius: 25px;
-        /*width: 790px;*/
     }
 
     /* photo_report */
@@ -2349,17 +2374,17 @@ form {
 
     .cottagges_one_item .block_text {
         padding: 30px 45px 25px 30px;
-        border-radius: 0px 25px 25px 0px;
-        -moz-border-radius: 0px 25px 25px 0px;
-        -webkit-border-radius: 0px 25px 25px 0px;
-        border: 0px solid #000000;
+        border-radius: 0 25px 25px 0;
+        -moz-border-radius: 0 25px 25px 0;
+        -webkit-border-radius: 0 25px 25px 0;
+        border: 0 solid #000000;
     }
 
     .cottagges_one_item .block_img img {
-        border-radius: 25px 0px 0px 25px !important;
-        -moz-border-radius: 25px 0px 0px 25px !important;
-        -webkit-border-radius: 25px 0px 0px 25px !important;
-        border: 0px solid #000000 !important;
+        border-radius: 25px 0 0 25px !important;
+        -moz-border-radius: 25px 0 0 25px !important;
+        -webkit-border-radius: 25px 0 0 25px !important;
+        border: 0 solid #000000 !important;
     }
 
     /* latest_publication end */
@@ -2373,7 +2398,6 @@ form {
         overflow: hidden;
         height: 465px;
     }
-
     /* cottagges_one_item end */
 }
 
@@ -2386,7 +2410,6 @@ form {
     .reviews .clider_info {
         margin-left: 7%;
     }
-
     /* reviews end */
 }
 
@@ -2411,12 +2434,10 @@ form {
     .reviews .clider_info {
         margin-left: 5%;
     }
-
     /* reviews end */
 }
 
 /* Sly Part */
-
 .wrap {
     position: relative;
     margin: 3em 0;
@@ -2478,7 +2499,7 @@ form {
     width: 100%;
     height: 100%;
     top: 0;
-    background: #00000070;
+    background: #787878;
 }
 
 .about-item p {
@@ -2499,7 +2520,6 @@ form {
 
 .left-align {
     text-align: left;
-
     font-size: 14px;
 }
 
@@ -2515,7 +2535,6 @@ form {
 .about-item .bottom {
     height: 45%;
     position: relative;
-
     display: flex;
     align-items: center;
 }
@@ -2656,7 +2675,6 @@ form {
     width: 400px;
     margin: 0 30px 0 2px;
 }
-
 /* Sly Part */
 
 @media (max-width: 1700px) {
@@ -2668,8 +2686,8 @@ form {
     .photo_report_arrow {
         padding-left: 120px;
     }
-
     /* Navbar */
+
     /* photo_report_slider */
     .photo_report_slider .slick-dots {
         padding: 0 4% 0 8%;
@@ -2683,7 +2701,6 @@ form {
         padding: 60px 30px 60px 550px;
         width: 85%;
     }
-
     /* photo_report_slider end */
 }
 
@@ -2711,7 +2728,6 @@ form {
         left: 76%;
         top: 490px;
     }
-
     /* reviews end */
 }
 
@@ -2726,7 +2742,6 @@ form {
         padding-left: 37%;
         padding-right: 15%;
     }
-
     /* reviews end */
 }
 
@@ -2740,8 +2755,8 @@ form {
     .links-part a {
         font-size: 20px;
     }
-
     /* Navbar */
+
     /* reviews */
     .reviews_slider_head {
         padding-left: 40%;
@@ -2771,7 +2786,6 @@ form {
     .latest_publication .slick-prev {
         left: 74%;
     }
-
     /* reviews end */
 }
 
@@ -2797,7 +2811,6 @@ form {
         padding-left: 45%;
         padding-right: 11%;
     }
-
     /* reviews end */
 }
 
@@ -2916,8 +2929,8 @@ form {
     .reviews_slider_img {
         margin-left: 7%;
     }
-
     /* video_items end */
+
     /* Navbar */
     .information_part .main-header {
         font-size: 36px;
@@ -2938,8 +2951,8 @@ form {
     .menu-part {
         padding-left: 20px;
     }
-
     /* Navbar */
+
     .photos-in-album .albom-header {
         font-size: 34px;
     }
@@ -2998,18 +3011,19 @@ form {
     .cottagges_one_item .text_one_item {
         padding-top: 30px;
     }
-
     /* cottagges_one_item end */
+
     /* artours_intro */
     .artours_intro .block_text {
         height: auto !important;
     }
-
     /* artours_intro end */
+
     /* photo_report */
     .photo_report .block_text {
         height: auto;
         padding: 25px 35px 15px 30px;
+        padding-bottom: 50px;
     }
 
     .photo_report_slider p {
@@ -3056,12 +3070,8 @@ form {
     .photo_report_arrow .slick-dots li {
         width: 25px;
     }
-
-    .photo_report .draggable {
-        /*height: 325px;*/
-    }
-
     /* photo_report end */
+
     /* reviews */
     .reviews_slider_img img {
         height: 430px;
@@ -3094,11 +3104,6 @@ form {
         font-size: 24px;
     }
 
-    .reviews_slider_head {
-        /*width: 600px;*/
-        /*padding-left: 0;*/
-    }
-
     .row_links {
         font-size: 24px;
         margin-bottom: 100px;
@@ -3113,10 +3118,10 @@ form {
     }
 
     .reviews {
-        padding: 90px 0 70px;
+        padding: 90px 0 0;
     }
-
     /* reviews end */
+
     /* latest_publication */
     .latest_publication h3 {
         font-size: 24px;
@@ -3166,8 +3171,8 @@ form {
     .artours_intro .block_text {
         order: 2;
     }
-
     /* latest_publication end */
+
     .wrapper-thubnails {
         height: auto;
     }
@@ -3192,7 +3197,6 @@ form {
 
     .wrapper-button-all-photos {
         width: 300px;
-
     }
 
     .button-all-photos {
@@ -3243,7 +3247,6 @@ form {
         top: -180px;
         left: 93.55%;
     }
-
     /* reviews end */
 }
 
@@ -3252,6 +3255,25 @@ form {
     .hover-item-text {
         width: 660px !important;
         bottom: 25px;
+    }
+
+    textarea::-webkit-input-placeholder {
+        font-size: 18px;
+    }
+
+    textarea::-moz-placeholder {
+        font-size: 18px;
+    }
+
+    /* Firefox 19+ */
+    textarea:-moz-placeholder {
+        font-size: 18px;
+
+    }
+
+    /* Firefox 18- */
+    textarea:-ms-input-placeholder {
+        font-size: 18px;
     }
 
     .artours_intro .block_img img{
@@ -3328,9 +3350,8 @@ form {
 
     .wrapper-text-left, .wrapper-answer-form {
         max-width: 600px;
-        margin: 0 auto;
+        margin: 0 auto !important;
         left: 0;
-        margin-bottom: 0 !important;
         border-radius: 0 !important;
         box-shadow: none !important;
     }
@@ -3366,12 +3387,13 @@ form {
     }
 
     hr {
-        width: 92%;
+        width: 90%;
     }
 
     #reserve-area {
         padding-top: 0;
         width: 100%;
+        padding-top: 20px;
     }
 
     .links-part {
@@ -3396,7 +3418,6 @@ form {
 
     .flex-repair {
         flex-direction: column-reverse;
-
     }
 
     .question-span {
@@ -3424,7 +3445,6 @@ form {
     }
 
     .wrapper-text-left {
-
         min-height: 900px;
     }
 
@@ -3483,15 +3503,11 @@ form {
     .cottagges_one_item .latest_publication_slider_item {
         padding: 0 30px;
     }
-
     /* cottagges_one_item end */
+
     /* photo_report */
     .flexx {
         flex-direction: column;
-    }
-
-    .photo_report .draggable {
-        /*height: 580px;*/
     }
 
     .photo_report .block_text {
@@ -3526,8 +3542,8 @@ form {
         right: 35px;
         top: 490px;
     }
-
     /* photo_report end */
+
     /* reviews */
     .reviews_slider_img {
         width: 100%;
@@ -3562,9 +3578,7 @@ form {
     }
 
     .row_links {
-        margin-bottom: 15px;
-        margin-top: 15px;
-        margin-bottom: 80px;
+        margin: 15px 0 80px 0;
     }
 
     .reviews .draggable {
@@ -3607,8 +3621,8 @@ form {
     .reviews .position_line {
         display: none;
     }
-
     /* reviews end */
+
     /* latest_publication */
     .latest_publication .slick-prev {
         top: 500px;
@@ -3619,7 +3633,6 @@ form {
         top: 500px;
         left: 96%;
     }
-
     /* latest_publication end */
 }
 
@@ -3650,10 +3663,7 @@ form {
     }
 
     .reviews .slick-list.draggable {
-        height: auto !important;
-    }
-
-    .reviews .draggable {
+        height: 650px !important;
     }
 
     .photo_report .block_text, .photo_report .block_img {
@@ -3779,8 +3789,8 @@ form {
         right: 15px;
         top: 490px;
     }
-
     /* photo_report end */
+
     /* reviews */
     .reviews .bg_i_text {
         font-size: 18px;
@@ -3805,7 +3815,6 @@ form {
     .slider_bg p {
         font-size: 20px;
         text-align: center;
-        background: #593425;
         padding: 15px;
     }
 
@@ -3818,8 +3827,8 @@ form {
         width: 100%;
         text-align: center;
     }
-
     /* reviews end */
+
     /* latest_publication */
     .latest_publication .block_text {
         /*height: 430px;*/
@@ -3831,12 +3840,8 @@ form {
         font-size: 18px;
         height: auto;
     }
-
-    .latest_publication .draggable {
-        /*height: 745px;*/
-    }
-
     /* latest_publication end */
+
     .map {
         height: 500px;
     }
@@ -3846,8 +3851,8 @@ form {
         padding-top: 30px;
         flex-wrap: wrap;
     }
-
     /* Navbar */
+
     .details-part {
         width: 100%;
     }
@@ -3882,7 +3887,6 @@ form {
 }
 
 @media (max-width: 630px) {
-
     .menu-part {
         text-align: center;
         justify-content: center;
@@ -3933,8 +3937,8 @@ form {
     .wrapper-latest-bublication-text {
         height: 190px;
     }
-
     /* video_items end */
+
     /* photo_report */
     .hover-item-text {
         width: 490px !important;
@@ -3957,10 +3961,6 @@ form {
         max-width: 90%;
     }
 
-    .photo_report .draggable {
-        /*height: 685px;*/
-    }
-
     .dance-blog-h2 {
         font-size: 25px;
     }
@@ -3978,9 +3978,8 @@ form {
     }
 
     .photo_report .block_text {
-        /*height: 380px;*/
-        /*width: 320px;*/
         padding: 25px 25px 15px 25px;
+        padding-bottom: 50px;
     }
 
     .photo_report_slider p {
@@ -3992,8 +3991,8 @@ form {
         padding: 10px 30px;
         font-size: 18px;
     }
-
     /* photo_report end */
+
     /* artours_intro */
     .artours_intro .block_text {
         width: 100% !important;
@@ -4002,14 +4001,14 @@ form {
     .artours_about {
         padding: 0 60px 0 60px;
     }
-
     /* artours_intro end */
+
     /* reviews */
     .add_reviews_div {
         padding-bottom: 10px;
     }
-
     /* reviews end */
+
     /* latest_publication */
     .latest_publication p {
         font-size: 18px;
@@ -4017,12 +4016,10 @@ form {
     }
 
     .latest_publication .block_text {
-        /*height: 330px;*/
-        /*width: 100%;*/
         padding: 25px 25px 15px 25px;
     }
-
     /* latest_publication end */
+
     .footer-copyright {
         text-align: center;
     }
@@ -4030,6 +4027,10 @@ form {
 
 @media (max-width: 480px) {
     /* reviews */
+    .reviews .slick-list.draggable {
+        height: 520px !important;
+    }
+
     .reviews_slider_img img {
         height: 280px;
         width: 280px;
@@ -4143,10 +4144,6 @@ form {
         text-align: center;
     }
 
-    .reviews .slider_bg {
-        background: none;
-    }
-
     .hover-item-text {
         width: 430px !important;
         bottom: 15px;
@@ -4223,7 +4220,11 @@ form {
         top: 490px;
     }
 
+    .reviews .slick-list.draggable {
+        height: 500px !important;
+    }
     /* reviews end */
+
     /* cottagges_one_item*/
     .cottagges_one_item .latest_publication_slider_item {
         padding: 0;
@@ -4238,8 +4239,8 @@ form {
         font-size: 18px;
         letter-spacing: 0;
     }
-
     /* cottagges_one_item end */
+
     /* artours_about */
     .artours_about {
         padding: 0;
@@ -4267,33 +4268,25 @@ form {
     .artours_about_bg {
         padding: 5px 15px 10px;
     }
-
     /* artours_intro end */
+
     /* latest_publication */
     .latest_publication .block_text {
         padding: 20px;
         height: auto;
-        padding-bottom: 30px;
+        padding-bottom: 50px;
     }
 
     .cottagges_one_item .block_text {
         padding: 25px;
     }
 
-    .latest_publication .draggable {
-        /*height: 720px;*/
-    }
-
     .latest_publication p {
         font-size: 18px;
         height: auto;
     }
-
-    .latest_publication h2 {
-
-    }
-
     /* latest_publication end */
+
     .main-menu li {
         padding-bottom: 20px;
         font-size: 30px;
@@ -4442,6 +4435,10 @@ form {
         font-size: 16px;
     }
 
+    .latest_publication .photo_report_panel a {
+        font-size: 16px;
+    }
+
     .sub-header-section.second {
         font-size: 14px;
     }
@@ -4481,7 +4478,6 @@ form {
 }
 
 @media (max-width: 360px) {
-
     .description-blog-p {
         font-size: 12px;
     }
