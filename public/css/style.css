@@ -1557,45 +1557,20 @@ textarea {
     padding-left: 40px;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    /*padding: 50px 0 0 50px;*/
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    /*padding: 50px 0 0 50px;*/
-}
-
-textarea::-webkit-input-placeholder {
+textarea::-moz-placeholder, textarea:-moz-placeholder, textarea:-ms-input-placeholder, textarea::-webkit-input-placeholder {
     letter-spacing: 7px;
     color: #2D1C15;
-    font-size: 25px;
-    padding: 0 0 0 0;
-}
-
-textarea::-moz-placeholder {
-    letter-spacing: 7px;
-    color: #2D1C15;
-    font-size: 25px;
+    font-size: 18px;
     text-align: center;
     padding: 0 0 0 0;
+    font-weight: 400;
 }
 
-/* Firefox 19+ */
-textarea:-moz-placeholder {
-    letter-spacing: 7px;
-    color: #2D1C15;
-    font-size: 25px;
-    text-align: center;
-    padding: 0 0 0 0;
-}
-
-/* Firefox 18- */
-textarea:-ms-input-placeholder {
-    letter-spacing: 7px;
-    color: #2D1C15;
-    font-size: 25px;
-    text-align: center;
-    padding: 0 0 0 0;
+::-webkit-input-placeholder, ::-moz-placeholder, :-moz-placeholder, :-ms-input-placeholder {
+    color: #2D1C15 !important;
+    font-size: 22px;
+    font-family: 'Proxima_Nova-reg';
+    font-weight: 700;
 }
 
 .question-span {
@@ -1785,31 +1760,7 @@ textarea:-ms-input-placeholder {
     text-align: center;
 }
 
-::-webkit-input-placeholder {
-    color: #2D1C15 !important;
-    font-size: 25px;
-    font-family: 'Proxima_Nova-reg';
-}
 
-::-moz-placeholder {
-    color: #2D1C15 !important;
-    font-size: 25px;
-    font-family: 'Proxima_Nova-reg';
-}
-
-/* Firefox 19+ */
-:-moz-placeholder {
-    color: #2D1C15 !important;
-    font-size: 25px;
-    font-family: 'Proxima_Nova-reg';
-}
-
-/* Firefox 18- */
-:-ms-input-placeholder {
-    color: #2D1C15 !important;
-    font-size: 25px;
-    font-family: 'Proxima_Nova-reg';
-}
 
 #reserve-area {
     color: #2D1C15 !important;

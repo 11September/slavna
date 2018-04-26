@@ -9,7 +9,7 @@ class Photo extends Model
 {
     public static function thubnails_photos()
     {
-        $photos = Photo::select('image', 'description')->latest()->take(5)->get();
+        $photos = Photo::select('id','image', 'description')->latest()->take(5)->get();
         return $photos;
     }
 }
