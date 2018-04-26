@@ -326,9 +326,9 @@ form button:hover {
 .cottage-name {
     text-align: center;
     color: white;
-    font-size: 50px;
+    font-size: 46px;
     font-family: 'Proxima_Nova-bold';
-    padding-top: 30px;
+    padding-top: 20px;
     letter-spacing: 2px;
 }
 
@@ -340,10 +340,10 @@ form button:hover {
     display: inline-block;
     background: white;
     color: #2D1C15;
-    padding: 20px 30px;
+    padding: 15px 25px;
     font-size: 30px;
     font-family: 'Proxima_light';
-    margin-bottom: 75px;
+    margin-bottom: 50px;
     border-radius: 10px;
     letter-spacing: 3px;
 }
@@ -355,8 +355,8 @@ form button:hover {
 .three-part {
     display: flex;
     justify-content: center;
-    margin-top: 80px;
-    margin-bottom: 40px;
+    margin-top: 50px;
+    margin-bottom: 35px;
 }
 
 .three-part .middle img {
@@ -398,7 +398,7 @@ form button:hover {
     font-family: 'Proxima_light';
     font-size: 40px;
     color: white;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     letter-spacing: 3px;
 }
 
