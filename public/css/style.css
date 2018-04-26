@@ -1422,10 +1422,27 @@ textarea {
     color: #2D1C15;
 }
 
+#reservation .form-group input, #reservation .form-group select, #reservation .form-group textarea{
+    padding-left: 40px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    /*padding: 50px 0 0 50px;*/
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    /*padding: 50px 0 0 50px;*/
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    /*padding: 50px 0 0 50px;*/
+}
+
 textarea::-webkit-input-placeholder {
     letter-spacing: 7px;
     color: #2D1C15;
     font-size: 25px;
+    padding: 40px 0 0 0;
 }
 
 textarea::-moz-placeholder {
@@ -1433,6 +1450,7 @@ textarea::-moz-placeholder {
     color: #2D1C15;
     font-size: 25px;
     text-align: center;
+    padding: 40px 0 0 0;
 }
 
 /* Firefox 19+ */
@@ -1441,6 +1459,7 @@ textarea:-moz-placeholder {
     color: #2D1C15;
     font-size: 25px;
     text-align: center;
+    padding: 40px 0 0 0;
 }
 
 /* Firefox 18- */
@@ -1449,6 +1468,7 @@ textarea:-ms-input-placeholder {
     color: #2D1C15;
     font-size: 25px;
     text-align: center;
+    padding: 40px 0 0 0;
 }
 
 .question-span {
