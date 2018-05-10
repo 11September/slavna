@@ -296,8 +296,8 @@ form button:hover {
 
 .main-menu li a {
     display: inline-block;
-    padding-bottom: 20px;
-    font-size: 40px;
+    padding-bottom: 15px;
+    font-size: 35px;
     font-family: 'Proxima_Nova-reg';
     color: white;
 }
