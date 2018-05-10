@@ -2,24 +2,33 @@
     <div class="info-body">
         <div class="top-part">
             <div class="slider-part">
-                <div class="video_slider">
-                    @foreach($number->photos as $photo)
-                        <div>
-                            <img src="{{ asset('storage/' . $photo->image) }}">
-                        </div>
-                    @endforeach
 
-                </div>
 
-                <div class="video_menu_slider">
+                @if(count($number->photos) > 1)
+                    <div class="video_slider">
+                        @foreach($number->photos as $photo)
+                            <div>
+                                <img src="{{ asset('storage/' . $photo->image) }}">
+                            </div>
+                        @endforeach
+                    </div>
+                @else
+                    <div class="details-image">
+                        <img src="{{ asset('storage/' . $number->image) }}" alt="{{ $number->name }}">
+                    </div>
+                @endif
 
-                    @foreach($number->photos as $photo)
-                        <div>
-                            <img src="{{ asset('storage/' . $photo->image) }}">
-                        </div>
-                    @endforeach
+                @if(count($number->photos) > 1)
+                    <div class="video_menu_slider">
+                        @foreach($number->photos as $photo)
+                            <div>
 
-                </div>
+                                <img src="{{ asset('storage/' . $photo->image) }}">
+                            </div>
+                        @endforeach
+                    </div>
+                @endif
+
             </div>
             <div class="details-part">
                 <h2 class="cottage-name">{{ $number->name }}</h2>

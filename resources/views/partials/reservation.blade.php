@@ -21,14 +21,15 @@
             </div>
 
             <div class="form-group">
-                <input name="date_start" id="date_start" value="{{ old('date_start') }}" type="date"
-                       class="form-control"
+                <input name="date_start" id="date_start" value="{{ old('date_start') }}" type="text"
+                       class="form-control" size="30"
                        placeholder="Дата заезда">
             </div>
 
 
             <div class="form-group">
-                <input name="date_end" id="date_end" value="{{ old('date_end') }}" type="date" class="form-control"
+                <input name="date_end" id="date_end" value="{{ old('date_end') }}" type="text"
+                       class="form-control" size="30"
                        placeholder="Дата выезда">
             </div>
             <div class="form-group">

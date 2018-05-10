@@ -48,11 +48,9 @@ $(document).ready(function () {
             method: 'post',
             data: data,
             success: function (result) {
-                console.log(result);
                 jQuery('.alert').show().addClass(result.type).html(result.text);
             },
             error: function (result) {
-                console.log(result);
                 jQuery('.alert').show().addClass(result.type).html(result.text);
             }
         });
