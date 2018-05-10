@@ -8,7 +8,7 @@
                         <div class="block_text">
                             <div class="row">
                                 <div class="col-xl-8 col-lg-7 main_head">
-                                    <h3>{{ $number->name }}</h3>
+                                    <a href="{{ url('/number', $number->id) }}"><h3>{{ $number->name }}</h3></a>
                                 </div>
                                 <div class="col-xl-4 col-lg-5 main_link">
                                     <a href="{{ url('/number', $number->id) }}">Подробнее</a>
@@ -57,7 +57,7 @@
                             </div>
                         </div>
                         <div class="block_img">
-                            <img src="{{ asset('storage/' . $number->image) }}">
+                            <a href="{{ url('/number', $number->id) }}"><img src="{{ asset('storage/' . $number->image) }}"></a>
                         </div>
                     </div>
                 </div>

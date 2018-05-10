@@ -1153,6 +1153,10 @@ form button:hover {
     z-index: 2;
 }
 
+.main_head a{
+    color: white;
+}
+
 .latest_publication .slick-dots {
     bottom: 220px;
     width: 200px;
