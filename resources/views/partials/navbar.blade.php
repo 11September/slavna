@@ -38,7 +38,9 @@
             <li><a href="{{ url('/numbers/cottage') }}">КОТТЕДЖИ</a></li>
             <li><a href="{{ url('/numbers/number') }}">НОМЕРА</a></li>
             <li><a href="{{ url('/numbers/sauna') }}">ДОМА С САУНОЙ</a></li>
+            <li><a href="{{ url('/numbers/сhopped_houses') }}">РУБЛЕННЫЕ ДОМА</a></li>
             <li><a href="{{ url('/numbers/bathhouse') }}">БАНИ</a></li>
+            <li><a href="{{ url('/numbers/discount_price') }}">Цена со скидкой</a></li>
             <li><a href="{{ url('/news') }}">БЛОГ</a></li>
             <li><a href="{{ url('/arbours') }}">БЕСЕДКИ</a></li>
             <li><a href="{{ url('/about') }}">О НАС</a></li>
