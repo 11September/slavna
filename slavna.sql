@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Апр 26 2018 г., 19:59
+-- Время создания: Май 11 2018 г., 20:40
 -- Версия сервера: 5.7.19
 -- Версия PHP: 7.1.7
 
@@ -179,20 +179,20 @@ INSERT INTO `data_rows` (`id`, `data_type_id`, `field`, `type`, `display_name`, 
 (58, 7, 'updated_at', 'timestamp', 'Время обновления', 0, 0, 0, 0, 0, 0, NULL, 5),
 (59, 8, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 1),
 (60, 8, 'album_id', 'hidden', 'Album Id', 1, 1, 1, 1, 1, 1, NULL, 2),
-(61, 8, 'image', 'image', 'Картинка', 1, 1, 1, 1, 1, 1, '{\"resize\":{\"width\":\"1000\",\"height\":null},\"quality\":\"65%\",\"upsize\":true}', 3),
+(61, 8, 'image', 'multiple_images', 'Картинки', 1, 1, 1, 1, 1, 1, '{\"resize\":{\"width\":\"1000\",\"height\":null},\"quality\":\"65%\",\"upsize\":true}', 3),
 (62, 8, 'description', 'text_area', 'Описание', 0, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"max:255\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 4),
-(63, 8, 'created_at', 'timestamp', 'Время создания', 0, 1, 1, 1, 0, 1, NULL, 5),
+(63, 8, 'created_at', 'timestamp', 'Время создания', 0, 1, 0, 0, 0, 0, NULL, 5),
 (64, 8, 'updated_at', 'timestamp', 'Время обновления', 0, 0, 0, 0, 0, 0, NULL, 6),
 (65, 8, 'photo_belongsto_album_relationship', 'relationship', 'Альбом', 0, 1, 1, 1, 1, 1, '{\"model\":\"App\\\\Album\",\"table\":\"albums\",\"type\":\"belongsTo\",\"column\":\"album_id\",\"key\":\"id\",\"label\":\"name\",\"pivot_table\":\"albums\",\"pivot\":\"0\"}', 7),
 (66, 9, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 1),
-(67, 9, 'name', 'text', 'Имя', 1, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:255\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 2),
-(68, 9, 'cottage_id', 'text', 'Котедж / номер', 0, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:255\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 3),
-(69, 9, 'date_start', 'date', 'Дата бронирования (с)', 0, 1, 1, 1, 1, 1, NULL, 4),
-(70, 9, 'date_end', 'date', 'Дата бронирования (до', 0, 1, 1, 1, 1, 1, NULL, 5),
-(71, 9, 'phone', 'text', 'Телефон', 1, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:255\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 6),
-(72, 9, 'message', 'text_area', 'Message', 1, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:500\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 7),
-(73, 9, 'created_at', 'timestamp', 'Created At', 0, 1, 1, 0, 0, 0, NULL, 8),
-(74, 9, 'updated_at', 'timestamp', 'Updated At', 0, 0, 0, 0, 0, 0, NULL, 9),
+(67, 9, 'name', 'text', 'ФИО', 1, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:255\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 3),
+(68, 9, 'cottage_id', 'text', 'Котедж / номер', 0, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:255\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 4),
+(69, 9, 'date_start', 'date', 'Дата бронирования (с)', 0, 1, 1, 1, 1, 1, NULL, 5),
+(70, 9, 'date_end', 'date', 'Дата бронирования (до)', 0, 1, 1, 1, 1, 1, NULL, 6),
+(71, 9, 'phone', 'text', 'Телефон', 1, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:255\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 7),
+(72, 9, 'message', 'text_area', 'Сообщение пользователя', 1, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:500\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 8),
+(73, 9, 'created_at', 'timestamp', 'Время создания', 0, 0, 0, 0, 0, 0, NULL, 9),
+(74, 9, 'updated_at', 'timestamp', 'Время обновления', 0, 0, 0, 0, 0, 0, NULL, 10),
 (75, 10, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 1),
 (76, 10, 'name', 'text', 'Название', 1, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:255\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 2),
 (77, 10, 'image', 'image', 'Картинка', 0, 1, 1, 1, 1, 1, '{\"resize\":{\"width\":\"1000\",\"height\":null},\"quality\":\"65%\",\"upsize\":true}', 3),
@@ -212,7 +212,7 @@ INSERT INTO `data_rows` (`id`, `data_type_id`, `field`, `type`, `display_name`, 
 (91, 12, 'body', 'rich_text_box', 'Описание', 1, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:2000\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 4),
 (92, 12, 'price_weekday', 'number', 'Цена в рабочий день', 1, 0, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:11\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 5),
 (93, 12, 'price_holiday', 'number', 'Цена в выходной день', 1, 0, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:11\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 6),
-(94, 12, 'type', 'radio_btn', 'Тип номера', 1, 1, 1, 1, 1, 1, '{\"default\":\"cottage\",\"options\":{\"cottage\":\"Котедж\",\"number\":\"Номер\",\"sauna\":\"Сауна\",\"bathhouse\":\"Баня\"}}', 7),
+(94, 12, 'type', 'radio_btn', 'Тип номера', 1, 1, 1, 1, 1, 1, '{\"default\":\"cottage\",\"options\":{\"cottage\":\"Котедж\",\"number\":\"Номер\",\"sauna\":\"Сауна\",\"сhopped_houses\":\"Рубленые дома\",\"bathhouse\":\"Баня\",\"discount_price\":\"Цена со скидкой\"}}', 7),
 (95, 12, 'created_at', 'timestamp', 'Время создания', 0, 1, 1, 0, 0, 0, NULL, 8),
 (96, 12, 'updated_at', 'timestamp', 'Время обновления', 0, 0, 0, 0, 0, 0, NULL, 9),
 (97, 13, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 1),
@@ -223,10 +223,10 @@ INSERT INTO `data_rows` (`id`, `data_type_id`, `field`, `type`, `display_name`, 
 (103, 13, 'feature_belongsto_number_relationship', 'relationship', 'numbers', 0, 1, 1, 1, 1, 1, '{\"model\":\"App\\\\Number\",\"table\":\"numbers\",\"type\":\"belongsTo\",\"column\":\"number_id\",\"key\":\"id\",\"label\":\"name\",\"pivot_table\":\"albums\",\"pivot\":\"0\"}', 5),
 (104, 14, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 1),
 (105, 14, 'number_id', 'hidden', 'Номер', 0, 1, 1, 1, 1, 1, NULL, 2),
-(106, 14, 'image', 'image', 'Картинка', 1, 1, 1, 1, 1, 1, '{\"resize\":{\"width\":\"1000\",\"height\":null},\"quality\":\"65%\",\"upsize\":true}', 3),
-(107, 14, 'created_at', 'timestamp', 'Время создания', 0, 1, 1, 0, 0, 0, NULL, 4),
+(106, 14, 'image', 'multiple_images', 'Картинки', 1, 1, 1, 1, 1, 1, '{\"resize\":{\"width\":\"1000\",\"height\":null},\"quality\":\"65%\",\"upsize\":true}', 3),
+(107, 14, 'created_at', 'timestamp', 'Время создания', 0, 1, 0, 0, 0, 0, NULL, 4),
 (108, 14, 'updated_at', 'timestamp', 'Время обновления', 0, 0, 0, 0, 0, 0, NULL, 5),
-(109, 14, 'photo_number_belongsto_number_relationship', 'relationship', 'numbers', 0, 1, 1, 1, 1, 1, '{\"model\":\"App\\\\Number\",\"table\":\"numbers\",\"type\":\"belongsTo\",\"column\":\"number_id\",\"key\":\"id\",\"label\":\"name\",\"pivot_table\":\"albums\",\"pivot\":\"0\"}', 6),
+(109, 14, 'photo_number_belongsto_number_relationship', 'relationship', 'Номер', 0, 1, 1, 1, 1, 1, '{\"model\":\"App\\\\Number\",\"table\":\"numbers\",\"type\":\"belongsTo\",\"column\":\"number_id\",\"key\":\"id\",\"label\":\"name\",\"pivot_table\":\"albums\",\"pivot\":\"0\"}', 6),
 (110, 15, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 1),
 (111, 15, 'name', 'text', 'Имя', 1, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:255\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 2),
 (112, 15, 'image', 'image', 'Картинка', 0, 1, 1, 1, 1, 1, '{\"resize\":{\"width\":\"1000\",\"height\":null},\"quality\":\"65%\",\"upsize\":true}', 3),
@@ -243,7 +243,8 @@ INSERT INTO `data_rows` (`id`, `data_type_id`, `field`, `type`, `display_name`, 
 (123, 17, 'email', 'text', 'Email', 1, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|email\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 4),
 (124, 17, 'message', 'text_area', 'Сообщение', 1, 1, 1, 1, 1, 1, '{\"validation\":{\"rule\":\"required|max:255\",\"messages\":{\"required\":\"Поле обязательное к заполнению\",\"max\":\"Поле :attribute максимум :max символов.\"}}}', 5),
 (125, 17, 'created_at', 'timestamp', 'Время создания', 0, 1, 1, 0, 0, 0, NULL, 6),
-(126, 17, 'updated_at', 'timestamp', 'Время обновления', 0, 0, 0, 0, 0, 0, NULL, 7);
+(126, 17, 'updated_at', 'timestamp', 'Время обновления', 0, 0, 0, 0, 0, 0, NULL, 7),
+(127, 9, 'reservation_hasmany_number_relationship', 'relationship', 'Котедж / номер', 0, 1, 1, 1, 1, 1, '{\"model\":\"App\\\\Number\",\"table\":\"numbers\",\"type\":\"belongsTo\",\"column\":\"cottage_id\",\"key\":\"id\",\"label\":\"name\",\"pivot_table\":\"albums\",\"pivot\":\"0\"}', 2);
 
 -- --------------------------------------------------------
 
@@ -363,29 +364,31 @@ CREATE TABLE `menu_items` (
 
 INSERT INTO `menu_items` (`id`, `menu_id`, `title`, `url`, `target`, `icon_class`, `color`, `parent_id`, `order`, `created_at`, `updated_at`, `route`, `parameters`) VALUES
 (1, 1, 'Приборная панель', '', '_self', 'voyager-boat', '#000000', NULL, 1, '2018-03-31 09:13:14', '2018-04-12 13:03:22', 'voyager.dashboard', 'null'),
-(2, 1, 'Media', '', '_self', 'voyager-images', NULL, NULL, 5, '2018-03-31 09:13:14', '2018-03-31 09:13:14', 'voyager.media.index', NULL),
-(3, 1, 'Новости', '', '_self', 'voyager-news', '#000000', NULL, 6, '2018-03-31 09:13:14', '2018-04-12 07:45:13', 'voyager.posts.index', 'null'),
+(2, 1, 'Media', '', '_self', 'voyager-images', NULL, NULL, 4, '2018-03-31 09:13:14', '2018-05-10 07:11:39', 'voyager.media.index', NULL),
+(3, 1, 'Новости', '', '_self', 'voyager-news', '#000000', NULL, 5, '2018-03-31 09:13:14', '2018-05-10 07:11:39', 'voyager.posts.index', 'null'),
 (4, 1, 'Users', '', '_self', 'voyager-person', NULL, NULL, 3, '2018-03-31 09:13:14', '2018-03-31 09:13:14', 'voyager.users.index', NULL),
-(5, 1, 'Categories', '', '_self', 'voyager-categories', NULL, NULL, 8, '2018-03-31 09:13:14', '2018-03-31 09:13:14', 'voyager.categories.index', NULL),
-(6, 1, 'Pages', '', '_self', 'voyager-file-text', NULL, NULL, 7, '2018-03-31 09:13:14', '2018-03-31 09:13:14', 'voyager.pages.index', NULL),
+(5, 1, 'Categories', '', '_self', 'voyager-categories', NULL, NULL, 7, '2018-03-31 09:13:14', '2018-05-10 07:11:39', 'voyager.categories.index', NULL),
+(6, 1, 'Pages', '', '_self', 'voyager-file-text', NULL, NULL, 6, '2018-03-31 09:13:14', '2018-05-10 07:11:39', 'voyager.pages.index', NULL),
 (7, 1, 'Roles', '', '_self', 'voyager-lock', NULL, NULL, 2, '2018-03-31 09:13:14', '2018-03-31 09:13:14', 'voyager.roles.index', NULL),
-(8, 1, 'Tools', '', '_self', 'voyager-tools', NULL, NULL, 9, '2018-03-31 09:13:14', '2018-03-31 09:13:14', NULL, NULL),
-(9, 1, 'Menu Builder', '', '_self', 'voyager-list', NULL, 8, 10, '2018-03-31 09:13:14', '2018-03-31 09:13:14', 'voyager.menus.index', NULL),
-(10, 1, 'Database', '', '_self', 'voyager-data', NULL, 8, 11, '2018-03-31 09:13:14', '2018-03-31 09:13:14', 'voyager.database.index', NULL),
-(11, 1, 'Compass', '', '_self', 'voyager-compass', NULL, 8, 12, '2018-03-31 09:13:14', '2018-03-31 09:13:14', 'voyager.compass.index', NULL),
-(12, 1, 'Настройки', '', '_self', 'voyager-settings', '#000000', NULL, 14, '2018-03-31 09:13:14', '2018-04-12 07:45:00', 'voyager.settings.index', 'null'),
-(13, 1, 'Hooks', '', '_self', 'voyager-hook', NULL, 8, 13, '2018-03-31 09:13:14', '2018-03-31 09:13:14', 'voyager.hooks', NULL),
-(14, 1, 'Альбомы', '/admin/albums', '_self', 'voyager-photos', '#000000', NULL, 15, '2018-04-09 10:08:20', '2018-04-12 07:44:50', NULL, ''),
-(15, 1, 'Фото', '/admin/photos', '_self', 'voyager-photo', '#000000', NULL, 16, '2018-04-09 10:11:45', '2018-04-12 07:44:40', NULL, ''),
-(16, 1, 'Бронирование', '/admin/reservations', '_self', 'voyager-buy', '#000000', NULL, 17, '2018-04-09 10:28:22', '2018-04-12 07:44:33', NULL, ''),
-(17, 1, 'Услуги', '/admin/services', '_self', 'voyager-book', '#000000', NULL, 18, '2018-04-11 10:26:46', '2018-04-12 07:44:21', NULL, ''),
-(18, 1, 'Видео', '/admin/videos', '_self', 'voyager-video', '#000000', NULL, 19, '2018-04-11 11:01:01', '2018-04-12 07:44:13', NULL, ''),
-(19, 1, 'Котеджы', '/admin/numbers', '_self', 'voyager-company', '#000000', NULL, 20, '2018-04-12 07:42:14', '2018-04-12 07:44:04', NULL, ''),
-(20, 1, 'Особенности номеров', '/admin/features', '_self', 'voyager-thumb-tack', '#000000', NULL, 21, '2018-04-12 08:31:22', '2018-04-12 12:52:51', NULL, ''),
-(21, 1, 'Фото намеров', '/admin/photo-numbers', '_self', 'voyager-photos', '#000000', NULL, 22, '2018-04-12 12:17:28', '2018-04-12 12:52:41', NULL, ''),
-(22, 1, 'Отзывы', '/admin/reviews', '_self', 'voyager-chat', '#000000', NULL, 23, '2018-04-12 13:01:39', '2018-04-12 13:02:42', NULL, ''),
-(23, 1, 'Слайды', '/admin/sliders', '_self', 'voyager-crop', '#000000', NULL, 24, '2018-04-13 04:30:02', '2018-04-13 04:36:20', NULL, ''),
-(24, 1, 'Контакты', '/admin/contacts', '_self', 'voyager-mail', NULL, NULL, 25, '2018-04-24 11:22:29', '2018-04-24 11:22:29', NULL, NULL);
+(8, 1, 'Tools', '', '_self', 'voyager-tools', NULL, NULL, 8, '2018-03-31 09:13:14', '2018-05-10 07:11:39', NULL, NULL),
+(9, 1, 'Menu Builder', '', '_self', 'voyager-list', NULL, 8, 1, '2018-03-31 09:13:14', '2018-05-10 07:11:39', 'voyager.menus.index', NULL),
+(10, 1, 'Database', '', '_self', 'voyager-data', NULL, 8, 2, '2018-03-31 09:13:14', '2018-05-10 07:11:39', 'voyager.database.index', NULL),
+(11, 1, 'Compass', '', '_self', 'voyager-compass', NULL, 8, 3, '2018-03-31 09:13:14', '2018-05-10 07:11:39', 'voyager.compass.index', NULL),
+(12, 1, 'Настройки', '', '_self', 'voyager-settings', '#000000', NULL, 9, '2018-03-31 09:13:14', '2018-05-10 07:11:39', 'voyager.settings.index', 'null'),
+(13, 1, 'Hooks', '', '_self', 'voyager-hook', NULL, 8, 4, '2018-03-31 09:13:14', '2018-05-10 07:11:39', 'voyager.hooks', NULL),
+(14, 1, 'Альбомы', '/admin/albums', '_self', 'voyager-photos', '#000000', 26, 1, '2018-04-09 10:08:20', '2018-05-11 14:17:53', NULL, ''),
+(15, 1, 'Фото', '/admin/photos', '_self', 'voyager-photo', '#000000', 26, 2, '2018-04-09 10:11:45', '2018-05-11 14:17:53', NULL, ''),
+(16, 1, 'Бронирование', '/admin/reservations', '_self', 'voyager-buy', '#000000', 25, 4, '2018-04-09 10:28:22', '2018-05-11 14:15:53', NULL, ''),
+(17, 1, 'Услуги', '/admin/services', '_self', 'voyager-book', '#000000', NULL, 12, '2018-04-11 10:26:46', '2018-05-11 14:17:38', NULL, ''),
+(18, 1, 'Видео', '/admin/videos', '_self', 'voyager-video', '#000000', 26, 3, '2018-04-11 11:01:01', '2018-05-11 14:17:53', NULL, ''),
+(19, 1, 'Котеджы', '/admin/numbers', '_self', 'voyager-company', '#000000', 25, 1, '2018-04-12 07:42:14', '2018-05-10 07:12:29', NULL, ''),
+(20, 1, 'Особенности номеров', '/admin/features', '_self', 'voyager-thumb-tack', '#000000', 25, 2, '2018-04-12 08:31:22', '2018-05-10 07:13:01', NULL, ''),
+(21, 1, 'Фото намеров', '/admin/photo-numbers', '_self', 'voyager-photos', '#000000', 25, 3, '2018-04-12 12:17:28', '2018-05-10 07:13:01', NULL, ''),
+(22, 1, 'Отзывы', '/admin/reviews', '_self', 'voyager-chat', '#000000', NULL, 13, '2018-04-12 13:01:39', '2018-05-11 14:17:38', NULL, ''),
+(23, 1, 'Слайды', '/admin/sliders', '_self', 'voyager-crop', '#000000', NULL, 14, '2018-04-13 04:30:02', '2018-05-11 14:17:38', NULL, ''),
+(24, 1, 'Контакты', '/admin/contacts', '_self', 'voyager-mail', NULL, NULL, 15, '2018-04-24 11:22:29', '2018-05-11 14:17:38', NULL, NULL),
+(25, 1, 'Номера', '', '_self', 'voyager-company', '#000000', NULL, 10, '2018-05-10 07:12:20', '2018-05-11 14:15:47', NULL, ''),
+(26, 1, 'Медиа-контент', '', '_self', 'voyager-photos', '#000000', NULL, 11, '2018-05-11 14:17:07', '2018-05-11 14:17:31', NULL, '');
 
 -- --------------------------------------------------------
 
@@ -441,7 +444,7 @@ CREATE TABLE `numbers` (
   `body` text COLLATE utf8_unicode_ci NOT NULL,
   `price_weekday` int(11) NOT NULL,
   `price_holiday` int(11) NOT NULL,
-  `type` enum('cottage','number','sauna','bathhouse') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'cottage',
+  `type` enum('cottage','number','sauna','сhopped_houses','bathhouse','discount_price') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'cottage',
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -451,7 +454,11 @@ CREATE TABLE `numbers` (
 --
 
 INSERT INTO `numbers` (`id`, `name`, `image`, `body`, `price_weekday`, `price_holiday`, `type`, `created_at`, `updated_at`) VALUES
-(1, 'Коттедж №1', 'numbers/April2018/CNFhXuVitUyH2WUlxOTz.jpg', '<p><span style=\"color: #333333; font-family: \'Open Sans\', sans-serif; font-size: 18px; text-align: justify; background-color: #fefaf1;\">В доме есть телевизоры, интернет, кондиционер, холодильник. В стомость включено пользование мангалом и баней. Баня топится строго дровами без применения посторонних источников энергии, используются только натуральные веники. Сюда входят душ, ведро водопад, банные принадлежности, веники. Баня превосходно помогает обрести душевное равновесие, все проблемы попросту уходят на второй план, открывая путь к спокойствию и умиротворению. К тому же неоспорим оздоровительный эффект банных процедур &mdash; вместе с потом из организма уходит огромное количество вредных веществ &mdash; шлаков и токсинов. Но для достижения положительного эффекта баня должна быть организована с&nbsp;</span><br style=\"box-sizing: border-box; color: #333333; font-family: \'Open Sans\', sans-serif; font-size: 18px; text-align: justify; background-color: #fefaf1;\" /><span style=\"color: #333333; font-family: \'Open Sans\', sans-serif; font-size: 18px; text-align: justify; background-color: #fefaf1;\">соблюдением строгих правил &mdash; именно так обстоят дела в Коттедж-парк Славна. По традиции, здесь все обустроено по высшему разряду и удовлетворит даже самых взыскательных гостей.</span></p>', 5500, 6000, 'cottage', '2018-04-12 07:46:57', '2018-04-12 07:46:57');
+(1, 'Коттедж №1', 'numbers/April2018/CNFhXuVitUyH2WUlxOTz.jpg', '<p><span style=\"color: #333333; font-family: \'Open Sans\', sans-serif; font-size: 18px; text-align: justify; background-color: #fefaf1;\">В доме есть телевизоры, интернет, кондиционер, холодильник. В стомость включено пользование мангалом и баней. Баня топится строго дровами без применения посторонних источников энергии, используются только натуральные веники. Сюда входят душ, ведро водопад, банные принадлежности, веники. Баня превосходно помогает обрести душевное равновесие, все проблемы попросту уходят на второй план, открывая путь к спокойствию и умиротворению. К тому же неоспорим оздоровительный эффект банных процедур &mdash; вместе с потом из организма уходит огромное количество вредных веществ &mdash; шлаков и токсинов. Но для достижения положительного эффекта баня должна быть организована с&nbsp;</span><br style=\"box-sizing: border-box; color: #333333; font-family: \'Open Sans\', sans-serif; font-size: 18px; text-align: justify; background-color: #fefaf1;\" /><span style=\"color: #333333; font-family: \'Open Sans\', sans-serif; font-size: 18px; text-align: justify; background-color: #fefaf1;\">соблюдением строгих правил &mdash; именно так обстоят дела в Коттедж-парк Славна. По традиции, здесь все обустроено по высшему разряду и удовлетворит даже самых взыскательных гостей.</span></p>', 5500, 6000, 'cottage', '2018-04-12 07:46:57', '2018-04-12 07:46:57'),
+(2, 'Рубленый дом 9', 'numbers/May2018/YCt8VYT2vBoUMtQewOkW.jpg', '<p><img src=\"http://1237664.eventren.web.hosting-test.net//storage/numbers/May2018/dsc-0002.jpg\" alt=\"\" width=\"573\" height=\"573\" /></p>\r\n<p><span style=\"color: #333333; font-family: \'Open Sans\', sans-serif; font-size: 18px; text-align: justify; background-color: #fefaf1;\">Данный номер предназначен для отдыха всей семьей или дружной компанией. В номере находится 2 комнаты с друспальной кроватью. В обеих комнатах есть спутниковое TV. Также в номере есть удобства, душевая кабинка.</span></p>', 150, 200, 'cottage', '2018-05-08 07:38:18', '2018-05-08 07:38:18'),
+(3, 'Рубленые дома #1', 'numbers/May2018/ltxjarLpxyP9ZHlbZQRn.jpg', '<p>Описание Рубленые дома</p>', 1000, 1400, 'сhopped_houses', '2018-05-10 06:40:09', '2018-05-10 06:40:09'),
+(4, 'Цена со скидкой №1', 'numbers/May2018/MIzXYZmQ46fvOLH4jt29.jpg', '<p>Цена со скидкой&nbsp;&nbsp;Цена со скидкой №1</p>', 1000, 1400, 'discount_price', '2018-05-10 06:40:48', '2018-05-10 06:40:48'),
+(5, 'Тестовый котедж', 'numbers/May2018/TslZMpVGL4WGDMjamNsR.jpg', '<p>Описание тестового котеджа</p>', 1000, 1500, 'cottage', '2018-05-11 14:32:12', '2018-05-11 14:32:12');
 
 -- --------------------------------------------------------
 
@@ -813,12 +820,8 @@ CREATE TABLE `photos` (
 --
 
 INSERT INTO `photos` (`id`, `album_id`, `image`, `description`, `created_at`, `updated_at`) VALUES
-(9, 6, 'photos/April2018/QI1BYT7uHgLqt3oQGyzF.jpg', NULL, '2018-04-26 13:27:47', '2018-04-26 13:27:47'),
-(10, 6, 'photos/April2018/3tdtQFzaP84lA7sEpDko.jpg', NULL, '2018-04-26 13:27:57', '2018-04-26 13:27:57'),
-(11, 6, 'photos/April2018/pqcLYyVWBPoK12uwmH5Q.jpg', NULL, '2018-04-26 13:28:45', '2018-04-26 13:28:45'),
-(12, 5, 'photos/April2018/JBlTkFql0MoswS2L5Gfq.JPG', NULL, '2018-04-26 13:30:51', '2018-04-26 13:30:51'),
-(13, 5, 'photos/April2018/Hq3lX1c8ErybjJ8Bi4uw.jpg', NULL, '2018-04-26 13:31:00', '2018-04-26 13:31:00'),
-(14, 5, 'photos/April2018/jyRg1USiBFJROlrqesF8.jpeg', NULL, '2018-04-26 13:34:33', '2018-04-26 13:34:33');
+(17, 5, '[\"photos\\/May2018\\/oB9ad7l2gDKa3NpB5CuH.jpg\"]', NULL, '2018-05-11 14:21:30', '2018-05-11 14:21:30'),
+(18, 6, '[\"photos\\/May2018\\/XnidfSXdkR6sN25oL71v.jpg\",\"photos\\/May2018\\/4C58icCjI29zGVLgXJoz.jpg\"]', NULL, '2018-05-11 14:21:42', '2018-05-11 14:30:51');
 
 -- --------------------------------------------------------
 
@@ -839,11 +842,11 @@ CREATE TABLE `photo_numbers` (
 --
 
 INSERT INTO `photo_numbers` (`id`, `number_id`, `image`, `created_at`, `updated_at`) VALUES
-(1, 1, 'photo-numbers/April2018/yTxLi9GjmomrOwASqSzn.jpg', '2018-04-12 12:19:20', '2018-04-12 12:19:20'),
-(2, 1, 'photo-numbers/April2018/NmPOdJjVpmP3gqCi6jJO.jpg', '2018-04-12 12:19:30', '2018-04-12 12:19:30'),
-(3, 1, 'photo-numbers/April2018/NeSRoKx4sJwlU5iX48ii.jpg', '2018-04-12 12:19:40', '2018-04-12 12:19:40'),
-(4, 1, 'photo-numbers/April2018/Gk3i1St7C1nguU4NB7Jk.jpg', '2018-04-12 12:19:50', '2018-04-12 12:19:50'),
-(5, 1, 'photo-numbers/April2018/SHFoOpIjCKL9yMrhnLOG.jpg', '2018-04-12 12:19:59', '2018-04-12 12:19:59');
+(8, 1, '[\"photo-numbers\\/May2018\\/oSYveGzlEyukB2JXoSQb.jpg\",\"photo-numbers\\/May2018\\/YEnhSmnd5eD46dATn5Pl.jpg\",\"photo-numbers\\/May2018\\/j1obxsTTxgnLm1vCzNZq.jpg\"]', '2018-05-11 14:26:16', '2018-05-11 14:26:16'),
+(9, 2, '[\"photo-numbers\\/May2018\\/POCkDiR0dBREGUcyBpsM.jpg\",\"photo-numbers\\/May2018\\/1wDoyCI3HmI5uVKKYBE8.jpg\",\"photo-numbers\\/May2018\\/073mukNx2KCyNOsNrOri.jpg\"]', '2018-05-11 14:26:31', '2018-05-11 14:26:31'),
+(10, 3, '[\"photo-numbers\\/May2018\\/KKoWbm3smTbdA69IT8HU.jpg\",\"photo-numbers\\/May2018\\/z31DGVTChb5NbKxLhihj.jpg\",\"photo-numbers\\/May2018\\/yqvb9ToRORZ63eRhZMFO.jpg\"]', '2018-05-11 14:26:45', '2018-05-11 14:26:45'),
+(11, 4, '[\"photo-numbers\\/May2018\\/vFJ1pFSH6mIz6dylJOBq.jpg\",\"photo-numbers\\/May2018\\/whWEw5S3xtVl59putapk.jpg\",\"photo-numbers\\/May2018\\/ZgXCmMuxZkqmOo3vmYUb.jpg\"]', '2018-05-11 14:26:57', '2018-05-11 14:26:57'),
+(12, 5, '[\"photo-numbers\\/May2018\\/C8NDi6wgraPp2GkgO0ZW.jpg\",\"photo-numbers\\/May2018\\/K1Fy3fbHeE8FfUm9rPng.jpg\",\"photo-numbers\\/May2018\\/kfePPNJ9ZMx3vFNshSfC.jpg\",\"photo-numbers\\/May2018\\/gjKSY8mK4bSVg7H6tzeV.jpg\"]', '2018-05-11 14:32:40', '2018-05-11 14:32:40');
 
 -- --------------------------------------------------------
 
@@ -875,7 +878,7 @@ CREATE TABLE `posts` (
 --
 
 INSERT INTO `posts` (`id`, `author_id`, `category_id`, `title`, `seo_title`, `excerpt`, `body`, `image`, `slug`, `meta_description`, `meta_keywords`, `status`, `featured`, `total_views`, `created_at`, `updated_at`) VALUES
-(5, 1, NULL, 'Танец чистоты - свидетельство целомудрия', NULL, NULL, '<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">Несколько десятилетий назад евангельский проповедник Рэнди Вильсон впервые предложил такое свадебное понятие, как &laquo;танец чистоты&raquo;. Данный танец преследует своей целью восхваление добродетели целомудрия.</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&nbsp;В роли гаранта целомудрия своей дочери выступает отец невесты, которому и предоставляется первоочередное право танца с дочерью на ее же свадьбе, перед тем, как уступить ее в танце жениху.</p>', 'posts/April2018/YJoE6kc3os62ghrHODHk.jpg', 'tanec-chistoty-svidetel-stvo-celomudriya', NULL, NULL, 'PUBLISHED', 0, 27, '2018-04-11 11:51:19', '2018-04-26 13:51:05'),
+(5, 1, NULL, 'Танец чистоты - свидетельство целомудрия', NULL, NULL, '<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">Несколько десятилетий назад евангельский проповедник Рэнди Вильсон впервые предложил такое свадебное понятие, как &laquo;танец чистоты&raquo;. Данный танец преследует своей целью восхваление добродетели целомудрия.</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&nbsp;В роли гаранта целомудрия своей дочери выступает отец невесты, которому и предоставляется первоочередное право танца с дочерью на ее же свадьбе, перед тем, как уступить ее в танце жениху.</p>', 'posts/April2018/YJoE6kc3os62ghrHODHk.jpg', 'tanec-chistoty-svidetel-stvo-celomudriya', NULL, NULL, 'PUBLISHED', 0, 28, '2018-04-11 11:51:19', '2018-05-08 07:11:52'),
 (6, 1, NULL, 'Свадебное дерево пожеланий своими руками', NULL, NULL, '<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&laquo;Свадебное дерево пожеланий&raquo; является классическим составляющим любой незабываемой свадьбы, &ndash; благодаря ему молодожёны навсегда сохранят в своей памяти пожелания многочисленных гостей их свадьбы!</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">Свадебное дерево печатается на матовой бумаге, которая в свою очередь закрепляется в рамку, размещённую на столе пожеланий.</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">При помощи специальной водорастворимой краски, гости свадебной церемонии оставляют на ветках &laquo;дерева&raquo; свои отпечатки пальцев, обозначают их своими инициалами и, по желанию, пишут рядом с ними краткое пожелание.</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\"><strong style=\"box-sizing: border-box; line-height: 1.5em;\">Советы:</strong></p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&ndash; предложите гостям несколько цветов краски на выбор;</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&ndash; предоставьте гостям гелиевые ручки, соответствующих цветов;</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&ndash; предоставьте гостям влажные салфетки, для снятия краски;</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&ndash; разместите рядом со &laquo;свадебным деревом&raquo; маленькие &laquo;деревца&raquo; пробники, на которых гости могли бы потренироваться оставлять свои отпечатки пальцев;</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&ndash; разместите рядом со &laquo;свадебным деревом&raquo; пожелание-инструкцию для ваших гостей: &laquo;Пожалуйста, оставьте на свадебном дереве нашей совместной жизни Ваш отпечаток и Ваши инициалы!&raquo;</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\"><strong style=\"box-sizing: border-box; line-height: 1.5em;\">Примечание:</strong></p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&ndash; вручение данного коллективного произведения искусства может стать прекрасным завершением праздничной программы;</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&ndash; молодая пара может стать первыми, кто демонстративно оставят свои пожелания на &laquo;дереве&raquo; их совместной жизни;</p>\r\n<p style=\"box-sizing: border-box; margin: 0px; font-size: 18px; line-height: 28px; text-align: justify; color: #333333; font-family: \'Open Sans\', sans-serif; background-color: #fefaf1;\">&ndash; под деревом может быть написано: &laquo;Посадите любовь. Позвольте ей принести плоды...&raquo;.</p>', 'posts/April2018/zYmrjk5aJU9yInY6Pj3c.jpg', 'svadebnoe-derevo-pozhelanij-svoimi-rukami', NULL, NULL, 'PUBLISHED', 0, 24, '2018-04-11 11:53:54', '2018-04-26 13:51:21');
 
 -- --------------------------------------------------------
@@ -1336,7 +1339,7 @@ ALTER TABLE `contacts`
 -- AUTO_INCREMENT для таблицы `data_rows`
 --
 ALTER TABLE `data_rows`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=127;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=128;
 --
 -- AUTO_INCREMENT для таблицы `data_types`
 --
@@ -1356,7 +1359,7 @@ ALTER TABLE `menus`
 -- AUTO_INCREMENT для таблицы `menu_items`
 --
 ALTER TABLE `menu_items`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 --
 -- AUTO_INCREMENT для таблицы `migrations`
 --
@@ -1366,7 +1369,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT для таблицы `numbers`
 --
 ALTER TABLE `numbers`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT для таблицы `pages`
 --
@@ -1386,12 +1389,12 @@ ALTER TABLE `permission_groups`
 -- AUTO_INCREMENT для таблицы `photos`
 --
 ALTER TABLE `photos`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 --
 -- AUTO_INCREMENT для таблицы `photo_numbers`
 --
 ALTER TABLE `photo_numbers`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT для таблицы `posts`
 --
@@ -1401,7 +1404,7 @@ ALTER TABLE `posts`
 -- AUTO_INCREMENT для таблицы `reservations`
 --
 ALTER TABLE `reservations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT для таблицы `reviews`
 --
@@ -1416,7 +1419,7 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT для таблицы `services`
 --
 ALTER TABLE `services`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT для таблицы `settings`
 --

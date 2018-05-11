@@ -3,12 +3,11 @@
         <div class="top-part">
             <div class="slider-part">
 
-
-                @if(count($number->photos) > 1)
+                @if(count($photos) > 1)
                     <div class="video_slider">
-                        @foreach($number->photos as $photo)
+                        @foreach($photos as $photo)
                             <div>
-                                <img src="{{ asset('storage/' . $photo->image) }}">
+                                <img src="{{ asset('storage/' . $photo) }}" alt="photo">
                             </div>
                         @endforeach
                     </div>
@@ -18,16 +17,13 @@
                     </div>
                 @endif
 
-                @if(count($number->photos) > 1)
-                    <div class="video_menu_slider">
-                        @foreach($number->photos as $photo)
-                            <div>
-
-                                <img src="{{ asset('storage/' . $photo->image) }}">
-                            </div>
-                        @endforeach
-                    </div>
-                @endif
+                <div class="video_menu_slider">
+                    @foreach($photos as $photo)
+                        <div>
+                            <img src="{{ asset('storage/' . $photo) }}">
+                        </div>
+                    @endforeach
+                </div>
 
             </div>
             <div class="details-part">

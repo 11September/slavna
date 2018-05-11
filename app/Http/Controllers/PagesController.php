@@ -84,7 +84,9 @@ class PagesController extends Controller
     {
         $number = Number::whereId($id)->with('features', 'photos')->first();
 
-        return view('one-cottage', compact('number'));
+        $photos = Photo::render($number->photos);
+
+        return view('one-cottage', compact('number', 'photos'));
     }
 
     public function houses()
