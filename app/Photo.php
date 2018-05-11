@@ -17,4 +17,22 @@ class Photo extends Model
     {
         return $this->belongsTo(Album::class);
     }
+
+    public static function render($photos)
+    {
+        $photos_array = array();
+
+        foreach ($photos as $photo) {
+            if (json_decode($photo->image)) {
+                foreach (json_decode($photo->image) as $file){
+                    filter_var($file, FILTER_VALIDATE_INT);
+                    array_push($photos_array, $file);
+                }
+            }else{
+                array_push($photos_array, $photo->image);
+            }
+        }
+
+        return $photos_array;
+    }
 }

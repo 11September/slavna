@@ -35,4 +35,4 @@
             $("#phone").mask("+380-999-99-9999");
         });
     </script>
-@endsection
+@endsectionw

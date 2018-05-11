@@ -8,10 +8,10 @@
             <p class="albom-header sorry">Извините, пока в данном альбоме нету фотографий!</p>
         @endif
 
-        @foreach($photos as $photo)
+        @foreach($all_photos as $photo)
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 grid-fix">
-                <a data-fancybox="photos" href="{{ asset('storage/' . $photo->image) }}">
-                    <img src="{{ asset('storage/' . $photo->image) }}" alt="">
+                <a data-fancybox="photos" href="{{ asset('storage/' . $photo) }}">
+                    <img src="{{ asset('storage/' . $photo) }}" alt="">
                 </a>
             </div>
         @endforeach
