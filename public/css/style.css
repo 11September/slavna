@@ -868,7 +868,7 @@ form button:hover {
     height: 230px;
     justify-content: flex-start;
     color: #f5db90;
-    margin-left: 10%;
+    margin-left: 7%;
 }
 
 .reviews .slick-prev:before,
@@ -2542,7 +2542,7 @@ form {
     }
 
     .reviews .clider_info {
-        margin-left: 7%;
+           margin-left: 5%;
     }
     /* reviews end */
 }
@@ -2566,7 +2566,7 @@ form {
     }
 
     .reviews .clider_info {
-        margin-left: 5%;
+            margin-left: 3%;
     }
     /* reviews end */
 }
@@ -2828,7 +2828,7 @@ form {
     }
 
     .reviews .clider_info {
-        margin-left: 30px;
+            margin-left: 7%;
     }
 
     .slider_bg {
@@ -2952,6 +2952,10 @@ form {
     /* video_items */
     .reviews .position_line {
         display: none;
+    }
+
+    .reviews .clider_info {
+        margin-left: 2.5%;
     }
 
     .artours_intro .block_img img{

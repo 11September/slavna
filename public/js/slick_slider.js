@@ -45,13 +45,14 @@ $(document).ready(function(){
   $('.reviews_slider').slick({
       initialSlide: 0,
       slidesToShow: 1,
-      verticalSwiping: true,
+      slidesToScroll: 1,
+      speed: 500,
       rows: 1,
-      arrows: false,
+      arrows: true,
       dots: false,
       infinite: false,
       vertical: false,
-      focusOnSelect: false,
+      focusOnSelect: true,
       responsive: [
       {
         breakpoint: 1200,
