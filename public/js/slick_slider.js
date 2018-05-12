@@ -47,10 +47,10 @@ $(document).ready(function(){
       slidesToShow: 1,
       verticalSwiping: true,
       rows: 1,
-      arrows: true,
-      dots: true,
+      arrows: false,
+      dots: false,
       infinite: false,
-      vertical: true,
+      vertical: false,
       focusOnSelect: false,
       responsive: [
       {
