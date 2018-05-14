@@ -208,11 +208,11 @@ $(document).ready(function(){
   if($('.latest_publication_slider').length > 0){
 
     element = Number("1");
-    $('.latest_publication_slider_item').last().addClass("latest_publication_slider_item_last");
+    $('.latest_publication_slider_new .latest_publication_slider_item').last().addClass("latest_publication_slider_item_last");
 
-      $('.latest_publication_slider_item').each(function(){
-        current = $('.latest_publication_slider_item').attr("data-slick-index");
-        last_n = $('.latest_publication_slider_item_last').attr("data-slick-index");
+      $('.latest_publication_slider_new .latest_publication_slider_item').each(function(){
+        current = $('.latest_publication_slider_new .latest_publication_slider_item').attr("data-slick-index");
+        last_n = $('.latest_publication_slider_new .latest_publication_slider_item_last').attr("data-slick-index");
         current = Number(current) + Number(element);
         last_n = Number(last_n) + Number("1");
         element = Number(element) + Number("1");
@@ -221,7 +221,7 @@ $(document).ready(function(){
     });
 
       var latest_publication_last_n;
-      latest_publication_last_n = $('.reviews_slider_item_last').attr("data-slick-index");
+      latest_publication_last_n = $('.latest_publication_slider_item_last').attr("data-slick-index");
       latest_publication_last_n = Number(latest_publication_last_n) + Number("1");
       var  latest_publication_slider_height = 100 / latest_publication_last_n;
       $('.latest_publication_slider').find('.slick-dots li').css("width", latest_publication_slider_height  + "%");
