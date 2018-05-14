@@ -38,7 +38,9 @@ class PagesController extends Controller
 
     public function reservation()
     {
-        return view('reservation');
+        $numbers = Number::all();
+
+        return view('reservation',compact('numbers'));
     }
 
     public function albums()
