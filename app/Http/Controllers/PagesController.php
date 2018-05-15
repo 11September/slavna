@@ -38,7 +38,7 @@ class PagesController extends Controller
 
     public function reservation()
     {
-        $numbers = Number::all();
+        $numbers = Number::select('id', 'name')->get();
 
         return view('reservation',compact('numbers'));
     }
