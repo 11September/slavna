@@ -4,7 +4,7 @@
         <h2>Последние публикации</h2>
         <h5>Последние публикации</h5>
 
-        <div class="latest_publication_slider">
+        <div class="latest_publication_slider latest_publication_slider_new">
 
             @foreach($posts as $post)
                 <div class="latest_publication_slider_item">
