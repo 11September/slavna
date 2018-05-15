@@ -17,14 +17,15 @@
                     </div>
                 </div>
 
-                @foreach($thubnails as $thubnail)
+                @foreach($photos as $photo)
+
                     <div class="col-md-4 wrapper-thubnail-item">
                         <div class="thubnails-item thubnails-hover-item">
-                            <img src="{{ asset('storage/' . $thubnail->image) }}" alt="{{ $thubnail->description }}">
+                            <img src="{{ asset('storage/' . $photo) }}" alt="photo">
 
                             <div class="thubnails-item-hidden-zoom">
                                 <a data-fancybox="gallery" data-trigger="gallery"
-                                   href="{{ asset('storage/' . $thubnail->image) }}">
+                                   href="{{ asset('storage/' . $photo) }}">
                                     <i class="fas fa-search-plus"></i>
                                     <p class="thubnails-text-zoom">Нажмите чтобы увеличить</p>
                                 </a>

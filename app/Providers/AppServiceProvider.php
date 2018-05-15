@@ -30,7 +30,7 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         view()->composer('partials.thubnails', function ($view){
-            $view->with('thubnails', Photo::thubnails_photos());
+            $view->with('photos', Photo::thubnails_photos());
         });
 
         view()->composer('partials.latest_publications', function ($view){
